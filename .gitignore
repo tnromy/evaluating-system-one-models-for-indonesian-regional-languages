@@ -1,0 +1,22 @@
+# environment
+.venv/
+.env
+secrets/
+
+# python
+__pycache__/
+*.egg-info/
+.pytest_cache/
+
+# large / regenerable artefacts
+data/raw/
+runs/
+results/
+models/
+*.safetensors
+*.bin
+*.pt
+.ipynb_checkpoints/
+
+# graphify cache (graph.json itself is kept)
+graphify-out/cache/
