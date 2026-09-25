@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "requirements.txt": {
-    "mtime": 1790301861.0829327,
-    "ast_hash": "639877c54dacbb2427246b4e772ccdd9",
+    "mtime": 1790306574.3429236,
+    "ast_hash": "836175cf0573ba2d57eb7d4fe720a92c",
     "semantic_hash": ""
   },
   "src/jevexp/nusax_reference.py": {
@@ -130,13 +130,63 @@
     "semantic_hash": ""
   },
   "prereg/protocol.md": {
-    "mtime": 1790304161.3234885,
-    "ast_hash": "295581495f8e8ddea5fc2ff377ee736d",
+    "mtime": 1790306559.853421,
+    "ast_hash": "63e3416f145b68b5592a9c40cabccb52",
     "semantic_hash": ""
   },
   "src/jevexp/runners/codex.py": {
     "mtime": 1790304507.1461744,
     "ast_hash": "d65e46ee10d02a0b40b72d82a98a05c7",
+    "semantic_hash": ""
+  },
+  "analysis/glmm.R": {
+    "mtime": 1790306467.9014719,
+    "ast_hash": "e3f06bb6b3e10a308d127c0c52660855",
+    "semantic_hash": ""
+  },
+  "analysis/power.py": {
+    "mtime": 1790306434.877533,
+    "ast_hash": "53f1207666110b0f350e8c26a79a33ce",
+    "semantic_hash": ""
+  },
+  "analysis/power_glmm.R": {
+    "mtime": 1790308563.187678,
+    "ast_hash": "32bccc177112136e17bf2552b43c9aa2",
+    "semantic_hash": ""
+  },
+  "analysis/run_confirmatory.py": {
+    "mtime": 1790306531.3303432,
+    "ast_hash": "bb039e14baa4ea0924ed8d0acb06e15b",
+    "semantic_hash": ""
+  },
+  "src/jevexp/features.py": {
+    "mtime": 1790306305.865738,
+    "ast_hash": "2e0bdba5422cedd1a4c330146719733a",
+    "semantic_hash": ""
+  },
+  "tests/test_features.py": {
+    "mtime": 1790306570.3588371,
+    "ast_hash": "457a830ee34dda54b9616a5defcfc01f",
+    "semantic_hash": ""
+  },
+  "prereg/README.md": {
+    "mtime": 1790309552.6897378,
+    "ast_hash": "781261f293aa6de02d6c9d8d6ff70f08",
+    "semantic_hash": ""
+  },
+  "prereg/analysis_plan.md": {
+    "mtime": 1790306374.9943314,
+    "ast_hash": "a2dd7958b7ec27bef83d164be0ad63a7",
+    "semantic_hash": ""
+  },
+  "prereg/hypotheses.md": {
+    "mtime": 1790306559.8535461,
+    "ast_hash": "a738528ad4bea5a7434c99c098316613",
+    "semantic_hash": ""
+  },
+  "prereg/power.md": {
+    "mtime": 1790309548.492615,
+    "ast_hash": "1c0c42b7870bce84b38d6bf48641e7f1",
     "semantic_hash": ""
   }
 }

@@ -4,6 +4,196 @@
   "graph": {},
   "nodes": [
     {
+      "label": "power.py",
+      "file_type": "code",
+      "source_file": "analysis/power.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "analysis_power",
+      "community": 0,
+      "norm_label": "power.py"
+    },
+    {
+      "label": "mcnemar_crit()",
+      "file_type": "code",
+      "source_file": "analysis/power.py",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "analysis_power_mcnemar_crit",
+      "community": 0,
+      "norm_label": "mcnemar_crit()"
+    },
+    {
+      "label": "power()",
+      "file_type": "code",
+      "source_file": "analysis/power.py",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "analysis_power_power",
+      "community": 0,
+      "norm_label": "power()"
+    },
+    {
+      "label": "mdd()",
+      "file_type": "code",
+      "source_file": "analysis/power.py",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "analysis_power_mdd",
+      "community": 0,
+      "norm_label": "mdd()"
+    },
+    {
+      "label": "discordance()",
+      "file_type": "code",
+      "source_file": "analysis/power.py",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "analysis_power_discordance",
+      "community": 0,
+      "norm_label": "discordance()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "analysis/power.py",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "analysis_power_main",
+      "community": 0,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Power analysis for prereg-v1 (K25), sized from VALIDATION pilot data only.  McNe",
+      "file_type": "rationale",
+      "source_file": "analysis/power.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "analysis_power_rationale_1",
+      "community": 0,
+      "norm_label": "power analysis for prereg-v1 (k25), sized from validation pilot data only.  mcne"
+    },
+    {
+      "label": "Smallest k such that the exact two-sided test on m discordant pairs rejects when",
+      "file_type": "rationale",
+      "source_file": "analysis/power.py",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "analysis_power_rationale_26",
+      "community": 0,
+      "norm_label": "smallest k such that the exact two-sided test on m discordant pairs rejects when"
+    },
+    {
+      "label": "run_confirmatory.py",
+      "file_type": "code",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "analysis_run_confirmatory",
+      "community": 7,
+      "norm_label": "run_confirmatory.py"
+    },
+    {
+      "label": "load_arm()",
+      "file_type": "code",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "analysis_run_confirmatory_load_arm",
+      "community": 7,
+      "norm_label": "load_arm()"
+    },
+    {
+      "label": "holm()",
+      "file_type": "code",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "analysis_run_confirmatory_holm",
+      "community": 7,
+      "norm_label": "holm()"
+    },
+    {
+      "label": "mcnemar()",
+      "file_type": "code",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "analysis_run_confirmatory_mcnemar",
+      "community": 7,
+      "norm_label": "mcnemar()"
+    },
+    {
+      "label": "a4_frame()",
+      "file_type": "code",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "analysis_run_confirmatory_a4_frame",
+      "community": 7,
+      "norm_label": "a4_frame()"
+    },
+    {
+      "label": "h1b()",
+      "file_type": "code",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "analysis_run_confirmatory_h1b",
+      "community": 7,
+      "norm_label": "h1b()"
+    },
+    {
+      "label": "h2()",
+      "file_type": "code",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "analysis_run_confirmatory_h2",
+      "community": 7,
+      "norm_label": "h2()"
+    },
+    {
+      "label": "h1a()",
+      "file_type": "code",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "analysis_run_confirmatory_h1a",
+      "community": 7,
+      "norm_label": "h1a()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L113",
+      "_origin": "ast",
+      "id": "analysis_run_confirmatory_main",
+      "community": 7,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Confirmatory analyses of prereg-v1 (hypotheses.md, analysis_plan.md).    --split",
+      "file_type": "rationale",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "analysis_run_confirmatory_rationale_1",
+      "community": 7,
+      "norm_label": "confirmatory analyses of prereg-v1 (hypotheses.md, analysis_plan.md).    --split"
+    },
+    {
+      "label": "a, b: boolean correctness aligned on the same items. Exact two-sided test.",
+      "file_type": "rationale",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "analysis_run_confirmatory_rationale_39",
+      "community": 7,
+      "norm_label": "a, b: boolean correctness aligned on the same items. exact two-sided test."
+    },
+    {
       "label": "smoke_api.py",
       "file_type": "code",
       "source_file": "scripts/smoke_api.py",
@@ -250,7 +440,7 @@
       "source_location": "L201",
       "_origin": "ast",
       "id": "jevexp_data_ind_source",
-      "community": 4,
+      "community": 5,
       "norm_label": "ind_source()"
     },
     {
@@ -380,7 +570,7 @@
       "source_location": "L202",
       "_origin": "ast",
       "id": "jevexp_data_rationale_202",
-      "community": 4,
+      "community": 5,
       "norm_label": "sentence_id -> human-written indonesian parallel text (oracle arm a4).      nusa"
     },
     {
@@ -574,6 +764,66 @@
       "norm_label": "percentile ci resampling whole clusters (all languages of a sentence move togeth"
     },
     {
+      "label": "features.py",
+      "file_type": "code",
+      "source_file": "src/jevexp/features.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "jevexp_features",
+      "community": 5,
+      "norm_label": "features.py"
+    },
+    {
+      "label": "sentence_overlap()",
+      "file_type": "code",
+      "source_file": "src/jevexp/features.py",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "jevexp_features_sentence_overlap",
+      "community": 5,
+      "norm_label": "sentence_overlap()"
+    },
+    {
+      "label": "_cosine_distance()",
+      "file_type": "code",
+      "source_file": "src/jevexp/features.py",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "jevexp_features_cosine_distance",
+      "community": 5,
+      "norm_label": "_cosine_distance()"
+    },
+    {
+      "label": "language_features()",
+      "file_type": "code",
+      "source_file": "src/jevexp/features.py",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "jevexp_features_language_features",
+      "community": 5,
+      "norm_label": "language_features()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "src/jevexp/features.py",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "jevexp_features_main",
+      "community": 5,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Covariates for H1 (docs/metodologi.md \u00a78; prereg/hypotheses.md).  Sentence level",
+      "file_type": "rationale",
+      "source_file": "src/jevexp/features.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "jevexp_features_rationale_1",
+      "community": 5,
+      "norm_label": "covariates for h1 (docs/metodologi.md \u00a78; prereg/hypotheses.md).  sentence level"
+    },
+    {
       "label": "nusax_reference.py",
       "file_type": "code",
       "source_file": "src/jevexp/nusax_reference.py",
@@ -600,7 +850,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_parsing",
-      "community": 5,
+      "community": 6,
       "norm_label": "parsing.py"
     },
     {
@@ -610,7 +860,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "jevexp_parsing_normalise",
-      "community": 5,
+      "community": 6,
       "norm_label": "_normalise()"
     },
     {
@@ -620,7 +870,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "jevexp_parsing_pred",
-      "community": 5,
+      "community": 6,
       "norm_label": "_pred()"
     },
     {
@@ -630,7 +880,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "jevexp_parsing_jev_answer",
-      "community": 5,
+      "community": 6,
       "norm_label": "jev_answer()"
     },
     {
@@ -640,7 +890,7 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "jevexp_parsing_llm_json",
-      "community": 5,
+      "community": 6,
       "norm_label": "llm_json()"
     },
     {
@@ -650,7 +900,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "jevexp_parsing_logprob_label_dist",
-      "community": 5,
+      "community": 6,
       "norm_label": "logprob_label_dist()"
     },
     {
@@ -660,7 +910,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_parsing_rationale_1",
-      "community": 5,
+      "community": 6,
       "norm_label": "turn raw api responses into (pred, probs, confidence). probs follow datasets lab"
     },
     {
@@ -670,7 +920,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "jevexp_parsing_rationale_23",
-      "community": 5,
+      "community": 6,
       "norm_label": "jev system one response -> (pred, probs, confidence). invalid if the answer is m"
     },
     {
@@ -680,7 +930,7 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "jevexp_parsing_rationale_45",
-      "community": 5,
+      "community": 6,
       "norm_label": "llm json answer -> (pred, verbalized probs or none). invalid on malformed json /"
     },
     {
@@ -690,7 +940,7 @@
       "source_location": "L71",
       "_origin": "ast",
       "id": "jevexp_parsing_rationale_71",
-      "community": 5,
+      "community": 6,
       "norm_label": "distribution over labels from top_logprobs at the first generated token that beg"
     },
     {
@@ -700,7 +950,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_paths",
-      "community": 1,
+      "community": 3,
       "norm_label": "paths.py"
     },
     {
@@ -870,7 +1120,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_report_f2",
-      "community": 0,
+      "community": 2,
       "norm_label": "report_f2.py"
     },
     {
@@ -890,7 +1140,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "jevexp_report_f2_ops",
-      "community": 0,
+      "community": 2,
       "norm_label": "ops()"
     },
     {
@@ -900,7 +1150,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "jevexp_report_f2_select_formulation",
-      "community": 0,
+      "community": 2,
       "norm_label": "select_formulation()"
     },
     {
@@ -910,7 +1160,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "jevexp_report_f2_main",
-      "community": 0,
+      "community": 2,
       "norm_label": "main()"
     },
     {
@@ -920,7 +1170,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_report_f2_rationale_1",
-      "community": 0,
+      "community": 2,
       "norm_label": "f2 pilot summaries (validation only): per-language macro-f1 per run, formulation"
     },
     {
@@ -930,7 +1180,7 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "jevexp_report_f2_rationale_42",
-      "community": 0,
+      "community": 2,
       "norm_label": "scores: {formulation: mean macro-f1}. rule from prereg/pilot_rules.md."
     },
     {
@@ -1040,7 +1290,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "runners_claude",
-      "community": 6,
+      "community": 4,
       "norm_label": "claude.py"
     },
     {
@@ -1050,7 +1300,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "runners_claude_call_cli",
-      "community": 6,
+      "community": 4,
       "norm_label": "call_cli()"
     },
     {
@@ -1060,7 +1310,7 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "runners_claude_run",
-      "community": 6,
+      "community": 4,
       "norm_label": "run()"
     },
     {
@@ -1070,7 +1320,7 @@
       "source_location": "L84",
       "_origin": "ast",
       "id": "runners_claude_main",
-      "community": 6,
+      "community": 4,
       "norm_label": "main()"
     },
     {
@@ -1080,7 +1330,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "runners_claude_rationale_1",
-      "community": 6,
+      "community": 4,
       "norm_label": "d3 (appendix): claude via headless claude code cli, one isolated call per item ("
     },
     {
@@ -1190,7 +1440,7 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "runners_common_guard_split",
-      "community": 4,
+      "community": 7,
       "norm_label": "guard_split()"
     },
     {
@@ -1210,7 +1460,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "runners_common_items",
-      "community": 4,
+      "community": 5,
       "norm_label": "items()"
     },
     {
@@ -1320,7 +1570,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "runners_common_rationale_28",
-      "community": 4,
+      "community": 7,
       "norm_label": "test data is only reachable after the pre-registration tag exists (docs/metodolo"
     },
     {
@@ -1330,7 +1580,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "runners_common_rationale_41",
-      "community": 4,
+      "community": 5,
       "norm_label": "items (dataset, split, lang, sentence_id, gold, text) restricted to the ids list"
     },
     {
@@ -1520,7 +1770,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "runners_nllb",
-      "community": 4,
+      "community": 5,
       "norm_label": "nllb.py"
     },
     {
@@ -1530,7 +1780,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "runners_nllb_translate",
-      "community": 4,
+      "community": 5,
       "norm_label": "translate()"
     },
     {
@@ -1540,7 +1790,7 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "runners_nllb_run",
-      "community": 4,
+      "community": 5,
       "norm_label": "run()"
     },
     {
@@ -1550,7 +1800,7 @@
       "source_location": "L66",
       "_origin": "ast",
       "id": "runners_nllb_main",
-      "community": 4,
+      "community": 5,
       "norm_label": "main()"
     },
     {
@@ -1560,7 +1810,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "runners_nllb_rationale_1",
-      "community": 4,
+      "community": 5,
       "norm_label": "a3 translate-test: nllb-200-distilled-600m, regional language -> indonesian, loc"
     },
     {
@@ -1854,13 +2104,43 @@
       "norm_label": "test_cluster_bootstrap_resamples_whole_clusters()"
     },
     {
+      "label": "test_features.py",
+      "file_type": "code",
+      "source_file": "tests/test_features.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_features",
+      "community": 3,
+      "norm_label": "test_features.py"
+    },
+    {
+      "label": "test_overlap_ind_is_identity_for_indonesian_and_complete()",
+      "file_type": "code",
+      "source_file": "tests/test_features.py",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "tests_test_features_test_overlap_ind_is_identity_for_indonesian_and_complete",
+      "community": 3,
+      "norm_label": "test_overlap_ind_is_identity_for_indonesian_and_complete()"
+    },
+    {
+      "label": "test_language_features_cover_all_parallel_languages()",
+      "file_type": "code",
+      "source_file": "tests/test_features.py",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "tests_test_features_test_language_features_cover_all_parallel_languages",
+      "community": 3,
+      "norm_label": "test_language_features_cover_all_parallel_languages()"
+    },
+    {
       "label": "test_parsing.py",
       "file_type": "code",
       "source_file": "tests/test_parsing.py",
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_parsing",
-      "community": 5,
+      "community": 6,
       "norm_label": "test_parsing.py"
     },
     {
@@ -1870,7 +2150,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "tests_test_parsing_test_spec_keys_are_canonical_labels",
-      "community": 5,
+      "community": 6,
       "norm_label": "test_spec_keys_are_canonical_labels()"
     },
     {
@@ -1890,7 +2170,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "tests_test_parsing_test_jev_choice_reorders_probs_to_canonical",
-      "community": 5,
+      "community": 6,
       "norm_label": "test_jev_choice_reorders_probs_to_canonical()"
     },
     {
@@ -1900,7 +2180,7 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "tests_test_parsing_test_jev_noul_normalised_and_invalid_when_missing",
-      "community": 5,
+      "community": 6,
       "norm_label": "test_jev_noul_normalised_and_invalid_when_missing()"
     },
     {
@@ -1910,7 +2190,7 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "tests_test_parsing_test_llm_json",
-      "community": 5,
+      "community": 6,
       "norm_label": "test_llm_json()"
     },
     {
@@ -1920,7 +2200,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "tests_test_parsing_tok",
-      "community": 5,
+      "community": 6,
       "norm_label": "_tok()"
     },
     {
@@ -1930,7 +2210,7 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "tests_test_parsing_test_logprob_merges_whitespace_variants_by_max",
-      "community": 5,
+      "community": 6,
       "norm_label": "test_logprob_merges_whitespace_variants_by_max()"
     },
     {
@@ -1940,7 +2220,7 @@
       "source_location": "L71",
       "_origin": "ast",
       "id": "tests_test_parsing_test_logprob_real_distribution_and_prefix_tokens",
-      "community": 5,
+      "community": 6,
       "norm_label": "test_logprob_real_distribution_and_prefix_tokens()"
     },
     {
@@ -2054,6 +2334,176 @@
       "norm_label": "data (pinned)"
     },
     {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "prereg/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "prereg_readme",
+      "community": 17,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Pre-registration `prereg-v1`",
+      "file_type": "document",
+      "source_file": "prereg/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "prereg_readme_pre_registration_prereg_v1",
+      "community": 17,
+      "norm_label": "pre-registration `prereg-v1`"
+    },
+    {
+      "label": "analysis_plan.md",
+      "file_type": "document",
+      "source_file": "prereg/analysis_plan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "prereg_analysis_plan",
+      "community": 10,
+      "norm_label": "analysis_plan.md"
+    },
+    {
+      "label": "Pre-registered analysis plan (prereg-v1)",
+      "file_type": "document",
+      "source_file": "prereg/analysis_plan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "prereg_analysis_plan_pre_registered_analysis_plan_prereg_v1",
+      "community": 10,
+      "norm_label": "pre-registered analysis plan (prereg-v1)"
+    },
+    {
+      "label": "1. Data handling",
+      "file_type": "document",
+      "source_file": "prereg/analysis_plan.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "prereg_analysis_plan_1_data_handling",
+      "community": 10,
+      "norm_label": "1. data handling"
+    },
+    {
+      "label": "2. Metrics",
+      "file_type": "document",
+      "source_file": "prereg/analysis_plan.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "prereg_analysis_plan_2_metrics",
+      "community": 10,
+      "norm_label": "2. metrics"
+    },
+    {
+      "label": "3. Paired tests",
+      "file_type": "document",
+      "source_file": "prereg/analysis_plan.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "prereg_analysis_plan_3_paired_tests",
+      "community": 10,
+      "norm_label": "3. paired tests"
+    },
+    {
+      "label": "4. GLMM (H1a)",
+      "file_type": "document",
+      "source_file": "prereg/analysis_plan.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "prereg_analysis_plan_4_glmm_h1a",
+      "community": 10,
+      "norm_label": "4. glmm (h1a)"
+    },
+    {
+      "label": "5. Bootstrap",
+      "file_type": "document",
+      "source_file": "prereg/analysis_plan.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "prereg_analysis_plan_5_bootstrap",
+      "community": 10,
+      "norm_label": "5. bootstrap"
+    },
+    {
+      "label": "6. Learning curves (H3a)",
+      "file_type": "document",
+      "source_file": "prereg/analysis_plan.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "prereg_analysis_plan_6_learning_curves_h3a",
+      "community": 10,
+      "norm_label": "6. learning curves (h3a)"
+    },
+    {
+      "label": "7. Order and stopping",
+      "file_type": "document",
+      "source_file": "prereg/analysis_plan.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "prereg_analysis_plan_7_order_and_stopping",
+      "community": 10,
+      "norm_label": "7. order and stopping"
+    },
+    {
+      "label": "hypotheses.md",
+      "file_type": "document",
+      "source_file": "prereg/hypotheses.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "prereg_hypotheses",
+      "community": 11,
+      "norm_label": "hypotheses.md"
+    },
+    {
+      "label": "Pre-registered hypotheses (prereg-v1)",
+      "file_type": "document",
+      "source_file": "prereg/hypotheses.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "prereg_hypotheses_pre_registered_hypotheses_prereg_v1",
+      "community": 11,
+      "norm_label": "pre-registered hypotheses (prereg-v1)"
+    },
+    {
+      "label": "Confirmatory",
+      "file_type": "document",
+      "source_file": "prereg/hypotheses.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "prereg_hypotheses_confirmatory",
+      "community": 11,
+      "norm_label": "confirmatory"
+    },
+    {
+      "label": "Secondary (reported with CIs, Holm within family, not used to claim confirmation)",
+      "file_type": "document",
+      "source_file": "prereg/hypotheses.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "prereg_hypotheses_secondary_reported_with_cis_holm_within_family_not_used_to_claim_confirmation",
+      "community": 11,
+      "norm_label": "secondary (reported with cis, holm within family, not used to claim confirmation)"
+    },
+    {
+      "label": "Exploratory",
+      "file_type": "document",
+      "source_file": "prereg/hypotheses.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "prereg_hypotheses_exploratory",
+      "community": 11,
+      "norm_label": "exploratory"
+    },
+    {
+      "label": "Disclosure",
+      "file_type": "document",
+      "source_file": "prereg/hypotheses.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "prereg_hypotheses_disclosure",
+      "community": 11,
+      "norm_label": "disclosure"
+    },
+    {
       "label": "pilot_rules.md",
       "file_type": "document",
       "source_file": "prereg/pilot_rules.md",
@@ -2124,6 +2574,46 @@
       "norm_label": "gate"
     },
     {
+      "label": "power.md",
+      "file_type": "document",
+      "source_file": "prereg/power.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "prereg_power",
+      "community": 16,
+      "norm_label": "power.md"
+    },
+    {
+      "label": "Power analysis (prereg-v1, K25)",
+      "file_type": "document",
+      "source_file": "prereg/power.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "prereg_power_power_analysis_prereg_v1_k25",
+      "community": 16,
+      "norm_label": "power analysis (prereg-v1, k25)"
+    },
+    {
+      "label": "Paired McNemar per language (families F2 and F3)",
+      "file_type": "document",
+      "source_file": "prereg/power.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "prereg_power_paired_mcnemar_per_language_families_f2_and_f3",
+      "community": 16,
+      "norm_label": "paired mcnemar per language (families f2 and f3)"
+    },
+    {
+      "label": "GLMM for H1a",
+      "file_type": "document",
+      "source_file": "prereg/power.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "prereg_power_glmm_for_h1a",
+      "community": 16,
+      "norm_label": "glmm for h1a"
+    },
+    {
       "label": "protocol.md",
       "file_type": "document",
       "source_file": "prereg/protocol.md",
@@ -2134,14 +2624,14 @@
       "norm_label": "protocol.md"
     },
     {
-      "label": "Protocol (DRAFT for F3 pre-registration \u2014 not yet locked)",
+      "label": "Protocol (prereg-v1)",
       "file_type": "document",
       "source_file": "prereg/protocol.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "prereg_protocol_protocol_draft_for_f3_pre_registration_not_yet_locked",
+      "id": "prereg_protocol_protocol_prereg_v1",
       "community": 15,
-      "norm_label": "protocol (draft for f3 pre-registration \u2014 not yet locked)"
+      "norm_label": "protocol (prereg-v1)"
     },
     {
       "label": "Question spec",
@@ -2167,7 +2657,7 @@
       "label": "Invalid outputs",
       "file_type": "document",
       "source_file": "prereg/protocol.md",
-      "source_location": "L26",
+      "source_location": "L27",
       "_origin": "ast",
       "id": "prereg_protocol_invalid_outputs",
       "community": 15,
@@ -2177,14 +2667,480 @@
       "label": "Items",
       "file_type": "document",
       "source_file": "prereg/protocol.md",
-      "source_location": "L29",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "prereg_protocol_items",
       "community": 15,
       "norm_label": "items"
+    },
+    {
+      "label": "Observed versions at registration (2026-09-25)",
+      "file_type": "document",
+      "source_file": "prereg/protocol.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "prereg_protocol_observed_versions_at_registration_2026_09_25",
+      "community": 15,
+      "norm_label": "observed versions at registration (2026-09-25)"
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/power.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "analysis_power",
+      "target": "analysis_power_discordance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/power.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "analysis_power",
+      "target": "analysis_power_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/power.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "analysis_power",
+      "target": "analysis_power_mcnemar_crit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/power.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "analysis_power",
+      "target": "analysis_power_mdd",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/power.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "analysis_power",
+      "target": "analysis_power_power",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/power.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "analysis_power",
+      "target": "jevexp_paths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/power.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "analysis_power",
+      "target": "jevexp_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/power.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "analysis_power_rationale_1",
+      "target": "analysis_power",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/power.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "analysis_power_power",
+      "target": "analysis_power_mcnemar_crit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/power.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "analysis_power_rationale_26",
+      "target": "analysis_power_mcnemar_crit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/power.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "analysis_power_mdd",
+      "target": "analysis_power_power",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/power.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "analysis_power_main",
+      "target": "analysis_power_mdd",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analysis/power.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "analysis_power_discordance",
+      "target": "jevexp_schema_read"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/power.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "analysis_power_main",
+      "target": "analysis_power_discordance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory",
+      "target": "analysis_run_confirmatory_a4_frame",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory",
+      "target": "analysis_run_confirmatory_h1a",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory",
+      "target": "analysis_run_confirmatory_h1b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory",
+      "target": "analysis_run_confirmatory_h2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory",
+      "target": "analysis_run_confirmatory_holm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory",
+      "target": "analysis_run_confirmatory_load_arm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory",
+      "target": "analysis_run_confirmatory_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory",
+      "target": "analysis_run_confirmatory_mcnemar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory",
+      "target": "jevexp_data",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory",
+      "target": "jevexp_eval",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory",
+      "target": "jevexp_paths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory",
+      "target": "jevexp_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory_rationale_1",
+      "target": "analysis_run_confirmatory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory_a4_frame",
+      "target": "analysis_run_confirmatory_load_arm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory_h1a",
+      "target": "analysis_run_confirmatory_load_arm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory_h1b",
+      "target": "analysis_run_confirmatory_load_arm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory_h2",
+      "target": "analysis_run_confirmatory_load_arm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory_load_arm",
+      "target": "jevexp_schema_read"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory_h1b",
+      "target": "analysis_run_confirmatory_holm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory_h1b",
+      "target": "analysis_run_confirmatory_mcnemar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory_rationale_39",
+      "target": "analysis_run_confirmatory_mcnemar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory_h1b",
+      "target": "analysis_run_confirmatory_a4_frame",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory_main",
+      "target": "analysis_run_confirmatory_h1b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory_h2",
+      "target": "jevexp_eval_aurc"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory_h2",
+      "target": "jevexp_eval_cluster_bootstrap"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory_h2",
+      "target": "jevexp_eval_ece"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L125",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory_main",
+      "target": "analysis_run_confirmatory_h2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory_main",
+      "target": "analysis_run_confirmatory_h1a",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "analysis/run_confirmatory.py",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "analysis_run_confirmatory_main",
+      "target": "runners_common_guard_split"
+    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -2505,6 +3461,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/features.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "jevexp_features",
+      "target": "jevexp_data",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/jevexp/parsing.py",
       "source_location": "L5",
       "weight": 1.0,
@@ -2574,9 +3541,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "jevexp_data",
-      "confidence_score": 1.0
+      "target": "jevexp_data"
     },
     {
       "relation": "imports_from",
@@ -2842,6 +3809,28 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/features.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "jevexp_features",
+      "target": "jevexp_data_load",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/features.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "jevexp_features_sentence_overlap",
+      "target": "jevexp_data_load",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L29",
       "weight": 1.0,
@@ -3089,6 +4078,28 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/features.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "jevexp_features",
+      "target": "jevexp_data_ind_source",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/features.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "jevexp_features_sentence_overlap",
+      "target": "jevexp_data_ind_source",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L10",
       "weight": 1.0,
@@ -3301,9 +4312,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "jevexp_eval",
-      "confidence_score": 1.0
+      "target": "jevexp_eval"
     },
     {
       "relation": "imports_from",
@@ -3662,6 +4673,100 @@
       "target": "jevexp_eval_cluster_bootstrap"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/features.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "jevexp_features",
+      "target": "jevexp_features_cosine_distance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/features.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "jevexp_features",
+      "target": "jevexp_features_language_features",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/features.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "jevexp_features",
+      "target": "jevexp_features_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/features.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "jevexp_features",
+      "target": "jevexp_features_sentence_overlap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/features.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "jevexp_features",
+      "target": "jevexp_paths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/features.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "jevexp_features_rationale_1",
+      "target": "jevexp_features",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/features.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "jevexp_features_main",
+      "target": "jevexp_features_sentence_overlap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/features.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "jevexp_features_language_features",
+      "target": "jevexp_features_cosine_distance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/features.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "jevexp_features_main",
+      "target": "jevexp_features_language_features",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/jevexp/nusax_reference.py",
@@ -3771,9 +4876,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "jevexp_parsing",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing"
     },
     {
       "relation": "imports_from",
@@ -3847,9 +4952,9 @@
       "source_file": "src/jevexp/parsing.py",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_parsing_rationale_23",
-      "target": "jevexp_parsing_jev_answer",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing_jev_answer"
     },
     {
       "relation": "imports",
@@ -3901,9 +5006,9 @@
       "source_file": "src/jevexp/parsing.py",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_parsing_rationale_45",
-      "target": "jevexp_parsing_llm_json",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing_llm_json"
     },
     {
       "relation": "imports",
@@ -3934,9 +5039,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "jevexp_parsing_llm_json",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing_llm_json"
     },
     {
       "relation": "calls",
@@ -3945,9 +5050,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L98",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex_run",
-      "target": "jevexp_parsing_llm_json",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing_llm_json"
     },
     {
       "relation": "imports",
@@ -3988,9 +5093,9 @@
       "source_file": "src/jevexp/parsing.py",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_parsing_rationale_71",
-      "target": "jevexp_parsing_logprob_label_dist",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing_logprob_label_dist"
     },
     {
       "relation": "imports",
@@ -4087,9 +5192,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "jevexp_paths",
-      "confidence_score": 1.0
+      "target": "jevexp_paths"
     },
     {
       "relation": "imports_from",
@@ -4158,14 +5263,25 @@
       "target": "jevexp_paths"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_features.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "tests_test_features",
+      "target": "jevexp_paths",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/jevexp/questions.py",
       "source_location": "L98",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_questions",
-      "target": "jevexp_questions_output_schema",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_output_schema"
     },
     {
       "relation": "contains",
@@ -4225,9 +5341,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "jevexp_questions",
-      "confidence_score": 1.0
+      "target": "jevexp_questions"
     },
     {
       "relation": "imports_from",
@@ -4269,9 +5385,9 @@
       "source_file": "src/jevexp/questions.py",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_questions_output_schema",
-      "target": "jevexp_questions_spec",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_spec"
     },
     {
       "relation": "calls",
@@ -4399,9 +5515,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "jevexp_questions_to_llm_messages",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_to_llm_messages"
     },
     {
       "relation": "calls",
@@ -4410,9 +5526,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex_run",
-      "target": "jevexp_questions_to_llm_messages",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_to_llm_messages"
     },
     {
       "relation": "imports",
@@ -4453,9 +5569,9 @@
       "source_file": "src/jevexp/questions.py",
       "source_location": "L99",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_questions_rationale_99",
-      "target": "jevexp_questions_output_schema",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_output_schema"
     },
     {
       "relation": "imports",
@@ -4464,9 +5580,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude",
-      "target": "jevexp_questions_output_schema",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_output_schema"
     },
     {
       "relation": "calls",
@@ -4475,9 +5591,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude_run",
-      "target": "jevexp_questions_output_schema",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_output_schema"
     },
     {
       "relation": "imports",
@@ -4486,9 +5602,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "jevexp_questions_output_schema",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_output_schema"
     },
     {
       "relation": "calls",
@@ -4497,9 +5613,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex_run",
-      "target": "jevexp_questions_output_schema",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_output_schema"
     },
     {
       "relation": "calls",
@@ -5177,9 +6293,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "jevexp_schema",
-      "confidence_score": 1.0
+      "target": "jevexp_schema"
     },
     {
       "relation": "imports",
@@ -5188,9 +6304,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "jevexp_schema_write",
-      "confidence_score": 1.0
+      "target": "jevexp_schema_write"
     },
     {
       "relation": "contains",
@@ -5198,9 +6314,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "runners_codex_call_cli",
-      "confidence_score": 1.0
+      "target": "runners_codex_call_cli"
     },
     {
       "relation": "contains",
@@ -5208,9 +6324,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "runners_codex_enabled_features",
-      "confidence_score": 1.0
+      "target": "runners_codex_enabled_features"
     },
     {
       "relation": "contains",
@@ -5218,9 +6334,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L116",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "runners_codex_main",
-      "confidence_score": 1.0
+      "target": "runners_codex_main"
     },
     {
       "relation": "contains",
@@ -5228,9 +6344,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "runners_codex_parse_events",
-      "confidence_score": 1.0
+      "target": "runners_codex_parse_events"
     },
     {
       "relation": "contains",
@@ -5238,9 +6354,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "runners_codex_run",
-      "confidence_score": 1.0
+      "target": "runners_codex_run"
     },
     {
       "relation": "imports_from",
@@ -5249,9 +6365,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "runners_common",
-      "confidence_score": 1.0
+      "target": "runners_common"
     },
     {
       "relation": "imports",
@@ -5260,9 +6376,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "runners_common_frame",
-      "confidence_score": 1.0
+      "target": "runners_common_frame"
     },
     {
       "relation": "imports",
@@ -5271,9 +6387,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "runners_common_items",
-      "confidence_score": 1.0
+      "target": "runners_common_items"
     },
     {
       "relation": "imports",
@@ -5282,9 +6398,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "runners_common_now_utc",
-      "confidence_score": 1.0
+      "target": "runners_common_now_utc"
     },
     {
       "relation": "imports",
@@ -5293,9 +6409,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "runners_common_rawlog",
-      "confidence_score": 1.0
+      "target": "runners_common_rawlog"
     },
     {
       "relation": "imports",
@@ -5304,9 +6420,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "runners_common_run_parallel",
-      "confidence_score": 1.0
+      "target": "runners_common_run_parallel"
     },
     {
       "relation": "rationale_for",
@@ -5314,9 +6430,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex_rationale_1",
-      "target": "runners_codex",
-      "confidence_score": 1.0
+      "target": "runners_codex"
     },
     {
       "relation": "calls",
@@ -5325,9 +6441,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex_enabled_features",
-      "target": "runners_codex_run",
-      "confidence_score": 1.0
+      "target": "runners_codex_run"
     },
     {
       "relation": "calls",
@@ -5336,9 +6452,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex_call_cli",
-      "target": "runners_codex_parse_events",
-      "confidence_score": 1.0
+      "target": "runners_codex_parse_events"
     },
     {
       "relation": "rationale_for",
@@ -5346,9 +6462,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex_rationale_37",
-      "target": "runners_codex_parse_events",
-      "confidence_score": 1.0
+      "target": "runners_codex_parse_events"
     },
     {
       "relation": "calls",
@@ -5368,9 +6484,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex_call_cli",
-      "target": "runners_codex_run",
-      "confidence_score": 1.0
+      "target": "runners_codex_run"
     },
     {
       "relation": "calls",
@@ -5379,9 +6495,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L124",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex_main",
-      "target": "runners_codex_run",
-      "confidence_score": 1.0
+      "target": "runners_codex_run"
     },
     {
       "relation": "calls",
@@ -5390,9 +6506,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L108",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex_run",
-      "target": "jevexp_schema_write",
-      "confidence_score": 1.0
+      "target": "jevexp_schema_write"
     },
     {
       "relation": "calls",
@@ -5401,9 +6517,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex_run",
-      "target": "runners_common_frame",
-      "confidence_score": 1.0
+      "target": "runners_common_frame"
     },
     {
       "relation": "calls",
@@ -5412,9 +6528,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L82",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex_run",
-      "target": "runners_common_items",
-      "confidence_score": 1.0
+      "target": "runners_common_items"
     },
     {
       "relation": "calls",
@@ -5423,9 +6539,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex_run",
-      "target": "runners_common_now_utc",
-      "confidence_score": 1.0
+      "target": "runners_common_now_utc"
     },
     {
       "relation": "calls",
@@ -5434,9 +6550,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L81",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex_run",
-      "target": "runners_common_rawlog",
-      "confidence_score": 1.0
+      "target": "runners_common_rawlog"
     },
     {
       "relation": "calls",
@@ -5445,9 +6561,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex_run",
-      "target": "runners_common_run_parallel",
-      "confidence_score": 1.0
+      "target": "runners_common_run_parallel"
     },
     {
       "relation": "contains",
@@ -6755,12 +7871,32 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_features.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "tests_test_features",
+      "target": "tests_test_features_test_language_features_cover_all_parallel_languages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_features.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "tests_test_features",
+      "target": "tests_test_features_test_overlap_ind_is_identity_for_indonesian_and_complete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_parsing.py",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_parsing",
-      "target": "tests_test_parsing_test_codex_output_schema_and_event_parser",
-      "confidence_score": 1.0
+      "target": "tests_test_parsing_test_codex_output_schema_and_event_parser"
     },
     {
       "relation": "contains",
@@ -6980,6 +8116,146 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "prereg/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "prereg_readme",
+      "target": "prereg_readme_pre_registration_prereg_v1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prereg/analysis_plan.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "prereg_analysis_plan",
+      "target": "prereg_analysis_plan_pre_registered_analysis_plan_prereg_v1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prereg/analysis_plan.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "prereg_analysis_plan_pre_registered_analysis_plan_prereg_v1",
+      "target": "prereg_analysis_plan_1_data_handling",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prereg/analysis_plan.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "prereg_analysis_plan_pre_registered_analysis_plan_prereg_v1",
+      "target": "prereg_analysis_plan_2_metrics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prereg/analysis_plan.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "prereg_analysis_plan_pre_registered_analysis_plan_prereg_v1",
+      "target": "prereg_analysis_plan_3_paired_tests",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prereg/analysis_plan.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "prereg_analysis_plan_pre_registered_analysis_plan_prereg_v1",
+      "target": "prereg_analysis_plan_4_glmm_h1a",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prereg/analysis_plan.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "prereg_analysis_plan_pre_registered_analysis_plan_prereg_v1",
+      "target": "prereg_analysis_plan_5_bootstrap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prereg/analysis_plan.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "prereg_analysis_plan_pre_registered_analysis_plan_prereg_v1",
+      "target": "prereg_analysis_plan_6_learning_curves_h3a",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prereg/analysis_plan.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "prereg_analysis_plan_pre_registered_analysis_plan_prereg_v1",
+      "target": "prereg_analysis_plan_7_order_and_stopping",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prereg/hypotheses.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "prereg_hypotheses",
+      "target": "prereg_hypotheses_pre_registered_hypotheses_prereg_v1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prereg/hypotheses.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "prereg_hypotheses_pre_registered_hypotheses_prereg_v1",
+      "target": "prereg_hypotheses_confirmatory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prereg/hypotheses.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "prereg_hypotheses_pre_registered_hypotheses_prereg_v1",
+      "target": "prereg_hypotheses_disclosure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prereg/hypotheses.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "prereg_hypotheses_pre_registered_hypotheses_prereg_v1",
+      "target": "prereg_hypotheses_exploratory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prereg/hypotheses.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "prereg_hypotheses_pre_registered_hypotheses_prereg_v1",
+      "target": "prereg_hypotheses_secondary_reported_with_cis_holm_within_family_not_used_to_claim_confirmation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "prereg/pilot_rules.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -7040,12 +8316,42 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "prereg/power.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "prereg_power",
+      "target": "prereg_power_power_analysis_prereg_v1_k25",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prereg/power.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "prereg_power_power_analysis_prereg_v1_k25",
+      "target": "prereg_power_glmm_for_h1a",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prereg/power.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "prereg_power_power_analysis_prereg_v1_k25",
+      "target": "prereg_power_paired_mcnemar_per_language_families_f2_and_f3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "prereg/protocol.md",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "prereg_protocol",
-      "target": "prereg_protocol_protocol_draft_for_f3_pre_registration_not_yet_locked"
+      "target": "prereg_protocol_protocol_prereg_v1",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -7053,29 +8359,39 @@
       "source_file": "prereg/protocol.md",
       "source_location": "L9",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "prereg_protocol_protocol_draft_for_f3_pre_registration_not_yet_locked",
-      "target": "prereg_protocol_arms_mvp"
+      "source": "prereg_protocol_protocol_prereg_v1",
+      "target": "prereg_protocol_arms_mvp",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "prereg/protocol.md",
-      "source_location": "L22",
+      "source_location": "L27",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "prereg_protocol_protocol_draft_for_f3_pre_registration_not_yet_locked",
-      "target": "prereg_protocol_invalid_outputs"
+      "source": "prereg_protocol_protocol_prereg_v1",
+      "target": "prereg_protocol_invalid_outputs",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "prereg/protocol.md",
-      "source_location": "L25",
+      "source_location": "L30",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "prereg_protocol_protocol_draft_for_f3_pre_registration_not_yet_locked",
-      "target": "prereg_protocol_items"
+      "source": "prereg_protocol_protocol_prereg_v1",
+      "target": "prereg_protocol_items",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prereg/protocol.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "prereg_protocol_protocol_prereg_v1",
+      "target": "prereg_protocol_observed_versions_at_registration_2026_09_25",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -7083,11 +8399,11 @@
       "source_file": "prereg/protocol.md",
       "source_location": "L6",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "prereg_protocol_protocol_draft_for_f3_pre_registration_not_yet_locked",
-      "target": "prereg_protocol_question_spec"
+      "source": "prereg_protocol_protocol_prereg_v1",
+      "target": "prereg_protocol_question_spec",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "35c5cd4d5916fc7b0760fcf190ff28fb42937f76"
+  "built_at_commit": "b048e4682a0b1a2bc799a6184954a48241377423"
 }
