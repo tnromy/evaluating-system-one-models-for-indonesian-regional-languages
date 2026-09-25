@@ -5,7 +5,7 @@ Datasets (docs/metodologi.md §3):
   nt_senti     NusaTranslation sentiment (NusaWrites), 2 labels
   nt_emot      NusaTranslation emotion (NusaWrites), 5 labels
 
-CLI:  python -m jevexp.data {fetch,summary,subsets}
+CLI:  python -m jevexp.data {fetch,summary,subsets,pilot}
 """
 import argparse
 import hashlib
@@ -16,7 +16,7 @@ import numpy as np
 import pandas as pd
 import requests
 
-from .paths import MANIFEST, RAW, SUBSETS
+from .paths import MANIFEST, PILOT, RAW, SUBSETS
 
 NUSAX_REPO, NUSAX_COMMIT = "IndoNLP/nusax", "75b0be5d982348332509f296e10d9bf9cb66d60f"
 NUSAWRITES_REPO, NUSAWRITES_COMMIT = "IndoNLP/nusa-writes", "b337f511185cd44c9c57ff906ecef1af6165adbc"
@@ -54,6 +54,22 @@ def _sources(dataset, lang, split):
     return f"https://raw.githubusercontent.com/{NUSAWRITES_REPO}/{NUSAWRITES_COMMIT}/{rel}", f"nusawrites/{rel}"
 
 
+def _mt_source(lang, split):
+    """NusaTranslation MT file (id, ind_text, tgt_text): the Indonesian source of each translated sentence."""
+    rel = f"data/nusa_kalimat-mt-{lang}-{split}.csv"
+    return f"https://raw.githubusercontent.com/{NUSAWRITES_REPO}/{NUSAWRITES_COMMIT}/{rel}", f"nusawrites/{rel}"
+
+
+def _all_sources():
+    for dataset, spec in DATASETS.items():
+        for lang in spec["langs"]:
+            for split in SPLITS:
+                yield _sources(dataset, lang, split)
+    for lang in NT_PARALLEL:
+        for split in SPLITS:
+            yield _mt_source(lang, split)
+
+
 def _sha256(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -68,22 +84,19 @@ def fetch():
     If a file is already listed in the manifest, its hash must match (reproducibility guard).
     """
     manifest = _read_manifest()
-    for dataset, spec in DATASETS.items():
-        for lang in spec["langs"]:
-            for split in SPLITS:
-                url, rel = _sources(dataset, lang, split)
-                path = RAW / rel
-                if not path.exists():
-                    path.parent.mkdir(parents=True, exist_ok=True)
-                    r = requests.get(url, timeout=60)
-                    r.raise_for_status()
-                    path.write_bytes(r.content)
-                digest = _sha256(path)
-                known = manifest.get(rel)
-                if known and known["sha256"] != digest:
-                    raise RuntimeError(f"hash mismatch for {rel}: manifest {known['sha256']} vs file {digest}")
-                n_rows = len(pd.read_csv(path, keep_default_na=False))
-                manifest[rel] = {"url": url, "sha256": digest, "rows": n_rows}
+    for url, rel in _all_sources():
+        path = RAW / rel
+        if not path.exists():
+            path.parent.mkdir(parents=True, exist_ok=True)
+            r = requests.get(url, timeout=60)
+            r.raise_for_status()
+            path.write_bytes(r.content)
+        digest = _sha256(path)
+        known = manifest.get(rel)
+        if known and known["sha256"] != digest:
+            raise RuntimeError(f"hash mismatch for {rel}: manifest {known['sha256']} vs file {digest}")
+        n_rows = len(pd.read_csv(path, keep_default_na=False))
+        manifest[rel] = {"url": url, "sha256": digest, "rows": n_rows}
     MANIFEST.parent.mkdir(parents=True, exist_ok=True)
     MANIFEST.write_text(json.dumps(dict(sorted(manifest.items())), indent=1) + "\n")
     return manifest
@@ -127,6 +140,28 @@ def parallel_report(df):
     return report
 
 
+def _consistent_gold(frame):
+    """sentence_id -> label for ids present in every language of `frame` with one consistent label."""
+    id_sets = frame.groupby("lang")["sentence_id"].apply(set)
+    common = set.intersection(*id_sets)
+    per_id = frame[frame["sentence_id"].isin(common)].groupby("sentence_id")["label"].agg(set)
+    return per_id[per_id.apply(len) == 1].apply(lambda s: next(iter(s))).sort_index()
+
+
+def _stratified_ids(gold, n, rng):
+    """Proportional label-stratified draw of n ids (largest-remainder allocation). Returns (ids, alloc)."""
+    counts = gold.value_counts().sort_index()
+    exact = counts / counts.sum() * n
+    alloc = np.floor(exact).astype(int)
+    for lab in (exact - alloc).sort_values(ascending=False).index[: n - alloc.sum()]:
+        alloc[lab] += 1
+    chosen = []
+    for lab, k in alloc.items():
+        pool = gold.index[gold == lab].to_numpy()
+        chosen += sorted(rng.choice(pool, size=k, replace=False).tolist())
+    return sorted(chosen), {lab: int(k) for lab, k in alloc.items()}
+
+
 def make_subsets(seed=SUBSET_SEED, sizes=SUBSET_SIZES):
     """Fixed test subsets (S-NX, S-NT, S-NE): proportional-stratified by label over sentence_id,
     drawn only from ids present in every language with a consistent label, so parallelism holds."""
@@ -134,28 +169,55 @@ def make_subsets(seed=SUBSET_SEED, sizes=SUBSET_SIZES):
     subsets = {}
     for dataset, n in sizes.items():
         test = load(dataset, split="test", langs=DATASETS[dataset]["parallel_langs"])
-        id_sets = test.groupby("lang")["sentence_id"].apply(set)
-        common = set.intersection(*id_sets)
-        per_id = test[test["sentence_id"].isin(common)].groupby("sentence_id")["label"].agg(set)
-        gold = per_id[per_id.apply(len) == 1].apply(lambda s: next(iter(s))).sort_index()
-        counts = gold.value_counts().sort_index()
-        # largest-remainder allocation of n across labels
-        exact = counts / counts.sum() * n
-        alloc = np.floor(exact).astype(int)
-        for lab in (exact - alloc).sort_values(ascending=False).index[: n - alloc.sum()]:
-            alloc[lab] += 1
-        chosen = []
-        for lab, k in alloc.items():
-            pool = gold.index[gold == lab].to_numpy()
-            chosen += sorted(rng.choice(pool, size=k, replace=False).tolist())
+        ids, alloc = _stratified_ids(_consistent_gold(test), n, rng)
         subsets[dataset] = {
             "seed": seed, "n": n, "split": "test", "langs": DATASETS[dataset]["parallel_langs"],
-            "label_counts": {lab: int(k) for lab, k in alloc.items()},
-            "sentence_ids": sorted(chosen),
+            "label_counts": alloc, "sentence_ids": ids,
         }
     SUBSETS.parent.mkdir(parents=True, exist_ok=True)
     SUBSETS.write_text(json.dumps(subsets, indent=1) + "\n")
     return subsets
+
+
+PILOT_SIZES = {"nusax_senti": None, "nt_senti": 100, "nt_emot": 100}  # None = the whole validation split
+
+
+def make_pilot(seed=SUBSET_SEED, sizes=PILOT_SIZES):
+    """F2 pilot items: validation only (docs/metodologi.md §2 F2; prereg/pilot_rules.md)."""
+    rng = np.random.default_rng(seed)
+    pilot = {}
+    for dataset, n in sizes.items():
+        valid = load(dataset, split="valid", langs=DATASETS[dataset]["parallel_langs"])
+        gold = _consistent_gold(valid)
+        ids, alloc = (sorted(gold.index), gold.value_counts().sort_index().astype(int).to_dict()) if n is None \
+            else _stratified_ids(gold, n, rng)
+        pilot[dataset] = {"seed": seed, "n": len(ids), "split": "valid", "langs": DATASETS[dataset]["parallel_langs"],
+                          "label_counts": alloc, "sentence_ids": ids}
+    PILOT.parent.mkdir(parents=True, exist_ok=True)
+    PILOT.write_text(json.dumps(pilot, indent=1) + "\n")
+    return pilot
+
+
+def ind_source(dataset, report=None):
+    """sentence_id -> human-written Indonesian parallel text (oracle arm A4).
+
+    NusaX: the `ind` language itself. NusaTranslation: `ind_text` of the MT files (union of their splits).
+    The same id may carry slightly different Indonesian strings across languages (trailing whitespace for ~760
+    ids, quote/symbol artefacts for 12): whitespace is normalised and the majority string across languages wins.
+    If `report` is a dict it receives the counts.
+    """
+    if dataset == "nusax_senti":
+        ind = load(dataset, langs=["ind"])
+        return dict(zip(ind["sentence_id"], ind["text"]))
+    mt = pd.concat([pd.read_csv(RAW / _mt_source(lang, split)[1], keep_default_na=False, dtype={"id": str})
+                    for lang in NT_PARALLEL for split in SPLITS], ignore_index=True)
+    mt["id"] = mt["id"].str.strip()
+    mt["text"] = mt["ind_text"].str.strip().str.replace(r"\s+", " ", regex=True)
+    variants = mt.groupby("id")["text"].nunique()
+    majority = mt.groupby("id")["text"].agg(lambda s: s.value_counts().sort_index().idxmax())
+    if report is not None:
+        report.update(ids=int(len(variants)), conflicting_after_normalisation=int((variants > 1).sum()))
+    return majority.to_dict()
 
 
 def summary():
@@ -174,14 +236,17 @@ def summary():
 
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="python -m jevexp.data")
-    ap.add_argument("cmd", choices=["fetch", "summary", "subsets"])
+    ap.add_argument("cmd", choices=["fetch", "summary", "subsets", "pilot"])
     cmd = ap.parse_args(argv).cmd
     if cmd == "fetch":
         print(f"{len(fetch())} files in {MANIFEST}")
     elif cmd == "summary":
         summary()
-    else:
+    elif cmd == "subsets":
         for name, s in make_subsets().items():
+            print(name, s["n"], s["label_counts"])
+    else:
+        for name, s in make_pilot().items():
             print(name, s["n"], s["label_counts"])
 
 

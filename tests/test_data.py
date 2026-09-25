@@ -12,7 +12,7 @@ pytestmark = [pytest.mark.data,
 
 def test_manifest_covers_all_files():
     manifest = json.loads(MANIFEST.read_text())
-    n_files = sum(len(s["langs"]) for s in DATASETS.values()) * 3
+    n_files = sum(len(s["langs"]) for s in DATASETS.values()) * 3 + len(NT_PARALLEL) * 3  # + MT source files
     assert len(manifest) == n_files
     assert all(len(v["sha256"]) == 64 for v in manifest.values())
 

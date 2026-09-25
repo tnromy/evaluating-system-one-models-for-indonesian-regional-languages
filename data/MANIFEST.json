@@ -164,6 +164,111 @@
   "sha256": "0aeb84ba51789c91e16de15c815618957402e13aa409a83c8b84a8c0ffec5b45",
   "rows": 401
  },
+ "nusawrites/data/nusa_kalimat-mt-bew-test.csv": {
+  "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-mt-bew-test.csv",
+  "sha256": "2a71623a892e870c74b28859d3ee90be9aa986dbc9280139bc256a60c92efca3",
+  "rows": 2000
+ },
+ "nusawrites/data/nusa_kalimat-mt-bew-train.csv": {
+  "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-mt-bew-train.csv",
+  "sha256": "211450862a55c6d07f144bfd620c5d7f8910c0cef7c41d580e2de0576e17d417",
+  "rows": 6600
+ },
+ "nusawrites/data/nusa_kalimat-mt-bew-valid.csv": {
+  "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-mt-bew-valid.csv",
+  "sha256": "833272774942c60a7de5a70dbea601e906dd2dd989d3b5821daae506dc2c5626",
+  "rows": 849
+ },
+ "nusawrites/data/nusa_kalimat-mt-btk-test.csv": {
+  "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-mt-btk-test.csv",
+  "sha256": "2e272da7f3b247770ab07bbb33e62043426a89333b143e56255c237a27b189ec",
+  "rows": 2000
+ },
+ "nusawrites/data/nusa_kalimat-mt-btk-train.csv": {
+  "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-mt-btk-train.csv",
+  "sha256": "f43906510713372d9a21c86392fdf68f9ca1630ffd1fa594aff4ef077b17f0fc",
+  "rows": 6600
+ },
+ "nusawrites/data/nusa_kalimat-mt-btk-valid.csv": {
+  "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-mt-btk-valid.csv",
+  "sha256": "f35fe053671ea58231fae314cd90edf9b8e37c7acdd60febd02da0807c9dfe43",
+  "rows": 849
+ },
+ "nusawrites/data/nusa_kalimat-mt-jav-test.csv": {
+  "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-mt-jav-test.csv",
+  "sha256": "88d7faaf96ffd4101a4819c1a91520eadacab62aa76c33705f60dd6e63bae753",
+  "rows": 2000
+ },
+ "nusawrites/data/nusa_kalimat-mt-jav-train.csv": {
+  "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-mt-jav-train.csv",
+  "sha256": "ecc3b6843ac72db58a620ed01cd5022caab28b4cc3f6968ad51d5a370dfe1160",
+  "rows": 6600
+ },
+ "nusawrites/data/nusa_kalimat-mt-jav-valid.csv": {
+  "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-mt-jav-valid.csv",
+  "sha256": "50bf70d54ff4f290e113d422e5acb1963312f02f8225f527e4d34d43a76b410b",
+  "rows": 849
+ },
+ "nusawrites/data/nusa_kalimat-mt-mad-test.csv": {
+  "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-mt-mad-test.csv",
+  "sha256": "b3b5aa7e610e1acb5709fef5e5923802736ac5c277e65c1fa8e41ced2deff956",
+  "rows": 2000
+ },
+ "nusawrites/data/nusa_kalimat-mt-mad-train.csv": {
+  "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-mt-mad-train.csv",
+  "sha256": "31c9bad730659ca436d97f60412a455019f1914f92f4c9052e8a811fb29b6c29",
+  "rows": 6600
+ },
+ "nusawrites/data/nusa_kalimat-mt-mad-valid.csv": {
+  "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-mt-mad-valid.csv",
+  "sha256": "02474f4034cfa4970d05f28b8b1191bb885e4bfdd91932cbbc911fa1f54979f5",
+  "rows": 849
+ },
+ "nusawrites/data/nusa_kalimat-mt-mak-test.csv": {
+  "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-mt-mak-test.csv",
+  "sha256": "6f0d4994f96aaa5890e0be2e5edda363c18dacf100e6f849a539c3f864b27668",
+  "rows": 2000
+ },
+ "nusawrites/data/nusa_kalimat-mt-mak-train.csv": {
+  "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-mt-mak-train.csv",
+  "sha256": "30a45a40efe78f39359861d18f161da0ed0c1aeb31e9d5fa948e3a63dcea5879",
+  "rows": 6600
+ },
+ "nusawrites/data/nusa_kalimat-mt-mak-valid.csv": {
+  "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-mt-mak-valid.csv",
+  "sha256": "e8f5a298735474716b3162fc0a4c178847836a478b4daa469a38b11a3b8b650e",
+  "rows": 849
+ },
+ "nusawrites/data/nusa_kalimat-mt-min-test.csv": {
+  "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-mt-min-test.csv",
+  "sha256": "cd69cc66424bc7e5fed281f6afa9c56f0c08f4f4d7e6668a655a209e24631620",
+  "rows": 2000
+ },
+ "nusawrites/data/nusa_kalimat-mt-min-train.csv": {
+  "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-mt-min-train.csv",
+  "sha256": "a1d1d4cf13ba1d43cf52fa8c11e17ec1cc91a00e92dddede2d35d8976c01e690",
+  "rows": 6600
+ },
+ "nusawrites/data/nusa_kalimat-mt-min-valid.csv": {
+  "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-mt-min-valid.csv",
+  "sha256": "ff63cc2ba7a4052929c0fa5f573acb501a6f537a3c3a0073a06a06d932851c70",
+  "rows": 849
+ },
+ "nusawrites/data/nusa_kalimat-mt-sun-test.csv": {
+  "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-mt-sun-test.csv",
+  "sha256": "35e421985907368f97e8169df25008ad625ba01bd3389e064ae5234250246c70",
+  "rows": 2000
+ },
+ "nusawrites/data/nusa_kalimat-mt-sun-train.csv": {
+  "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-mt-sun-train.csv",
+  "sha256": "42f06016e262526ebcd4bb9e56f8f524eb1e6c7d82c5def0f6dcd2e7c738150a",
+  "rows": 6600
+ },
+ "nusawrites/data/nusa_kalimat-mt-sun-valid.csv": {
+  "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-mt-sun-valid.csv",
+  "sha256": "85bbd71baa6dce6ed241356b42b119a68d316a420aefc7b388d5d55a0ecc7cf7",
+  "rows": 849
+ },
  "nusawrites/data/nusa_kalimat-senti-abs-test.csv": {
   "url": "https://raw.githubusercontent.com/IndoNLP/nusa-writes/b337f511185cd44c9c57ff906ecef1af6165adbc/data/nusa_kalimat-senti-abs-test.csv",
   "sha256": "cd08c034712d234254b2cc0d774a7ae4336117f9f4b52ca0be63c5fe3e2e1feb",
