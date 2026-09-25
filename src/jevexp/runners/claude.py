@@ -17,23 +17,38 @@ from ..parsing import llm_json
 from ..paths import RUNS
 from ..questions import output_schema, to_llm_messages
 from ..schema import write
-from .common import RawLog, frame, items, now_utc, run_parallel, run_tag
+from .common import RawLog, frame, is_infra_text, items, now_utc, run_parallel, run_tag
 
 EMPTY_CWD = RUNS / "claude" / "cwd_empty"
 
 
 def call_cli(model, system, user, schema, timeout=180):
+    """Returns a record; `_infra=True` when no model answer exists (quota, rate limit, network, auth; K52)."""
     cmd = ["claude", "-p", "--model", model, "--system-prompt", system, "--tools", "", "--setting-sources", "",
            "--strict-mcp-config", "--no-session-persistence", "--output-format", "json",
            "--json-schema", json.dumps(schema)]
     t0 = time.perf_counter()
+    infra = False
     try:
         p = subprocess.run(cmd, input=user, capture_output=True, text=True, timeout=timeout, cwd=EMPTY_CWD)
-        out = json.loads(p.stdout) if p.stdout.strip() else {"error": p.stderr[-500:]}
+        try:
+            out = json.loads(p.stdout) if p.stdout.strip() else None
+        except ValueError:
+            out = None
+        if out is None:
+            out, infra = {"error": (p.stderr or p.stdout)[-500:]}, True
+        elif out.get("is_error"):
+            status_code = str(out.get("api_error_status") or "")
+            structured_fail = "structured" in str(out.get("subtype", "")).lower()
+            infra = not structured_fail and (status_code in ("429", "401", "403") or status_code.startswith("5")
+                                             or is_infra_text(out.get("result")) or not status_code)
         status = 0 if p.returncode == 0 and not out.get("is_error") else p.returncode or 1
-    except (subprocess.TimeoutExpired, ValueError) as e:
-        out, status = {"error": f"{type(e).__name__}: {e}"}, 1
-    return {"status": status, "latency_ms": round((time.perf_counter() - t0) * 1000, 1), "response": out}
+    except subprocess.TimeoutExpired as e:
+        out, status, infra = {"error": f"timeout: {e}"}, 1, True
+    rec = {"status": status, "latency_ms": round((time.perf_counter() - t0) * 1000, 1), "response": out}
+    if infra:
+        rec["_infra"] = True
+    return rec
 
 
 def run(dataset, split, model, limit=None, workers=4, scope=None):

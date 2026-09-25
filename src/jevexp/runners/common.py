@@ -106,22 +106,56 @@ def item_key(it):
     return f"{it['dataset']}|{it['split']}|{it['lang']}|{it['sentence_id']}"
 
 
-def run_parallel(todo, fn, log, workers=8, every=50):
-    """Call fn(item) -> record for every item whose key is not yet in `log`; resume-safe."""
+INFRA_PATTERNS = ("usage limit", "rate limit", "rate_limit", "overloaded", "quota", "timeout", "timed out",
+                  "authentication", "unauthorized", "not logged in", "connection", "temporarily unavailable",
+                  "does not support this model")
+
+
+def is_infra_text(text):
+    """True if an error message describes an infrastructure failure (no model answer was produced)."""
+    text = (text or "").lower()
+    return any(p in text for p in INFRA_PATTERNS)
+
+
+def run_parallel(todo, fn, log, workers=8, every=50, max_infra=5):
+    """Call fn(item) -> record for every item whose key is not yet in `log`; resume-safe.
+
+    Records flagged `_infra` (quota / rate limit / network / auth: no model answer exists) are NOT written to the
+    log, so a later resume retries them (K52); they go to `<run_id>.infra.jsonl` for audit. After `max_infra`
+    consecutive infra failures the remaining queue is cancelled and the run stops cleanly.
+    """
     done = log.done_keys()
     pending = [it for it in todo if item_key(it) not in done]
     print(f"{log.path.name}: {len(todo)} items, {len(todo) - len(pending)} already done, {len(pending)} to run",
           flush=True)
-    t0, n = time.perf_counter(), 0
+    infra_log = log.path.with_suffix(".infra.jsonl")
+    t0, n, streak, n_infra, stopped = time.perf_counter(), 0, 0, 0, False
     with ThreadPoolExecutor(max_workers=workers) as ex:
         futures = {ex.submit(fn, it): it for it in pending}
         for fut in as_completed(futures):
             rec = fut.result()
             rec["key"] = item_key(futures[fut])
+            if rec.get("_infra"):
+                n_infra += 1
+                streak += 1
+                with log._lock, infra_log.open("a") as f:
+                    f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                if streak >= max_infra and not stopped:
+                    stopped = True
+                    for other in futures:
+                        other.cancel()
+                    print(f"  STOP: {streak} consecutive infra failures (quota/rate limit/network). "
+                          f"Last: {str(rec.get('response'))[:200]}. Resume later.", flush=True)
+                continue
+            streak = 0
             log.append(rec)
             n += 1
             if n % every == 0 or n == len(pending):
                 print(f"  {n}/{len(pending)}  {time.perf_counter() - t0:6.0f}s", flush=True)
+    if n_infra:
+        print(f"  infra failures (not recorded, will be retried on resume): {n_infra}", flush=True)
+    if stopped:
+        raise SystemExit(3)
     return log.records()
 
 

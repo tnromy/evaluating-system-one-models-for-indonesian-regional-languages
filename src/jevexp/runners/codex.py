@@ -19,7 +19,7 @@ from ..parsing import llm_json
 from ..paths import RUNS
 from ..questions import output_schema, to_llm_messages
 from ..schema import write
-from .common import RawLog, frame, items, now_utc, run_parallel, run_tag
+from .common import RawLog, frame, is_infra_text, items, now_utc, run_parallel, run_tag
 
 BASE = RUNS / "codex"
 EMPTY_CWD = BASE / "cwd_empty"
@@ -67,9 +67,14 @@ def call_cli(model, dataset, prompt, disabled, timeout=300):
         msg, usage, tools, errors = parse_events(p.stdout)
         status = 0 if p.returncode == 0 and msg is not None else (p.returncode or 1)
         out = {"result": msg, "usage": usage, "tool_calls": tools, "errors": errors, "stderr": p.stderr[-300:]}
+        # no answer at all + infra-looking error -> infrastructure failure, retried on resume (K52)
+        infra = msg is None and (is_infra_text(" ".join(errors) + " " + p.stderr) or p.returncode != 0)
     except subprocess.TimeoutExpired as e:
-        status, out = 1, {"error": f"timeout: {e}"}
-    return {"status": status, "latency_ms": round((time.perf_counter() - t0) * 1000, 1), "response": out}
+        status, out, infra = 1, {"error": f"timeout: {e}"}, True
+    rec = {"status": status, "latency_ms": round((time.perf_counter() - t0) * 1000, 1), "response": out}
+    if infra:
+        rec["_infra"] = True
+    return rec
 
 
 def run(dataset, split, model, limit=None, workers=4, scope=None):
