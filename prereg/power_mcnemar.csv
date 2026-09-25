@@ -1,0 +1,7 @@
+pair,dataset,pilot_items,pilot_discordance,pilot_diff,test_n_per_lang,mdd_alpha_0.05,mdd_alpha_holm_26
+A1_vs_D1,nusax_senti,1000,0.195,-0.003,400,0.065,0.09
+A1_vs_D1,nt_senti,700,0.107,-0.004,1200,0.03,0.04
+A1_vs_D1,nt_emot,700,0.194,-0.037,1000,0.04,0.06
+A4_vs_A1,nusax_senti,1000,0.19,0.1,400,0.065,0.09
+A4_vs_A1,nt_senti,700,0.146,0.091,1200,0.035,0.045
+A4_vs_A1,nt_emot,700,0.264,0.133,1000,0.05,0.065
