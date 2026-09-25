@@ -32,4 +32,7 @@ def test_stops_after_consecutive_infra_failures(tmp_path, monkeypatch):
     log.path = tmp_path / "r2.jsonl"
     with pytest.raises(SystemExit):
         run_parallel(_items(20), lambda it: {"_infra": True}, log, workers=1, max_infra=5)
+    with pytest.raises(SystemExit) as e:  # with parallel workers the cancelled queue must not raise CancelledError
+        run_parallel(_items(40), lambda it: {"_infra": True}, log, workers=4, max_infra=5)
+    assert e.value.code == 3
     assert log.records() == []

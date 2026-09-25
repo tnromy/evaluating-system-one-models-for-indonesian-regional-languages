@@ -133,6 +133,8 @@ def run_parallel(todo, fn, log, workers=8, every=50, max_infra=5):
     with ThreadPoolExecutor(max_workers=workers) as ex:
         futures = {ex.submit(fn, it): it for it in pending}
         for fut in as_completed(futures):
+            if fut.cancelled():  # queue cancelled after an infra stop
+                continue
             rec = fut.result()
             rec["key"] = item_key(futures[fut])
             if rec.get("_infra"):
