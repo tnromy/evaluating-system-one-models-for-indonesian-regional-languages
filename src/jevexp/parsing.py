@@ -1,6 +1,7 @@
 """Turn raw API responses into (pred, probs, confidence). Probs follow DATASETS label order."""
 import json
 import math
+import re
 
 from .data import DATASETS
 from .eval import INVALID
@@ -41,7 +42,14 @@ def jev_answer(resp, dataset, formulation):
 
 
 def llm_json(content, labels):
-    """LLM JSON answer -> (pred, verbalized probs or None). INVALID on malformed JSON / unknown label."""
+    """LLM JSON answer -> (pred, verbalized probs or None). INVALID on malformed JSON / unknown label.
+
+    Pilot rule (F2, K45): a single enclosing ```json fence is stripped; anything else must be pure JSON.
+    """
+    if isinstance(content, str):  # one enclosing markdown code fence is tolerated, identically for every arm
+        m = re.fullmatch(r"\s*```(?:json)?\s*(.*?)\s*```\s*", content, flags=re.S)
+        if m:
+            content = m.group(1)
     try:
         obj = json.loads(content)
     except (TypeError, ValueError):

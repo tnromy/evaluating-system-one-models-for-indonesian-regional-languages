@@ -46,6 +46,9 @@ def test_jev_noul_normalised_and_invalid_when_missing():
     ('{"choice": "neutral", "probabilities": {"negative": 0.1, "neutral": 0.6, "positive": 0.3}}', "neutral"),
     ('{"choice": "Neutral"}', INVALID),
     ('not json', INVALID),
+    ('```json\n{"choice": "positive"}\n```', "positive"),
+    ('```\n{"choice": "negative"}\n```', "negative"),
+    ('Here: ```json {"choice": "positive"}```', INVALID),
     ('["neutral"]', INVALID),
 ])
 def test_llm_json(content, expected):
@@ -72,3 +75,19 @@ def test_logprob_real_distribution_and_prefix_tokens():
     ]}}
     assert logprob_label_dist(choice, SENTI) == pytest.approx([0.3, 0.1, 0.6])
     assert logprob_label_dist({"logprobs": {"content": [_tok("{", [("{", 0.0)])]}}, SENTI) is None
+
+
+def test_codex_output_schema_and_event_parser():
+    from jevexp.questions import output_schema
+    from jevexp.runners.codex import parse_events
+    s = output_schema("nt_emot")
+    assert s["properties"]["choice"]["enum"] == ["anger", "fear", "happy", "love", "sadness"]
+    stdout = "\n".join([
+        json.dumps({"type": "thread.started", "thread_id": "x"}),
+        json.dumps({"type": "item.completed", "item": {"type": "error", "message": "warn"}}),
+        json.dumps({"type": "item.completed", "item": {"type": "command_execution", "command": "ls"}}),
+        json.dumps({"type": "item.completed", "item": {"type": "agent_message", "text": '{"choice": "fear"}'}}),
+        json.dumps({"type": "turn.completed", "usage": {"input_tokens": 7000, "output_tokens": 30}}),
+    ])
+    msg, usage, tools, errors = parse_events(stdout)
+    assert msg == '{"choice": "fear"}' and usage["input_tokens"] == 7000 and tools == 1 and errors == ["warn"]

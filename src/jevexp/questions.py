@@ -93,3 +93,12 @@ def to_llm_messages(dataset, text, qlang="en"):
     options = "\n".join(f"- {lab}: {desc}" for lab, desc in s["criteria"].items())
     user = f"{s['instructions']}\nOptions:\n{options}\n\nText: {text}"
     return [{"role": "system", "content": system}, {"role": "user", "content": user}]
+
+
+def output_schema(dataset):
+    """JSON Schema of the LLM answer, enforced by the CLIs (--json-schema for Claude, --output-schema for Codex)."""
+    labels = list(spec(dataset)["criteria"])
+    return {"type": "object", "additionalProperties": False, "required": ["choice", "probabilities"],
+            "properties": {"choice": {"type": "string", "enum": labels},
+                           "probabilities": {"type": "object", "additionalProperties": False, "required": labels,
+                                             "properties": {lab: {"type": "number"} for lab in labels}}}}
