@@ -5,8 +5,8 @@
     "semantic_hash": ""
   },
   "src/jevexp/data.py": {
-    "mtime": 1790233995.3518863,
-    "ast_hash": "32c9a0e62e130b8b0e1ecfd3c5c760a9",
+    "mtime": 1790300673.871852,
+    "ast_hash": "d42d4ac2cd2460d12d321d4268fd3301",
     "semantic_hash": ""
   },
   "src/jevexp/eval.py": {
@@ -15,8 +15,8 @@
     "semantic_hash": ""
   },
   "src/jevexp/paths.py": {
-    "mtime": 1790233870.5308425,
-    "ast_hash": "93d4fcfd18422831cc27bff81267eb3c",
+    "mtime": 1790300626.217826,
+    "ast_hash": "518c0803088fa321536bb8e5a52be180",
     "semantic_hash": ""
   },
   "src/jevexp/schema.py": {
@@ -25,8 +25,8 @@
     "semantic_hash": ""
   },
   "tests/test_data.py": {
-    "mtime": 1790234058.5304227,
-    "ast_hash": "9219a219107e40fd76c87c70e7acd521",
+    "mtime": 1790300725.289201,
+    "ast_hash": "969b8fb93090286f33054d336df63b36",
     "semantic_hash": ""
   },
   "tests/test_eval.py": {
@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "requirements.txt": {
-    "mtime": 1790251662.4418213,
-    "ast_hash": "bc1ca3c108ca2a284546c0fd5606074f",
+    "mtime": 1790301861.0829327,
+    "ast_hash": "639877c54dacbb2427246b4e772ccdd9",
     "semantic_hash": ""
   },
   "src/jevexp/nusax_reference.py": {
@@ -77,6 +77,61 @@
   "scripts/smoke_api.py": {
     "mtime": 1790299305.6248,
     "ast_hash": "9e7d8f4bdd01976abcbecfcbcd805848",
+    "semantic_hash": ""
+  },
+  "src/jevexp/parsing.py": {
+    "mtime": 1790300708.5016959,
+    "ast_hash": "eec7b5bc99c4f12138ea8fb283dd7f66",
+    "semantic_hash": ""
+  },
+  "src/jevexp/questions.py": {
+    "mtime": 1790300697.705369,
+    "ast_hash": "7b34ea46156ee4d56bc890678bc743e9",
+    "semantic_hash": ""
+  },
+  "src/jevexp/report_f2.py": {
+    "mtime": 1790300980.0364952,
+    "ast_hash": "16ee9d989bde08fc63c3babb856d7d48",
+    "semantic_hash": ""
+  },
+  "src/jevexp/runners/claude.py": {
+    "mtime": 1790301803.2475243,
+    "ast_hash": "a1f407bf6c6ea6f373b215f8f372d863",
+    "semantic_hash": ""
+  },
+  "src/jevexp/runners/common.py": {
+    "mtime": 1790300758.364186,
+    "ast_hash": "cb773a58f55c7f80f8947776995f64d6",
+    "semantic_hash": ""
+  },
+  "src/jevexp/runners/deepseek.py": {
+    "mtime": 1790302210.9416475,
+    "ast_hash": "9224fe31004662f11484dabae9ed033d",
+    "semantic_hash": ""
+  },
+  "src/jevexp/runners/jev.py": {
+    "mtime": 1790300770.4705434,
+    "ast_hash": "bcaa2bce9dd5fb144a68e4d9bc180b51",
+    "semantic_hash": ""
+  },
+  "src/jevexp/runners/nllb.py": {
+    "mtime": 1790301169.1415737,
+    "ast_hash": "26278d14e51afc9f7d423cce491d4046",
+    "semantic_hash": ""
+  },
+  "tests/test_parsing.py": {
+    "mtime": 1790300720.8480675,
+    "ast_hash": "c6fb5e883c1f26f910f93f9603063396",
+    "semantic_hash": ""
+  },
+  "prereg/pilot_rules.md": {
+    "mtime": 1790300576.0073752,
+    "ast_hash": "b131e5ffa0719249a53bf27c975638c7",
+    "semantic_hash": ""
+  },
+  "prereg/protocol.md": {
+    "mtime": 1790302307.109675,
+    "ast_hash": "faf25cc628f173e6dcf1ead192fc079d",
     "semantic_hash": ""
   }
 }
