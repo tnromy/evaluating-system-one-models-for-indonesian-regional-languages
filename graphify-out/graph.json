@@ -120,7 +120,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_data",
-      "community": 6,
+      "community": 1,
       "norm_label": "data.py"
     },
     {
@@ -130,7 +130,7 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "jevexp_data_sources",
-      "community": 6,
+      "community": 1,
       "norm_label": "_sources()"
     },
     {
@@ -140,7 +140,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "jevexp_data_mt_source",
-      "community": 6,
+      "community": 1,
       "norm_label": "_mt_source()"
     },
     {
@@ -150,7 +150,7 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "jevexp_data_all_sources",
-      "community": 6,
+      "community": 1,
       "norm_label": "_all_sources()"
     },
     {
@@ -160,7 +160,7 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "jevexp_data_sha256",
-      "community": 6,
+      "community": 1,
       "norm_label": "_sha256()"
     },
     {
@@ -170,7 +170,7 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "jevexp_data_read_manifest",
-      "community": 6,
+      "community": 1,
       "norm_label": "_read_manifest()"
     },
     {
@@ -180,7 +180,7 @@
       "source_location": "L81",
       "_origin": "ast",
       "id": "jevexp_data_fetch",
-      "community": 6,
+      "community": 1,
       "norm_label": "fetch()"
     },
     {
@@ -210,7 +210,7 @@
       "source_location": "L143",
       "_origin": "ast",
       "id": "jevexp_data_consistent_gold",
-      "community": 11,
+      "community": 1,
       "norm_label": "_consistent_gold()"
     },
     {
@@ -220,7 +220,7 @@
       "source_location": "L151",
       "_origin": "ast",
       "id": "jevexp_data_stratified_ids",
-      "community": 11,
+      "community": 1,
       "norm_label": "_stratified_ids()"
     },
     {
@@ -230,7 +230,7 @@
       "source_location": "L165",
       "_origin": "ast",
       "id": "jevexp_data_make_subsets",
-      "community": 11,
+      "community": 1,
       "norm_label": "make_subsets()"
     },
     {
@@ -240,7 +240,7 @@
       "source_location": "L185",
       "_origin": "ast",
       "id": "jevexp_data_make_pilot",
-      "community": 11,
+      "community": 1,
       "norm_label": "make_pilot()"
     },
     {
@@ -250,7 +250,7 @@
       "source_location": "L201",
       "_origin": "ast",
       "id": "jevexp_data_ind_source",
-      "community": 10,
+      "community": 4,
       "norm_label": "ind_source()"
     },
     {
@@ -270,7 +270,7 @@
       "source_location": "L237",
       "_origin": "ast",
       "id": "jevexp_data_main",
-      "community": 6,
+      "community": 1,
       "norm_label": "main()"
     },
     {
@@ -280,7 +280,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_data_rationale_1",
-      "community": 6,
+      "community": 1,
       "norm_label": "pinned download, uniform loading and fixed subsets for the three datasets.  data"
     },
     {
@@ -290,7 +290,7 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "jevexp_data_rationale_48",
-      "community": 6,
+      "community": 1,
       "norm_label": "return (url, local relative path) for one csv at the pinned commit."
     },
     {
@@ -300,7 +300,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "jevexp_data_rationale_58",
-      "community": 6,
+      "community": 1,
       "norm_label": "nusatranslation mt file (id, ind_text, tgt_text): the indonesian source of each"
     },
     {
@@ -310,7 +310,7 @@
       "source_location": "L82",
       "_origin": "ast",
       "id": "jevexp_data_rationale_82",
-      "community": 6,
+      "community": 1,
       "norm_label": "download every csv at the pinned commit; verify against / write manifest.json."
     },
     {
@@ -340,7 +340,7 @@
       "source_location": "L144",
       "_origin": "ast",
       "id": "jevexp_data_rationale_144",
-      "community": 11,
+      "community": 1,
       "norm_label": "sentence_id -> label for ids present in every language of `frame` with one consi"
     },
     {
@@ -350,7 +350,7 @@
       "source_location": "L152",
       "_origin": "ast",
       "id": "jevexp_data_rationale_152",
-      "community": 11,
+      "community": 1,
       "norm_label": "proportional label-stratified draw of n ids (largest-remainder allocation). retu"
     },
     {
@@ -360,7 +360,7 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "jevexp_data_rationale_166",
-      "community": 11,
+      "community": 1,
       "norm_label": "fixed test subsets (s-nx, s-nt, s-ne): proportional-stratified by label over sen"
     },
     {
@@ -370,7 +370,7 @@
       "source_location": "L186",
       "_origin": "ast",
       "id": "jevexp_data_rationale_186",
-      "community": 11,
+      "community": 1,
       "norm_label": "f2 pilot items: validation only (docs/metodologi.md \u00a72 f2; prereg/pilot_rules.md"
     },
     {
@@ -380,7 +380,7 @@
       "source_location": "L202",
       "_origin": "ast",
       "id": "jevexp_data_rationale_202",
-      "community": 10,
+      "community": 4,
       "norm_label": "sentence_id -> human-written indonesian parallel text (oracle arm a4).      nusa"
     },
     {
@@ -580,7 +580,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_nusax_reference",
-      "community": 7,
+      "community": 3,
       "norm_label": "nusax_reference.py"
     },
     {
@@ -590,7 +590,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_nusax_reference_rationale_1",
-      "community": 7,
+      "community": 3,
       "norm_label": "published nusax sentiment results (macro-f1 %, test split), winata et al. eacl 2"
     },
     {
@@ -607,7 +607,7 @@
       "label": "_normalise()",
       "file_type": "code",
       "source_file": "src/jevexp/parsing.py",
-      "source_location": "L10",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "jevexp_parsing_normalise",
       "community": 5,
@@ -617,7 +617,7 @@
       "label": "_pred()",
       "file_type": "code",
       "source_file": "src/jevexp/parsing.py",
-      "source_location": "L17",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "jevexp_parsing_pred",
       "community": 5,
@@ -627,7 +627,7 @@
       "label": "jev_answer()",
       "file_type": "code",
       "source_file": "src/jevexp/parsing.py",
-      "source_location": "L21",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "jevexp_parsing_jev_answer",
       "community": 5,
@@ -637,7 +637,7 @@
       "label": "llm_json()",
       "file_type": "code",
       "source_file": "src/jevexp/parsing.py",
-      "source_location": "L43",
+      "source_location": "L44",
       "_origin": "ast",
       "id": "jevexp_parsing_llm_json",
       "community": 5,
@@ -647,7 +647,7 @@
       "label": "logprob_label_dist()",
       "file_type": "code",
       "source_file": "src/jevexp/parsing.py",
-      "source_location": "L62",
+      "source_location": "L70",
       "_origin": "ast",
       "id": "jevexp_parsing_logprob_label_dist",
       "community": 5,
@@ -667,9 +667,9 @@
       "label": "Jev System One response -> (pred, probs, confidence). INVALID if the answer is m",
       "file_type": "rationale",
       "source_file": "src/jevexp/parsing.py",
-      "source_location": "L22",
+      "source_location": "L23",
       "_origin": "ast",
-      "id": "jevexp_parsing_rationale_22",
+      "id": "jevexp_parsing_rationale_23",
       "community": 5,
       "norm_label": "jev system one response -> (pred, probs, confidence). invalid if the answer is m"
     },
@@ -677,9 +677,9 @@
       "label": "LLM JSON answer -> (pred, verbalized probs or None). INVALID on malformed JSON /",
       "file_type": "rationale",
       "source_file": "src/jevexp/parsing.py",
-      "source_location": "L44",
+      "source_location": "L45",
       "_origin": "ast",
-      "id": "jevexp_parsing_rationale_44",
+      "id": "jevexp_parsing_rationale_45",
       "community": 5,
       "norm_label": "llm json answer -> (pred, verbalized probs or none). invalid on malformed json /"
     },
@@ -687,9 +687,9 @@
       "label": "Distribution over labels from top_logprobs at the first generated token that beg",
       "file_type": "rationale",
       "source_file": "src/jevexp/parsing.py",
-      "source_location": "L63",
+      "source_location": "L71",
       "_origin": "ast",
-      "id": "jevexp_parsing_rationale_63",
+      "id": "jevexp_parsing_rationale_71",
       "community": 5,
       "norm_label": "distribution over labels from top_logprobs at the first generated token that beg"
     },
@@ -710,7 +710,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_questions",
-      "community": 5,
+      "community": 6,
       "norm_label": "questions.py"
     },
     {
@@ -720,7 +720,7 @@
       "source_location": "L66",
       "_origin": "ast",
       "id": "jevexp_questions_spec",
-      "community": 5,
+      "community": 6,
       "norm_label": "spec()"
     },
     {
@@ -730,7 +730,7 @@
       "source_location": "L72",
       "_origin": "ast",
       "id": "jevexp_questions_to_jev",
-      "community": 5,
+      "community": 6,
       "norm_label": "to_jev()"
     },
     {
@@ -740,8 +740,18 @@
       "source_location": "L84",
       "_origin": "ast",
       "id": "jevexp_questions_to_llm_messages",
-      "community": 5,
+      "community": 6,
       "norm_label": "to_llm_messages()"
+    },
+    {
+      "label": "output_schema()",
+      "file_type": "code",
+      "source_file": "src/jevexp/questions.py",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "jevexp_questions_output_schema",
+      "community": 6,
+      "norm_label": "output_schema()"
     },
     {
       "label": "Single question spec shared by Jev and the LLM arms (docs/metodologi.md \u00a74.2, K3",
@@ -750,7 +760,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_questions_rationale_1",
-      "community": 5,
+      "community": 6,
       "norm_label": "single question spec shared by jev and the llm arms (docs/metodologi.md \u00a74.2, k3"
     },
     {
@@ -760,7 +770,7 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "jevexp_questions_rationale_73",
-      "community": 5,
+      "community": 6,
       "norm_label": "request body fields `state` + `questions` for the jev system one api."
     },
     {
@@ -770,8 +780,18 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "jevexp_questions_rationale_85",
-      "community": 5,
+      "community": 6,
       "norm_label": "neutral chat prompt (no persona, no mention of jev) from the same spec; json ans"
+    },
+    {
+      "label": "JSON Schema of the LLM answer, enforced by the CLIs (--json-schema for Claude, -",
+      "file_type": "rationale",
+      "source_file": "src/jevexp/questions.py",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "jevexp_questions_rationale_99",
+      "community": 6,
+      "norm_label": "json schema of the llm answer, enforced by the clis (--json-schema for claude, -"
     },
     {
       "label": "report_f1.py",
@@ -780,7 +800,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_report_f1",
-      "community": 7,
+      "community": 3,
       "norm_label": "report_f1.py"
     },
     {
@@ -790,7 +810,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "jevexp_report_f1_variants",
-      "community": 7,
+      "community": 3,
       "norm_label": "variants()"
     },
     {
@@ -800,7 +820,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "jevexp_report_f1_compare",
-      "community": 7,
+      "community": 3,
       "norm_label": "compare()"
     },
     {
@@ -810,7 +830,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "jevexp_report_f1_markdown",
-      "community": 7,
+      "community": 3,
       "norm_label": "_markdown()"
     },
     {
@@ -820,7 +840,7 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "jevexp_report_f1_main",
-      "community": 7,
+      "community": 3,
       "norm_label": "main()"
     },
     {
@@ -830,7 +850,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_report_f1_rationale_1",
-      "community": 7,
+      "community": 3,
       "norm_label": "f1 gate report: our b1 replication vs nusax table 3 (docs/metodologi.md \u00a75, k20,"
     },
     {
@@ -840,7 +860,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "jevexp_report_f1_rationale_20",
-      "community": 7,
+      "community": 3,
       "norm_label": "rows (lang, clf, variant, f1, feature) for the three variants."
     },
     {
@@ -850,7 +870,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_report_f2",
-      "community": 2,
+      "community": 0,
       "norm_label": "report_f2.py"
     },
     {
@@ -870,7 +890,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "jevexp_report_f2_ops",
-      "community": 2,
+      "community": 0,
       "norm_label": "ops()"
     },
     {
@@ -880,7 +900,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "jevexp_report_f2_select_formulation",
-      "community": 2,
+      "community": 0,
       "norm_label": "select_formulation()"
     },
     {
@@ -890,7 +910,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "jevexp_report_f2_main",
-      "community": 2,
+      "community": 0,
       "norm_label": "main()"
     },
     {
@@ -900,7 +920,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_report_f2_rationale_1",
-      "community": 2,
+      "community": 0,
       "norm_label": "f2 pilot summaries (validation only): per-language macro-f1 per run, formulation"
     },
     {
@@ -910,7 +930,7 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "jevexp_report_f2_rationale_42",
-      "community": 2,
+      "community": 0,
       "norm_label": "scores: {formulation: mean macro-f1}. rule from prereg/pilot_rules.md."
     },
     {
@@ -1020,7 +1040,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "runners_claude",
-      "community": 4,
+      "community": 6,
       "norm_label": "claude.py"
     },
     {
@@ -1030,27 +1050,27 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "runners_claude_call_cli",
-      "community": 4,
+      "community": 6,
       "norm_label": "call_cli()"
     },
     {
       "label": "run()",
       "file_type": "code",
       "source_file": "src/jevexp/runners/claude.py",
-      "source_location": "L38",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "runners_claude_run",
-      "community": 4,
+      "community": 6,
       "norm_label": "run()"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "src/jevexp/runners/claude.py",
-      "source_location": "L76",
+      "source_location": "L84",
       "_origin": "ast",
       "id": "runners_claude_main",
-      "community": 4,
+      "community": 6,
       "norm_label": "main()"
     },
     {
@@ -1060,8 +1080,88 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "runners_claude_rationale_1",
-      "community": 4,
+      "community": 6,
       "norm_label": "d3 (appendix): claude via headless claude code cli, one isolated call per item ("
+    },
+    {
+      "label": "codex.py",
+      "file_type": "code",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runners_codex",
+      "community": 6,
+      "norm_label": "codex.py"
+    },
+    {
+      "label": "enabled_features()",
+      "file_type": "code",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "runners_codex_enabled_features",
+      "community": 6,
+      "norm_label": "enabled_features()"
+    },
+    {
+      "label": "parse_events()",
+      "file_type": "code",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "runners_codex_parse_events",
+      "community": 6,
+      "norm_label": "parse_events()"
+    },
+    {
+      "label": "call_cli()",
+      "file_type": "code",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "runners_codex_call_cli",
+      "community": 6,
+      "norm_label": "call_cli()"
+    },
+    {
+      "label": "run()",
+      "file_type": "code",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "runners_codex_run",
+      "community": 6,
+      "norm_label": "run()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L116",
+      "_origin": "ast",
+      "id": "runners_codex_main",
+      "community": 6,
+      "norm_label": "main()"
+    },
+    {
+      "label": "D4 (LLM reference ladder): OpenAI GPT models via headless Codex CLI (`codex exec",
+      "file_type": "rationale",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "runners_codex_rationale_1",
+      "community": 6,
+      "norm_label": "d4 (llm reference ladder): openai gpt models via headless codex cli (`codex exec"
+    },
+    {
+      "label": "Codex --json event stream -> final message, usage, tool-call count, error messag",
+      "file_type": "rationale",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "runners_codex_rationale_37",
+      "community": 6,
+      "norm_label": "codex --json event stream -> final message, usage, tool-call count, error messag"
     },
     {
       "label": "common.py",
@@ -1090,7 +1190,7 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "runners_common_guard_split",
-      "community": 10,
+      "community": 4,
       "norm_label": "guard_split()"
     },
     {
@@ -1110,7 +1210,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "runners_common_items",
-      "community": 10,
+      "community": 4,
       "norm_label": "items()"
     },
     {
@@ -1220,7 +1320,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "runners_common_rationale_28",
-      "community": 10,
+      "community": 4,
       "norm_label": "test data is only reachable after the pre-registration tag exists (docs/metodolo"
     },
     {
@@ -1230,7 +1330,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "runners_common_rationale_41",
-      "community": 10,
+      "community": 4,
       "norm_label": "items (dataset, split, lang, sentence_id, gold, text) restricted to the ids list"
     },
     {
@@ -1300,7 +1400,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "runners_deepseek_body",
-      "community": 5,
+      "community": 6,
       "norm_label": "body()"
     },
     {
@@ -1420,7 +1520,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "runners_nllb",
-      "community": 10,
+      "community": 4,
       "norm_label": "nllb.py"
     },
     {
@@ -1430,7 +1530,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "runners_nllb_translate",
-      "community": 10,
+      "community": 4,
       "norm_label": "translate()"
     },
     {
@@ -1440,7 +1540,7 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "runners_nllb_run",
-      "community": 10,
+      "community": 4,
       "norm_label": "run()"
     },
     {
@@ -1450,7 +1550,7 @@
       "source_location": "L66",
       "_origin": "ast",
       "id": "runners_nllb_main",
-      "community": 10,
+      "community": 4,
       "norm_label": "main()"
     },
     {
@@ -1460,7 +1560,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "runners_nllb_rationale_1",
-      "community": 10,
+      "community": 4,
       "norm_label": "a3 translate-test: nllb-200-distilled-600m, regional language -> indonesian, loc"
     },
     {
@@ -1470,7 +1570,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_schema",
-      "community": 3,
+      "community": 0,
       "norm_label": "schema.py"
     },
     {
@@ -1500,7 +1600,7 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "jevexp_schema_read",
-      "community": 2,
+      "community": 0,
       "norm_label": "read()"
     },
     {
@@ -1510,7 +1610,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_schema_rationale_1",
-      "community": 3,
+      "community": 0,
       "norm_label": "per-item prediction schema shared by every arm (docs/metodologi.md \u00a76).  one row"
     },
     {
@@ -1570,7 +1670,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "tests_test_baseline_test_report_select_valid_picks_best_validation",
-      "community": 7,
+      "community": 3,
       "norm_label": "test_report_select_valid_picks_best_validation()"
     },
     {
@@ -1780,7 +1880,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "tests_test_parsing_test_render_jev_and_llm_are_deterministic_and_share_text",
-      "community": 5,
+      "community": 6,
       "norm_label": "test_render_jev_and_llm_are_deterministic_and_share_text()"
     },
     {
@@ -1807,7 +1907,7 @@
       "label": "test_llm_json()",
       "file_type": "code",
       "source_file": "tests/test_parsing.py",
-      "source_location": "L51",
+      "source_location": "L54",
       "_origin": "ast",
       "id": "tests_test_parsing_test_llm_json",
       "community": 5,
@@ -1817,7 +1917,7 @@
       "label": "_tok()",
       "file_type": "code",
       "source_file": "tests/test_parsing.py",
-      "source_location": "L55",
+      "source_location": "L58",
       "_origin": "ast",
       "id": "tests_test_parsing_tok",
       "community": 5,
@@ -1827,7 +1927,7 @@
       "label": "test_logprob_merges_whitespace_variants_by_max()",
       "file_type": "code",
       "source_file": "tests/test_parsing.py",
-      "source_location": "L59",
+      "source_location": "L62",
       "_origin": "ast",
       "id": "tests_test_parsing_test_logprob_merges_whitespace_variants_by_max",
       "community": 5,
@@ -1837,11 +1937,21 @@
       "label": "test_logprob_real_distribution_and_prefix_tokens()",
       "file_type": "code",
       "source_file": "tests/test_parsing.py",
-      "source_location": "L68",
+      "source_location": "L71",
       "_origin": "ast",
       "id": "tests_test_parsing_test_logprob_real_distribution_and_prefix_tokens",
       "community": 5,
       "norm_label": "test_logprob_real_distribution_and_prefix_tokens()"
+    },
+    {
+      "label": "test_codex_output_schema_and_event_parser()",
+      "file_type": "code",
+      "source_file": "tests/test_parsing.py",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "tests_test_parsing_test_codex_output_schema_and_event_parser",
+      "community": 6,
+      "norm_label": "test_codex_output_schema_and_event_parser()"
     },
     {
       "label": "test_schema.py",
@@ -2057,7 +2167,7 @@
       "label": "Invalid outputs",
       "file_type": "document",
       "source_file": "prereg/protocol.md",
-      "source_location": "L22",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "prereg_protocol_invalid_outputs",
       "community": 15,
@@ -2067,7 +2177,7 @@
       "label": "Items",
       "file_type": "document",
       "source_file": "prereg/protocol.md",
-      "source_location": "L25",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "prereg_protocol_items",
       "community": 15,
@@ -2226,9 +2336,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data",
-      "target": "jevexp_data_all_sources",
-      "confidence_score": 1.0
+      "target": "jevexp_data_all_sources"
     },
     {
       "relation": "contains",
@@ -2236,9 +2346,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L143",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data",
-      "target": "jevexp_data_consistent_gold",
-      "confidence_score": 1.0
+      "target": "jevexp_data_consistent_gold"
     },
     {
       "relation": "contains",
@@ -2256,9 +2366,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L201",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data",
-      "target": "jevexp_data_ind_source",
-      "confidence_score": 1.0
+      "target": "jevexp_data_ind_source"
     },
     {
       "relation": "contains",
@@ -2286,9 +2396,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L185",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data",
-      "target": "jevexp_data_make_pilot",
-      "confidence_score": 1.0
+      "target": "jevexp_data_make_pilot"
     },
     {
       "relation": "contains",
@@ -2306,9 +2416,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data",
-      "target": "jevexp_data_mt_source",
-      "confidence_score": 1.0
+      "target": "jevexp_data_mt_source"
     },
     {
       "relation": "contains",
@@ -2356,9 +2466,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L151",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data",
-      "target": "jevexp_data_stratified_ids",
-      "confidence_score": 1.0
+      "target": "jevexp_data_stratified_ids"
     },
     {
       "relation": "contains",
@@ -2398,9 +2508,9 @@
       "source_file": "src/jevexp/parsing.py",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_parsing",
-      "target": "jevexp_data",
-      "confidence_score": 1.0
+      "target": "jevexp_data"
     },
     {
       "relation": "imports_from",
@@ -2409,9 +2519,9 @@
       "source_file": "src/jevexp/questions.py",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_questions",
-      "target": "jevexp_data",
-      "confidence_score": 1.0
+      "target": "jevexp_data"
     },
     {
       "relation": "imports_from",
@@ -2420,9 +2530,9 @@
       "source_file": "src/jevexp/report_f2.py",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f2",
-      "target": "jevexp_data",
-      "confidence_score": 1.0
+      "target": "jevexp_data"
     },
     {
       "relation": "imports_from",
@@ -2453,7 +2563,18 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude",
+      "target": "jevexp_data"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "runners_codex",
       "target": "jevexp_data",
       "confidence_score": 1.0
     },
@@ -2464,9 +2585,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common",
-      "target": "jevexp_data",
-      "confidence_score": 1.0
+      "target": "jevexp_data"
     },
     {
       "relation": "imports_from",
@@ -2475,9 +2596,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "jevexp_data",
-      "confidence_score": 1.0
+      "target": "jevexp_data"
     },
     {
       "relation": "imports_from",
@@ -2486,9 +2607,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev",
-      "target": "jevexp_data",
-      "confidence_score": 1.0
+      "target": "jevexp_data"
     },
     {
       "relation": "imports_from",
@@ -2497,9 +2618,9 @@
       "source_file": "src/jevexp/runners/nllb.py",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_nllb",
-      "target": "jevexp_data",
-      "confidence_score": 1.0
+      "target": "jevexp_data"
     },
     {
       "relation": "imports_from",
@@ -2530,9 +2651,9 @@
       "source_file": "tests/test_parsing.py",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_parsing",
-      "target": "jevexp_data",
-      "confidence_score": 1.0
+      "target": "jevexp_data"
     },
     {
       "relation": "calls",
@@ -2541,9 +2662,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data_all_sources",
-      "target": "jevexp_data_sources",
-      "confidence_score": 1.0
+      "target": "jevexp_data_sources"
     },
     {
       "relation": "calls",
@@ -2584,9 +2705,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data_all_sources",
-      "target": "jevexp_data_mt_source",
-      "confidence_score": 1.0
+      "target": "jevexp_data_mt_source"
     },
     {
       "relation": "calls",
@@ -2595,9 +2716,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L212",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data_ind_source",
-      "target": "jevexp_data_mt_source",
-      "confidence_score": 1.0
+      "target": "jevexp_data_mt_source"
     },
     {
       "relation": "rationale_for",
@@ -2605,9 +2726,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data_rationale_58",
-      "target": "jevexp_data_mt_source",
-      "confidence_score": 1.0
+      "target": "jevexp_data_mt_source"
     },
     {
       "relation": "calls",
@@ -2616,9 +2737,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data_fetch",
-      "target": "jevexp_data_all_sources",
-      "confidence_score": 1.0
+      "target": "jevexp_data_all_sources"
     },
     {
       "relation": "calls",
@@ -2659,9 +2780,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L82",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data_rationale_82",
-      "target": "jevexp_data_fetch",
-      "confidence_score": 1.0
+      "target": "jevexp_data_fetch"
     },
     {
       "relation": "calls",
@@ -2670,9 +2791,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L210",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data_ind_source",
-      "target": "jevexp_data_load",
-      "confidence_score": 1.0
+      "target": "jevexp_data_load"
     },
     {
       "relation": "calls",
@@ -2681,9 +2802,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L190",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data_make_pilot",
-      "target": "jevexp_data_load",
-      "confidence_score": 1.0
+      "target": "jevexp_data_load"
     },
     {
       "relation": "calls",
@@ -2702,9 +2823,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L106",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data_rationale_106",
-      "target": "jevexp_data_load",
-      "confidence_score": 1.0
+      "target": "jevexp_data_load"
     },
     {
       "relation": "calls",
@@ -2746,9 +2867,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common",
-      "target": "jevexp_data_load",
-      "confidence_score": 1.0
+      "target": "jevexp_data_load"
     },
     {
       "relation": "calls",
@@ -2757,9 +2878,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_items",
-      "target": "jevexp_data_load",
-      "confidence_score": 1.0
+      "target": "jevexp_data_load"
     },
     {
       "relation": "calls",
@@ -2811,9 +2932,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data_rationale_129",
-      "target": "jevexp_data_parallel_report",
-      "confidence_score": 1.0
+      "target": "jevexp_data_parallel_report"
     },
     {
       "relation": "calls",
@@ -2855,9 +2976,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L191",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data_make_pilot",
-      "target": "jevexp_data_consistent_gold",
-      "confidence_score": 1.0
+      "target": "jevexp_data_consistent_gold"
     },
     {
       "relation": "calls",
@@ -2866,9 +2987,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L172",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data_make_subsets",
-      "target": "jevexp_data_consistent_gold",
-      "confidence_score": 1.0
+      "target": "jevexp_data_consistent_gold"
     },
     {
       "relation": "rationale_for",
@@ -2876,9 +2997,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L144",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data_rationale_144",
-      "target": "jevexp_data_consistent_gold",
-      "confidence_score": 1.0
+      "target": "jevexp_data_consistent_gold"
     },
     {
       "relation": "calls",
@@ -2887,9 +3008,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L193",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data_make_pilot",
-      "target": "jevexp_data_stratified_ids",
-      "confidence_score": 1.0
+      "target": "jevexp_data_stratified_ids"
     },
     {
       "relation": "calls",
@@ -2898,9 +3019,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L172",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data_make_subsets",
-      "target": "jevexp_data_stratified_ids",
-      "confidence_score": 1.0
+      "target": "jevexp_data_stratified_ids"
     },
     {
       "relation": "rationale_for",
@@ -2908,9 +3029,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L152",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data_rationale_152",
-      "target": "jevexp_data_stratified_ids",
-      "confidence_score": 1.0
+      "target": "jevexp_data_stratified_ids"
     },
     {
       "relation": "calls",
@@ -2929,9 +3050,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L166",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data_rationale_166",
-      "target": "jevexp_data_make_subsets",
-      "confidence_score": 1.0
+      "target": "jevexp_data_make_subsets"
     },
     {
       "relation": "calls",
@@ -2940,9 +3061,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L249",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data_main",
-      "target": "jevexp_data_make_pilot",
-      "confidence_score": 1.0
+      "target": "jevexp_data_make_pilot"
     },
     {
       "relation": "rationale_for",
@@ -2950,9 +3071,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L186",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data_rationale_186",
-      "target": "jevexp_data_make_pilot",
-      "confidence_score": 1.0
+      "target": "jevexp_data_make_pilot"
     },
     {
       "relation": "rationale_for",
@@ -2960,9 +3081,9 @@
       "source_file": "src/jevexp/data.py",
       "source_location": "L202",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_data_rationale_202",
-      "target": "jevexp_data_ind_source",
-      "confidence_score": 1.0
+      "target": "jevexp_data_ind_source"
     },
     {
       "relation": "imports",
@@ -2971,9 +3092,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev",
-      "target": "jevexp_data_ind_source",
-      "confidence_score": 1.0
+      "target": "jevexp_data_ind_source"
     },
     {
       "relation": "calls",
@@ -2982,9 +3103,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev_texts",
-      "target": "jevexp_data_ind_source",
-      "confidence_score": 1.0
+      "target": "jevexp_data_ind_source"
     },
     {
       "relation": "imports",
@@ -2993,9 +3114,9 @@
       "source_file": "src/jevexp/runners/nllb.py",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_nllb",
-      "target": "jevexp_data_ind_source",
-      "confidence_score": 1.0
+      "target": "jevexp_data_ind_source"
     },
     {
       "relation": "calls",
@@ -3004,9 +3125,9 @@
       "source_file": "src/jevexp/runners/nllb.py",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_nllb_run",
-      "target": "jevexp_data_ind_source",
-      "confidence_score": 1.0
+      "target": "jevexp_data_ind_source"
     },
     {
       "relation": "calls",
@@ -3136,9 +3257,9 @@
       "source_file": "src/jevexp/parsing.py",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_parsing",
-      "target": "jevexp_eval",
-      "confidence_score": 1.0
+      "target": "jevexp_eval"
     },
     {
       "relation": "imports_from",
@@ -3147,9 +3268,9 @@
       "source_file": "src/jevexp/report_f2.py",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f2",
-      "target": "jevexp_eval",
-      "confidence_score": 1.0
+      "target": "jevexp_eval"
     },
     {
       "relation": "imports_from",
@@ -3169,7 +3290,18 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude",
+      "target": "jevexp_eval"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "runners_codex",
       "target": "jevexp_eval",
       "confidence_score": 1.0
     },
@@ -3180,9 +3312,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "jevexp_eval",
-      "confidence_score": 1.0
+      "target": "jevexp_eval"
     },
     {
       "relation": "imports_from",
@@ -3202,9 +3334,9 @@
       "source_file": "tests/test_parsing.py",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_parsing",
-      "target": "jevexp_eval",
-      "confidence_score": 1.0
+      "target": "jevexp_eval"
     },
     {
       "relation": "imports",
@@ -3213,9 +3345,9 @@
       "source_file": "src/jevexp/report_f2.py",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f2",
-      "target": "jevexp_eval_accuracy",
-      "confidence_score": 1.0
+      "target": "jevexp_eval_accuracy"
     },
     {
       "relation": "calls",
@@ -3224,9 +3356,9 @@
       "source_file": "src/jevexp/report_f2.py",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f2_per_lang",
-      "target": "jevexp_eval_accuracy",
-      "confidence_score": 1.0
+      "target": "jevexp_eval_accuracy"
     },
     {
       "relation": "calls",
@@ -3267,9 +3399,9 @@
       "source_file": "src/jevexp/report_f2.py",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f2",
-      "target": "jevexp_eval_macro_f1",
-      "confidence_score": 1.0
+      "target": "jevexp_eval_macro_f1"
     },
     {
       "relation": "calls",
@@ -3278,9 +3410,9 @@
       "source_file": "src/jevexp/report_f2.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f2_per_lang",
-      "target": "jevexp_eval_macro_f1",
-      "confidence_score": 1.0
+      "target": "jevexp_eval_macro_f1"
     },
     {
       "relation": "calls",
@@ -3375,9 +3507,9 @@
       "source_file": "src/jevexp/report_f2.py",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f2",
-      "target": "jevexp_eval_ece",
-      "confidence_score": 1.0
+      "target": "jevexp_eval_ece"
     },
     {
       "relation": "calls",
@@ -3386,9 +3518,9 @@
       "source_file": "src/jevexp/report_f2.py",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f2_per_lang",
-      "target": "jevexp_eval_ece",
-      "confidence_score": 1.0
+      "target": "jevexp_eval_ece"
     },
     {
       "relation": "calls",
@@ -3556,9 +3688,9 @@
       "source_file": "src/jevexp/parsing.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_parsing",
-      "target": "jevexp_parsing_jev_answer",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing_jev_answer"
     },
     {
       "relation": "contains",
@@ -3566,9 +3698,9 @@
       "source_file": "src/jevexp/parsing.py",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_parsing",
-      "target": "jevexp_parsing_llm_json",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing_llm_json"
     },
     {
       "relation": "contains",
@@ -3576,9 +3708,9 @@
       "source_file": "src/jevexp/parsing.py",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_parsing",
-      "target": "jevexp_parsing_logprob_label_dist",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing_logprob_label_dist"
     },
     {
       "relation": "contains",
@@ -3586,9 +3718,9 @@
       "source_file": "src/jevexp/parsing.py",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_parsing",
-      "target": "jevexp_parsing_normalise",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing_normalise"
     },
     {
       "relation": "contains",
@@ -3596,9 +3728,9 @@
       "source_file": "src/jevexp/parsing.py",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_parsing",
-      "target": "jevexp_parsing_pred",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing_pred"
     },
     {
       "relation": "imports_from",
@@ -3607,9 +3739,9 @@
       "source_file": "src/jevexp/parsing.py",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_parsing",
-      "target": "jevexp_questions",
-      "confidence_score": 1.0
+      "target": "jevexp_questions"
     },
     {
       "relation": "rationale_for",
@@ -3617,9 +3749,9 @@
       "source_file": "src/jevexp/parsing.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_parsing_rationale_1",
-      "target": "jevexp_parsing",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing"
     },
     {
       "relation": "imports_from",
@@ -3628,7 +3760,18 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude",
+      "target": "jevexp_parsing"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "runners_codex",
       "target": "jevexp_parsing",
       "confidence_score": 1.0
     },
@@ -3639,9 +3782,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "jevexp_parsing",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing"
     },
     {
       "relation": "imports_from",
@@ -3650,9 +3793,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev",
-      "target": "jevexp_parsing",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing"
     },
     {
       "relation": "imports_from",
@@ -3661,9 +3804,9 @@
       "source_file": "tests/test_parsing.py",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_parsing",
-      "target": "jevexp_parsing",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing"
     },
     {
       "relation": "calls",
@@ -3672,9 +3815,9 @@
       "source_file": "src/jevexp/parsing.py",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_parsing_jev_answer",
-      "target": "jevexp_parsing_normalise",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing_normalise"
     },
     {
       "relation": "calls",
@@ -3683,9 +3826,9 @@
       "source_file": "src/jevexp/parsing.py",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_parsing_llm_json",
-      "target": "jevexp_parsing_normalise",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing_normalise"
     },
     {
       "relation": "calls",
@@ -3694,17 +3837,17 @@
       "source_file": "src/jevexp/parsing.py",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_parsing_jev_answer",
-      "target": "jevexp_parsing_pred",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing_pred"
     },
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/jevexp/parsing.py",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0,
-      "source": "jevexp_parsing_rationale_22",
+      "source": "jevexp_parsing_rationale_23",
       "target": "jevexp_parsing_jev_answer",
       "confidence_score": 1.0
     },
@@ -3715,9 +3858,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev",
-      "target": "jevexp_parsing_jev_answer",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing_jev_answer"
     },
     {
       "relation": "calls",
@@ -3726,9 +3869,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev_run",
-      "target": "jevexp_parsing_jev_answer",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing_jev_answer"
     },
     {
       "relation": "calls",
@@ -3756,9 +3899,9 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/jevexp/parsing.py",
-      "source_location": "L44",
+      "source_location": "L45",
       "weight": 1.0,
-      "source": "jevexp_parsing_rationale_44",
+      "source": "jevexp_parsing_rationale_45",
       "target": "jevexp_parsing_llm_json",
       "confidence_score": 1.0
     },
@@ -3769,9 +3912,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude",
-      "target": "jevexp_parsing_llm_json",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing_llm_json"
     },
     {
       "relation": "calls",
@@ -3780,7 +3923,29 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude_run",
+      "target": "jevexp_parsing_llm_json"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "runners_codex",
+      "target": "jevexp_parsing_llm_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "runners_codex_run",
       "target": "jevexp_parsing_llm_json",
       "confidence_score": 1.0
     },
@@ -3791,9 +3956,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "jevexp_parsing_llm_json",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing_llm_json"
     },
     {
       "relation": "calls",
@@ -3802,9 +3967,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek_parse",
-      "target": "jevexp_parsing_llm_json",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing_llm_json"
     },
     {
       "relation": "calls",
@@ -3821,9 +3986,9 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/jevexp/parsing.py",
-      "source_location": "L63",
+      "source_location": "L71",
       "weight": 1.0,
-      "source": "jevexp_parsing_rationale_63",
+      "source": "jevexp_parsing_rationale_71",
       "target": "jevexp_parsing_logprob_label_dist",
       "confidence_score": 1.0
     },
@@ -3834,9 +3999,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "jevexp_parsing_logprob_label_dist",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing_logprob_label_dist"
     },
     {
       "relation": "calls",
@@ -3845,9 +4010,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek_parse",
-      "target": "jevexp_parsing_logprob_label_dist",
-      "confidence_score": 1.0
+      "target": "jevexp_parsing_logprob_label_dist"
     },
     {
       "relation": "calls",
@@ -3889,9 +4054,9 @@
       "source_file": "src/jevexp/report_f2.py",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f2",
-      "target": "jevexp_paths",
-      "confidence_score": 1.0
+      "target": "jevexp_paths"
     },
     {
       "relation": "imports_from",
@@ -3911,7 +4076,18 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude",
+      "target": "jevexp_paths"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "runners_codex",
       "target": "jevexp_paths",
       "confidence_score": 1.0
     },
@@ -3922,9 +4098,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common",
-      "target": "jevexp_paths",
-      "confidence_score": 1.0
+      "target": "jevexp_paths"
     },
     {
       "relation": "imports_from",
@@ -3933,9 +4109,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "jevexp_paths",
-      "confidence_score": 1.0
+      "target": "jevexp_paths"
     },
     {
       "relation": "imports_from",
@@ -3944,9 +4120,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev",
-      "target": "jevexp_paths",
-      "confidence_score": 1.0
+      "target": "jevexp_paths"
     },
     {
       "relation": "imports_from",
@@ -3955,9 +4131,9 @@
       "source_file": "src/jevexp/runners/nllb.py",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_nllb",
-      "target": "jevexp_paths",
-      "confidence_score": 1.0
+      "target": "jevexp_paths"
     },
     {
       "relation": "imports_from",
@@ -3985,11 +4161,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/jevexp/questions.py",
-      "source_location": "L66",
+      "source_location": "L98",
       "weight": 1.0,
       "source": "jevexp_questions",
-      "target": "jevexp_questions_spec",
+      "target": "jevexp_questions_output_schema",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/questions.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "jevexp_questions",
+      "target": "jevexp_questions_spec"
     },
     {
       "relation": "contains",
@@ -3997,9 +4183,9 @@
       "source_file": "src/jevexp/questions.py",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_questions",
-      "target": "jevexp_questions_to_jev",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_to_jev"
     },
     {
       "relation": "contains",
@@ -4007,9 +4193,9 @@
       "source_file": "src/jevexp/questions.py",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_questions",
-      "target": "jevexp_questions_to_llm_messages",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_to_llm_messages"
     },
     {
       "relation": "rationale_for",
@@ -4017,9 +4203,9 @@
       "source_file": "src/jevexp/questions.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_questions_rationale_1",
-      "target": "jevexp_questions",
-      "confidence_score": 1.0
+      "target": "jevexp_questions"
     },
     {
       "relation": "imports_from",
@@ -4028,7 +4214,18 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude",
+      "target": "jevexp_questions"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "runners_codex",
       "target": "jevexp_questions",
       "confidence_score": 1.0
     },
@@ -4039,9 +4236,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "jevexp_questions",
-      "confidence_score": 1.0
+      "target": "jevexp_questions"
     },
     {
       "relation": "imports_from",
@@ -4050,9 +4247,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev",
-      "target": "jevexp_questions",
-      "confidence_score": 1.0
+      "target": "jevexp_questions"
     },
     {
       "relation": "imports_from",
@@ -4061,8 +4258,19 @@
       "source_file": "tests/test_parsing.py",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_parsing",
-      "target": "jevexp_questions",
+      "target": "jevexp_questions"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/questions.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "jevexp_questions_output_schema",
+      "target": "jevexp_questions_spec",
       "confidence_score": 1.0
     },
     {
@@ -4072,9 +4280,9 @@
       "source_file": "src/jevexp/questions.py",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_questions_to_jev",
-      "target": "jevexp_questions_spec",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_spec"
     },
     {
       "relation": "calls",
@@ -4083,9 +4291,9 @@
       "source_file": "src/jevexp/questions.py",
       "source_location": "L86",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_questions_to_llm_messages",
-      "target": "jevexp_questions_spec",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_spec"
     },
     {
       "relation": "calls",
@@ -4115,9 +4323,9 @@
       "source_file": "src/jevexp/questions.py",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_questions_rationale_73",
-      "target": "jevexp_questions_to_jev",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_to_jev"
     },
     {
       "relation": "imports",
@@ -4126,9 +4334,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev",
-      "target": "jevexp_questions_to_jev",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_to_jev"
     },
     {
       "relation": "calls",
@@ -4137,9 +4345,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev_run",
-      "target": "jevexp_questions_to_jev",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_to_jev"
     },
     {
       "relation": "calls",
@@ -4158,9 +4366,9 @@
       "source_file": "src/jevexp/questions.py",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_questions_rationale_85",
-      "target": "jevexp_questions_to_llm_messages",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_to_llm_messages"
     },
     {
       "relation": "imports",
@@ -4169,9 +4377,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude",
-      "target": "jevexp_questions_to_llm_messages",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_to_llm_messages"
     },
     {
       "relation": "calls",
@@ -4180,7 +4388,29 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude_run",
+      "target": "jevexp_questions_to_llm_messages"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "runners_codex",
+      "target": "jevexp_questions_to_llm_messages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "runners_codex_run",
       "target": "jevexp_questions_to_llm_messages",
       "confidence_score": 1.0
     },
@@ -4191,9 +4421,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "jevexp_questions_to_llm_messages",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_to_llm_messages"
     },
     {
       "relation": "calls",
@@ -4202,9 +4432,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek_body",
-      "target": "jevexp_questions_to_llm_messages",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_to_llm_messages"
     },
     {
       "relation": "calls",
@@ -4216,6 +4446,71 @@
       "weight": 1.0,
       "source": "tests_test_parsing_test_render_jev_and_llm_are_deterministic_and_share_text",
       "target": "jevexp_questions_to_llm_messages"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/questions.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "jevexp_questions_rationale_99",
+      "target": "jevexp_questions_output_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/claude.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "runners_claude",
+      "target": "jevexp_questions_output_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/claude.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "runners_claude_run",
+      "target": "jevexp_questions_output_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "runners_codex",
+      "target": "jevexp_questions_output_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "runners_codex_run",
+      "target": "jevexp_questions_output_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_parsing.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "tests_test_parsing_test_codex_output_schema_and_event_parser",
+      "target": "jevexp_questions_output_schema"
     },
     {
       "relation": "contains",
@@ -4338,9 +4633,9 @@
       "source_file": "src/jevexp/report_f2.py",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f2",
-      "target": "jevexp_report_f2_main",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f2_main"
     },
     {
       "relation": "contains",
@@ -4348,9 +4643,9 @@
       "source_file": "src/jevexp/report_f2.py",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f2",
-      "target": "jevexp_report_f2_ops",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f2_ops"
     },
     {
       "relation": "contains",
@@ -4358,9 +4653,9 @@
       "source_file": "src/jevexp/report_f2.py",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f2",
-      "target": "jevexp_report_f2_per_lang",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f2_per_lang"
     },
     {
       "relation": "contains",
@@ -4368,9 +4663,9 @@
       "source_file": "src/jevexp/report_f2.py",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f2",
-      "target": "jevexp_report_f2_select_formulation",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f2_select_formulation"
     },
     {
       "relation": "imports_from",
@@ -4379,9 +4674,9 @@
       "source_file": "src/jevexp/report_f2.py",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f2",
-      "target": "jevexp_schema",
-      "confidence_score": 1.0
+      "target": "jevexp_schema"
     },
     {
       "relation": "imports",
@@ -4390,9 +4685,9 @@
       "source_file": "src/jevexp/report_f2.py",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f2",
-      "target": "jevexp_schema_read",
-      "confidence_score": 1.0
+      "target": "jevexp_schema_read"
     },
     {
       "relation": "rationale_for",
@@ -4400,9 +4695,9 @@
       "source_file": "src/jevexp/report_f2.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f2_rationale_1",
-      "target": "jevexp_report_f2",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f2"
     },
     {
       "relation": "calls",
@@ -4411,9 +4706,9 @@
       "source_file": "src/jevexp/report_f2.py",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f2_main",
-      "target": "jevexp_report_f2_per_lang",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f2_per_lang"
     },
     {
       "relation": "calls",
@@ -4422,9 +4717,9 @@
       "source_file": "src/jevexp/report_f2.py",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f2_main",
-      "target": "jevexp_report_f2_ops",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f2_ops"
     },
     {
       "relation": "calls",
@@ -4433,9 +4728,9 @@
       "source_file": "src/jevexp/report_f2.py",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f2_main",
-      "target": "jevexp_report_f2_select_formulation",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f2_select_formulation"
     },
     {
       "relation": "rationale_for",
@@ -4443,9 +4738,9 @@
       "source_file": "src/jevexp/report_f2.py",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f2_rationale_42",
-      "target": "jevexp_report_f2_select_formulation",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f2_select_formulation"
     },
     {
       "relation": "calls",
@@ -4454,9 +4749,9 @@
       "source_file": "src/jevexp/report_f2.py",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f2_main",
-      "target": "jevexp_schema_read",
-      "confidence_score": 1.0
+      "target": "jevexp_schema_read"
     },
     {
       "relation": "imports_from",
@@ -4666,9 +4961,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude",
-      "target": "jevexp_schema",
-      "confidence_score": 1.0
+      "target": "jevexp_schema"
     },
     {
       "relation": "imports",
@@ -4677,9 +4972,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude",
-      "target": "jevexp_schema_write",
-      "confidence_score": 1.0
+      "target": "jevexp_schema_write"
     },
     {
       "relation": "contains",
@@ -4687,9 +4982,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude",
-      "target": "runners_claude_call_cli",
-      "confidence_score": 1.0
+      "target": "runners_claude_call_cli"
     },
     {
       "relation": "contains",
@@ -4697,9 +4992,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude",
-      "target": "runners_claude_main",
-      "confidence_score": 1.0
+      "target": "runners_claude_main"
     },
     {
       "relation": "contains",
@@ -4707,9 +5002,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude",
-      "target": "runners_claude_run",
-      "confidence_score": 1.0
+      "target": "runners_claude_run"
     },
     {
       "relation": "imports_from",
@@ -4718,9 +5013,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude",
-      "target": "runners_common",
-      "confidence_score": 1.0
+      "target": "runners_common"
     },
     {
       "relation": "imports",
@@ -4729,9 +5024,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude",
-      "target": "runners_common_frame",
-      "confidence_score": 1.0
+      "target": "runners_common_frame"
     },
     {
       "relation": "imports",
@@ -4740,9 +5035,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude",
-      "target": "runners_common_items",
-      "confidence_score": 1.0
+      "target": "runners_common_items"
     },
     {
       "relation": "imports",
@@ -4751,9 +5046,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude",
-      "target": "runners_common_now_utc",
-      "confidence_score": 1.0
+      "target": "runners_common_now_utc"
     },
     {
       "relation": "imports",
@@ -4762,9 +5057,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude",
-      "target": "runners_common_rawlog",
-      "confidence_score": 1.0
+      "target": "runners_common_rawlog"
     },
     {
       "relation": "imports",
@@ -4773,9 +5068,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude",
-      "target": "runners_common_run_parallel",
-      "confidence_score": 1.0
+      "target": "runners_common_run_parallel"
     },
     {
       "relation": "rationale_for",
@@ -4783,9 +5078,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude_rationale_1",
-      "target": "runners_claude",
-      "confidence_score": 1.0
+      "target": "runners_claude"
     },
     {
       "relation": "calls",
@@ -4794,9 +5089,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude_call_cli",
-      "target": "runners_claude_run",
-      "confidence_score": 1.0
+      "target": "runners_claude_run"
     },
     {
       "relation": "calls",
@@ -4805,9 +5100,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude_main",
-      "target": "runners_claude_run",
-      "confidence_score": 1.0
+      "target": "runners_claude_run"
     },
     {
       "relation": "calls",
@@ -4816,9 +5111,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude_run",
-      "target": "jevexp_schema_write",
-      "confidence_score": 1.0
+      "target": "jevexp_schema_write"
     },
     {
       "relation": "calls",
@@ -4827,9 +5122,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude_run",
-      "target": "runners_common_frame",
-      "confidence_score": 1.0
+      "target": "runners_common_frame"
     },
     {
       "relation": "calls",
@@ -4838,9 +5133,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude_run",
-      "target": "runners_common_items",
-      "confidence_score": 1.0
+      "target": "runners_common_items"
     },
     {
       "relation": "calls",
@@ -4849,9 +5144,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude_run",
-      "target": "runners_common_now_utc",
-      "confidence_score": 1.0
+      "target": "runners_common_now_utc"
     },
     {
       "relation": "calls",
@@ -4860,9 +5155,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude_run",
-      "target": "runners_common_rawlog",
-      "confidence_score": 1.0
+      "target": "runners_common_rawlog"
     },
     {
       "relation": "calls",
@@ -4871,7 +5166,286 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude_run",
+      "target": "runners_common_run_parallel"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "runners_codex",
+      "target": "jevexp_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "runners_codex",
+      "target": "jevexp_schema_write",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "runners_codex",
+      "target": "runners_codex_call_cli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "runners_codex",
+      "target": "runners_codex_enabled_features",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "runners_codex",
+      "target": "runners_codex_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "runners_codex",
+      "target": "runners_codex_parse_events",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "runners_codex",
+      "target": "runners_codex_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "runners_codex",
+      "target": "runners_common",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "runners_codex",
+      "target": "runners_common_frame",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "runners_codex",
+      "target": "runners_common_items",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "runners_codex",
+      "target": "runners_common_now_utc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "runners_codex",
+      "target": "runners_common_rawlog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "runners_codex",
+      "target": "runners_common_run_parallel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "runners_codex_rationale_1",
+      "target": "runners_codex",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "runners_codex_enabled_features",
+      "target": "runners_codex_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "runners_codex_call_cli",
+      "target": "runners_codex_parse_events",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "runners_codex_rationale_37",
+      "target": "runners_codex_parse_events",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_parsing.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "tests_test_parsing_test_codex_output_schema_and_event_parser",
+      "target": "runners_codex_parse_events"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "runners_codex_call_cli",
+      "target": "runners_codex_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "runners_codex_main",
+      "target": "runners_codex_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "runners_codex_run",
+      "target": "jevexp_schema_write",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "runners_codex_run",
+      "target": "runners_common_frame",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "runners_codex_run",
+      "target": "runners_common_items",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "runners_codex_run",
+      "target": "runners_common_now_utc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "runners_codex_run",
+      "target": "runners_common_rawlog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/jevexp/runners/codex.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "runners_codex_run",
       "target": "runners_common_run_parallel",
       "confidence_score": 1.0
     },
@@ -4881,9 +5455,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L115",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common",
-      "target": "runners_common_frame",
-      "confidence_score": 1.0
+      "target": "runners_common_frame"
     },
     {
       "relation": "contains",
@@ -4891,9 +5465,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common",
-      "target": "runners_common_guard_split",
-      "confidence_score": 1.0
+      "target": "runners_common_guard_split"
     },
     {
       "relation": "contains",
@@ -4901,9 +5475,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common",
-      "target": "runners_common_item_key",
-      "confidence_score": 1.0
+      "target": "runners_common_item_key"
     },
     {
       "relation": "contains",
@@ -4911,9 +5485,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common",
-      "target": "runners_common_items",
-      "confidence_score": 1.0
+      "target": "runners_common_items"
     },
     {
       "relation": "contains",
@@ -4921,9 +5495,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common",
-      "target": "runners_common_load_env",
-      "confidence_score": 1.0
+      "target": "runners_common_load_env"
     },
     {
       "relation": "contains",
@@ -4931,9 +5505,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common",
-      "target": "runners_common_now_utc",
-      "confidence_score": 1.0
+      "target": "runners_common_now_utc"
     },
     {
       "relation": "contains",
@@ -4941,9 +5515,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common",
-      "target": "runners_common_post_json",
-      "confidence_score": 1.0
+      "target": "runners_common_post_json"
     },
     {
       "relation": "contains",
@@ -4951,9 +5525,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common",
-      "target": "runners_common_rawlog",
-      "confidence_score": 1.0
+      "target": "runners_common_rawlog"
     },
     {
       "relation": "contains",
@@ -4961,9 +5535,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common",
-      "target": "runners_common_run_parallel",
-      "confidence_score": 1.0
+      "target": "runners_common_run_parallel"
     },
     {
       "relation": "rationale_for",
@@ -4971,9 +5545,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_rationale_1",
-      "target": "runners_common",
-      "confidence_score": 1.0
+      "target": "runners_common"
     },
     {
       "relation": "imports_from",
@@ -4982,9 +5556,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "runners_common",
-      "confidence_score": 1.0
+      "target": "runners_common"
     },
     {
       "relation": "imports_from",
@@ -4993,9 +5567,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev",
-      "target": "runners_common",
-      "confidence_score": 1.0
+      "target": "runners_common"
     },
     {
       "relation": "imports_from",
@@ -5004,9 +5578,9 @@
       "source_file": "src/jevexp/runners/nllb.py",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_nllb",
-      "target": "runners_common",
-      "confidence_score": 1.0
+      "target": "runners_common"
     },
     {
       "relation": "imports",
@@ -5015,9 +5589,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "runners_common_load_env",
-      "confidence_score": 1.0
+      "target": "runners_common_load_env"
     },
     {
       "relation": "calls",
@@ -5026,9 +5600,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek_run",
-      "target": "runners_common_load_env",
-      "confidence_score": 1.0
+      "target": "runners_common_load_env"
     },
     {
       "relation": "imports",
@@ -5037,9 +5611,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev",
-      "target": "runners_common_load_env",
-      "confidence_score": 1.0
+      "target": "runners_common_load_env"
     },
     {
       "relation": "calls",
@@ -5048,9 +5622,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev_run",
-      "target": "runners_common_load_env",
-      "confidence_score": 1.0
+      "target": "runners_common_load_env"
     },
     {
       "relation": "calls",
@@ -5059,9 +5633,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_items",
-      "target": "runners_common_guard_split",
-      "confidence_score": 1.0
+      "target": "runners_common_guard_split"
     },
     {
       "relation": "rationale_for",
@@ -5069,9 +5643,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_rationale_28",
-      "target": "runners_common_guard_split",
-      "confidence_score": 1.0
+      "target": "runners_common_guard_split"
     },
     {
       "relation": "imports",
@@ -5080,9 +5654,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "runners_common_now_utc",
-      "confidence_score": 1.0
+      "target": "runners_common_now_utc"
     },
     {
       "relation": "calls",
@@ -5091,9 +5665,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek_run",
-      "target": "runners_common_now_utc",
-      "confidence_score": 1.0
+      "target": "runners_common_now_utc"
     },
     {
       "relation": "imports",
@@ -5102,9 +5676,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev",
-      "target": "runners_common_now_utc",
-      "confidence_score": 1.0
+      "target": "runners_common_now_utc"
     },
     {
       "relation": "calls",
@@ -5113,9 +5687,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev_run",
-      "target": "runners_common_now_utc",
-      "confidence_score": 1.0
+      "target": "runners_common_now_utc"
     },
     {
       "relation": "rationale_for",
@@ -5123,9 +5697,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_rationale_41",
-      "target": "runners_common_items",
-      "confidence_score": 1.0
+      "target": "runners_common_items"
     },
     {
       "relation": "imports",
@@ -5134,9 +5708,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "runners_common_items",
-      "confidence_score": 1.0
+      "target": "runners_common_items"
     },
     {
       "relation": "calls",
@@ -5145,9 +5719,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek_run",
-      "target": "runners_common_items",
-      "confidence_score": 1.0
+      "target": "runners_common_items"
     },
     {
       "relation": "imports",
@@ -5156,9 +5730,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev",
-      "target": "runners_common_items",
-      "confidence_score": 1.0
+      "target": "runners_common_items"
     },
     {
       "relation": "calls",
@@ -5167,9 +5741,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev_run",
-      "target": "runners_common_items",
-      "confidence_score": 1.0
+      "target": "runners_common_items"
     },
     {
       "relation": "imports",
@@ -5178,9 +5752,9 @@
       "source_file": "src/jevexp/runners/nllb.py",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_nllb",
-      "target": "runners_common_items",
-      "confidence_score": 1.0
+      "target": "runners_common_items"
     },
     {
       "relation": "calls",
@@ -5189,9 +5763,9 @@
       "source_file": "src/jevexp/runners/nllb.py",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_nllb_run",
-      "target": "runners_common_items",
-      "confidence_score": 1.0
+      "target": "runners_common_items"
     },
     {
       "relation": "rationale_for",
@@ -5199,9 +5773,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_rationale_51",
-      "target": "runners_common_post_json",
-      "confidence_score": 1.0
+      "target": "runners_common_post_json"
     },
     {
       "relation": "imports",
@@ -5210,9 +5784,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "runners_common_post_json",
-      "confidence_score": 1.0
+      "target": "runners_common_post_json"
     },
     {
       "relation": "calls",
@@ -5221,9 +5795,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek_run",
-      "target": "runners_common_post_json",
-      "confidence_score": 1.0
+      "target": "runners_common_post_json"
     },
     {
       "relation": "imports",
@@ -5232,9 +5806,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev",
-      "target": "runners_common_post_json",
-      "confidence_score": 1.0
+      "target": "runners_common_post_json"
     },
     {
       "relation": "calls",
@@ -5243,9 +5817,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev_run",
-      "target": "runners_common_post_json",
-      "confidence_score": 1.0
+      "target": "runners_common_post_json"
     },
     {
       "relation": "rationale_for",
@@ -5253,9 +5827,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_rationale_72",
-      "target": "runners_common_rawlog",
-      "confidence_score": 1.0
+      "target": "runners_common_rawlog"
     },
     {
       "relation": "method",
@@ -5263,9 +5837,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_rawlog",
-      "target": "runners_common_rawlog_append",
-      "confidence_score": 1.0
+      "target": "runners_common_rawlog_append"
     },
     {
       "relation": "method",
@@ -5273,9 +5847,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_rawlog",
-      "target": "runners_common_rawlog_done_keys",
-      "confidence_score": 1.0
+      "target": "runners_common_rawlog_done_keys"
     },
     {
       "relation": "method",
@@ -5283,9 +5857,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_rawlog",
-      "target": "runners_common_rawlog_init",
-      "confidence_score": 1.0
+      "target": "runners_common_rawlog_init"
     },
     {
       "relation": "method",
@@ -5293,9 +5867,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_rawlog",
-      "target": "runners_common_rawlog_records",
-      "confidence_score": 1.0
+      "target": "runners_common_rawlog_records"
     },
     {
       "relation": "imports",
@@ -5304,9 +5878,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "runners_common_rawlog",
-      "confidence_score": 1.0
+      "target": "runners_common_rawlog"
     },
     {
       "relation": "calls",
@@ -5315,9 +5889,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek_run",
-      "target": "runners_common_rawlog",
-      "confidence_score": 1.0
+      "target": "runners_common_rawlog"
     },
     {
       "relation": "imports",
@@ -5326,9 +5900,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev",
-      "target": "runners_common_rawlog",
-      "confidence_score": 1.0
+      "target": "runners_common_rawlog"
     },
     {
       "relation": "calls",
@@ -5337,9 +5911,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev_run",
-      "target": "runners_common_rawlog",
-      "confidence_score": 1.0
+      "target": "runners_common_rawlog"
     },
     {
       "relation": "calls",
@@ -5348,9 +5922,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_rawlog_done_keys",
-      "target": "runners_common_rawlog_records",
-      "confidence_score": 1.0
+      "target": "runners_common_rawlog_records"
     },
     {
       "relation": "calls",
@@ -5359,9 +5933,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L112",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_run_parallel",
-      "target": "runners_common_rawlog_records",
-      "confidence_score": 1.0
+      "target": "runners_common_rawlog_records"
     },
     {
       "relation": "calls",
@@ -5370,9 +5944,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L98",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_run_parallel",
-      "target": "runners_common_rawlog_done_keys",
-      "confidence_score": 1.0
+      "target": "runners_common_rawlog_done_keys"
     },
     {
       "relation": "calls",
@@ -5381,9 +5955,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L108",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_run_parallel",
-      "target": "runners_common_rawlog_append",
-      "confidence_score": 1.0
+      "target": "runners_common_rawlog_append"
     },
     {
       "relation": "calls",
@@ -5392,9 +5966,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L99",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_run_parallel",
-      "target": "runners_common_item_key",
-      "confidence_score": 1.0
+      "target": "runners_common_item_key"
     },
     {
       "relation": "rationale_for",
@@ -5402,9 +5976,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_rationale_97",
-      "target": "runners_common_run_parallel",
-      "confidence_score": 1.0
+      "target": "runners_common_run_parallel"
     },
     {
       "relation": "imports",
@@ -5413,9 +5987,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "runners_common_run_parallel",
-      "confidence_score": 1.0
+      "target": "runners_common_run_parallel"
     },
     {
       "relation": "calls",
@@ -5424,9 +5998,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek_run",
-      "target": "runners_common_run_parallel",
-      "confidence_score": 1.0
+      "target": "runners_common_run_parallel"
     },
     {
       "relation": "imports",
@@ -5435,9 +6009,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev",
-      "target": "runners_common_run_parallel",
-      "confidence_score": 1.0
+      "target": "runners_common_run_parallel"
     },
     {
       "relation": "calls",
@@ -5446,9 +6020,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev_run",
-      "target": "runners_common_run_parallel",
-      "confidence_score": 1.0
+      "target": "runners_common_run_parallel"
     },
     {
       "relation": "imports",
@@ -5457,9 +6031,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "runners_common_frame",
-      "confidence_score": 1.0
+      "target": "runners_common_frame"
     },
     {
       "relation": "calls",
@@ -5468,9 +6042,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek_run",
-      "target": "runners_common_frame",
-      "confidence_score": 1.0
+      "target": "runners_common_frame"
     },
     {
       "relation": "imports",
@@ -5479,9 +6053,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev",
-      "target": "runners_common_frame",
-      "confidence_score": 1.0
+      "target": "runners_common_frame"
     },
     {
       "relation": "calls",
@@ -5490,9 +6064,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev_run",
-      "target": "runners_common_frame",
-      "confidence_score": 1.0
+      "target": "runners_common_frame"
     },
     {
       "relation": "imports_from",
@@ -5501,9 +6075,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "jevexp_schema",
-      "confidence_score": 1.0
+      "target": "jevexp_schema"
     },
     {
       "relation": "imports",
@@ -5512,9 +6086,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "jevexp_schema_write",
-      "confidence_score": 1.0
+      "target": "jevexp_schema_write"
     },
     {
       "relation": "contains",
@@ -5522,9 +6096,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "runners_deepseek_balance",
-      "confidence_score": 1.0
+      "target": "runners_deepseek_balance"
     },
     {
       "relation": "contains",
@@ -5532,9 +6106,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "runners_deepseek_body",
-      "confidence_score": 1.0
+      "target": "runners_deepseek_body"
     },
     {
       "relation": "contains",
@@ -5542,9 +6116,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "runners_deepseek_cost_upper",
-      "confidence_score": 1.0
+      "target": "runners_deepseek_cost_upper"
     },
     {
       "relation": "contains",
@@ -5552,9 +6126,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "runners_deepseek_main",
-      "confidence_score": 1.0
+      "target": "runners_deepseek_main"
     },
     {
       "relation": "contains",
@@ -5562,9 +6136,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "runners_deepseek_parse",
-      "confidence_score": 1.0
+      "target": "runners_deepseek_parse"
     },
     {
       "relation": "contains",
@@ -5572,9 +6146,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "runners_deepseek_run",
-      "confidence_score": 1.0
+      "target": "runners_deepseek_run"
     },
     {
       "relation": "rationale_for",
@@ -5582,9 +6156,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek_rationale_1",
-      "target": "runners_deepseek",
-      "confidence_score": 1.0
+      "target": "runners_deepseek"
     },
     {
       "relation": "calls",
@@ -5593,9 +6167,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek_run",
-      "target": "runners_deepseek_cost_upper",
-      "confidence_score": 1.0
+      "target": "runners_deepseek_cost_upper"
     },
     {
       "relation": "calls",
@@ -5604,9 +6178,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek_run",
-      "target": "runners_deepseek_balance",
-      "confidence_score": 1.0
+      "target": "runners_deepseek_balance"
     },
     {
       "relation": "rationale_for",
@@ -5614,9 +6188,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek_rationale_50",
-      "target": "runners_deepseek_parse",
-      "confidence_score": 1.0
+      "target": "runners_deepseek_parse"
     },
     {
       "relation": "calls",
@@ -5625,9 +6199,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek_run",
-      "target": "runners_deepseek_parse",
-      "confidence_score": 1.0
+      "target": "runners_deepseek_parse"
     },
     {
       "relation": "calls",
@@ -5636,9 +6210,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L112",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek_main",
-      "target": "runners_deepseek_run",
-      "confidence_score": 1.0
+      "target": "runners_deepseek_run"
     },
     {
       "relation": "calls",
@@ -5647,9 +6221,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek_run",
-      "target": "jevexp_schema_write",
-      "confidence_score": 1.0
+      "target": "jevexp_schema_write"
     },
     {
       "relation": "imports_from",
@@ -5658,9 +6232,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev",
-      "target": "jevexp_schema",
-      "confidence_score": 1.0
+      "target": "jevexp_schema"
     },
     {
       "relation": "imports",
@@ -5669,9 +6243,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev",
-      "target": "jevexp_schema_write",
-      "confidence_score": 1.0
+      "target": "jevexp_schema_write"
     },
     {
       "relation": "contains",
@@ -5679,9 +6253,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev",
-      "target": "runners_jev_main",
-      "confidence_score": 1.0
+      "target": "runners_jev_main"
     },
     {
       "relation": "contains",
@@ -5689,9 +6263,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev",
-      "target": "runners_jev_run",
-      "confidence_score": 1.0
+      "target": "runners_jev_run"
     },
     {
       "relation": "contains",
@@ -5699,9 +6273,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev",
-      "target": "runners_jev_texts",
-      "confidence_score": 1.0
+      "target": "runners_jev_texts"
     },
     {
       "relation": "rationale_for",
@@ -5709,9 +6283,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev_rationale_1",
-      "target": "runners_jev",
-      "confidence_score": 1.0
+      "target": "runners_jev"
     },
     {
       "relation": "rationale_for",
@@ -5719,9 +6293,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev_rationale_22",
-      "target": "runners_jev_texts",
-      "confidence_score": 1.0
+      "target": "runners_jev_texts"
     },
     {
       "relation": "calls",
@@ -5730,9 +6304,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev_run",
-      "target": "runners_jev_texts",
-      "confidence_score": 1.0
+      "target": "runners_jev_texts"
     },
     {
       "relation": "calls",
@@ -5741,9 +6315,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev_main",
-      "target": "runners_jev_run",
-      "confidence_score": 1.0
+      "target": "runners_jev_run"
     },
     {
       "relation": "calls",
@@ -5752,9 +6326,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev_run",
-      "target": "jevexp_schema_write",
-      "confidence_score": 1.0
+      "target": "jevexp_schema_write"
     },
     {
       "relation": "contains",
@@ -5762,9 +6336,9 @@
       "source_file": "src/jevexp/runners/nllb.py",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_nllb",
-      "target": "runners_nllb_main",
-      "confidence_score": 1.0
+      "target": "runners_nllb_main"
     },
     {
       "relation": "contains",
@@ -5772,9 +6346,9 @@
       "source_file": "src/jevexp/runners/nllb.py",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_nllb",
-      "target": "runners_nllb_run",
-      "confidence_score": 1.0
+      "target": "runners_nllb_run"
     },
     {
       "relation": "contains",
@@ -5782,9 +6356,9 @@
       "source_file": "src/jevexp/runners/nllb.py",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_nllb",
-      "target": "runners_nllb_translate",
-      "confidence_score": 1.0
+      "target": "runners_nllb_translate"
     },
     {
       "relation": "rationale_for",
@@ -5792,9 +6366,9 @@
       "source_file": "src/jevexp/runners/nllb.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_nllb_rationale_1",
-      "target": "runners_nllb",
-      "confidence_score": 1.0
+      "target": "runners_nllb"
     },
     {
       "relation": "calls",
@@ -5803,9 +6377,9 @@
       "source_file": "src/jevexp/runners/nllb.py",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_nllb_run",
-      "target": "runners_nllb_translate",
-      "confidence_score": 1.0
+      "target": "runners_nllb_translate"
     },
     {
       "relation": "calls",
@@ -5814,9 +6388,9 @@
       "source_file": "src/jevexp/runners/nllb.py",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_nllb_main",
-      "target": "runners_nllb_run",
-      "confidence_score": 1.0
+      "target": "runners_nllb_run"
     },
     {
       "relation": "contains",
@@ -6182,11 +6756,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_parsing.py",
-      "source_location": "L29",
+      "source_location": "L80",
       "weight": 1.0,
       "source": "tests_test_parsing",
-      "target": "tests_test_parsing_test_jev_choice_reorders_probs_to_canonical",
+      "target": "tests_test_parsing_test_codex_output_schema_and_event_parser",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_parsing.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_parsing",
+      "target": "tests_test_parsing_test_jev_choice_reorders_probs_to_canonical"
     },
     {
       "relation": "contains",
@@ -6194,9 +6778,9 @@
       "source_file": "tests/test_parsing.py",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_parsing",
-      "target": "tests_test_parsing_test_jev_noul_normalised_and_invalid_when_missing",
-      "confidence_score": 1.0
+      "target": "tests_test_parsing_test_jev_noul_normalised_and_invalid_when_missing"
     },
     {
       "relation": "contains",
@@ -6204,9 +6788,9 @@
       "source_file": "tests/test_parsing.py",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_parsing",
-      "target": "tests_test_parsing_test_llm_json",
-      "confidence_score": 1.0
+      "target": "tests_test_parsing_test_llm_json"
     },
     {
       "relation": "contains",
@@ -6214,9 +6798,9 @@
       "source_file": "tests/test_parsing.py",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_parsing",
-      "target": "tests_test_parsing_test_logprob_merges_whitespace_variants_by_max",
-      "confidence_score": 1.0
+      "target": "tests_test_parsing_test_logprob_merges_whitespace_variants_by_max"
     },
     {
       "relation": "contains",
@@ -6224,9 +6808,9 @@
       "source_file": "tests/test_parsing.py",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_parsing",
-      "target": "tests_test_parsing_test_logprob_real_distribution_and_prefix_tokens",
-      "confidence_score": 1.0
+      "target": "tests_test_parsing_test_logprob_real_distribution_and_prefix_tokens"
     },
     {
       "relation": "contains",
@@ -6234,9 +6818,9 @@
       "source_file": "tests/test_parsing.py",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_parsing",
-      "target": "tests_test_parsing_test_render_jev_and_llm_are_deterministic_and_share_text",
-      "confidence_score": 1.0
+      "target": "tests_test_parsing_test_render_jev_and_llm_are_deterministic_and_share_text"
     },
     {
       "relation": "contains",
@@ -6244,9 +6828,9 @@
       "source_file": "tests/test_parsing.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_parsing",
-      "target": "tests_test_parsing_test_spec_keys_are_canonical_labels",
-      "confidence_score": 1.0
+      "target": "tests_test_parsing_test_spec_keys_are_canonical_labels"
     },
     {
       "relation": "contains",
@@ -6254,9 +6838,9 @@
       "source_file": "tests/test_parsing.py",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_parsing",
-      "target": "tests_test_parsing_tok",
-      "confidence_score": 1.0
+      "target": "tests_test_parsing_tok"
     },
     {
       "relation": "calls",
@@ -6265,9 +6849,9 @@
       "source_file": "tests/test_parsing.py",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_parsing_test_logprob_merges_whitespace_variants_by_max",
-      "target": "tests_test_parsing_tok",
-      "confidence_score": 1.0
+      "target": "tests_test_parsing_tok"
     },
     {
       "relation": "calls",
@@ -6276,9 +6860,9 @@
       "source_file": "tests/test_parsing.py",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_parsing_test_logprob_real_distribution_and_prefix_tokens",
-      "target": "tests_test_parsing_tok",
-      "confidence_score": 1.0
+      "target": "tests_test_parsing_tok"
     },
     {
       "relation": "contains",
@@ -6399,9 +6983,9 @@
       "source_file": "prereg/pilot_rules.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prereg_pilot_rules",
-      "target": "prereg_pilot_rules_f2_pilot_rules_committed_before_the_first_pilot_call",
-      "confidence_score": 1.0
+      "target": "prereg_pilot_rules_f2_pilot_rules_committed_before_the_first_pilot_call"
     },
     {
       "relation": "contains",
@@ -6409,9 +6993,9 @@
       "source_file": "prereg/pilot_rules.md",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prereg_pilot_rules_f2_pilot_rules_committed_before_the_first_pilot_call",
-      "target": "prereg_pilot_rules_candidate_jev_formulations_rq4_min",
-      "confidence_score": 1.0
+      "target": "prereg_pilot_rules_candidate_jev_formulations_rq4_min"
     },
     {
       "relation": "contains",
@@ -6419,9 +7003,9 @@
       "source_file": "prereg/pilot_rules.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prereg_pilot_rules_f2_pilot_rules_committed_before_the_first_pilot_call",
-      "target": "prereg_pilot_rules_data",
-      "confidence_score": 1.0
+      "target": "prereg_pilot_rules_data"
     },
     {
       "relation": "contains",
@@ -6429,9 +7013,9 @@
       "source_file": "prereg/pilot_rules.md",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prereg_pilot_rules_f2_pilot_rules_committed_before_the_first_pilot_call",
-      "target": "prereg_pilot_rules_gate",
-      "confidence_score": 1.0
+      "target": "prereg_pilot_rules_gate"
     },
     {
       "relation": "contains",
@@ -6439,9 +7023,9 @@
       "source_file": "prereg/pilot_rules.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prereg_pilot_rules_f2_pilot_rules_committed_before_the_first_pilot_call",
-      "target": "prereg_pilot_rules_llm_arms",
-      "confidence_score": 1.0
+      "target": "prereg_pilot_rules_llm_arms"
     },
     {
       "relation": "contains",
@@ -6449,9 +7033,9 @@
       "source_file": "prereg/pilot_rules.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prereg_pilot_rules_f2_pilot_rules_committed_before_the_first_pilot_call",
-      "target": "prereg_pilot_rules_selection_rule_for_the_primary_formulation_arm_a1",
-      "confidence_score": 1.0
+      "target": "prereg_pilot_rules_selection_rule_for_the_primary_formulation_arm_a1"
     },
     {
       "relation": "contains",
@@ -6459,9 +7043,9 @@
       "source_file": "prereg/protocol.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prereg_protocol",
-      "target": "prereg_protocol_protocol_draft_for_f3_pre_registration_not_yet_locked",
-      "confidence_score": 1.0
+      "target": "prereg_protocol_protocol_draft_for_f3_pre_registration_not_yet_locked"
     },
     {
       "relation": "contains",
@@ -6469,9 +7053,9 @@
       "source_file": "prereg/protocol.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prereg_protocol_protocol_draft_for_f3_pre_registration_not_yet_locked",
-      "target": "prereg_protocol_arms_mvp",
-      "confidence_score": 1.0
+      "target": "prereg_protocol_arms_mvp"
     },
     {
       "relation": "contains",
@@ -6479,9 +7063,9 @@
       "source_file": "prereg/protocol.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prereg_protocol_protocol_draft_for_f3_pre_registration_not_yet_locked",
-      "target": "prereg_protocol_invalid_outputs",
-      "confidence_score": 1.0
+      "target": "prereg_protocol_invalid_outputs"
     },
     {
       "relation": "contains",
@@ -6489,9 +7073,9 @@
       "source_file": "prereg/protocol.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prereg_protocol_protocol_draft_for_f3_pre_registration_not_yet_locked",
-      "target": "prereg_protocol_items",
-      "confidence_score": 1.0
+      "target": "prereg_protocol_items"
     },
     {
       "relation": "contains",
@@ -6499,11 +7083,11 @@
       "source_file": "prereg/protocol.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "prereg_protocol_protocol_draft_for_f3_pre_registration_not_yet_locked",
-      "target": "prereg_protocol_question_spec",
-      "confidence_score": 1.0
+      "target": "prereg_protocol_question_spec"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b4293dd4ad60b46b248917cb220238c577c079ca"
+  "built_at_commit": "35c5cd4d5916fc7b0760fcf190ff28fb42937f76"
 }

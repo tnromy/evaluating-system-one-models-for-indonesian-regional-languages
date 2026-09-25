@@ -80,13 +80,13 @@
     "semantic_hash": ""
   },
   "src/jevexp/parsing.py": {
-    "mtime": 1790300708.5016959,
-    "ast_hash": "eec7b5bc99c4f12138ea8fb283dd7f66",
+    "mtime": 1790304423.623095,
+    "ast_hash": "a0a5cdca9a8c9d03abfe47ddb1d01118",
     "semantic_hash": ""
   },
   "src/jevexp/questions.py": {
-    "mtime": 1790300697.705369,
-    "ast_hash": "7b34ea46156ee4d56bc890678bc743e9",
+    "mtime": 1790304507.1380877,
+    "ast_hash": "d9a09b05c8b9466334134eb96bd63ce1",
     "semantic_hash": ""
   },
   "src/jevexp/report_f2.py": {
@@ -95,8 +95,8 @@
     "semantic_hash": ""
   },
   "src/jevexp/runners/claude.py": {
-    "mtime": 1790301803.2475243,
-    "ast_hash": "a1f407bf6c6ea6f373b215f8f372d863",
+    "mtime": 1790304687.5362527,
+    "ast_hash": "efbc33de546d0952198b2de0c50d6239",
     "semantic_hash": ""
   },
   "src/jevexp/runners/common.py": {
@@ -120,8 +120,8 @@
     "semantic_hash": ""
   },
   "tests/test_parsing.py": {
-    "mtime": 1790300720.8480675,
-    "ast_hash": "c6fb5e883c1f26f910f93f9603063396",
+    "mtime": 1790304507.1463027,
+    "ast_hash": "bb112f03d719b407a2c8f682fb1b3d37",
     "semantic_hash": ""
   },
   "prereg/pilot_rules.md": {
@@ -130,8 +130,13 @@
     "semantic_hash": ""
   },
   "prereg/protocol.md": {
-    "mtime": 1790302307.109675,
-    "ast_hash": "faf25cc628f173e6dcf1ead192fc079d",
+    "mtime": 1790304161.3234885,
+    "ast_hash": "295581495f8e8ddea5fc2ff377ee736d",
+    "semantic_hash": ""
+  },
+  "src/jevexp/runners/codex.py": {
+    "mtime": 1790304507.1461744,
+    "ast_hash": "d65e46ee10d02a0b40b72d82a98a05c7",
     "semantic_hash": ""
   }
 }
