@@ -12,13 +12,13 @@ from ..parsing import jev_answer
 from ..paths import RUNS
 from ..questions import FORMULATIONS, to_jev
 from ..schema import write
-from .common import RawLog, frame, items, load_env, now_utc, post_json, run_parallel
+from .common import RawLog, frame, items, load_env, now_utc, post_json, run_parallel, run_tag
 
 URL = "https://openrouter.ai/api/v1/systemone"
 MODEL = "jev-1.13"
 
 
-def _texts(arm, dataset, todo):
+def _texts(arm, dataset, todo, tag):
     """Replace item text according to the arm; A4 collapses to one item per sentence_id (lang='ind')."""
     if arm == "A1":
         return todo
@@ -31,18 +31,18 @@ def _texts(arm, dataset, todo):
                 out.append({**it, "lang": "ind", "text": src[it["sentence_id"]]})
         return out
     if arm == "A3":
-        mt = pd.read_parquet(RUNS / "nllb" / f"{dataset}_{todo[0]['split']}.parquet")
+        mt = pd.read_parquet(RUNS / "nllb" / f"{dataset}_{tag}.parquet")
         mt = {(r.lang, r.sentence_id): r.mt for r in mt.itertuples()}
         return [{**it, "text": mt[(it["lang"], it["sentence_id"])]} for it in todo if (it["lang"], it["sentence_id"]) in mt]
     raise ValueError(arm)
 
 
-def run(arm, formulation, dataset, split, workers=8):
+def run(arm, formulation, dataset, split, scope=None, workers=8):
     load_env()
     key = os.environ["OPENROUTER_API_KEY"]
-    run_id = f"{split}-{arm}-{formulation}-{dataset}"
+    run_id = f"{run_tag(split, scope)}-{arm}-{formulation}-{dataset}"
     log = RawLog("jev", run_id)
-    todo = _texts(arm, dataset, items(dataset, split))
+    todo = _texts(arm, dataset, items(dataset, split, scope), run_tag(split, scope))
 
     def call(it):
         body = {"model": MODEL, **to_jev(dataset, formulation, it["text"])}
@@ -74,9 +74,10 @@ def main(argv=None):
     ap.add_argument("--formulation", choices=list(FORMULATIONS), default="choice_en")
     ap.add_argument("--dataset", required=True)
     ap.add_argument("--split", choices=["valid", "test"], default="valid")
+    ap.add_argument("--scope", choices=["pilot", "full", "subset"])
     ap.add_argument("--workers", type=int, default=8)
     a = ap.parse_args(argv)
-    df = run(a.arm, a.formulation, a.dataset, a.split, a.workers)
+    df = run(a.arm, a.formulation, a.dataset, a.split, a.scope, a.workers)
     print(f"{len(df)} rows, INVALID {(df['pred'] == 'INVALID').mean():.2%}, "
           f"cost ${df['cost_usd'].fillna(0).sum():.5f}, versions {sorted(df['model_version'].dropna().unique())}")
 

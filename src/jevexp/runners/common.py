@@ -37,14 +37,27 @@ def now_utc():
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
-def items(dataset, split, ids_file=PILOT, langs=None):
-    """Items (dataset, split, lang, sentence_id, gold, text) restricted to the ids listed for `dataset`."""
+def items(dataset, split, scope=None, langs=None):
+    """Items (dataset, split, lang, sentence_id, gold, text) of the parallel languages.
+
+    scope: valid -> "pilot" (splits/pilot.json, the only valid scope);
+           test  -> "full" (every item) or "subset" (splits/subsets.json), required (K50).
+    """
     guard_split(split)
-    sel = json.loads((ids_file if split == "valid" else SUBSETS).read_text()) if ids_file else None
+    scope = scope or ("pilot" if split == "valid" else None)
+    allowed = {"valid": {"pilot"}, "test": {"full", "subset"}}[split]
+    if scope not in allowed:
+        raise ValueError(f"split={split} needs scope in {sorted(allowed)}, got {scope!r}")
     df = load(dataset, split=split, langs=langs or DATASETS[dataset]["parallel_langs"])
-    if sel is not None:
+    if scope != "full":
+        sel = json.loads((PILOT if scope == "pilot" else SUBSETS).read_text())
         df = df[df["sentence_id"].isin(set(sel[dataset]["sentence_ids"]))]
     return df.rename(columns={"label": "gold"}).to_dict("records")
+
+
+def run_tag(split, scope):
+    """Prefix of run ids: 'valid' for the pilot (unchanged), 'test-full' / 'test-subset' on test."""
+    return split if split == "valid" else f"{split}-{scope}"
 
 
 def post_json(url, key, body, timeout=60, retries=3):

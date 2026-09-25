@@ -15,7 +15,7 @@ from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
 from ..data import ind_source
 from ..paths import RUNS
-from .common import items
+from .common import items, run_tag
 
 MODEL = "facebook/nllb-200-distilled-600M"
 NLLB_CODES = {"ace": "ace_Latn", "ban": "ban_Latn", "bjn": "bjn_Latn", "bug": "bug_Latn",
@@ -36,8 +36,8 @@ def translate(texts, src_code, tok, model, batch_size=16, max_length=256):
     return out
 
 
-def run(dataset, split, batch_size=16):
-    todo = [it for it in items(dataset, split) if it["lang"] in NLLB_CODES]
+def run(dataset, split, batch_size=16, scope=None):
+    todo = [it for it in items(dataset, split, scope) if it["lang"] in NLLB_CODES]
     langs = sorted({it["lang"] for it in todo})
     device = "cuda" if torch.cuda.is_available() else "cpu"
     tok = AutoTokenizer.from_pretrained(MODEL)
@@ -58,8 +58,9 @@ def run(dataset, split, batch_size=16):
                  for it, m, r in zip(sub, mt, refs)]
     out = RUNS / "nllb"
     out.mkdir(parents=True, exist_ok=True)
-    pd.DataFrame(rows).to_parquet(out / f"{dataset}_{split}.parquet", index=False)
-    pd.DataFrame(stats).assign(model=MODEL, device=device).to_csv(out / f"{dataset}_{split}_stats.csv", index=False)
+    tag = run_tag(split, scope)
+    pd.DataFrame(rows).to_parquet(out / f"{dataset}_{tag}.parquet", index=False)
+    pd.DataFrame(stats).assign(model=MODEL, device=device).to_csv(out / f"{dataset}_{tag}_stats.csv", index=False)
     return stats
 
 
@@ -68,8 +69,9 @@ def main(argv=None):
     ap.add_argument("--dataset", required=True)
     ap.add_argument("--split", choices=["valid", "test"], default="valid")
     ap.add_argument("--batch-size", type=int, default=16)
+    ap.add_argument("--scope", choices=["pilot", "full", "subset"])
     a = ap.parse_args(argv)
-    run(a.dataset, a.split, a.batch_size)
+    run(a.dataset, a.split, a.batch_size, a.scope)
 
 
 if __name__ == "__main__":

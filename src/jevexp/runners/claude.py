@@ -17,7 +17,7 @@ from ..parsing import llm_json
 from ..paths import RUNS
 from ..questions import output_schema, to_llm_messages
 from ..schema import write
-from .common import RawLog, frame, items, now_utc, run_parallel
+from .common import RawLog, frame, items, now_utc, run_parallel, run_tag
 
 EMPTY_CWD = RUNS / "claude" / "cwd_empty"
 
@@ -36,11 +36,11 @@ def call_cli(model, system, user, schema, timeout=180):
     return {"status": status, "latency_ms": round((time.perf_counter() - t0) * 1000, 1), "response": out}
 
 
-def run(dataset, split, model, limit=None, workers=4):
+def run(dataset, split, model, limit=None, workers=4, scope=None):
     EMPTY_CWD.mkdir(parents=True, exist_ok=True)
-    run_id = f"{split}-D3-{model}-{dataset}" + (f"-n{limit}" if limit else "")
+    run_id = f"{run_tag(split, scope)}-D3-{model}-{dataset}" + (f"-n{limit}" if limit else "")
     log = RawLog("claude", run_id)
-    todo = items(dataset, split)
+    todo = items(dataset, split, scope)
     if limit:
         keep = sorted({it["sentence_id"] for it in todo})[:limit]
         todo = [it for it in todo if it["sentence_id"] in keep]
@@ -87,9 +87,10 @@ def main(argv=None):
     ap.add_argument("--split", choices=["valid", "test"], default="valid")
     ap.add_argument("--model", default="claude-sonnet-5")
     ap.add_argument("--limit", type=int)
+    ap.add_argument("--scope", choices=["pilot", "full", "subset"])
     ap.add_argument("--workers", type=int, default=4)
     a = ap.parse_args(argv)
-    run(a.dataset, a.split, a.model, a.limit, a.workers)
+    run(a.dataset, a.split, a.model, a.limit, a.workers, a.scope)
 
 
 if __name__ == "__main__":

@@ -18,7 +18,7 @@ from ..parsing import llm_json, logprob_label_dist
 from ..paths import RUNS
 from ..questions import to_llm_messages
 from ..schema import write
-from .common import RawLog, frame, items, load_env, now_utc, post_json, run_parallel
+from .common import RawLog, frame, items, load_env, now_utc, post_json, run_parallel, run_tag
 
 URL = "https://api.deepseek.com/chat/completions"
 # USD per 1M tokens at PEAK rates (conservative upper bound; off-peak is half). api-docs.deepseek.com, 2026-09-25.
@@ -58,14 +58,14 @@ def parse(resp, labels):
     return labels[max(range(len(labels)), key=lambda i: dist[i])], dist, "logprob", False
 
 
-def run(dataset, split, model, thinking, limit=None, workers=8):
+def run(dataset, split, model, thinking, limit=None, workers=8, scope=None):
     load_env()
     key = os.environ["DEEPSEEK_API_KEY"]
     arm = "D2" if (thinking or model != "deepseek-flash") else "D1"
     tag = f"{model}-{'think' if thinking else 'nothink'}"
-    run_id = f"{split}-{arm}-{tag}-{dataset}" + (f"-n{limit}" if limit else "")
+    run_id = f"{run_tag(split, scope)}-{arm}-{tag}-{dataset}" + (f"-n{limit}" if limit else "")
     log = RawLog("deepseek", run_id)
-    todo = items(dataset, split)
+    todo = items(dataset, split, scope)
     if limit:  # first `limit` sentence_ids (all languages), deterministic
         keep = sorted({it["sentence_id"] for it in todo})[:limit]
         todo = [it for it in todo if it["sentence_id"] in keep]
@@ -107,9 +107,10 @@ def main(argv=None):
     ap.add_argument("--model", choices=["deepseek-flash", "deepseek-v4-pro"], default="deepseek-flash")
     ap.add_argument("--thinking", action="store_true")
     ap.add_argument("--limit", type=int)
+    ap.add_argument("--scope", choices=["pilot", "full", "subset"])
     ap.add_argument("--workers", type=int, default=8)
     a = ap.parse_args(argv)
-    run(a.dataset, a.split, a.model, a.thinking, a.limit, a.workers)
+    run(a.dataset, a.split, a.model, a.thinking, a.limit, a.workers, a.scope)
 
 
 if __name__ == "__main__":
