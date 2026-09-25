@@ -1,16 +1,16 @@
-# Graph Report - jev  (2026-09-24)
+# Graph Report - jev  (2026-09-25)
 
 ## Corpus Check
-- 14 files · ~3,869 words
+- 15 files · ~4,537 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 96 nodes · 158 edges · 13 communities (12 shown, 1 thin omitted)
-- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.8)
+- 105 nodes · 171 edges · 14 communities (13 shown, 1 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `fd6990f7`
+- Built from commit: `82b6ae34`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -27,18 +27,19 @@
 - [[_COMMUNITY_Community 10|Community 10]]
 - [[_COMMUNITY_Community 11|Community 11]]
 - [[_COMMUNITY_Community 12|Community 12]]
+- [[_COMMUNITY_Community 13|Community 13]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `load()` - 11 edges
 2. `run()` - 7 edges
 3. `validate()` - 7 edges
-4. `fetch()` - 6 edges
-5. `reliability_bins()` - 6 edges
-6. `ece()` - 6 edges
-7. `fit_select()` - 6 edges
-8. `parallel_report()` - 5 edges
-9. `write()` - 5 edges
-10. `test_fit_select_and_schema()` - 5 edges
+4. `main()` - 6 edges
+5. `fetch()` - 6 edges
+6. `reliability_bins()` - 6 edges
+7. `ece()` - 6 edges
+8. `fit_select()` - 6 edges
+9. `parallel_report()` - 5 edges
+10. `write()` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `test_anchor_matches_official_notebook_output()` --calls--> `load()`  [EXTRACTED]
@@ -55,7 +56,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (13 total, 1 thin omitted)
+## Communities (14 total, 1 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.35
@@ -101,6 +102,10 @@ Nodes (5): ece(), Expected calibration error of the top-class confidence (Naeini
 Cohesion: 0.67
 Nodes (3): brier(), Multiclass Brier score: mean over items of sum_k (p_k - 1[y=k])^2., test_brier()
 
+### Community 13 - "Community 13"
+Cohesion: 0.36
+Nodes (8): deepseek_body(), jev_body(), label_distribution(), load_env(), main(), post(), Smoke test of the two paid APIs (F2 prerequisite). Uses hand-written sentences o, Distribution over OPTIONS from top_logprobs at the first token that starts a lab
+
 ## Knowledge Gaps
 - **3 isolated node(s):** `Setup (reproducible)`, `Layout`, `Data (pinned)`
   These have ≤1 connection - possible missing edges or undocumented components.
@@ -110,10 +115,10 @@ Nodes (3): brier(), Multiclass Brier score: mean over items of sum_k (p_k - 1[y=
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `load()` connect `Community 1` to `Community 3`?**
-  _High betweenness centrality (0.070) - this node is a cross-community bridge._
+  _High betweenness centrality (0.058) - this node is a cross-community bridge._
 - **Why does `validate()` connect `Community 0` to `Community 3`?**
-  _High betweenness centrality (0.047) - this node is a cross-community bridge._
+  _High betweenness centrality (0.039) - this node is a cross-community bridge._
 - **Why does `ece()` connect `Community 10` to `Community 2`?**
-  _High betweenness centrality (0.041) - this node is a cross-community bridge._
-- **What connects `Experiment harness for journal 010 (see docs/metodologi.md in the journal folder`, `Pinned download, uniform loading and fixed subsets for the three datasets.  Data`, `Return (url, local relative path) for one CSV at the pinned commit.` to the rest of the system?**
-  _28 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.034) - this node is a cross-community bridge._
+- **What connects `Smoke test of the two paid APIs (F2 prerequisite). Uses hand-written sentences o`, `Distribution over OPTIONS from top_logprobs at the first token that starts a lab`, `Experiment harness for journal 010 (see docs/metodologi.md in the journal folder` to the rest of the system?**
+  _30 weakly-connected nodes found - possible documentation gaps or missing edges._

@@ -4,6 +4,96 @@
   "graph": {},
   "nodes": [
     {
+      "label": "smoke_api.py",
+      "file_type": "code",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_smoke_api",
+      "community": 13,
+      "norm_label": "smoke_api.py"
+    },
+    {
+      "label": "load_env()",
+      "file_type": "code",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "scripts_smoke_api_load_env",
+      "community": 13,
+      "norm_label": "load_env()"
+    },
+    {
+      "label": "post()",
+      "file_type": "code",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "scripts_smoke_api_post",
+      "community": 13,
+      "norm_label": "post()"
+    },
+    {
+      "label": "jev_body()",
+      "file_type": "code",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "scripts_smoke_api_jev_body",
+      "community": 13,
+      "norm_label": "jev_body()"
+    },
+    {
+      "label": "deepseek_body()",
+      "file_type": "code",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "scripts_smoke_api_deepseek_body",
+      "community": 13,
+      "norm_label": "deepseek_body()"
+    },
+    {
+      "label": "label_distribution()",
+      "file_type": "code",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "scripts_smoke_api_label_distribution",
+      "community": 13,
+      "norm_label": "label_distribution()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "scripts_smoke_api_main",
+      "community": 13,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Smoke test of the two paid APIs (F2 prerequisite). Uses hand-written sentences o",
+      "file_type": "rationale",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_smoke_api_rationale_1",
+      "community": 13,
+      "norm_label": "smoke test of the two paid apis (f2 prerequisite). uses hand-written sentences o"
+    },
+    {
+      "label": "Distribution over OPTIONS from top_logprobs at the first token that starts a lab",
+      "file_type": "rationale",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "scripts_smoke_api_rationale_79",
+      "community": 13,
+      "norm_label": "distribution over options from top_logprobs at the first token that starts a lab"
+    },
+    {
       "label": "__init__.py",
       "file_type": "code",
       "source_file": "src/jevexp/__init__.py",
@@ -966,6 +1056,141 @@
   ],
   "links": [
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "scripts_smoke_api",
+      "target": "scripts_smoke_api_deepseek_body",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "scripts_smoke_api",
+      "target": "scripts_smoke_api_jev_body",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "scripts_smoke_api",
+      "target": "scripts_smoke_api_label_distribution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "scripts_smoke_api",
+      "target": "scripts_smoke_api_load_env",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "scripts_smoke_api",
+      "target": "scripts_smoke_api_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "scripts_smoke_api",
+      "target": "scripts_smoke_api_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_smoke_api_rationale_1",
+      "target": "scripts_smoke_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "scripts_smoke_api_main",
+      "target": "scripts_smoke_api_load_env",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L114",
+      "weight": 1.0,
+      "source": "scripts_smoke_api_main",
+      "target": "scripts_smoke_api_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L114",
+      "weight": 1.0,
+      "source": "scripts_smoke_api_main",
+      "target": "scripts_smoke_api_jev_body",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "scripts_smoke_api_main",
+      "target": "scripts_smoke_api_deepseek_body",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L135",
+      "weight": 1.0,
+      "source": "scripts_smoke_api_main",
+      "target": "scripts_smoke_api_label_distribution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/smoke_api.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "scripts_smoke_api_rationale_79",
+      "target": "scripts_smoke_api_label_distribution",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/jevexp/__init__.py",
@@ -1104,9 +1329,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline",
-      "target": "jevexp_data",
-      "confidence_score": 1.0
+      "target": "jevexp_data"
     },
     {
       "relation": "imports_from",
@@ -1115,9 +1340,9 @@
       "source_file": "tests/test_baseline.py",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_baseline",
-      "target": "jevexp_data",
-      "confidence_score": 1.0
+      "target": "jevexp_data"
     },
     {
       "relation": "imports_from",
@@ -1244,9 +1469,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline",
-      "target": "jevexp_data_load",
-      "confidence_score": 1.0
+      "target": "jevexp_data_load"
     },
     {
       "relation": "calls",
@@ -1255,9 +1480,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline_run",
-      "target": "jevexp_data_load",
-      "confidence_score": 1.0
+      "target": "jevexp_data_load"
     },
     {
       "relation": "calls",
@@ -1773,9 +1998,9 @@
       "source_file": "src/jevexp/nusax_reference.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_nusax_reference_rationale_1",
-      "target": "jevexp_nusax_reference",
-      "confidence_score": 1.0
+      "target": "jevexp_nusax_reference"
     },
     {
       "relation": "imports_from",
@@ -1784,9 +2009,9 @@
       "source_file": "src/jevexp/report_f1.py",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f1",
-      "target": "jevexp_nusax_reference",
-      "confidence_score": 1.0
+      "target": "jevexp_nusax_reference"
     },
     {
       "relation": "imports_from",
@@ -1795,9 +2020,9 @@
       "source_file": "src/jevexp/report_f1.py",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f1",
-      "target": "jevexp_paths",
-      "confidence_score": 1.0
+      "target": "jevexp_paths"
     },
     {
       "relation": "imports_from",
@@ -1806,9 +2031,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline",
-      "target": "jevexp_paths",
-      "confidence_score": 1.0
+      "target": "jevexp_paths"
     },
     {
       "relation": "imports_from",
@@ -1817,9 +2042,9 @@
       "source_file": "tests/test_baseline.py",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_baseline",
-      "target": "jevexp_paths",
-      "confidence_score": 1.0
+      "target": "jevexp_paths"
     },
     {
       "relation": "imports_from",
@@ -1838,9 +2063,9 @@
       "source_file": "src/jevexp/report_f1.py",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f1",
-      "target": "jevexp_report_f1_compare",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f1_compare"
     },
     {
       "relation": "contains",
@@ -1848,9 +2073,9 @@
       "source_file": "src/jevexp/report_f1.py",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f1",
-      "target": "jevexp_report_f1_main",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f1_main"
     },
     {
       "relation": "contains",
@@ -1858,9 +2083,9 @@
       "source_file": "src/jevexp/report_f1.py",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f1",
-      "target": "jevexp_report_f1_markdown",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f1_markdown"
     },
     {
       "relation": "contains",
@@ -1868,9 +2093,9 @@
       "source_file": "src/jevexp/report_f1.py",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f1",
-      "target": "jevexp_report_f1_variants",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f1_variants"
     },
     {
       "relation": "rationale_for",
@@ -1878,9 +2103,9 @@
       "source_file": "src/jevexp/report_f1.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f1_rationale_1",
-      "target": "jevexp_report_f1",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f1"
     },
     {
       "relation": "imports_from",
@@ -1889,9 +2114,9 @@
       "source_file": "tests/test_baseline.py",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_baseline",
-      "target": "jevexp_report_f1",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f1"
     },
     {
       "relation": "calls",
@@ -1900,9 +2125,9 @@
       "source_file": "src/jevexp/report_f1.py",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f1_compare",
-      "target": "jevexp_report_f1_variants",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f1_variants"
     },
     {
       "relation": "rationale_for",
@@ -1910,9 +2135,9 @@
       "source_file": "src/jevexp/report_f1.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f1_rationale_20",
-      "target": "jevexp_report_f1_variants",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f1_variants"
     },
     {
       "relation": "calls",
@@ -1921,9 +2146,9 @@
       "source_file": "src/jevexp/report_f1.py",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f1_main",
-      "target": "jevexp_report_f1_compare",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f1_compare"
     },
     {
       "relation": "calls",
@@ -1943,9 +2168,9 @@
       "source_file": "src/jevexp/report_f1.py",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f1_main",
-      "target": "jevexp_report_f1_markdown",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f1_markdown"
     },
     {
       "relation": "imports_from",
@@ -1954,9 +2179,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline",
-      "target": "jevexp_schema",
-      "confidence_score": 1.0
+      "target": "jevexp_schema"
     },
     {
       "relation": "imports",
@@ -1965,9 +2190,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline",
-      "target": "jevexp_schema_write",
-      "confidence_score": 1.0
+      "target": "jevexp_schema_write"
     },
     {
       "relation": "contains",
@@ -1975,9 +2200,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline",
-      "target": "runners_baseline_fit_select",
-      "confidence_score": 1.0
+      "target": "runners_baseline_fit_select"
     },
     {
       "relation": "contains",
@@ -1985,9 +2210,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline",
-      "target": "runners_baseline_main",
-      "confidence_score": 1.0
+      "target": "runners_baseline_main"
     },
     {
       "relation": "contains",
@@ -1995,9 +2220,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline",
-      "target": "runners_baseline_prediction_frame",
-      "confidence_score": 1.0
+      "target": "runners_baseline_prediction_frame"
     },
     {
       "relation": "contains",
@@ -2005,9 +2230,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L82",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline",
-      "target": "runners_baseline_run",
-      "confidence_score": 1.0
+      "target": "runners_baseline_run"
     },
     {
       "relation": "contains",
@@ -2015,9 +2240,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline",
-      "target": "runners_baseline_tokenize",
-      "confidence_score": 1.0
+      "target": "runners_baseline_tokenize"
     },
     {
       "relation": "rationale_for",
@@ -2025,9 +2250,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline_rationale_1",
-      "target": "runners_baseline",
-      "confidence_score": 1.0
+      "target": "runners_baseline"
     },
     {
       "relation": "calls",
@@ -2036,9 +2261,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline_fit_select",
-      "target": "runners_baseline_tokenize",
-      "confidence_score": 1.0
+      "target": "runners_baseline_tokenize"
     },
     {
       "relation": "calls",
@@ -2057,9 +2282,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline_rationale_46",
-      "target": "runners_baseline_fit_select",
-      "confidence_score": 1.0
+      "target": "runners_baseline_fit_select"
     },
     {
       "relation": "calls",
@@ -2068,9 +2293,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline_run",
-      "target": "runners_baseline_fit_select",
-      "confidence_score": 1.0
+      "target": "runners_baseline_fit_select"
     },
     {
       "relation": "calls",
@@ -2101,9 +2326,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline_run",
-      "target": "runners_baseline_prediction_frame",
-      "confidence_score": 1.0
+      "target": "runners_baseline_prediction_frame"
     },
     {
       "relation": "calls",
@@ -2123,9 +2348,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L114",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline_main",
-      "target": "runners_baseline_run",
-      "confidence_score": 1.0
+      "target": "runners_baseline_run"
     },
     {
       "relation": "rationale_for",
@@ -2133,9 +2358,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline_rationale_83",
-      "target": "runners_baseline_run",
-      "confidence_score": 1.0
+      "target": "runners_baseline_run"
     },
     {
       "relation": "calls",
@@ -2144,9 +2369,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline_run",
-      "target": "jevexp_schema_write",
-      "confidence_score": 1.0
+      "target": "jevexp_schema_write"
     },
     {
       "relation": "contains",
@@ -2195,9 +2420,9 @@
       "source_file": "tests/test_baseline.py",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_baseline",
-      "target": "jevexp_schema",
-      "confidence_score": 1.0
+      "target": "jevexp_schema"
     },
     {
       "relation": "imports_from",
@@ -2303,9 +2528,9 @@
       "source_file": "tests/test_baseline.py",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_baseline",
-      "target": "tests_test_baseline_test_anchor_matches_official_notebook_output",
-      "confidence_score": 1.0
+      "target": "tests_test_baseline_test_anchor_matches_official_notebook_output"
     },
     {
       "relation": "contains",
@@ -2313,9 +2538,9 @@
       "source_file": "tests/test_baseline.py",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_baseline",
-      "target": "tests_test_baseline_test_fit_select_and_schema",
-      "confidence_score": 1.0
+      "target": "tests_test_baseline_test_fit_select_and_schema"
     },
     {
       "relation": "contains",
@@ -2323,9 +2548,9 @@
       "source_file": "tests/test_baseline.py",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_baseline",
-      "target": "tests_test_baseline_test_report_select_valid_picks_best_validation",
-      "confidence_score": 1.0
+      "target": "tests_test_baseline_test_report_select_valid_picks_best_validation"
     },
     {
       "relation": "contains",
@@ -2333,9 +2558,9 @@
       "source_file": "tests/test_baseline.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_baseline",
-      "target": "tests_test_baseline_test_tokenize_matches_notebook",
-      "confidence_score": 1.0
+      "target": "tests_test_baseline_test_tokenize_matches_notebook"
     },
     {
       "relation": "contains",
@@ -2343,9 +2568,9 @@
       "source_file": "tests/test_baseline.py",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_baseline",
-      "target": "tests_test_baseline_toy",
-      "confidence_score": 1.0
+      "target": "tests_test_baseline_toy"
     },
     {
       "relation": "calls",
@@ -2354,9 +2579,9 @@
       "source_file": "tests/test_baseline.py",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_baseline_test_fit_select_and_schema",
-      "target": "tests_test_baseline_toy",
-      "confidence_score": 1.0
+      "target": "tests_test_baseline_toy"
     },
     {
       "relation": "rationale_for",
@@ -2364,9 +2589,9 @@
       "source_file": "tests/test_baseline.py",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_baseline_rationale_56",
-      "target": "tests_test_baseline_test_anchor_matches_official_notebook_output",
-      "confidence_score": 1.0
+      "target": "tests_test_baseline_test_anchor_matches_official_notebook_output"
     },
     {
       "relation": "contains",
@@ -2623,5 +2848,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "fd6990f766a4ad96c1398c180c1d55141c7be320"
+  "built_at_commit": "82b6ae34c760f253c7f3223afef224d73e995a88"
 }

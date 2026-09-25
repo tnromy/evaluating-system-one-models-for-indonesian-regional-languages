@@ -73,5 +73,10 @@
     "mtime": 1790236649.8961885,
     "ast_hash": "6cc133ada328012e80434d7494a9932e",
     "semantic_hash": ""
+  },
+  "scripts/smoke_api.py": {
+    "mtime": 1790299305.6248,
+    "ast_hash": "9e7d8f4bdd01976abcbecfcbcd805848",
+    "semantic_hash": ""
   }
 }
