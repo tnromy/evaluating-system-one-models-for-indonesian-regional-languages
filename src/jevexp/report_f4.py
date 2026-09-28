@@ -14,6 +14,7 @@ from .paths import RESULTS, RUNS
 from .schema import read
 
 JEV_SNAPSHOT = "typesafe/jev-1.13-20260917"
+SUBSET_ROWS = {"nusax_senti": 1200, "nt_senti": 1400, "nt_emot": 1400}  # splits/subsets.json x parallel langs
 
 
 def status(path):
@@ -33,6 +34,9 @@ def check(path):
     problems = []
     if s["invalid_pct"] > 1:
         problems.append(f"INVALID {s['invalid_pct']} % > 1 %")
+    expected = SUBSET_ROWS.get(path.stem.rsplit("-", 1)[-1]) if path.stem.startswith("test-subset-") else None
+    if expected and s["rows"] != expected:  # CLI ladder runs: every subset item must be present (K52 retries)
+        problems.append(f"incomplete: {s['rows']}/{expected} rows (rerun the same command to fill the gap)")
     if s["arm"].startswith("A") and s["versions"] != JEV_SNAPSHOT:
         problems.append(f"Jev snapshot(s) {s['versions']} != {JEV_SNAPSHOT}")
     print(f"{s['run']}: rows {s['rows']}, INVALID {s['invalid_pct']} %, versions {s['versions']}, "
