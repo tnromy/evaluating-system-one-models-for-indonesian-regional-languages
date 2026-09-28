@@ -77,7 +77,7 @@ def train(run, data, lr, bs, ctx):
         set_rng_state(ck["rng"])
         st = ck["st"]
         ctx["log"](f"  resumed at epoch {st['epoch']} (best valid F1 {st['best_f1']:.4f} @ {st['best_epoch']})")
-    max_epochs = ctx.get("max_epochs", MAX_EPOCHS)
+    max_epochs = ctx.get("max_epochs") or MAX_EPOCHS  # the worker passes None when unset
     while st["epoch"] < max_epochs and st["bad"] < PATIENCE:
         t0 = time.perf_counter()
         model.train()

@@ -8,7 +8,7 @@ if [ -n "$(git status --porcelain -- src splits data/MANIFEST.json pyproject.tom
   echo "uncommitted changes in src/splits/notebooks: commit first"; exit 1
 fi
 out=dist/f5
-rm -rf "$out" && mkdir -p "$out"
+mkdir -p "$out" && rm -f "$out/jev_f5_bundle.zip" "$out/f5_colab.ipynb"   # keep the user's config.json
 stage=$(mktemp -d)
 trap 'rm -rf "$stage"' EXIT
 mkdir "$stage/jev"

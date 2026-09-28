@@ -173,3 +173,14 @@ def test_pred_frame_valid(tiny):
            "train_lang": "ind", "n": None}
     p = torch.softmax(torch.randn(len(valid), 3), -1).numpy()
     validate(pred_frame(run, "valid", valid, p, "m", "v", 40, 1.0))
+
+
+def test_hf_train_with_worker_default_ctx(tiny, tmp_path):
+    """The worker passes max_epochs=None (Colab default): training must fall back to MAX_EPOCHS, not crash."""
+    store = LocalStore(tmp_path / "store")
+    w = W.Worker(store, work=tmp_path / "work", log=lambda m: None)
+    ctx = w._ctx("b2-w")
+    assert ctx["max_epochs"] is None
+    run = {"run_id": "b2-w", "arm": "B2", "dataset": "nusax_senti", "seed": 0}
+    res = hf_clf.train(run, tiny, 1e-3, 8, ctx)
+    assert 1 <= res["epochs"] <= hf_clf.MAX_EPOCHS and res["test_probs"].shape == (12, 3)
