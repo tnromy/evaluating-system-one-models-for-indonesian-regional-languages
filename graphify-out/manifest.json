@@ -205,8 +205,8 @@
     "semantic_hash": ""
   },
   "scripts/f5_notebook.py": {
-    "mtime": 1790563779.8853693,
-    "ast_hash": "a4d5bf3f55309e57ab4f116caec8ee91",
+    "mtime": 1790577859.8607793,
+    "ast_hash": "7bb59d52f1b3e42908ec814ef2175301",
     "semantic_hash": ""
   },
   "src/jevexp/ft/__init__.py": {
@@ -245,8 +245,8 @@
     "semantic_hash": ""
   },
   "src/jevexp/ft/worker.py": {
-    "mtime": 1790563391.726771,
-    "ast_hash": "49afe30fbf68ef2d97de4d002d2ec6cf",
+    "mtime": 1790577751.1190007,
+    "ast_hash": "599a0400feeb16ddd50dd997f9998bf7",
     "semantic_hash": ""
   },
   "src/jevexp/report_f4.py": {
@@ -255,8 +255,8 @@
     "semantic_hash": ""
   },
   "tests/test_ft.py": {
-    "mtime": 1790576944.8650856,
-    "ast_hash": "010dd9646b98914ee1223c598968f3fb",
+    "mtime": 1790577767.0197988,
+    "ast_hash": "8687ef201d8d045214d7ca2c5c2b5ca2",
     "semantic_hash": ""
   },
   "tests/test_infra.py": {
@@ -267,6 +267,11 @@
   "tests/test_scope.py": {
     "mtime": 1790313936.2130249,
     "ast_hash": "56dd306e3419e6a7ff709df351cb32c0",
+    "semantic_hash": ""
+  },
+  "src/jevexp/ft/progress.py": {
+    "mtime": 1790577824.5819545,
+    "ast_hash": "f36b90037c885f14be67adabd8b33166",
     "semantic_hash": ""
   }
 }
