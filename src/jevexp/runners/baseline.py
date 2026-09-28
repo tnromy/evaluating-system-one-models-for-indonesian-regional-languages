@@ -7,6 +7,7 @@
 Test data is read here by design (K31): the protocol is fully pre-specified, nothing is tuned on test.
 
 CLI:  python -m jevexp.runners.baseline --dataset {nusax_senti,nt_senti,nt_emot,all}
+      python -m jevexp.runners.baseline --dataset nusax_senti --curves   # H3a learning curves, B1-LR (LR-BoW)
 Needs NLTK data `punkt_tab` (nltk.download('punkt_tab')).
 """
 import argparse
@@ -42,7 +43,7 @@ def tokenize(texts):
     return [" ".join(word_tokenize(t)) for t in texts]
 
 
-def fit_select(train, valid, test, clf, feature):
+def fit_select(train, valid, test, clf, feature, n_jobs=None):
     """One notebook run. Frames have columns text, label. Returns dict with fitted search + test outputs."""
     xtr, xva, xte = tokenize(train["text"]), tokenize(valid["text"]), tokenize(test["text"])
     vec = FEATURES[feature]().fit(xtr)
@@ -51,7 +52,7 @@ def fit_select(train, valid, test, clf, feature):
     model, grid = CLASSIFIERS[clf]
     ps = PredefinedSplit([-1] * len(ytr) + [0] * len(yva))
     t0 = time.perf_counter()
-    search = GridSearchCV(model(), grid, cv=ps).fit(vstack([xtr, xva]), ytr + yva)
+    search = GridSearchCV(model(), grid, cv=ps, n_jobs=n_jobs).fit(vstack([xtr, xva]), ytr + yva)
     train_time = time.perf_counter() - t0
     est = search.best_estimator_
     pred = est.predict(xte)
@@ -104,10 +105,47 @@ def run(dataset):
     return rows, params
 
 
+def run_curves(dataset, clf="lr", feature="bow"):
+    """H3a (analysis_plan §6): per language, the frozen F5 train subsets (splits/f5_plan.json, shared with B2/C1),
+    hyperparameters re-selected on the full validation split with the official protocol for every subset."""
+    from ..ft.plan import load_plan
+    plan, plan_sha = load_plan()
+    run_id = f"B1curve-{dataset}-{datetime.now(timezone.utc):%Y%m%dT%H%M%S}"
+    df = load(dataset, langs=DATASETS[dataset]["parallel_langs"])
+    frames, rows = [], []
+    for lang in DATASETS[dataset]["parallel_langs"]:
+        sub = df[df["lang"] == lang]
+        train, valid, test = (sub[sub["split"] == s] for s in ("train", "valid", "test"))
+        for seed, by_n in plan["curves"][dataset].items():
+            for n, ids in by_n.items():
+                tr = train[train["sentence_id"].isin(set(ids))]
+                assert len(tr) == int(n)
+                out = fit_select(tr, valid, test, clf, feature, n_jobs=-1)
+                f = _prediction_frame(run_id, dataset, lang, test, out, clf, feature)
+                f["condition"] = f"clf={clf};feat={feature};n={n};seed={seed}"
+                f["seed"] = int(seed)
+                frames.append(f)
+                rows.append({"dataset": dataset, "lang": lang, "seed": int(seed), "n": int(n),
+                             "valid_acc": out["search"].best_score_,
+                             "best_params": json.dumps({k: float(v) if isinstance(v, np.floating) else v
+                                                        for k, v in out["search"].best_params_.items()}),
+                             "train_time_s": out["train_time_s"], "plan_sha": plan_sha})
+        print(f"{dataset} {lang} curves done", flush=True)
+    write(pd.concat(frames, ignore_index=True), RUNS / "B1" / f"{run_id}.parquet")
+    return rows  # no test metric here: learning curves are analysed in F6 (analysis_plan §7)
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="python -m jevexp.runners.baseline")
     ap.add_argument("--dataset", choices=[*DATASETS, "all"], default="all")
+    ap.add_argument("--curves", action="store_true", help="H3a learning curves (LR-BoW) on the F5 subsets")
     args = ap.parse_args(argv)
+    if args.curves:
+        out_dir = RESULTS / "f5_b1_curves"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        for dataset in DATASETS if args.dataset == "all" else [args.dataset]:
+            pd.DataFrame(run_curves(dataset)).to_csv(out_dir / f"selection_{dataset}.csv", index=False)
+        return
     out_dir = RESULTS / "f1_baseline"
     out_dir.mkdir(parents=True, exist_ok=True)
     for dataset in DATASETS if args.dataset == "all" else [args.dataset]:

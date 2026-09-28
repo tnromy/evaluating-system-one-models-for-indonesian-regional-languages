@@ -27,8 +27,12 @@ def load_env():
 def guard_split(split):
     """Test data is only reachable after the pre-registration tag exists (docs/metodologi.md §1, K18)."""
     if split == "test":
-        tags = subprocess.run(["git", "-C", str(ROOT), "tag", "--list", PREREG_TAG],
-                              capture_output=True, text=True).stdout.split()
+        if not (ROOT / ".git").exists() and (ROOT / "PREREG_TAG").exists():
+            # Colab bundle (no git): scripts/f5_bundle.sh writes PREREG_TAG only after checking the tag exists
+            tags = (ROOT / "PREREG_TAG").read_text().split()[:1]
+        else:
+            tags = subprocess.run(["git", "-C", str(ROOT), "tag", "--list", PREREG_TAG],
+                                  capture_output=True, text=True).stdout.split()
         if PREREG_TAG not in tags:
             raise PermissionError(f"test split is locked until git tag {PREREG_TAG} exists")
 
