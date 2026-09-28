@@ -255,8 +255,8 @@
     "semantic_hash": ""
   },
   "tests/test_ft.py": {
-    "mtime": 1790577767.0197988,
-    "ast_hash": "8687ef201d8d045214d7ca2c5c2b5ca2",
+    "mtime": 1790588402.2022126,
+    "ast_hash": "d07d626be49f0576fb78dd1692eb4048",
     "semantic_hash": ""
   },
   "tests/test_infra.py": {
@@ -270,8 +270,8 @@
     "semantic_hash": ""
   },
   "src/jevexp/ft/progress.py": {
-    "mtime": 1790577824.5819545,
-    "ast_hash": "f36b90037c885f14be67adabd8b33166",
+    "mtime": 1790588372.1085606,
+    "ast_hash": "ac5f036b0fefa9b2c36068b692febc12",
     "semantic_hash": ""
   }
 }

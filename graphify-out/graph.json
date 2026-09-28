@@ -1649,7 +1649,7 @@
       "label": "regime()",
       "file_type": "code",
       "source_file": "src/jevexp/ft/progress.py",
-      "source_location": "L30",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "ft_progress_regime",
       "community": 23,
@@ -1659,7 +1659,7 @@
       "label": "wall_of()",
       "file_type": "code",
       "source_file": "src/jevexp/ft/progress.py",
-      "source_location": "L38",
+      "source_location": "L41",
       "_origin": "ast",
       "id": "ft_progress_wall_of",
       "community": 23,
@@ -1669,7 +1669,7 @@
       "label": "Progress",
       "file_type": "code",
       "source_file": "src/jevexp/ft/progress.py",
-      "source_location": "L45",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "ft_progress_progress",
       "community": 23,
@@ -1679,7 +1679,7 @@
       "label": ".__init__()",
       "file_type": "code",
       "source_file": "src/jevexp/ft/progress.py",
-      "source_location": "L46",
+      "source_location": "L49",
       "_origin": "ast",
       "id": "ft_progress_progress_init",
       "community": 23,
@@ -1689,7 +1689,7 @@
       "label": ".snapshot()",
       "file_type": "code",
       "source_file": "src/jevexp/ft/progress.py",
-      "source_location": "L50",
+      "source_location": "L53",
       "_origin": "ast",
       "id": "ft_progress_progress_snapshot",
       "community": 23,
@@ -1699,7 +1699,7 @@
       "label": ".add_wall()",
       "file_type": "code",
       "source_file": "src/jevexp/ft/progress.py",
-      "source_location": "L65",
+      "source_location": "L68",
       "_origin": "ast",
       "id": "ft_progress_progress_add_wall",
       "community": 23,
@@ -1709,7 +1709,7 @@
       "label": "._estimator()",
       "file_type": "code",
       "source_file": "src/jevexp/ft/progress.py",
-      "source_location": "L68",
+      "source_location": "L71",
       "_origin": "ast",
       "id": "ft_progress_progress_estimator",
       "community": 23,
@@ -1719,7 +1719,7 @@
       "label": ".report()",
       "file_type": "code",
       "source_file": "src/jevexp/ft/progress.py",
-      "source_location": "L89",
+      "source_location": "L98",
       "_origin": "ast",
       "id": "ft_progress_progress_report",
       "community": 23,
@@ -1729,7 +1729,7 @@
       "label": "_keys()",
       "file_type": "code",
       "source_file": "src/jevexp/ft/progress.py",
-      "source_location": "L147",
+      "source_location": "L156",
       "_origin": "ast",
       "id": "ft_progress_keys",
       "community": 23,
@@ -1739,7 +1739,7 @@
       "label": "_bar()",
       "file_type": "code",
       "source_file": "src/jevexp/ft/progress.py",
-      "source_location": "L154",
+      "source_location": "L167",
       "_origin": "ast",
       "id": "ft_progress_bar",
       "community": 23,
@@ -1749,7 +1749,7 @@
       "label": "_h()",
       "file_type": "code",
       "source_file": "src/jevexp/ft/progress.py",
-      "source_location": "L159",
+      "source_location": "L172",
       "_origin": "ast",
       "id": "ft_progress_h",
       "community": 23,
@@ -1759,7 +1759,7 @@
       "label": "main()",
       "file_type": "code",
       "source_file": "src/jevexp/ft/progress.py",
-      "source_location": "L165",
+      "source_location": "L178",
       "_origin": "ast",
       "id": "ft_progress_main",
       "community": 23,
@@ -1779,9 +1779,9 @@
       "label": "Wall seconds of a finished run; older metas (before K63) only have train_time_s.",
       "file_type": "rationale",
       "source_file": "src/jevexp/ft/progress.py",
-      "source_location": "L39",
+      "source_location": "L42",
       "_origin": "ast",
-      "id": "ft_progress_rationale_39",
+      "id": "ft_progress_rationale_42",
       "community": 23,
       "norm_label": "wall seconds of a finished run; older metas (before k63) only have train_time_s."
     },
@@ -1789,21 +1789,21 @@
       "label": "(text, dict). `current` = {run_id, started, msg}; `session` = {id, started, runs",
       "file_type": "rationale",
       "source_file": "src/jevexp/ft/progress.py",
-      "source_location": "L90",
+      "source_location": "L99",
       "_origin": "ast",
-      "id": "ft_progress_rationale_90",
+      "id": "ft_progress_rationale_99",
       "community": 23,
       "norm_label": "(text, dict). `current` = {run_id, started, msg}; `session` = {id, started, runs"
     },
     {
-      "label": "Empirical groups, most specific first. The regime is always kept: a pooled run s",
+      "label": "Empirical groups, most specific first. The regime is always kept (a pooled run s",
       "file_type": "rationale",
       "source_file": "src/jevexp/ft/progress.py",
-      "source_location": "L148",
+      "source_location": "L157",
       "_origin": "ast",
-      "id": "ft_progress_rationale_148",
+      "id": "ft_progress_rationale_157",
       "community": 23,
-      "norm_label": "empirical groups, most specific first. the regime is always kept: a pooled run s"
+      "norm_label": "empirical groups, most specific first. the regime is always kept (a pooled run s"
     },
     {
       "label": "pull.py",
@@ -3212,7 +3212,7 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "runners_common_guard_split",
-      "community": 6,
+      "community": 4,
       "norm_label": "guard_split()"
     },
     {
@@ -3362,7 +3362,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "runners_common_rationale_28",
-      "community": 6,
+      "community": 4,
       "norm_label": "test data is only reachable after the pre-registration tag exists (docs/metodolo"
     },
     {
@@ -4136,6 +4136,16 @@
       "norm_label": "test_heartbeat_prints_status_periodically()"
     },
     {
+      "label": "test_eta_scales_other_dataset_by_train_size()",
+      "file_type": "code",
+      "source_file": "tests/test_ft.py",
+      "source_location": "L248",
+      "_origin": "ast",
+      "id": "tests_test_ft_test_eta_scales_other_dataset_by_train_size",
+      "community": 18,
+      "norm_label": "test_eta_scales_other_dataset_by_train_size()"
+    },
+    {
       "label": "F5 plumbing: store, learning-curve subsets, resumable training, idempotent worke",
       "file_type": "rationale",
       "source_file": "tests/test_ft.py",
@@ -4154,6 +4164,16 @@
       "id": "tests_test_ft_rationale_179",
       "community": 18,
       "norm_label": "the worker passes max_epochs=none (colab default): training must fall back to ma"
+    },
+    {
+      "label": "NT runs without history borrow the same arm's NusaX per-language duration x trai",
+      "file_type": "rationale",
+      "source_file": "tests/test_ft.py",
+      "source_location": "L249",
+      "_origin": "ast",
+      "id": "tests_test_ft_rationale_249",
+      "community": 18,
+      "norm_label": "nt runs without history borrow the same arm's nusax per-language duration x trai"
     },
     {
       "label": "test_infra.py",
@@ -8663,9 +8683,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L166",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress",
-      "target": "ft_plan_load_plan",
-      "confidence_score": 1.0
+      "target": "ft_plan_load_plan"
     },
     {
       "relation": "calls",
@@ -8674,9 +8694,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L178",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress_main",
-      "target": "ft_plan_load_plan",
-      "confidence_score": 1.0
+      "target": "ft_plan_load_plan"
     },
     {
       "relation": "imports",
@@ -8728,9 +8748,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L154",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress",
-      "target": "ft_progress_bar",
-      "confidence_score": 1.0
+      "target": "ft_progress_bar"
     },
     {
       "relation": "contains",
@@ -8738,9 +8758,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L159",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress",
-      "target": "ft_progress_h",
-      "confidence_score": 1.0
+      "target": "ft_progress_h"
     },
     {
       "relation": "contains",
@@ -8748,9 +8768,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L147",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress",
-      "target": "ft_progress_keys",
-      "confidence_score": 1.0
+      "target": "ft_progress_keys"
     },
     {
       "relation": "contains",
@@ -8758,9 +8778,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L165",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress",
-      "target": "ft_progress_main",
-      "confidence_score": 1.0
+      "target": "ft_progress_main"
     },
     {
       "relation": "contains",
@@ -8768,9 +8788,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress",
-      "target": "ft_progress_progress",
-      "confidence_score": 1.0
+      "target": "ft_progress_progress"
     },
     {
       "relation": "contains",
@@ -8778,9 +8798,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress",
-      "target": "ft_progress_regime",
-      "confidence_score": 1.0
+      "target": "ft_progress_regime"
     },
     {
       "relation": "contains",
@@ -8788,9 +8808,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress",
-      "target": "ft_progress_wall_of",
-      "confidence_score": 1.0
+      "target": "ft_progress_wall_of"
     },
     {
       "relation": "imports",
@@ -8799,9 +8819,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress",
-      "target": "ft_store_s3_store",
-      "confidence_score": 1.0
+      "target": "ft_store_s3_store"
     },
     {
       "relation": "rationale_for",
@@ -8809,9 +8829,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress_rationale_1",
-      "target": "ft_progress",
-      "confidence_score": 1.0
+      "target": "ft_progress"
     },
     {
       "relation": "imports_from",
@@ -8820,9 +8840,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "ft_progress",
-      "confidence_score": 1.0
+      "target": "ft_progress"
     },
     {
       "relation": "calls",
@@ -8831,9 +8851,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress_progress_estimator",
-      "target": "ft_progress_regime",
-      "confidence_score": 1.0
+      "target": "ft_progress_regime"
     },
     {
       "relation": "calls",
@@ -8842,9 +8862,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L110",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress_progress_report",
-      "target": "ft_progress_regime",
-      "confidence_score": 1.0
+      "target": "ft_progress_regime"
     },
     {
       "relation": "calls",
@@ -8853,17 +8873,17 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress_progress_snapshot",
-      "target": "ft_progress_wall_of",
-      "confidence_score": 1.0
+      "target": "ft_progress_wall_of"
     },
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/jevexp/ft/progress.py",
-      "source_location": "L39",
+      "source_location": "L42",
       "weight": 1.0,
-      "source": "ft_progress_rationale_39",
+      "source": "ft_progress_rationale_42",
       "target": "ft_progress_wall_of",
       "confidence_score": 1.0
     },
@@ -8874,9 +8894,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L180",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress_main",
-      "target": "ft_progress_progress",
-      "confidence_score": 1.0
+      "target": "ft_progress_progress"
     },
     {
       "relation": "method",
@@ -8884,9 +8904,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress_progress",
-      "target": "ft_progress_progress_add_wall",
-      "confidence_score": 1.0
+      "target": "ft_progress_progress_add_wall"
     },
     {
       "relation": "method",
@@ -8894,9 +8914,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress_progress",
-      "target": "ft_progress_progress_estimator",
-      "confidence_score": 1.0
+      "target": "ft_progress_progress_estimator"
     },
     {
       "relation": "method",
@@ -8904,9 +8924,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress_progress",
-      "target": "ft_progress_progress_init",
-      "confidence_score": 1.0
+      "target": "ft_progress_progress_init"
     },
     {
       "relation": "method",
@@ -8914,9 +8934,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress_progress",
-      "target": "ft_progress_progress_report",
-      "confidence_score": 1.0
+      "target": "ft_progress_progress_report"
     },
     {
       "relation": "method",
@@ -8924,9 +8944,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress_progress",
-      "target": "ft_progress_progress_snapshot",
-      "confidence_score": 1.0
+      "target": "ft_progress_progress_snapshot"
     },
     {
       "relation": "imports",
@@ -8935,9 +8955,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "ft_progress_progress",
-      "confidence_score": 1.0
+      "target": "ft_progress_progress"
     },
     {
       "relation": "uses",
@@ -8945,9 +8965,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L34",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "ft_worker_worker",
-      "target": "ft_progress_progress",
-      "confidence_score": 0.5
+      "target": "ft_progress_progress"
     },
     {
       "relation": "calls",
@@ -8966,9 +8986,20 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L199",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "tests_test_ft_stop",
-      "target": "ft_progress_progress",
-      "confidence_score": 0.5
+      "target": "ft_progress_progress"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_ft.py",
+      "source_location": "L257",
+      "weight": 1.0,
+      "source": "tests_test_ft_test_eta_scales_other_dataset_by_train_size",
+      "target": "ft_progress_progress"
     },
     {
       "relation": "calls",
@@ -8988,9 +9019,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress_progress_report",
-      "target": "ft_progress_progress_snapshot",
-      "confidence_score": 1.0
+      "target": "ft_progress_progress_snapshot"
     },
     {
       "relation": "calls",
@@ -8999,9 +9030,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress_progress_estimator",
-      "target": "ft_progress_keys",
-      "confidence_score": 1.0
+      "target": "ft_progress_keys"
     },
     {
       "relation": "calls",
@@ -9010,9 +9041,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress_progress_report",
-      "target": "ft_progress_progress_estimator",
-      "confidence_score": 1.0
+      "target": "ft_progress_progress_estimator"
     },
     {
       "relation": "calls",
@@ -9021,9 +9052,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L180",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress_main",
-      "target": "ft_progress_progress_report",
-      "confidence_score": 1.0
+      "target": "ft_progress_progress_report"
     },
     {
       "relation": "calls",
@@ -9032,9 +9063,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L127",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress_progress_report",
-      "target": "ft_progress_bar",
-      "confidence_score": 1.0
+      "target": "ft_progress_bar"
     },
     {
       "relation": "calls",
@@ -9043,17 +9074,17 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L131",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress_progress_report",
-      "target": "ft_progress_h",
-      "confidence_score": 1.0
+      "target": "ft_progress_h"
     },
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/jevexp/ft/progress.py",
-      "source_location": "L90",
+      "source_location": "L99",
       "weight": 1.0,
-      "source": "ft_progress_rationale_90",
+      "source": "ft_progress_rationale_99",
       "target": "ft_progress_progress_report",
       "confidence_score": 1.0
     },
@@ -9061,9 +9092,9 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/jevexp/ft/progress.py",
-      "source_location": "L148",
+      "source_location": "L157",
       "weight": 1.0,
-      "source": "ft_progress_rationale_148",
+      "source": "ft_progress_rationale_157",
       "target": "ft_progress_keys",
       "confidence_score": 1.0
     },
@@ -9074,9 +9105,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L171",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress_main",
-      "target": "ft_store_s3_store",
-      "confidence_score": 1.0
+      "target": "ft_store_s3_store"
     },
     {
       "relation": "contains",
@@ -9560,6 +9591,17 @@
       "weight": 0.8,
       "confidence_score": 0.5,
       "source": "tests_test_ft_stop",
+      "target": "ft_store_localstore"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_ft.py",
+      "source_location": "L254",
+      "weight": 1.0,
+      "source": "tests_test_ft_test_eta_scales_other_dataset_by_train_size",
       "target": "ft_store_localstore"
     },
     {
@@ -10224,9 +10266,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L130",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker",
-      "target": "ft_worker_worker_print_status",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_print_status"
     },
     {
       "relation": "method",
@@ -10244,9 +10286,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L148",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker",
-      "target": "ft_worker_worker_run_all",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_run_all"
     },
     {
       "relation": "method",
@@ -10328,9 +10370,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_rationale_78",
-      "target": "ft_worker_worker_status",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_status"
     },
     {
       "relation": "calls",
@@ -10349,9 +10391,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_rationale_92",
-      "target": "ft_worker_worker_check_plan",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_check_plan"
     },
     {
       "relation": "calls",
@@ -10381,9 +10423,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_rationale_120",
-      "target": "ft_worker_worker_best_config",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_best_config"
     },
     {
       "relation": "calls",
@@ -10402,9 +10444,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L131",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_rationale_131",
-      "target": "ft_worker_worker_print_status",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_print_status"
     },
     {
       "relation": "calls",
@@ -10413,9 +10455,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker_run",
-      "target": "ft_worker_worker_print_status",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_print_status"
     },
     {
       "relation": "calls",
@@ -10424,9 +10466,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L162",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker_run_all",
-      "target": "ft_worker_worker_print_status",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_print_status"
     },
     {
       "relation": "rationale_for",
@@ -10434,9 +10476,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_rationale_149",
-      "target": "ft_worker_worker_run_all",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_run_all"
     },
     {
       "relation": "calls",
@@ -10445,9 +10487,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L156",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker_run_all",
-      "target": "ft_worker_worker_collect",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_collect"
     },
     {
       "relation": "calls",
@@ -10456,9 +10498,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L153",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker_run_all",
-      "target": "ft_worker_worker_run",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_run"
     },
     {
       "relation": "calls",
@@ -10499,9 +10541,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L295",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_rationale_295",
-      "target": "ft_worker_worker_collect",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_collect"
     },
     {
       "relation": "calls",
@@ -14147,9 +14189,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L190",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft",
-      "target": "tests_test_ft_mini_plan",
-      "confidence_score": 1.0
+      "target": "tests_test_ft_mini_plan"
     },
     {
       "relation": "contains",
@@ -14185,11 +14227,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_ft.py",
-      "source_location": "L236",
+      "source_location": "L248",
       "weight": 1.0,
       "source": "tests_test_ft",
-      "target": "tests_test_ft_test_heartbeat_prints_status_periodically",
+      "target": "tests_test_ft_test_eta_scales_other_dataset_by_train_size",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_ft.py",
+      "source_location": "L236",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_ft",
+      "target": "tests_test_ft_test_heartbeat_prints_status_periodically"
     },
     {
       "relation": "contains",
@@ -14257,9 +14309,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L198",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft",
-      "target": "tests_test_ft_test_progress_counts_and_eta",
-      "confidence_score": 1.0
+      "target": "tests_test_ft_test_progress_counts_and_eta"
     },
     {
       "relation": "contains",
@@ -14267,9 +14319,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L214",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft",
-      "target": "tests_test_ft_test_run_all_advances_stages_and_collects",
-      "confidence_score": 1.0
+      "target": "tests_test_ft_test_run_all_advances_stages_and_collects"
     },
     {
       "relation": "contains",
@@ -14328,9 +14380,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L242",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft_test_heartbeat_prints_status_periodically",
-      "target": "tests_test_ft_ctx",
-      "confidence_score": 1.0
+      "target": "tests_test_ft_ctx"
     },
     {
       "relation": "calls",
@@ -14382,9 +14434,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L239",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft_test_heartbeat_prints_status_periodically",
-      "target": "tests_test_ft_mini_plan",
-      "confidence_score": 1.0
+      "target": "tests_test_ft_mini_plan"
     },
     {
       "relation": "calls",
@@ -14393,9 +14445,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L206",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft_test_progress_counts_and_eta",
-      "target": "tests_test_ft_mini_plan",
-      "confidence_score": 1.0
+      "target": "tests_test_ft_mini_plan"
     },
     {
       "relation": "calls",
@@ -14404,8 +14456,18 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L217",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft_test_run_all_advances_stages_and_collects",
-      "target": "tests_test_ft_mini_plan",
+      "target": "tests_test_ft_mini_plan"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_ft.py",
+      "source_location": "L249",
+      "weight": 1.0,
+      "source": "tests_test_ft_rationale_249",
+      "target": "tests_test_ft_test_eta_scales_other_dataset_by_train_size",
       "confidence_score": 1.0
     },
     {
@@ -15007,5 +15069,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "29ced94e90d7b8065b6ef59ff42c49fed8c24158"
+  "built_at_commit": "5fb8c298e8548bab044c8b5b121f0fb929b7aeba"
 }

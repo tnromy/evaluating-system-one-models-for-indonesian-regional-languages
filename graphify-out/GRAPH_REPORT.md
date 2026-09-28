@@ -1,16 +1,16 @@
 # Graph Report - jev  (2026-09-28)
 
 ## Corpus Check
-- 54 files · ~23,671 words
+- 54 files · ~23,838 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 475 nodes · 968 edges · 24 communities (19 shown, 5 thin omitted)
-- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 33 edges (avg confidence: 0.75)
+- 477 nodes · 972 edges · 24 communities (19 shown, 5 thin omitted)
+- Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 35 edges (avg confidence: 0.76)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `29ced94e`
+- Built from commit: `5fb8c298`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -41,7 +41,7 @@
 
 ## God Nodes (most connected - your core abstractions)
 1. `load()` - 22 edges
-2. `LocalStore` - 21 edges
+2. `LocalStore` - 22 edges
 3. `Worker` - 20 edges
 4. `RawLog` - 16 edges
 5. `run_parallel()` - 16 edges
@@ -85,8 +85,8 @@ Cohesion: 0.11
 Nodes (24): load_plan(), Published NusaX sentiment results (macro-F1 %, test split), Winata et al. EACL 2, compare(), main(), _markdown(), F1 gate report: our B1 replication vs NusaX Table 3 (docs/metodologi.md §5, K20,, Rows (lang, clf, variant, f1, feature) for the three variants., variants() (+16 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.07
-Nodes (24): Checkpoint, condition(), env_versions(), gpu_name(), now_utc(), pred_frame(), Shared F5 plumbing: run data, prediction frames, resumable checkpoints., Rolling `runs/<id>/ckpt/latest.pt` in the store, written at most every `every_s` (+16 more)
+Cohesion: 0.06
+Nodes (26): Checkpoint, condition(), env_versions(), gpu_name(), now_utc(), pred_frame(), Shared F5 plumbing: run data, prediction frames, resumable checkpoints., Rolling `runs/<id>/ckpt/latest.pt` in the store, written at most every `every_s` (+18 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.11
@@ -94,7 +94,7 @@ Nodes (35): device(), hf_kwargs(), rng_state(), set_rng_state(), _batch(), encod
 
 ### Community 6 - "Community 6"
 Cohesion: 0.06
-Nodes (75): jev_answer(), llm_json(), logprob_label_dist(), _normalise(), _pred(), Turn raw API responses into (pred, probs, confidence). Probs follow DATASETS lab, Jev System One response -> (pred, probs, confidence). INVALID if the answer is m, LLM JSON answer -> (pred, verbalized probs or None). INVALID on malformed JSON / (+67 more)
+Nodes (73): jev_answer(), llm_json(), logprob_label_dist(), _normalise(), _pred(), Turn raw API responses into (pred, probs, confidence). Probs follow DATASETS lab, Jev System One response -> (pred, probs, confidence). INVALID if the answer is m, LLM JSON answer -> (pred, verbalized probs or None). INVALID on malformed JSON / (+65 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.10
@@ -129,8 +129,8 @@ Cohesion: 0.50
 Nodes (3): GLMM for H1a, Paired McNemar per language (families F2 and F3), Power analysis (prereg-v1, K25)
 
 ### Community 18 - "Community 18"
-Cohesion: 0.13
-Nodes (18): Exception, LocalStore, _ctx(), _mini_plan(), F5 plumbing: store, learning-curve subsets, resumable training, idempotent worke, The worker passes max_epochs=None (Colab default): training must fall back to MA, Stop, test_heartbeat_prints_status_periodically() (+10 more)
+Cohesion: 0.12
+Nodes (20): Exception, LocalStore, _ctx(), _mini_plan(), F5 plumbing: store, learning-curve subsets, resumable training, idempotent worke, The worker passes max_epochs=None (Colab default): training must fall back to MA, NT runs without history borrow the same arm's NusaX per-language duration x trai, Stop (+12 more)
 
 ### Community 19 - "Community 19"
 Cohesion: 0.83
@@ -138,7 +138,7 @@ Nodes (3): f4_collect.sh script, check(), step()
 
 ### Community 23 - "Community 23"
 Cohesion: 0.19
-Nodes (11): _bar(), _h(), _keys(), main(), Progress, F5 progress + ETA from the store (K63). Used by the Colab worker (printed to the, Empirical groups, most specific first. The regime is always kept: a pooled run s, Wall seconds of a finished run; older metas (before K63) only have train_time_s. (+3 more)
+Nodes (11): _bar(), _h(), _keys(), main(), Progress, F5 progress + ETA from the store (K63). Used by the Colab worker (printed to the, Empirical groups, most specific first. The regime is always kept (a pooled run s, Wall seconds of a finished run; older metas (before K63) only have train_time_s. (+3 more)
 
 ## Knowledge Gaps
 - **29 isolated node(s):** `f4_cli.sh script`, `f5_bundle.sh script`, `Setup (reproducible)`, `Layout`, `Data (pinned)` (+24 more)
@@ -151,11 +151,11 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `Worker` connect `Community 4` to `Community 0`, `Community 23`?**
   _High betweenness centrality (0.065) - this node is a cross-community bridge._
 - **Why does `LocalStore` connect `Community 18` to `Community 7`?**
-  _High betweenness centrality (0.041) - this node is a cross-community bridge._
+  _High betweenness centrality (0.042) - this node is a cross-community bridge._
 - **Why does `S3Store` connect `Community 7` to `Community 18`?**
   _High betweenness centrality (0.036) - this node is a cross-community bridge._
-- **Are the 10 inferred relationships involving `LocalStore` (e.g. with `Stop` and `test_heartbeat_prints_status_periodically()`) actually correct?**
-  _`LocalStore` has 10 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 11 inferred relationships involving `LocalStore` (e.g. with `Stop` and `test_eta_scales_other_dataset_by_train_size()`) actually correct?**
+  _`LocalStore` has 11 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 2 inferred relationships involving `Worker` (e.g. with `Checkpoint` and `Progress`) actually correct?**
   _`Worker` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 2 inferred relationships involving `RawLog` (e.g. with `test_infra_records_are_not_logged_and_are_retried()` and `test_stops_after_consecutive_infra_failures()`) actually correct?**
