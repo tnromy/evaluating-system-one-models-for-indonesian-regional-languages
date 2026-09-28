@@ -1522,7 +1522,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ft_plan",
-      "community": 1,
+      "community": 18,
       "norm_label": "plan.py"
     },
     {
@@ -1532,7 +1532,7 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "ft_plan_alloc",
-      "community": 1,
+      "community": 18,
       "norm_label": "_alloc()"
     },
     {
@@ -1542,7 +1542,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "ft_plan_curve_subsets",
-      "community": 1,
+      "community": 18,
       "norm_label": "curve_subsets()"
     },
     {
@@ -1552,7 +1552,7 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "ft_plan_run_id",
-      "community": 1,
+      "community": 18,
       "norm_label": "run_id()"
     },
     {
@@ -1562,7 +1562,7 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "ft_plan_build",
-      "community": 1,
+      "community": 18,
       "norm_label": "build()"
     },
     {
@@ -1572,7 +1572,7 @@
       "source_location": "L129",
       "_origin": "ast",
       "id": "ft_plan_dumps",
-      "community": 1,
+      "community": 18,
       "norm_label": "dumps()"
     },
     {
@@ -1582,7 +1582,7 @@
       "source_location": "L133",
       "_origin": "ast",
       "id": "ft_plan_sha",
-      "community": 1,
+      "community": 18,
       "norm_label": "sha()"
     },
     {
@@ -1592,7 +1592,7 @@
       "source_location": "L137",
       "_origin": "ast",
       "id": "ft_plan_load_plan",
-      "community": 1,
+      "community": 18,
       "norm_label": "load_plan()"
     },
     {
@@ -1602,7 +1602,7 @@
       "source_location": "L142",
       "_origin": "ast",
       "id": "ft_plan_main",
-      "community": 1,
+      "community": 18,
       "norm_label": "main()"
     },
     {
@@ -1612,7 +1612,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ft_plan_rationale_1",
-      "community": 1,
+      "community": 18,
       "norm_label": "f5 run plan (docs/metodologi.md \u00a74, k60/k61): every fine-tuning run, frozen in `"
     },
     {
@@ -1622,7 +1622,7 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "ft_plan_rationale_43",
-      "community": 1,
+      "community": 18,
       "norm_label": "at least one per label, the rest proportional by largest remainder."
     },
     {
@@ -1632,7 +1632,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "ft_plan_rationale_58",
-      "community": 1,
+      "community": 18,
       "norm_label": "{n: sorted ids} nested over n for one (dataset, seed). `gold`: series sentence_i"
     },
     {
@@ -3372,7 +3372,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "runners_nllb",
-      "community": 6,
+      "community": 1,
       "norm_label": "nllb.py"
     },
     {
@@ -3382,7 +3382,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "runners_nllb_translate",
-      "community": 6,
+      "community": 1,
       "norm_label": "translate()"
     },
     {
@@ -3392,7 +3392,7 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "runners_nllb_run",
-      "community": 6,
+      "community": 1,
       "norm_label": "run()"
     },
     {
@@ -3402,7 +3402,7 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "runners_nllb_main",
-      "community": 6,
+      "community": 1,
       "norm_label": "main()"
     },
     {
@@ -3412,7 +3412,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "runners_nllb_rationale_1",
-      "community": 6,
+      "community": 1,
       "norm_label": "a3 translate-test: nllb-200-distilled-600m, regional language -> indonesian, loc"
     },
     {
@@ -3762,7 +3762,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "tests_test_ft_test_alloc_min_one_and_total",
-      "community": 1,
+      "community": 18,
       "norm_label": "test_alloc_min_one_and_total()"
     },
     {
@@ -3772,7 +3772,7 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "tests_test_ft_test_curve_subsets_nested_stratified_deterministic",
-      "community": 1,
+      "community": 18,
       "norm_label": "test_curve_subsets_nested_stratified_deterministic()"
     },
     {
@@ -3876,6 +3876,16 @@
       "norm_label": "test_pred_frame_valid()"
     },
     {
+      "label": "test_hf_train_with_worker_default_ctx()",
+      "file_type": "code",
+      "source_file": "tests/test_ft.py",
+      "source_location": "L178",
+      "_origin": "ast",
+      "id": "tests_test_ft_test_hf_train_with_worker_default_ctx",
+      "community": 18,
+      "norm_label": "test_hf_train_with_worker_default_ctx()"
+    },
+    {
       "label": "F5 plumbing: store, learning-curve subsets, resumable training, idempotent worke",
       "file_type": "rationale",
       "source_file": "tests/test_ft.py",
@@ -3884,6 +3894,16 @@
       "id": "tests_test_ft_rationale_1",
       "community": 18,
       "norm_label": "f5 plumbing: store, learning-curve subsets, resumable training, idempotent worke"
+    },
+    {
+      "label": "The worker passes max_epochs=None (Colab default): training must fall back to MA",
+      "file_type": "rationale",
+      "source_file": "tests/test_ft.py",
+      "source_location": "L179",
+      "_origin": "ast",
+      "id": "tests_test_ft_rationale_179",
+      "community": 18,
+      "norm_label": "the worker passes max_epochs=none (colab default): training must fall back to ma"
     },
     {
       "label": "test_infra.py",
@@ -4979,9 +4999,9 @@
       "source_file": "scripts/f4_cli.sh",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_f4_cli",
-      "target": "media_tnromy_cross_data_journals_010_jev_laya_model_system_one_jev_scripts_f4_cli_sh__entry",
-      "confidence_score": 1.0
+      "target": "media_tnromy_cross_data_journals_010_jev_laya_model_system_one_jev_scripts_f4_cli_sh__entry"
     },
     {
       "relation": "contains",
@@ -4989,9 +5009,9 @@
       "source_file": "scripts/f4_collect.sh",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_f4_collect",
-      "target": "media_tnromy_cross_data_journals_010_jev_laya_model_system_one_jev_scripts_f4_collect_sh__entry",
-      "confidence_score": 1.0
+      "target": "media_tnromy_cross_data_journals_010_jev_laya_model_system_one_jev_scripts_f4_collect_sh__entry"
     },
     {
       "relation": "defines",
@@ -4999,9 +5019,9 @@
       "source_file": "scripts/f4_collect.sh",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_f4_collect",
-      "target": "scripts_f4_collect_check",
-      "confidence_score": 1.0
+      "target": "scripts_f4_collect_check"
     },
     {
       "relation": "defines",
@@ -5009,9 +5029,9 @@
       "source_file": "scripts/f4_collect.sh",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_f4_collect",
-      "target": "scripts_f4_collect_step",
-      "confidence_score": 1.0
+      "target": "scripts_f4_collect_step"
     },
     {
       "relation": "calls",
@@ -5020,9 +5040,9 @@
       "source_location": "L13",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "media_tnromy_cross_data_journals_010_jev_laya_model_system_one_jev_scripts_f4_collect_sh__entry",
-      "target": "scripts_f4_collect_check",
-      "confidence_score": 1.0
+      "target": "scripts_f4_collect_check"
     },
     {
       "relation": "calls",
@@ -5031,9 +5051,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "media_tnromy_cross_data_journals_010_jev_laya_model_system_one_jev_scripts_f4_collect_sh__entry",
-      "target": "scripts_f4_collect_step",
-      "confidence_score": 1.0
+      "target": "scripts_f4_collect_step"
     },
     {
       "relation": "contains",
@@ -5041,9 +5061,9 @@
       "source_file": "scripts/f5_bundle.sh",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_f5_bundle",
-      "target": "media_tnromy_cross_data_journals_010_jev_laya_model_system_one_jev_scripts_f5_bundle_sh__entry",
-      "confidence_score": 1.0
+      "target": "media_tnromy_cross_data_journals_010_jev_laya_model_system_one_jev_scripts_f5_bundle_sh__entry"
     },
     {
       "relation": "contains",
@@ -5051,9 +5071,9 @@
       "source_file": "scripts/f5_notebook.py",
       "source_location": "L125",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_f5_notebook",
-      "target": "scripts_f5_notebook_main",
-      "confidence_score": 1.0
+      "target": "scripts_f5_notebook_main"
     },
     {
       "relation": "rationale_for",
@@ -5061,9 +5081,9 @@
       "source_file": "scripts/f5_notebook.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_f5_notebook_rationale_1",
-      "target": "scripts_f5_notebook",
-      "confidence_score": 1.0
+      "target": "scripts_f5_notebook"
     },
     {
       "relation": "contains",
@@ -5217,9 +5237,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common",
-      "target": "jevexp_data",
-      "confidence_score": 1.0
+      "target": "jevexp_data"
     },
     {
       "relation": "imports_from",
@@ -5228,9 +5248,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf",
-      "target": "jevexp_data",
-      "confidence_score": 1.0
+      "target": "jevexp_data"
     },
     {
       "relation": "imports_from",
@@ -5239,9 +5259,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "jevexp_data",
-      "confidence_score": 1.0
+      "target": "jevexp_data"
     },
     {
       "relation": "imports_from",
@@ -5250,9 +5270,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan",
-      "target": "jevexp_data",
-      "confidence_score": 1.0
+      "target": "jevexp_data"
     },
     {
       "relation": "imports_from",
@@ -5261,9 +5281,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "jevexp_data",
-      "confidence_score": 1.0
+      "target": "jevexp_data"
     },
     {
       "relation": "contains",
@@ -5737,9 +5757,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common",
-      "target": "jevexp_data_load",
-      "confidence_score": 1.0
+      "target": "jevexp_data_load"
     },
     {
       "relation": "calls",
@@ -5748,9 +5768,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common_run_data",
-      "target": "jevexp_data_load",
-      "confidence_score": 1.0
+      "target": "jevexp_data_load"
     },
     {
       "relation": "imports",
@@ -5759,9 +5779,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan",
-      "target": "jevexp_data_load",
-      "confidence_score": 1.0
+      "target": "jevexp_data_load"
     },
     {
       "relation": "calls",
@@ -5770,9 +5790,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L114",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan_build",
-      "target": "jevexp_data_load",
-      "confidence_score": 1.0
+      "target": "jevexp_data_load"
     },
     {
       "relation": "calls",
@@ -5879,9 +5899,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L114",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline_run_curves",
-      "target": "jevexp_data_load",
-      "confidence_score": 1.0
+      "target": "jevexp_data_load"
     },
     {
       "relation": "imports",
@@ -5999,9 +6019,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan",
-      "target": "jevexp_data_consistent_gold",
-      "confidence_score": 1.0
+      "target": "jevexp_data_consistent_gold"
     },
     {
       "relation": "calls",
@@ -6010,9 +6030,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L115",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan_build",
-      "target": "jevexp_data_consistent_gold",
-      "confidence_score": 1.0
+      "target": "jevexp_data_consistent_gold"
     },
     {
       "relation": "calls",
@@ -6346,9 +6366,9 @@
       "source_file": "src/jevexp/report_f4.py",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f4",
-      "target": "jevexp_eval",
-      "confidence_score": 1.0
+      "target": "jevexp_eval"
     },
     {
       "relation": "imports_from",
@@ -6839,9 +6859,9 @@
       "source_file": "src/jevexp/ft/__init__.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_init_rationale_1",
-      "target": "ft_init",
-      "confidence_score": 1.0
+      "target": "ft_init"
     },
     {
       "relation": "imports_from",
@@ -6850,9 +6870,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "ft_init",
-      "confidence_score": 1.0
+      "target": "ft_init"
     },
     {
       "relation": "contains",
@@ -6860,9 +6880,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L101",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common",
-      "target": "ft_common_checkpoint",
-      "confidence_score": 1.0
+      "target": "ft_common_checkpoint"
     },
     {
       "relation": "contains",
@@ -6870,9 +6890,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common",
-      "target": "ft_common_condition",
-      "confidence_score": 1.0
+      "target": "ft_common_condition"
     },
     {
       "relation": "contains",
@@ -6880,9 +6900,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common",
-      "target": "ft_common_device",
-      "confidence_score": 1.0
+      "target": "ft_common_device"
     },
     {
       "relation": "contains",
@@ -6890,9 +6910,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L148",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common",
-      "target": "ft_common_env_versions",
-      "confidence_score": 1.0
+      "target": "ft_common_env_versions"
     },
     {
       "relation": "contains",
@@ -6900,9 +6920,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common",
-      "target": "ft_common_gpu_name",
-      "confidence_score": 1.0
+      "target": "ft_common_gpu_name"
     },
     {
       "relation": "contains",
@@ -6910,9 +6930,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L139",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common",
-      "target": "ft_common_hf_kwargs",
-      "confidence_score": 1.0
+      "target": "ft_common_hf_kwargs"
     },
     {
       "relation": "contains",
@@ -6920,9 +6940,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common",
-      "target": "ft_common_now_utc",
-      "confidence_score": 1.0
+      "target": "ft_common_now_utc"
     },
     {
       "relation": "contains",
@@ -6930,9 +6950,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common",
-      "target": "ft_common_pred_frame",
-      "confidence_score": 1.0
+      "target": "ft_common_pred_frame"
     },
     {
       "relation": "contains",
@@ -6940,9 +6960,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L90",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common",
-      "target": "ft_common_rng_state",
-      "confidence_score": 1.0
+      "target": "ft_common_rng_state"
     },
     {
       "relation": "contains",
@@ -6950,9 +6970,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common",
-      "target": "ft_common_run_data",
-      "confidence_score": 1.0
+      "target": "ft_common_run_data"
     },
     {
       "relation": "contains",
@@ -6960,9 +6980,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common",
-      "target": "ft_common_run_langs",
-      "confidence_score": 1.0
+      "target": "ft_common_run_langs"
     },
     {
       "relation": "contains",
@@ -6970,9 +6990,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L95",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common",
-      "target": "ft_common_set_rng_state",
-      "confidence_score": 1.0
+      "target": "ft_common_set_rng_state"
     },
     {
       "relation": "imports_from",
@@ -6981,9 +7001,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common",
-      "target": "jevexp_paths",
-      "confidence_score": 1.0
+      "target": "jevexp_paths"
     },
     {
       "relation": "imports_from",
@@ -6992,9 +7012,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common",
-      "target": "runners_common",
-      "confidence_score": 1.0
+      "target": "runners_common"
     },
     {
       "relation": "imports",
@@ -7003,9 +7023,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common",
-      "target": "runners_common_guard_split",
-      "confidence_score": 1.0
+      "target": "runners_common_guard_split"
     },
     {
       "relation": "rationale_for",
@@ -7013,9 +7033,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common_rationale_1",
-      "target": "ft_common",
-      "confidence_score": 1.0
+      "target": "ft_common"
     },
     {
       "relation": "imports_from",
@@ -7024,9 +7044,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf",
-      "target": "ft_common",
-      "confidence_score": 1.0
+      "target": "ft_common"
     },
     {
       "relation": "imports_from",
@@ -7035,9 +7055,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "ft_common",
-      "confidence_score": 1.0
+      "target": "ft_common"
     },
     {
       "relation": "imports_from",
@@ -7046,9 +7066,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "ft_common",
-      "confidence_score": 1.0
+      "target": "ft_common"
     },
     {
       "relation": "calls",
@@ -7057,9 +7077,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common_pred_frame",
-      "target": "ft_common_now_utc",
-      "confidence_score": 1.0
+      "target": "ft_common_now_utc"
     },
     {
       "relation": "imports",
@@ -7068,9 +7088,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "ft_common_now_utc",
-      "confidence_score": 1.0
+      "target": "ft_common_now_utc"
     },
     {
       "relation": "calls",
@@ -7079,9 +7099,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L86",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common_pred_frame",
-      "target": "ft_common_gpu_name",
-      "confidence_score": 1.0
+      "target": "ft_common_gpu_name"
     },
     {
       "relation": "imports",
@@ -7090,9 +7110,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "ft_common_gpu_name",
-      "confidence_score": 1.0
+      "target": "ft_common_gpu_name"
     },
     {
       "relation": "calls",
@@ -7112,9 +7132,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf",
-      "target": "ft_common_device",
-      "confidence_score": 1.0
+      "target": "ft_common_device"
     },
     {
       "relation": "calls",
@@ -7123,9 +7143,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf_train",
-      "target": "ft_common_device",
-      "confidence_score": 1.0
+      "target": "ft_common_device"
     },
     {
       "relation": "calls",
@@ -7134,9 +7154,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common_run_data",
-      "target": "ft_common_run_langs",
-      "confidence_score": 1.0
+      "target": "ft_common_run_langs"
     },
     {
       "relation": "rationale_for",
@@ -7144,9 +7164,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common_rationale_40",
-      "target": "ft_common_run_data",
-      "confidence_score": 1.0
+      "target": "ft_common_run_data"
     },
     {
       "relation": "calls",
@@ -7155,9 +7175,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common_run_data",
-      "target": "ft_common_checkpoint_load",
-      "confidence_score": 1.0
+      "target": "ft_common_checkpoint_load"
     },
     {
       "relation": "calls",
@@ -7166,9 +7186,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common_run_data",
-      "target": "runners_common_guard_split",
-      "confidence_score": 1.0
+      "target": "runners_common_guard_split"
     },
     {
       "relation": "imports",
@@ -7177,9 +7197,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "ft_common_run_data",
-      "confidence_score": 1.0
+      "target": "ft_common_run_data"
     },
     {
       "relation": "calls",
@@ -7199,9 +7219,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common_pred_frame",
-      "target": "ft_common_condition",
-      "confidence_score": 1.0
+      "target": "ft_common_condition"
     },
     {
       "relation": "imports",
@@ -7210,9 +7230,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "ft_common_pred_frame",
-      "confidence_score": 1.0
+      "target": "ft_common_pred_frame"
     },
     {
       "relation": "calls",
@@ -7243,9 +7263,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf",
-      "target": "ft_common_rng_state",
-      "confidence_score": 1.0
+      "target": "ft_common_rng_state"
     },
     {
       "relation": "calls",
@@ -7254,9 +7274,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf_train",
-      "target": "ft_common_rng_state",
-      "confidence_score": 1.0
+      "target": "ft_common_rng_state"
     },
     {
       "relation": "imports",
@@ -7265,9 +7285,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "ft_common_rng_state",
-      "confidence_score": 1.0
+      "target": "ft_common_rng_state"
     },
     {
       "relation": "calls",
@@ -7276,9 +7296,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L236",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_train",
-      "target": "ft_common_rng_state",
-      "confidence_score": 1.0
+      "target": "ft_common_rng_state"
     },
     {
       "relation": "imports",
@@ -7287,9 +7307,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf",
-      "target": "ft_common_set_rng_state",
-      "confidence_score": 1.0
+      "target": "ft_common_set_rng_state"
     },
     {
       "relation": "calls",
@@ -7298,9 +7318,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf_train",
-      "target": "ft_common_set_rng_state",
-      "confidence_score": 1.0
+      "target": "ft_common_set_rng_state"
     },
     {
       "relation": "imports",
@@ -7309,9 +7329,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "ft_common_set_rng_state",
-      "confidence_score": 1.0
+      "target": "ft_common_set_rng_state"
     },
     {
       "relation": "calls",
@@ -7320,9 +7340,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L201",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_train",
-      "target": "ft_common_set_rng_state",
-      "confidence_score": 1.0
+      "target": "ft_common_set_rng_state"
     },
     {
       "relation": "method",
@@ -7330,9 +7350,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L134",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common_checkpoint",
-      "target": "ft_common_checkpoint_clear",
-      "confidence_score": 1.0
+      "target": "ft_common_checkpoint_clear"
     },
     {
       "relation": "method",
@@ -7340,9 +7360,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L108",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common_checkpoint",
-      "target": "ft_common_checkpoint_init",
-      "confidence_score": 1.0
+      "target": "ft_common_checkpoint_init"
     },
     {
       "relation": "method",
@@ -7350,9 +7370,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L114",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common_checkpoint",
-      "target": "ft_common_checkpoint_load",
-      "confidence_score": 1.0
+      "target": "ft_common_checkpoint_load"
     },
     {
       "relation": "method",
@@ -7360,9 +7380,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common_checkpoint",
-      "target": "ft_common_checkpoint_maybe_save",
-      "confidence_score": 1.0
+      "target": "ft_common_checkpoint_maybe_save"
     },
     {
       "relation": "rationale_for",
@@ -7370,9 +7390,9 @@
       "source_file": "src/jevexp/ft/common.py",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_common_rationale_102",
-      "target": "ft_common_checkpoint",
-      "confidence_score": 1.0
+      "target": "ft_common_checkpoint"
     },
     {
       "relation": "imports",
@@ -7381,9 +7401,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "ft_common_checkpoint",
-      "confidence_score": 1.0
+      "target": "ft_common_checkpoint"
     },
     {
       "relation": "uses",
@@ -7391,9 +7411,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L30",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "ft_worker_worker",
-      "target": "ft_common_checkpoint",
-      "confidence_score": 0.5
+      "target": "ft_common_checkpoint"
     },
     {
       "relation": "calls",
@@ -7423,9 +7443,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L9",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "tests_test_ft_stop",
-      "target": "ft_common_checkpoint",
-      "confidence_score": 0.5
+      "target": "ft_common_checkpoint"
     },
     {
       "relation": "imports",
@@ -7434,9 +7454,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf",
-      "target": "ft_common_hf_kwargs",
-      "confidence_score": 1.0
+      "target": "ft_common_hf_kwargs"
     },
     {
       "relation": "calls",
@@ -7445,9 +7465,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf_load_model",
-      "target": "ft_common_hf_kwargs",
-      "confidence_score": 1.0
+      "target": "ft_common_hf_kwargs"
     },
     {
       "relation": "imports",
@@ -7456,9 +7476,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "ft_common_hf_kwargs",
-      "confidence_score": 1.0
+      "target": "ft_common_hf_kwargs"
     },
     {
       "relation": "calls",
@@ -7467,9 +7487,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_base_dir",
-      "target": "ft_common_hf_kwargs",
-      "confidence_score": 1.0
+      "target": "ft_common_hf_kwargs"
     },
     {
       "relation": "imports",
@@ -7478,9 +7498,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "ft_common_env_versions",
-      "confidence_score": 1.0
+      "target": "ft_common_env_versions"
     },
     {
       "relation": "calls",
@@ -7499,9 +7519,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf",
-      "target": "ft_hf_clf_batch",
-      "confidence_score": 1.0
+      "target": "ft_hf_clf_batch"
     },
     {
       "relation": "contains",
@@ -7509,9 +7529,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf",
-      "target": "ft_hf_clf_encode",
-      "confidence_score": 1.0
+      "target": "ft_hf_clf_encode"
     },
     {
       "relation": "contains",
@@ -7519,9 +7539,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L116",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf",
-      "target": "ft_hf_clf_export",
-      "confidence_score": 1.0
+      "target": "ft_hf_clf_export"
     },
     {
       "relation": "contains",
@@ -7529,9 +7549,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf",
-      "target": "ft_hf_clf_load_model",
-      "confidence_score": 1.0
+      "target": "ft_hf_clf_load_model"
     },
     {
       "relation": "contains",
@@ -7539,9 +7559,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf",
-      "target": "ft_hf_clf_macro_f1",
-      "confidence_score": 1.0
+      "target": "ft_hf_clf_macro_f1"
     },
     {
       "relation": "contains",
@@ -7549,9 +7569,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf",
-      "target": "ft_hf_clf_predict",
-      "confidence_score": 1.0
+      "target": "ft_hf_clf_predict"
     },
     {
       "relation": "contains",
@@ -7559,9 +7579,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf",
-      "target": "ft_hf_clf_train",
-      "confidence_score": 1.0
+      "target": "ft_hf_clf_train"
     },
     {
       "relation": "imports_from",
@@ -7570,9 +7590,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf",
-      "target": "ft_plan",
-      "confidence_score": 1.0
+      "target": "ft_plan"
     },
     {
       "relation": "rationale_for",
@@ -7580,9 +7600,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf_rationale_1",
-      "target": "ft_hf_clf",
-      "confidence_score": 1.0
+      "target": "ft_hf_clf"
     },
     {
       "relation": "imports_from",
@@ -7591,9 +7611,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "ft_hf_clf",
-      "confidence_score": 1.0
+      "target": "ft_hf_clf"
     },
     {
       "relation": "calls",
@@ -7602,9 +7622,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf_train",
-      "target": "ft_hf_clf_load_model",
-      "confidence_score": 1.0
+      "target": "ft_hf_clf_load_model"
     },
     {
       "relation": "calls",
@@ -7613,9 +7633,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf_train",
-      "target": "ft_hf_clf_encode",
-      "confidence_score": 1.0
+      "target": "ft_hf_clf_encode"
     },
     {
       "relation": "calls",
@@ -7624,9 +7644,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf_predict",
-      "target": "ft_hf_clf_batch",
-      "confidence_score": 1.0
+      "target": "ft_hf_clf_batch"
     },
     {
       "relation": "calls",
@@ -7635,9 +7655,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L88",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf_train",
-      "target": "ft_hf_clf_batch",
-      "confidence_score": 1.0
+      "target": "ft_hf_clf_batch"
     },
     {
       "relation": "rationale_for",
@@ -7645,9 +7665,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf_rationale_40",
-      "target": "ft_hf_clf_predict",
-      "confidence_score": 1.0
+      "target": "ft_hf_clf_predict"
     },
     {
       "relation": "calls",
@@ -7656,9 +7676,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L95",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf_train",
-      "target": "ft_hf_clf_predict",
-      "confidence_score": 1.0
+      "target": "ft_hf_clf_predict"
     },
     {
       "relation": "calls",
@@ -7667,9 +7687,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L95",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf_train",
-      "target": "ft_hf_clf_macro_f1",
-      "confidence_score": 1.0
+      "target": "ft_hf_clf_macro_f1"
     },
     {
       "relation": "rationale_for",
@@ -7677,9 +7697,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf_rationale_57",
-      "target": "ft_hf_clf_train",
-      "confidence_score": 1.0
+      "target": "ft_hf_clf_train"
     },
     {
       "relation": "rationale_for",
@@ -7687,9 +7707,9 @@
       "source_file": "src/jevexp/ft/hf_clf.py",
       "source_location": "L117",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_hf_clf_rationale_117",
-      "target": "ft_hf_clf_export",
-      "confidence_score": 1.0
+      "target": "ft_hf_clf_export"
     },
     {
       "relation": "contains",
@@ -7697,9 +7717,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "ft_laya_ft_agent_temperature",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_agent_temperature"
     },
     {
       "relation": "contains",
@@ -7707,9 +7727,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "ft_laya_ft_base_dir",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_base_dir"
     },
     {
       "relation": "contains",
@@ -7717,9 +7737,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "ft_laya_ft_build_items",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_build_items"
     },
     {
       "relation": "contains",
@@ -7727,9 +7747,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "ft_laya_ft_collate",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_collate"
     },
     {
       "relation": "contains",
@@ -7737,9 +7757,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L157",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "ft_laya_ft_dev",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_dev"
     },
     {
       "relation": "contains",
@@ -7747,9 +7767,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L276",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "ft_laya_ft_export",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_export"
     },
     {
       "relation": "contains",
@@ -7757,9 +7777,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L135",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "ft_laya_ft_fit_one_temp",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_fit_one_temp"
     },
     {
       "relation": "contains",
@@ -7767,9 +7787,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "ft_laya_ft_load_base",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_load_base"
     },
     {
       "relation": "contains",
@@ -7777,9 +7797,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L105",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "ft_laya_ft_logits_of",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_logits_of"
     },
     {
       "relation": "contains",
@@ -7787,9 +7807,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "ft_laya_ft_probs_from_logits",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_probs_from_logits"
     },
     {
       "relation": "contains",
@@ -7797,9 +7817,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "ft_laya_ft_question",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_question"
     },
     {
       "relation": "contains",
@@ -7807,9 +7827,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L255",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "ft_laya_ft_rlcd_loss",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_rlcd_loss"
     },
     {
       "relation": "contains",
@@ -7817,9 +7837,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L173",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "ft_laya_ft_train",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_train"
     },
     {
       "relation": "contains",
@@ -7827,9 +7847,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L161",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "ft_laya_ft_zeroshot",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_zeroshot"
     },
     {
       "relation": "imports_from",
@@ -7838,9 +7858,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "ft_plan",
-      "confidence_score": 1.0
+      "target": "ft_plan"
     },
     {
       "relation": "imports_from",
@@ -7849,9 +7869,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "jevexp_questions",
-      "confidence_score": 1.0
+      "target": "jevexp_questions"
     },
     {
       "relation": "imports",
@@ -7860,9 +7880,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft",
-      "target": "jevexp_questions_to_jev",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_to_jev"
     },
     {
       "relation": "rationale_for",
@@ -7870,9 +7890,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_rationale_1",
-      "target": "ft_laya_ft",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft"
     },
     {
       "relation": "imports_from",
@@ -7881,9 +7901,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "ft_laya_ft",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft"
     },
     {
       "relation": "calls",
@@ -7892,9 +7912,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L177",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_train",
-      "target": "ft_laya_ft_base_dir",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_base_dir"
     },
     {
       "relation": "calls",
@@ -7903,9 +7923,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L164",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_zeroshot",
-      "target": "ft_laya_ft_base_dir",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_base_dir"
     },
     {
       "relation": "calls",
@@ -7914,9 +7934,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L178",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_train",
-      "target": "ft_laya_ft_load_base",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_load_base"
     },
     {
       "relation": "calls",
@@ -7925,9 +7945,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L164",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_zeroshot",
-      "target": "ft_laya_ft_load_base",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_load_base"
     },
     {
       "relation": "calls",
@@ -7936,9 +7956,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_build_items",
-      "target": "ft_laya_ft_question",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_question"
     },
     {
       "relation": "calls",
@@ -7947,9 +7967,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_question",
-      "target": "jevexp_questions_to_jev",
-      "confidence_score": 1.0
+      "target": "jevexp_questions_to_jev"
     },
     {
       "relation": "calls",
@@ -7958,9 +7978,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L184",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_train",
-      "target": "ft_laya_ft_build_items",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_build_items"
     },
     {
       "relation": "calls",
@@ -7969,9 +7989,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L166",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_zeroshot",
-      "target": "ft_laya_ft_build_items",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_build_items"
     },
     {
       "relation": "calls",
@@ -7980,9 +8000,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_logits_of",
-      "target": "ft_laya_ft_collate",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_collate"
     },
     {
       "relation": "calls",
@@ -7991,9 +8011,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L213",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_train",
-      "target": "ft_laya_ft_collate",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_collate"
     },
     {
       "relation": "rationale_for",
@@ -8001,9 +8021,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L106",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_rationale_106",
-      "target": "ft_laya_ft_logits_of",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_logits_of"
     },
     {
       "relation": "calls",
@@ -8012,9 +8032,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L240",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_train",
-      "target": "ft_laya_ft_logits_of",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_logits_of"
     },
     {
       "relation": "calls",
@@ -8023,9 +8043,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_zeroshot",
-      "target": "ft_laya_ft_logits_of",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_logits_of"
     },
     {
       "relation": "rationale_for",
@@ -8033,9 +8053,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_rationale_122",
-      "target": "ft_laya_ft_agent_temperature",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_agent_temperature"
     },
     {
       "relation": "calls",
@@ -8044,9 +8064,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L247",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_train",
-      "target": "ft_laya_ft_agent_temperature",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_agent_temperature"
     },
     {
       "relation": "calls",
@@ -8055,9 +8075,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L168",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_zeroshot",
-      "target": "ft_laya_ft_agent_temperature",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_agent_temperature"
     },
     {
       "relation": "calls",
@@ -8066,9 +8086,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L249",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_train",
-      "target": "ft_laya_ft_probs_from_logits",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_probs_from_logits"
     },
     {
       "relation": "calls",
@@ -8077,9 +8097,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L169",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_zeroshot",
-      "target": "ft_laya_ft_probs_from_logits",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_probs_from_logits"
     },
     {
       "relation": "rationale_for",
@@ -8087,9 +8107,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L136",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_rationale_136",
-      "target": "ft_laya_ft_fit_one_temp",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_fit_one_temp"
     },
     {
       "relation": "calls",
@@ -8098,9 +8118,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L242",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_train",
-      "target": "ft_laya_ft_fit_one_temp",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_fit_one_temp"
     },
     {
       "relation": "calls",
@@ -8109,9 +8129,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L175",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_train",
-      "target": "ft_laya_ft_dev",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_dev"
     },
     {
       "relation": "calls",
@@ -8120,9 +8140,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L163",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_zeroshot",
-      "target": "ft_laya_ft_dev",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_dev"
     },
     {
       "relation": "calls",
@@ -8131,9 +8151,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L217",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_train",
-      "target": "ft_laya_ft_rlcd_loss",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_rlcd_loss"
     },
     {
       "relation": "rationale_for",
@@ -8141,9 +8161,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L256",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_rationale_256",
-      "target": "ft_laya_ft_rlcd_loss",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_rlcd_loss"
     },
     {
       "relation": "rationale_for",
@@ -8151,9 +8171,9 @@
       "source_file": "src/jevexp/ft/laya_ft.py",
       "source_location": "L277",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_laya_ft_rationale_277",
-      "target": "ft_laya_ft_export",
-      "confidence_score": 1.0
+      "target": "ft_laya_ft_export"
     },
     {
       "relation": "contains",
@@ -8161,9 +8181,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan",
-      "target": "ft_plan_alloc",
-      "confidence_score": 1.0
+      "target": "ft_plan_alloc"
     },
     {
       "relation": "contains",
@@ -8171,9 +8191,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan",
-      "target": "ft_plan_build",
-      "confidence_score": 1.0
+      "target": "ft_plan_build"
     },
     {
       "relation": "contains",
@@ -8181,9 +8201,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan",
-      "target": "ft_plan_curve_subsets",
-      "confidence_score": 1.0
+      "target": "ft_plan_curve_subsets"
     },
     {
       "relation": "contains",
@@ -8191,9 +8211,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan",
-      "target": "ft_plan_dumps",
-      "confidence_score": 1.0
+      "target": "ft_plan_dumps"
     },
     {
       "relation": "contains",
@@ -8201,9 +8221,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L137",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan",
-      "target": "ft_plan_load_plan",
-      "confidence_score": 1.0
+      "target": "ft_plan_load_plan"
     },
     {
       "relation": "contains",
@@ -8211,9 +8231,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L142",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan",
-      "target": "ft_plan_main",
-      "confidence_score": 1.0
+      "target": "ft_plan_main"
     },
     {
       "relation": "contains",
@@ -8221,9 +8241,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan",
-      "target": "ft_plan_run_id",
-      "confidence_score": 1.0
+      "target": "ft_plan_run_id"
     },
     {
       "relation": "contains",
@@ -8231,9 +8251,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L133",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan",
-      "target": "ft_plan_sha",
-      "confidence_score": 1.0
+      "target": "ft_plan_sha"
     },
     {
       "relation": "imports_from",
@@ -8242,9 +8262,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan",
-      "target": "jevexp_paths",
-      "confidence_score": 1.0
+      "target": "jevexp_paths"
     },
     {
       "relation": "rationale_for",
@@ -8252,9 +8272,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan_rationale_1",
-      "target": "ft_plan",
-      "confidence_score": 1.0
+      "target": "ft_plan"
     },
     {
       "relation": "imports_from",
@@ -8263,9 +8283,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "ft_plan",
-      "confidence_score": 1.0
+      "target": "ft_plan"
     },
     {
       "relation": "calls",
@@ -8274,9 +8294,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan_curve_subsets",
-      "target": "ft_plan_alloc",
-      "confidence_score": 1.0
+      "target": "ft_plan_alloc"
     },
     {
       "relation": "rationale_for",
@@ -8284,9 +8304,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan_rationale_43",
-      "target": "ft_plan_alloc",
-      "confidence_score": 1.0
+      "target": "ft_plan_alloc"
     },
     {
       "relation": "calls",
@@ -8306,9 +8326,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L116",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan_build",
-      "target": "ft_plan_curve_subsets",
-      "confidence_score": 1.0
+      "target": "ft_plan_curve_subsets"
     },
     {
       "relation": "rationale_for",
@@ -8316,9 +8336,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan_rationale_58",
-      "target": "ft_plan_curve_subsets",
-      "confidence_score": 1.0
+      "target": "ft_plan_curve_subsets"
     },
     {
       "relation": "calls",
@@ -8338,9 +8358,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L143",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan_main",
-      "target": "ft_plan_build",
-      "confidence_score": 1.0
+      "target": "ft_plan_build"
     },
     {
       "relation": "calls",
@@ -8360,9 +8380,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L144",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan_main",
-      "target": "ft_plan_dumps",
-      "confidence_score": 1.0
+      "target": "ft_plan_dumps"
     },
     {
       "relation": "calls",
@@ -8371,9 +8391,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L139",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan_load_plan",
-      "target": "ft_plan_sha",
-      "confidence_score": 1.0
+      "target": "ft_plan_sha"
     },
     {
       "relation": "calls",
@@ -8382,9 +8402,9 @@
       "source_file": "src/jevexp/ft/plan.py",
       "source_location": "L148",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_plan_main",
-      "target": "ft_plan_sha",
-      "confidence_score": 1.0
+      "target": "ft_plan_sha"
     },
     {
       "relation": "imports",
@@ -8393,9 +8413,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "ft_plan_load_plan",
-      "confidence_score": 1.0
+      "target": "ft_plan_load_plan"
     },
     {
       "relation": "calls",
@@ -8415,9 +8435,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L111",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline",
-      "target": "ft_plan_load_plan",
-      "confidence_score": 1.0
+      "target": "ft_plan_load_plan"
     },
     {
       "relation": "calls",
@@ -8426,9 +8446,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L112",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline_run_curves",
-      "target": "ft_plan_load_plan",
-      "confidence_score": 1.0
+      "target": "ft_plan_load_plan"
     },
     {
       "relation": "contains",
@@ -8436,9 +8456,9 @@
       "source_file": "src/jevexp/ft/pull.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_pull",
-      "target": "ft_pull_install",
-      "confidence_score": 1.0
+      "target": "ft_pull_install"
     },
     {
       "relation": "contains",
@@ -8446,9 +8466,9 @@
       "source_file": "src/jevexp/ft/pull.py",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_pull",
-      "target": "ft_pull_main",
-      "confidence_score": 1.0
+      "target": "ft_pull_main"
     },
     {
       "relation": "imports_from",
@@ -8457,9 +8477,9 @@
       "source_file": "src/jevexp/ft/pull.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_pull",
-      "target": "ft_store",
-      "confidence_score": 1.0
+      "target": "ft_store"
     },
     {
       "relation": "imports",
@@ -8468,9 +8488,9 @@
       "source_file": "src/jevexp/ft/pull.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_pull",
-      "target": "ft_store_s3_store",
-      "confidence_score": 1.0
+      "target": "ft_store_s3_store"
     },
     {
       "relation": "imports_from",
@@ -8479,9 +8499,9 @@
       "source_file": "src/jevexp/ft/pull.py",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_pull",
-      "target": "ft_worker",
-      "confidence_score": 1.0
+      "target": "ft_worker"
     },
     {
       "relation": "imports",
@@ -8490,9 +8510,9 @@
       "source_file": "src/jevexp/ft/pull.py",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_pull",
-      "target": "ft_worker_worker",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker"
     },
     {
       "relation": "imports_from",
@@ -8501,9 +8521,9 @@
       "source_file": "src/jevexp/ft/pull.py",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_pull",
-      "target": "jevexp_paths",
-      "confidence_score": 1.0
+      "target": "jevexp_paths"
     },
     {
       "relation": "imports_from",
@@ -8512,9 +8532,9 @@
       "source_file": "src/jevexp/ft/pull.py",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_pull",
-      "target": "jevexp_schema",
-      "confidence_score": 1.0
+      "target": "jevexp_schema"
     },
     {
       "relation": "imports",
@@ -8523,9 +8543,9 @@
       "source_file": "src/jevexp/ft/pull.py",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_pull",
-      "target": "jevexp_schema_read",
-      "confidence_score": 1.0
+      "target": "jevexp_schema_read"
     },
     {
       "relation": "rationale_for",
@@ -8533,9 +8553,9 @@
       "source_file": "src/jevexp/ft/pull.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_pull_rationale_1",
-      "target": "ft_pull",
-      "confidence_score": 1.0
+      "target": "ft_pull"
     },
     {
       "relation": "calls",
@@ -8544,9 +8564,9 @@
       "source_file": "src/jevexp/ft/pull.py",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_pull_install",
-      "target": "jevexp_schema_read",
-      "confidence_score": 1.0
+      "target": "jevexp_schema_read"
     },
     {
       "relation": "calls",
@@ -8555,9 +8575,9 @@
       "source_file": "src/jevexp/ft/pull.py",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_pull_main",
-      "target": "ft_pull_install",
-      "confidence_score": 1.0
+      "target": "ft_pull_install"
     },
     {
       "relation": "calls",
@@ -8566,9 +8586,9 @@
       "source_file": "src/jevexp/ft/pull.py",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_pull_main",
-      "target": "ft_store_s3_store",
-      "confidence_score": 1.0
+      "target": "ft_store_s3_store"
     },
     {
       "relation": "calls",
@@ -8577,9 +8597,9 @@
       "source_file": "src/jevexp/ft/pull.py",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_pull_main",
-      "target": "ft_worker_worker",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker"
     },
     {
       "relation": "contains",
@@ -8587,9 +8607,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L160",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store",
-      "target": "ft_store_config_fingerprint",
-      "confidence_score": 1.0
+      "target": "ft_store_config_fingerprint"
     },
     {
       "relation": "contains",
@@ -8597,9 +8617,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store",
-      "target": "ft_store_file_sha256",
-      "confidence_score": 1.0
+      "target": "ft_store_file_sha256"
     },
     {
       "relation": "contains",
@@ -8607,9 +8627,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L145",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store",
-      "target": "ft_store_load_s3_config",
-      "confidence_score": 1.0
+      "target": "ft_store_load_s3_config"
     },
     {
       "relation": "contains",
@@ -8617,9 +8637,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store",
-      "target": "ft_store_localstore",
-      "confidence_score": 1.0
+      "target": "ft_store_localstore"
     },
     {
       "relation": "contains",
@@ -8627,9 +8647,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L130",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store",
-      "target": "ft_store_normalize_endpoint",
-      "confidence_score": 1.0
+      "target": "ft_store_normalize_endpoint"
     },
     {
       "relation": "contains",
@@ -8637,9 +8657,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L165",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store",
-      "target": "ft_store_s3_store",
-      "confidence_score": 1.0
+      "target": "ft_store_s3_store"
     },
     {
       "relation": "contains",
@@ -8647,9 +8667,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store",
-      "target": "ft_store_s3store",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store"
     },
     {
       "relation": "contains",
@@ -8657,9 +8677,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store",
-      "target": "ft_store_store",
-      "confidence_score": 1.0
+      "target": "ft_store_store"
     },
     {
       "relation": "rationale_for",
@@ -8667,9 +8687,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_rationale_1",
-      "target": "ft_store",
-      "confidence_score": 1.0
+      "target": "ft_store"
     },
     {
       "relation": "inherits",
@@ -8677,9 +8697,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_localstore",
-      "target": "ft_store_store",
-      "confidence_score": 1.0
+      "target": "ft_store_store"
     },
     {
       "relation": "inherits",
@@ -8687,9 +8707,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_s3store",
-      "target": "ft_store_store",
-      "confidence_score": 1.0
+      "target": "ft_store_store"
     },
     {
       "relation": "method",
@@ -8697,9 +8717,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_store",
-      "target": "ft_store_store_delete",
-      "confidence_score": 1.0
+      "target": "ft_store_store_delete"
     },
     {
       "relation": "method",
@@ -8707,9 +8727,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_store",
-      "target": "ft_store_store_exists",
-      "confidence_score": 1.0
+      "target": "ft_store_store_exists"
     },
     {
       "relation": "method",
@@ -8717,9 +8737,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_store",
-      "target": "ft_store_store_get_bytes",
-      "confidence_score": 1.0
+      "target": "ft_store_store_get_bytes"
     },
     {
       "relation": "method",
@@ -8727,9 +8747,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_store",
-      "target": "ft_store_store_get_file",
-      "confidence_score": 1.0
+      "target": "ft_store_store_get_file"
     },
     {
       "relation": "method",
@@ -8737,9 +8757,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_store",
-      "target": "ft_store_store_get_json",
-      "confidence_score": 1.0
+      "target": "ft_store_store_get_json"
     },
     {
       "relation": "method",
@@ -8747,9 +8767,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_store",
-      "target": "ft_store_store_list",
-      "confidence_score": 1.0
+      "target": "ft_store_store_list"
     },
     {
       "relation": "method",
@@ -8757,9 +8777,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_store",
-      "target": "ft_store_store_put_bytes",
-      "confidence_score": 1.0
+      "target": "ft_store_store_put_bytes"
     },
     {
       "relation": "method",
@@ -8767,9 +8787,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_store",
-      "target": "ft_store_store_put_file",
-      "confidence_score": 1.0
+      "target": "ft_store_store_put_file"
     },
     {
       "relation": "method",
@@ -8777,9 +8797,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_store",
-      "target": "ft_store_store_put_json",
-      "confidence_score": 1.0
+      "target": "ft_store_store_put_json"
     },
     {
       "relation": "calls",
@@ -8788,9 +8808,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_store_get_json",
-      "target": "ft_store_s3store_exists",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_exists"
     },
     {
       "relation": "calls",
@@ -8799,9 +8819,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_store_get_json",
-      "target": "ft_store_s3store_get_bytes",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_get_bytes"
     },
     {
       "relation": "calls",
@@ -8810,9 +8830,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_store_put_json",
-      "target": "ft_store_s3store_put_bytes",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_put_bytes"
     },
     {
       "relation": "method",
@@ -8820,9 +8840,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_localstore",
-      "target": "ft_store_localstore_delete",
-      "confidence_score": 1.0
+      "target": "ft_store_localstore_delete"
     },
     {
       "relation": "method",
@@ -8830,9 +8850,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_localstore",
-      "target": "ft_store_localstore_exists",
-      "confidence_score": 1.0
+      "target": "ft_store_localstore_exists"
     },
     {
       "relation": "method",
@@ -8840,9 +8860,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_localstore",
-      "target": "ft_store_localstore_get_bytes",
-      "confidence_score": 1.0
+      "target": "ft_store_localstore_get_bytes"
     },
     {
       "relation": "method",
@@ -8850,9 +8870,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_localstore",
-      "target": "ft_store_localstore_get_file",
-      "confidence_score": 1.0
+      "target": "ft_store_localstore_get_file"
     },
     {
       "relation": "method",
@@ -8860,9 +8880,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_localstore",
-      "target": "ft_store_localstore_init",
-      "confidence_score": 1.0
+      "target": "ft_store_localstore_init"
     },
     {
       "relation": "method",
@@ -8870,9 +8890,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_localstore",
-      "target": "ft_store_localstore_list",
-      "confidence_score": 1.0
+      "target": "ft_store_localstore_list"
     },
     {
       "relation": "method",
@@ -8880,9 +8900,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_localstore",
-      "target": "ft_store_localstore_p",
-      "confidence_score": 1.0
+      "target": "ft_store_localstore_p"
     },
     {
       "relation": "method",
@@ -8890,9 +8910,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_localstore",
-      "target": "ft_store_localstore_put_bytes",
-      "confidence_score": 1.0
+      "target": "ft_store_localstore_put_bytes"
     },
     {
       "relation": "method",
@@ -8900,9 +8920,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_localstore",
-      "target": "ft_store_localstore_put_file",
-      "confidence_score": 1.0
+      "target": "ft_store_localstore_put_file"
     },
     {
       "relation": "uses",
@@ -8910,9 +8930,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L11",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "tests_test_ft_stop",
-      "target": "ft_store_localstore",
-      "confidence_score": 0.5
+      "target": "ft_store_localstore"
     },
     {
       "relation": "calls",
@@ -8934,6 +8954,17 @@
       "source_location": "L101",
       "weight": 1.0,
       "source": "tests_test_ft_test_hf_train_resumes_after_kill",
+      "target": "ft_store_localstore"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_ft.py",
+      "source_location": "L180",
+      "weight": 1.0,
+      "source": "tests_test_ft_test_hf_train_with_worker_default_ctx",
       "target": "ft_store_localstore"
     },
     {
@@ -8976,9 +9007,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_localstore_delete",
-      "target": "ft_store_localstore_p",
-      "confidence_score": 1.0
+      "target": "ft_store_localstore_p"
     },
     {
       "relation": "calls",
@@ -8987,9 +9018,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_localstore_exists",
-      "target": "ft_store_localstore_p",
-      "confidence_score": 1.0
+      "target": "ft_store_localstore_p"
     },
     {
       "relation": "calls",
@@ -8998,9 +9029,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_localstore_get_bytes",
-      "target": "ft_store_localstore_p",
-      "confidence_score": 1.0
+      "target": "ft_store_localstore_p"
     },
     {
       "relation": "calls",
@@ -9009,9 +9040,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_localstore_get_file",
-      "target": "ft_store_localstore_p",
-      "confidence_score": 1.0
+      "target": "ft_store_localstore_p"
     },
     {
       "relation": "calls",
@@ -9020,9 +9051,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_localstore_list",
-      "target": "ft_store_localstore_p",
-      "confidence_score": 1.0
+      "target": "ft_store_localstore_p"
     },
     {
       "relation": "calls",
@@ -9031,9 +9062,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_localstore_put_bytes",
-      "target": "ft_store_localstore_p",
-      "confidence_score": 1.0
+      "target": "ft_store_localstore_p"
     },
     {
       "relation": "calls",
@@ -9042,9 +9073,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_localstore_put_file",
-      "target": "ft_store_localstore_p",
-      "confidence_score": 1.0
+      "target": "ft_store_localstore_p"
     },
     {
       "relation": "calls",
@@ -9053,9 +9084,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_localstore_exists",
-      "target": "ft_store_s3store_exists",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_exists"
     },
     {
       "relation": "calls",
@@ -9064,9 +9095,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_localstore_delete",
-      "target": "ft_store_s3store_exists",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_exists"
     },
     {
       "relation": "calls",
@@ -9075,9 +9106,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_localstore_list",
-      "target": "ft_store_s3store_exists",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_exists"
     },
     {
       "relation": "rationale_for",
@@ -9085,9 +9116,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_rationale_73",
-      "target": "ft_store_s3store",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store"
     },
     {
       "relation": "calls",
@@ -9096,9 +9127,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L176",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_s3_store",
-      "target": "ft_store_s3store",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store"
     },
     {
       "relation": "method",
@@ -9106,9 +9137,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_s3store",
-      "target": "ft_store_s3store_delete",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_delete"
     },
     {
       "relation": "method",
@@ -9116,9 +9147,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L81",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_s3store",
-      "target": "ft_store_s3store_exists",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_exists"
     },
     {
       "relation": "method",
@@ -9126,9 +9157,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L90",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_s3store",
-      "target": "ft_store_s3store_get_bytes",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_get_bytes"
     },
     {
       "relation": "method",
@@ -9136,9 +9167,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L99",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_s3store",
-      "target": "ft_store_s3store_get_file",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_get_file"
     },
     {
       "relation": "method",
@@ -9146,9 +9177,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_s3store",
-      "target": "ft_store_s3store_init",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_init"
     },
     {
       "relation": "method",
@@ -9156,9 +9187,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_s3store",
-      "target": "ft_store_s3store_k",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_k"
     },
     {
       "relation": "method",
@@ -9166,9 +9197,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L108",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_s3store",
-      "target": "ft_store_s3store_list",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_list"
     },
     {
       "relation": "method",
@@ -9176,9 +9207,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_s3store",
-      "target": "ft_store_s3store_put_bytes",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_put_bytes"
     },
     {
       "relation": "method",
@@ -9186,9 +9217,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_s3store",
-      "target": "ft_store_s3store_put_file",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_put_file"
     },
     {
       "relation": "calls",
@@ -9197,9 +9228,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L106",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_s3store_delete",
-      "target": "ft_store_s3store_k",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_k"
     },
     {
       "relation": "calls",
@@ -9208,9 +9239,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_s3store_exists",
-      "target": "ft_store_s3store_k",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_k"
     },
     {
       "relation": "calls",
@@ -9219,9 +9250,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L91",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_s3store_get_bytes",
-      "target": "ft_store_s3store_k",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_k"
     },
     {
       "relation": "calls",
@@ -9230,9 +9261,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L101",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_s3store_get_file",
-      "target": "ft_store_s3store_k",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_k"
     },
     {
       "relation": "calls",
@@ -9241,9 +9272,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_s3store_list",
-      "target": "ft_store_s3store_k",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_k"
     },
     {
       "relation": "calls",
@@ -9252,9 +9283,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_s3store_put_bytes",
-      "target": "ft_store_s3store_k",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_k"
     },
     {
       "relation": "calls",
@@ -9263,9 +9294,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_s3store_put_file",
-      "target": "ft_store_s3store_k",
-      "confidence_score": 1.0
+      "target": "ft_store_s3store_k"
     },
     {
       "relation": "calls",
@@ -9274,9 +9305,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L148",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_load_s3_config",
-      "target": "ft_store_normalize_endpoint",
-      "confidence_score": 1.0
+      "target": "ft_store_normalize_endpoint"
     },
     {
       "relation": "rationale_for",
@@ -9284,9 +9315,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L131",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_rationale_131",
-      "target": "ft_store_normalize_endpoint",
-      "confidence_score": 1.0
+      "target": "ft_store_normalize_endpoint"
     },
     {
       "relation": "calls",
@@ -9295,9 +9326,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L168",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_s3_store",
-      "target": "ft_store_load_s3_config",
-      "confidence_score": 1.0
+      "target": "ft_store_load_s3_config"
     },
     {
       "relation": "rationale_for",
@@ -9305,9 +9336,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L161",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_rationale_161",
-      "target": "ft_store_config_fingerprint",
-      "confidence_score": 1.0
+      "target": "ft_store_config_fingerprint"
     },
     {
       "relation": "calls",
@@ -9316,9 +9347,9 @@
       "source_file": "src/jevexp/ft/store.py",
       "source_location": "L176",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_store_s3_store",
-      "target": "ft_store_config_fingerprint",
-      "confidence_score": 1.0
+      "target": "ft_store_config_fingerprint"
     },
     {
       "relation": "contains",
@@ -9326,9 +9357,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "ft_worker_code_sha",
-      "confidence_score": 1.0
+      "target": "ft_worker_code_sha"
     },
     {
       "relation": "contains",
@@ -9336,9 +9367,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "ft_worker_parquet_bytes",
-      "confidence_score": 1.0
+      "target": "ft_worker_parquet_bytes"
     },
     {
       "relation": "contains",
@@ -9346,9 +9377,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "ft_worker_worker",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker"
     },
     {
       "relation": "contains",
@@ -9356,9 +9387,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L265",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "ft_worker_zip",
-      "confidence_score": 1.0
+      "target": "ft_worker_zip"
     },
     {
       "relation": "imports_from",
@@ -9367,9 +9398,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "jevexp_paths",
-      "confidence_score": 1.0
+      "target": "jevexp_paths"
     },
     {
       "relation": "imports_from",
@@ -9378,9 +9409,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "jevexp_schema",
-      "confidence_score": 1.0
+      "target": "jevexp_schema"
     },
     {
       "relation": "imports",
@@ -9389,9 +9420,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker",
-      "target": "jevexp_schema_validate",
-      "confidence_score": 1.0
+      "target": "jevexp_schema_validate"
     },
     {
       "relation": "rationale_for",
@@ -9399,9 +9430,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_rationale_1",
-      "target": "ft_worker",
-      "confidence_score": 1.0
+      "target": "ft_worker"
     },
     {
       "relation": "calls",
@@ -9410,9 +9441,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker_init",
-      "target": "ft_worker_code_sha",
-      "confidence_score": 1.0
+      "target": "ft_worker_code_sha"
     },
     {
       "relation": "calls",
@@ -9421,9 +9452,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_parquet_bytes",
-      "target": "jevexp_schema_validate",
-      "confidence_score": 1.0
+      "target": "jevexp_schema_validate"
     },
     {
       "relation": "calls",
@@ -9432,9 +9463,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L204",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker_one",
-      "target": "ft_worker_parquet_bytes",
-      "confidence_score": 1.0
+      "target": "ft_worker_parquet_bytes"
     },
     {
       "relation": "method",
@@ -9442,9 +9473,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L111",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker",
-      "target": "ft_worker_worker_best_config",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_best_config"
     },
     {
       "relation": "method",
@@ -9452,9 +9483,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker",
-      "target": "ft_worker_worker_check_plan",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_check_plan"
     },
     {
       "relation": "method",
@@ -9462,9 +9493,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L235",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker",
-      "target": "ft_worker_worker_collect",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_collect"
     },
     {
       "relation": "method",
@@ -9472,9 +9503,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L162",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker",
-      "target": "ft_worker_worker_ctx",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_ctx"
     },
     {
       "relation": "method",
@@ -9482,9 +9513,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L224",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker",
-      "target": "ft_worker_worker_export",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_export"
     },
     {
       "relation": "method",
@@ -9492,9 +9523,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker",
-      "target": "ft_worker_worker_init",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_init"
     },
     {
       "relation": "method",
@@ -9502,9 +9533,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker",
-      "target": "ft_worker_worker_is_done",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_is_done"
     },
     {
       "relation": "method",
@@ -9512,9 +9543,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker",
-      "target": "ft_worker_worker_lease_ok",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_lease_ok"
     },
     {
       "relation": "method",
@@ -9522,9 +9553,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L176",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker",
-      "target": "ft_worker_worker_one",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_one"
     },
     {
       "relation": "method",
@@ -9532,9 +9563,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker",
-      "target": "ft_worker_worker_run",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_run"
     },
     {
       "relation": "method",
@@ -9542,9 +9573,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker",
-      "target": "ft_worker_worker_runs",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_runs"
     },
     {
       "relation": "method",
@@ -9552,9 +9583,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker",
-      "target": "ft_worker_worker_status",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_status"
     },
     {
       "relation": "method",
@@ -9562,9 +9593,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L108",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker",
-      "target": "ft_worker_worker_take_lease",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_take_lease"
     },
     {
       "relation": "calls",
@@ -9573,9 +9604,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L123",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker_run",
-      "target": "ft_worker_worker_runs",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_runs"
     },
     {
       "relation": "calls",
@@ -9584,9 +9615,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker_status",
-      "target": "ft_worker_worker_runs",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_runs"
     },
     {
       "relation": "calls",
@@ -9595,9 +9626,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L244",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker_collect",
-      "target": "ft_worker_worker_is_done",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_is_done"
     },
     {
       "relation": "calls",
@@ -9606,9 +9637,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L123",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker_run",
-      "target": "ft_worker_worker_is_done",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_is_done"
     },
     {
       "relation": "rationale_for",
@@ -9616,9 +9647,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_rationale_70",
-      "target": "ft_worker_worker_status",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_status"
     },
     {
       "relation": "calls",
@@ -9627,9 +9658,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L257",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker_collect",
-      "target": "ft_worker_worker_status",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_status"
     },
     {
       "relation": "rationale_for",
@@ -9637,9 +9668,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_rationale_84",
-      "target": "ft_worker_worker_check_plan",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_check_plan"
     },
     {
       "relation": "calls",
@@ -9648,9 +9679,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L128",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker_run",
-      "target": "ft_worker_worker_lease_ok",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_lease_ok"
     },
     {
       "relation": "calls",
@@ -9659,9 +9690,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L139",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker_run",
-      "target": "ft_worker_worker_take_lease",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_take_lease"
     },
     {
       "relation": "rationale_for",
@@ -9669,9 +9700,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L112",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_rationale_112",
-      "target": "ft_worker_worker_best_config",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_best_config"
     },
     {
       "relation": "calls",
@@ -9680,9 +9711,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L135",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker_run",
-      "target": "ft_worker_worker_best_config",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_best_config"
     },
     {
       "relation": "calls",
@@ -9691,9 +9722,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L143",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker_run",
-      "target": "ft_worker_worker_one",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_one"
     },
     {
       "relation": "calls",
@@ -9702,9 +9733,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L178",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker_one",
-      "target": "ft_worker_worker_ctx",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_ctx"
     },
     {
       "relation": "calls",
@@ -9713,9 +9744,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L214",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker_one",
-      "target": "ft_worker_worker_export",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_export"
     },
     {
       "relation": "rationale_for",
@@ -9723,9 +9754,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L236",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_rationale_236",
-      "target": "ft_worker_worker_collect",
-      "confidence_score": 1.0
+      "target": "ft_worker_worker_collect"
     },
     {
       "relation": "calls",
@@ -9734,9 +9765,9 @@
       "source_file": "src/jevexp/ft/worker.py",
       "source_location": "L260",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_worker_worker_collect",
-      "target": "ft_worker_zip",
-      "confidence_score": 1.0
+      "target": "ft_worker_zip"
     },
     {
       "relation": "rationale_for",
@@ -10142,9 +10173,9 @@
       "source_file": "src/jevexp/report_f4.py",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f4",
-      "target": "jevexp_paths",
-      "confidence_score": 1.0
+      "target": "jevexp_paths"
     },
     {
       "relation": "imports_from",
@@ -10263,9 +10294,9 @@
       "source_file": "tests/test_scope.py",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_scope",
-      "target": "jevexp_paths",
-      "confidence_score": 1.0
+      "target": "jevexp_paths"
     },
     {
       "relation": "contains",
@@ -10869,9 +10900,9 @@
       "source_file": "src/jevexp/report_f4.py",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f4",
-      "target": "jevexp_report_f4_check",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f4_check"
     },
     {
       "relation": "contains",
@@ -10879,9 +10910,9 @@
       "source_file": "src/jevexp/report_f4.py",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f4",
-      "target": "jevexp_report_f4_main",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f4_main"
     },
     {
       "relation": "contains",
@@ -10889,9 +10920,9 @@
       "source_file": "src/jevexp/report_f4.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f4",
-      "target": "jevexp_report_f4_status",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f4_status"
     },
     {
       "relation": "imports_from",
@@ -10900,9 +10931,9 @@
       "source_file": "src/jevexp/report_f4.py",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f4",
-      "target": "jevexp_schema",
-      "confidence_score": 1.0
+      "target": "jevexp_schema"
     },
     {
       "relation": "imports",
@@ -10911,9 +10942,9 @@
       "source_file": "src/jevexp/report_f4.py",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f4",
-      "target": "jevexp_schema_read",
-      "confidence_score": 1.0
+      "target": "jevexp_schema_read"
     },
     {
       "relation": "rationale_for",
@@ -10921,9 +10952,9 @@
       "source_file": "src/jevexp/report_f4.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f4_rationale_1",
-      "target": "jevexp_report_f4",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f4"
     },
     {
       "relation": "calls",
@@ -10932,9 +10963,9 @@
       "source_file": "src/jevexp/report_f4.py",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f4_check",
-      "target": "jevexp_report_f4_status",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f4_status"
     },
     {
       "relation": "calls",
@@ -10943,9 +10974,9 @@
       "source_file": "src/jevexp/report_f4.py",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f4_main",
-      "target": "jevexp_report_f4_status",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f4_status"
     },
     {
       "relation": "calls",
@@ -10954,9 +10985,9 @@
       "source_file": "src/jevexp/report_f4.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f4_status",
-      "target": "jevexp_schema_read",
-      "confidence_score": 1.0
+      "target": "jevexp_schema_read"
     },
     {
       "relation": "calls",
@@ -10965,9 +10996,9 @@
       "source_file": "src/jevexp/report_f4.py",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jevexp_report_f4_main",
-      "target": "jevexp_report_f4_check",
-      "confidence_score": 1.0
+      "target": "jevexp_report_f4_check"
     },
     {
       "relation": "imports_from",
@@ -11037,9 +11068,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L108",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline",
-      "target": "runners_baseline_run_curves",
-      "confidence_score": 1.0
+      "target": "runners_baseline_run_curves"
     },
     {
       "relation": "contains",
@@ -11089,9 +11120,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline_rationale_47",
-      "target": "runners_baseline_fit_select",
-      "confidence_score": 1.0
+      "target": "runners_baseline_fit_select"
     },
     {
       "relation": "calls",
@@ -11111,9 +11142,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L123",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline_run_curves",
-      "target": "runners_baseline_fit_select",
-      "confidence_score": 1.0
+      "target": "runners_baseline_fit_select"
     },
     {
       "relation": "calls",
@@ -11155,9 +11186,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L124",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline_run_curves",
-      "target": "runners_baseline_prediction_frame",
-      "confidence_score": 1.0
+      "target": "runners_baseline_prediction_frame"
     },
     {
       "relation": "calls",
@@ -11187,9 +11218,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline_rationale_84",
-      "target": "runners_baseline_run",
-      "confidence_score": 1.0
+      "target": "runners_baseline_run"
     },
     {
       "relation": "calls",
@@ -11209,9 +11240,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L147",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline_main",
-      "target": "runners_baseline_run_curves",
-      "confidence_score": 1.0
+      "target": "runners_baseline_run_curves"
     },
     {
       "relation": "rationale_for",
@@ -11219,9 +11250,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline_rationale_109",
-      "target": "runners_baseline_run_curves",
-      "confidence_score": 1.0
+      "target": "runners_baseline_run_curves"
     },
     {
       "relation": "calls",
@@ -11230,9 +11261,9 @@
       "source_file": "src/jevexp/runners/baseline.py",
       "source_location": "L134",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_baseline_run_curves",
-      "target": "jevexp_schema_write",
-      "confidence_score": 1.0
+      "target": "jevexp_schema_write"
     },
     {
       "relation": "imports_from",
@@ -11315,9 +11346,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude",
-      "target": "runners_common_is_infra_text",
-      "confidence_score": 1.0
+      "target": "runners_common_is_infra_text"
     },
     {
       "relation": "imports",
@@ -11370,9 +11401,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude",
-      "target": "runners_common_run_tag",
-      "confidence_score": 1.0
+      "target": "runners_common_run_tag"
     },
     {
       "relation": "rationale_for",
@@ -11402,9 +11433,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude_call_cli",
-      "target": "runners_common_is_infra_text",
-      "confidence_score": 1.0
+      "target": "runners_common_is_infra_text"
     },
     {
       "relation": "rationale_for",
@@ -11412,9 +11443,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude_rationale_26",
-      "target": "runners_claude_call_cli",
-      "confidence_score": 1.0
+      "target": "runners_claude_call_cli"
     },
     {
       "relation": "calls",
@@ -11500,9 +11531,9 @@
       "source_file": "src/jevexp/runners/claude.py",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_claude_run",
-      "target": "runners_common_run_tag",
-      "confidence_score": 1.0
+      "target": "runners_common_run_tag"
     },
     {
       "relation": "imports_from",
@@ -11605,9 +11636,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "runners_common_is_infra_text",
-      "confidence_score": 1.0
+      "target": "runners_common_is_infra_text"
     },
     {
       "relation": "imports",
@@ -11660,9 +11691,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex",
-      "target": "runners_common_run_tag",
-      "confidence_score": 1.0
+      "target": "runners_common_run_tag"
     },
     {
       "relation": "rationale_for",
@@ -11735,9 +11766,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex_call_cli",
-      "target": "runners_common_is_infra_text",
-      "confidence_score": 1.0
+      "target": "runners_common_is_infra_text"
     },
     {
       "relation": "calls",
@@ -11823,9 +11854,9 @@
       "source_file": "src/jevexp/runners/codex.py",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_codex_run",
-      "target": "runners_common_run_tag",
-      "confidence_score": 1.0
+      "target": "runners_common_run_tag"
     },
     {
       "relation": "contains",
@@ -11853,9 +11884,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L118",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common",
-      "target": "runners_common_is_infra_text",
-      "confidence_score": 1.0
+      "target": "runners_common_is_infra_text"
     },
     {
       "relation": "contains",
@@ -11933,9 +11964,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common",
-      "target": "runners_common_run_tag",
-      "confidence_score": 1.0
+      "target": "runners_common_run_tag"
     },
     {
       "relation": "rationale_for",
@@ -12095,9 +12126,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_rationale_45",
-      "target": "runners_common_items",
-      "confidence_score": 1.0
+      "target": "runners_common_items"
     },
     {
       "relation": "imports",
@@ -12171,9 +12202,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_rationale_63",
-      "target": "runners_common_run_tag",
-      "confidence_score": 1.0
+      "target": "runners_common_run_tag"
     },
     {
       "relation": "imports",
@@ -12182,9 +12213,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek",
-      "target": "runners_common_run_tag",
-      "confidence_score": 1.0
+      "target": "runners_common_run_tag"
     },
     {
       "relation": "calls",
@@ -12193,9 +12224,9 @@
       "source_file": "src/jevexp/runners/deepseek.py",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_deepseek_run",
-      "target": "runners_common_run_tag",
-      "confidence_score": 1.0
+      "target": "runners_common_run_tag"
     },
     {
       "relation": "imports",
@@ -12204,9 +12235,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev",
-      "target": "runners_common_run_tag",
-      "confidence_score": 1.0
+      "target": "runners_common_run_tag"
     },
     {
       "relation": "calls",
@@ -12215,9 +12246,9 @@
       "source_file": "src/jevexp/runners/jev.py",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_jev_run",
-      "target": "runners_common_run_tag",
-      "confidence_score": 1.0
+      "target": "runners_common_run_tag"
     },
     {
       "relation": "imports",
@@ -12226,9 +12257,9 @@
       "source_file": "src/jevexp/runners/nllb.py",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_nllb",
-      "target": "runners_common_run_tag",
-      "confidence_score": 1.0
+      "target": "runners_common_run_tag"
     },
     {
       "relation": "calls",
@@ -12237,9 +12268,9 @@
       "source_file": "src/jevexp/runners/nllb.py",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_nllb_run",
-      "target": "runners_common_run_tag",
-      "confidence_score": 1.0
+      "target": "runners_common_run_tag"
     },
     {
       "relation": "calls",
@@ -12258,9 +12289,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_rationale_68",
-      "target": "runners_common_post_json",
-      "confidence_score": 1.0
+      "target": "runners_common_post_json"
     },
     {
       "relation": "imports",
@@ -12312,9 +12343,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_rationale_89",
-      "target": "runners_common_rawlog",
-      "confidence_score": 1.0
+      "target": "runners_common_rawlog"
     },
     {
       "relation": "method",
@@ -12483,9 +12514,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L119",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_rationale_119",
-      "target": "runners_common_is_infra_text",
-      "confidence_score": 1.0
+      "target": "runners_common_is_infra_text"
     },
     {
       "relation": "calls",
@@ -12504,9 +12535,9 @@
       "source_file": "src/jevexp/runners/common.py",
       "source_location": "L125",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runners_common_rationale_125",
-      "target": "runners_common_run_parallel",
-      "confidence_score": 1.0
+      "target": "runners_common_run_parallel"
     },
     {
       "relation": "imports",
@@ -13011,9 +13042,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft",
-      "target": "jevexp_schema",
-      "confidence_score": 1.0
+      "target": "jevexp_schema"
     },
     {
       "relation": "imports_from",
@@ -13361,9 +13392,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft",
-      "target": "tests_test_ft_ctx",
-      "confidence_score": 1.0
+      "target": "tests_test_ft_ctx"
     },
     {
       "relation": "contains",
@@ -13371,9 +13402,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft",
-      "target": "tests_test_ft_stop",
-      "confidence_score": 1.0
+      "target": "tests_test_ft_stop"
     },
     {
       "relation": "contains",
@@ -13381,9 +13412,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft",
-      "target": "tests_test_ft_test_alloc_min_one_and_total",
-      "confidence_score": 1.0
+      "target": "tests_test_ft_test_alloc_min_one_and_total"
     },
     {
       "relation": "contains",
@@ -13391,9 +13422,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft",
-      "target": "tests_test_ft_test_curve_subsets_nested_stratified_deterministic",
-      "confidence_score": 1.0
+      "target": "tests_test_ft_test_curve_subsets_nested_stratified_deterministic"
     },
     {
       "relation": "contains",
@@ -13401,9 +13432,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L115",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft",
-      "target": "tests_test_ft_test_hf_train_resume_equals_uninterrupted",
-      "confidence_score": 1.0
+      "target": "tests_test_ft_test_hf_train_resume_equals_uninterrupted"
     },
     {
       "relation": "contains",
@@ -13411,8 +13442,18 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft",
-      "target": "tests_test_ft_test_hf_train_resumes_after_kill",
+      "target": "tests_test_ft_test_hf_train_resumes_after_kill"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_ft.py",
+      "source_location": "L178",
+      "weight": 1.0,
+      "source": "tests_test_ft",
+      "target": "tests_test_ft_test_hf_train_with_worker_default_ctx",
       "confidence_score": 1.0
     },
     {
@@ -13421,9 +13462,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft",
-      "target": "tests_test_ft_test_local_store_roundtrip",
-      "confidence_score": 1.0
+      "target": "tests_test_ft_test_local_store_roundtrip"
     },
     {
       "relation": "contains",
@@ -13431,9 +13472,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft",
-      "target": "tests_test_ft_test_plan_shape",
-      "confidence_score": 1.0
+      "target": "tests_test_ft_test_plan_shape"
     },
     {
       "relation": "contains",
@@ -13441,9 +13482,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L169",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft",
-      "target": "tests_test_ft_test_pred_frame_valid",
-      "confidence_score": 1.0
+      "target": "tests_test_ft_test_pred_frame_valid"
     },
     {
       "relation": "contains",
@@ -13451,9 +13492,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L159",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft",
-      "target": "tests_test_ft_test_worker_refuses_other_code",
-      "confidence_score": 1.0
+      "target": "tests_test_ft_test_worker_refuses_other_code"
     },
     {
       "relation": "contains",
@@ -13461,9 +13502,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L128",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft",
-      "target": "tests_test_ft_test_worker_skips_done_and_records_errors",
-      "confidence_score": 1.0
+      "target": "tests_test_ft_test_worker_skips_done_and_records_errors"
     },
     {
       "relation": "contains",
@@ -13471,9 +13512,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft",
-      "target": "tests_test_ft_tiny",
-      "confidence_score": 1.0
+      "target": "tests_test_ft_tiny"
     },
     {
       "relation": "rationale_for",
@@ -13481,9 +13522,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft_rationale_1",
-      "target": "tests_test_ft",
-      "confidence_score": 1.0
+      "target": "tests_test_ft"
     },
     {
       "relation": "inherits",
@@ -13491,9 +13532,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft_stop",
-      "target": "exception",
-      "confidence_score": 1.0
+      "target": "exception"
     },
     {
       "relation": "calls",
@@ -13502,9 +13543,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L117",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft_test_hf_train_resume_equals_uninterrupted",
-      "target": "tests_test_ft_ctx",
-      "confidence_score": 1.0
+      "target": "tests_test_ft_ctx"
     },
     {
       "relation": "calls",
@@ -13513,8 +13554,29 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft_test_hf_train_resumes_after_kill",
+      "target": "tests_test_ft_ctx"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_ft.py",
+      "source_location": "L182",
+      "weight": 1.0,
+      "source": "tests_test_ft_test_hf_train_with_worker_default_ctx",
       "target": "tests_test_ft_ctx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_ft.py",
+      "source_location": "L179",
+      "weight": 1.0,
+      "source": "tests_test_ft_rationale_179",
+      "target": "tests_test_ft_test_hf_train_with_worker_default_ctx",
       "confidence_score": 1.0
     },
     {
@@ -13523,9 +13585,9 @@
       "source_file": "tests/test_infra.py",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_infra",
-      "target": "tests_test_infra_items",
-      "confidence_score": 1.0
+      "target": "tests_test_infra_items"
     },
     {
       "relation": "contains",
@@ -13533,9 +13595,9 @@
       "source_file": "tests/test_infra.py",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_infra",
-      "target": "tests_test_infra_test_infra_records_are_not_logged_and_are_retried",
-      "confidence_score": 1.0
+      "target": "tests_test_infra_test_infra_records_are_not_logged_and_are_retried"
     },
     {
       "relation": "contains",
@@ -13543,9 +13605,9 @@
       "source_file": "tests/test_infra.py",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_infra",
-      "target": "tests_test_infra_test_infra_text",
-      "confidence_score": 1.0
+      "target": "tests_test_infra_test_infra_text"
     },
     {
       "relation": "contains",
@@ -13553,9 +13615,9 @@
       "source_file": "tests/test_infra.py",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_infra",
-      "target": "tests_test_infra_test_stops_after_consecutive_infra_failures",
-      "confidence_score": 1.0
+      "target": "tests_test_infra_test_stops_after_consecutive_infra_failures"
     },
     {
       "relation": "calls",
@@ -13564,9 +13626,9 @@
       "source_file": "tests/test_infra.py",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_infra_test_infra_records_are_not_logged_and_are_retried",
-      "target": "tests_test_infra_items",
-      "confidence_score": 1.0
+      "target": "tests_test_infra_items"
     },
     {
       "relation": "calls",
@@ -13575,9 +13637,9 @@
       "source_file": "tests/test_infra.py",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_infra_test_stops_after_consecutive_infra_failures",
-      "target": "tests_test_infra_items",
-      "confidence_score": 1.0
+      "target": "tests_test_infra_items"
     },
     {
       "relation": "contains",
@@ -13770,9 +13832,9 @@
       "source_file": "tests/test_scope.py",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_scope",
-      "target": "tests_test_scope_test_scope_sizes",
-      "confidence_score": 1.0
+      "target": "tests_test_scope_test_scope_sizes"
     },
     {
       "relation": "contains",
@@ -13780,9 +13842,9 @@
       "source_file": "tests/test_scope.py",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_scope",
-      "target": "tests_test_scope_test_test_split_requires_explicit_scope",
-      "confidence_score": 1.0
+      "target": "tests_test_scope_test_test_split_requires_explicit_scope"
     },
     {
       "relation": "contains",
@@ -14116,5 +14178,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d8ea23543fbc348057a4f02e1d655977f63f2c89"
+  "built_at_commit": "a140c99a81c46fd6fe718b9335fa3a7e77f9c0e5"
 }
