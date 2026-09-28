@@ -243,3 +243,16 @@ def test_heartbeat_prints_status_periodically(tmp_path):
     ctx["heartbeat"]("epoch 1/4 loss 0.3")
     assert any(m.startswith("==== STATUS F5") for m in logs)
     assert any("Sedang: a1 — epoch 1/4 loss 0.3" in m for m in logs)
+
+
+def test_eta_scales_other_dataset_by_train_size():
+    """NT runs without history borrow the same arm's NusaX per-language duration x train-size ratio, marked prior."""
+    from jevexp.ft.progress import Progress
+    import tempfile
+    mk = lambda rid, ds: {"stage": 1, "kind": "train", "run_id": rid, "arm": "B2", "dataset": ds,
+                          "train_lang": "jav", "seed": 0, "n": None, "export": False}
+    store = LocalStore(tempfile.mkdtemp())
+    store.put_json("runs/x/done.json", {})
+    store.put_json("runs/x/meta.json", {"wall_s": 50.0})
+    _, d = Progress(store, {"runs": [mk("x", "nusax_senti"), mk("y", "nt_senti")]}).report(stage=1)
+    assert d["stages"][1]["eta_h"] == round(50 * 3400 / 500 / 3600, 2) and d["stages"][1]["prior"]

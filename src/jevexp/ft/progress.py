@@ -2,7 +2,7 @@
 `status/progress.txt`) and by the laptop:  python -m jevexp.ft.progress --config dist/f5/config.json
 
 ETA per remaining run = mean wall time of finished runs in the most specific group that has any
-(kind, arm, dataset, regime, n) -> (kind, arm, regime, n) -> (kind, arm, dataset, regime) -> (kind, arm, regime);
+(kind, arm, dataset, regime, n) -> (kind, arm, regime, n) [curves only] -> (kind, arm, dataset, regime);
 otherwise a prior guess (PRIOR_S),
 marked with '*'. No test metric is ever shown (analysis_plan §7); only validation F1 lives in meta.json.
 """
@@ -25,6 +25,9 @@ PRIOR_S = {
     ("zeroshot", "C2"): 240,
     ("curve", "B2"): 90, ("curve", "C1"): 120,
 }
+
+
+TRAIN_PER_LANG = {"nusax_senti": 500, "nt_senti": 3400, "nt_emot": 3000}  # train items per language
 
 
 def regime(r):
@@ -80,6 +83,12 @@ class Progress:
             for k in _keys(r, reg):
                 if by.get(k):
                     return sum(by[k]) / len(by[k]), False
+            # same arm and regime measured on another dataset: scale by the train size per language
+            if r["kind"] == "train" and not r["n"]:
+                for ds, size in TRAIN_PER_LANG.items():
+                    k = (r["kind"], r["arm"], ds, reg)
+                    if ds != r["dataset"] and by.get(k):
+                        return sum(by[k]) / len(by[k]) * TRAIN_PER_LANG[r["dataset"]] / size, True
             for k in ((r["kind"], r["arm"], r["dataset"], reg), (reg, r["arm"]), (r["kind"], r["arm"])):
                 if k in PRIOR_S:
                     return PRIOR_S[k], True
@@ -145,10 +154,14 @@ class Progress:
 
 
 def _keys(r, reg):
-    """Empirical groups, most specific first. The regime is always kept: a pooled run says nothing about the
-    duration of a 10-example curve run."""
-    return ((r["kind"], r["arm"], r["dataset"], reg, r["n"]), (r["kind"], r["arm"], reg, r["n"]),
-            (r["kind"], r["arm"], r["dataset"], reg), (r["kind"], r["arm"], reg))
+    """Empirical groups, most specific first. The regime is always kept (a pooled run says nothing about a
+    10-example curve run), and so is the dataset unless n fixes the train size: an NT language has 3,400 train
+    items against NusaX's 500, so NusaX durations must not stand in for NT ones."""
+    keys = [(r["kind"], r["arm"], r["dataset"], reg, r["n"])]
+    if r["n"]:
+        keys.append((r["kind"], r["arm"], reg, r["n"]))
+    keys.append((r["kind"], r["arm"], r["dataset"], reg))
+    return tuple(keys)
 
 
 def _bar(d, t, width=20):
