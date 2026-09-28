@@ -30,12 +30,14 @@ hanya macro-F1 **validasi**. Prediksi test disimpan untuk analisis F6 di laptop.
     ("code", """# ===== Cell 1: Pengaturan =====
 from pathlib import Path
 
-STAGE = 1              # 1 = inti (grid, B2/B3 penuh, C1 + C2) · 2 = kurva belajar NusaX · 3 = kurva belajar NT
+STAGE = 1              # stage AWAL: 1 = inti (grid, B2/B3 penuh, C1 + C2) · 2 = kurva NusaX · 3 = kurva NT
+AUTO_NEXT = True       # selesai satu stage -> langsung lanjut stage berikutnya (sel tetap sibuk = keep alive)
+STATUS_EVERY_MIN = 10  # blok status + estimasi dicetak tiap sekian menit (dan setiap kali satu run selesai)
 BUCKET = "private"
 S3_PREFIX = "jev_f5"
 CKPT_EVERY_MIN = 15    # checkpoint tengah-run paling sering tiap sekian menit (di akhir epoch)
 SHARED = False         # True hanya bila DUA sesi Colab menjalankan tahap yang sama bersamaan
-ALLOW_NEW_CODE = False # True hanya setelah perubahan kode dicatat sebagai keputusan (K-entry)
+ALLOW_NEW_CODE = True  # bundle ini membawa perbaikan K62 + status K63 (tercatat di log keputusan)
 
 CONTENT = Path("/content")
 JEV = CONTENT / "jev"
@@ -92,32 +94,38 @@ from jevexp import data as jdata
 manifest = jdata.fetch()          # gagal keras bila satu hash tidak sama dengan MANIFEST
 print(len(manifest), "file data terverifikasi")
 """),
-    ("md", "## Cell 5 — Status & jalankan (aman dihentikan kapan saja)"),
-    ("code", """# ===== Cell 5: Worker =====
+    ("md", """## Cell 5 — Jalankan + pantau status (cell terakhir, sengaja blocking = keep alive)
+
+Sel ini mengerjakan stage `STAGE`, lalu (bila `AUTO_NEXT`) langsung stage berikutnya sampai stage 3 habis.
+Selama berjalan, blok status dicetak setiap kali satu run selesai dan tiap `STATUS_EVERY_MIN` menit:
+
+```
+==== STATUS F5 · 2026-09-28 07:10 UTC · sesi 3f2a… (1.4 j, 6 run selesai) ====
+Stage 1 [##..................]   25/250  selesai · sisa ±21.3 j  <- sekarang
+    grid B2 nusax_senti grid               20/20
+    train C1 nt_emot pooled                 1/3
+    ...
+Stage 2 [....................]    0/432  selesai · sisa ±12.6 j*
+Stage 3 [....................]    0/588  selesai · sisa ±17.1 j*
+Sedang: c1-nt_emot-pooled-s1-nfull — epoch 2/4 loss 0.41 (berjalan 18 mnt)
+Total sisa semua stage: ±51.0 j  (* = sebagian masih perkiraan awal …)
+```
+
+`*` = estimasi masih memakai perkiraan awal; angka makin akurat setelah run pertama di kelompok itu selesai.
+Blok yang sama disimpan ke `/content/output/progress.txt` dan ke MinIO `jev_f5/status/progress.txt`
+(dari laptop: `python -m jevexp.ft.progress --config <config.json>`).
+
+Setiap stage selesai, hasil otomatis dikumpulkan ke `/content/output` (`f5_results.zip` + `runs/`, `meta/`,
+`status.csv`). Mengumpulkan manual dari sesi baru: jalankan Cell 1–3, lalu
+`Worker(STORE, work=WORK).collect(OUTPUT)`.
+"""),
+    ("code", """# ===== Cell 5: Jalankan semua stage + status =====
 from jevexp.ft.worker import Worker
 
-W = Worker(STORE, work=WORK, stage=STAGE, hf_token=HF_TOKEN, ckpt_every_s=CKPT_EVERY_MIN * 60, shared=SHARED)
+W = Worker(STORE, work=WORK, stage=STAGE, hf_token=HF_TOKEN, ckpt_every_s=CKPT_EVERY_MIN * 60,
+           shared=SHARED, status_every_s=STATUS_EVERY_MIN * 60, out_dir=OUTPUT)
 print(W.check_plan(allow_new_code=ALLOW_NEW_CODE))
-print(W.status().to_string(index=False))
-W.run()
-print(W.status().to_string(index=False))
-"""),
-    ("md", """## Cell 6 — Kumpulkan hasil ke `/content/output`
-
-Bisa dijalankan kapan saja, juga dari sesi baru (cukup Cell 1–3 lalu cell ini). Isi `/content/output`:
-- `runs/<ARM>/<run_id>.parquet` — prediksi test (skema `jevexp.schema`);
-- `runs/<ARM>/valid/…` — prediksi validasi;
-- `meta/` — konfigurasi, riwayat epoch, waktu latih, versi paket;
-- `status.csv`;
-- **`f5_results.zip`** — semua di atas dalam satu file.
-
-Checkpoint ekspor (pooled seed-0 B2/B3/C1, fp16, < 1 GB VRAM) tetap di MinIO `jev_f5/export/`. Laptop
-mengambilnya langsung dengan `python -m jevexp.ft.pull --config <config.json> --export`.
-"""),
-    ("code", """# ===== Cell 6: Kumpulkan =====
-from jevexp.ft.worker import Worker
-zip_path = Worker(STORE, work=WORK, stage=STAGE).collect(OUTPUT)
-print(zip_path)
+W.run_all(STAGE, auto_next=AUTO_NEXT)
 """),
 ]
 

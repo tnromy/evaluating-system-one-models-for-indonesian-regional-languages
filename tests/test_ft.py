@@ -184,3 +184,62 @@ def test_hf_train_with_worker_default_ctx(tiny, tmp_path):
     run = {"run_id": "b2-w", "arm": "B2", "dataset": "nusax_senti", "seed": 0}
     res = hf_clf.train(run, tiny, 1e-3, 8, ctx)
     assert 1 <= res["epochs"] <= hf_clf.MAX_EPOCHS and res["test_probs"].shape == (12, 3)
+
+
+# ------------------------------------------------------------------ progress + auto stages (K63)
+def _mini_plan():
+    mk = lambda stage, rid, kind="train", arm="C1", ds="nusax_senti", lang="pooled", n=None: {
+        "stage": stage, "kind": kind, "run_id": rid, "arm": arm, "dataset": ds, "train_lang": lang, "seed": 0,
+        "n": n, "export": False}
+    return {"runs": [mk(1, "a1"), mk(1, "a2"), mk(1, "a3"), mk(2, "b1", arm="B2", lang="jav", n=10),
+                     mk(3, "c1", arm="C1", ds="nt_emot", lang="jav", n=10)]}
+
+
+def test_progress_counts_and_eta():
+    from jevexp.ft.progress import PRIOR_S, Progress
+    import tempfile
+    store = LocalStore(tempfile.mkdtemp())
+    store.put_json("runs/a1/done.json", {})
+    store.put_json("runs/a1/meta.json", {"wall_s": 100.0})
+    store.put_json("runs/a2/error.json", {"attempts": 2})
+    store.put_json("runs/b1/error.json", {"attempts": 1})
+    text, d = Progress(store, _mini_plan()).report(stage=1)
+    s1, s2, s3 = d["stages"][1], d["stages"][2], d["stages"][3]
+    assert (s1["done"], s1["total"], s1["failed"], s1["retry"]) == (1, 3, 1, 0)
+    assert s1["eta_h"] == round(100 / 3600, 2) and not s1["prior"]  # a3 estimated from a1's group mean
+    assert s2["retry"] == 1 and s2["prior"] and s2["eta_h"] == round(PRIOR_S[("curve", "B2")] / 3600, 2)
+    assert "Stage 1" in text and "*" in text and "gagal permanen" in text
+
+
+def test_run_all_advances_stages_and_collects(tmp_path, monkeypatch):
+    store = LocalStore(tmp_path / "store")
+    w = W.Worker(store, work=tmp_path / "work", out_dir=tmp_path / "output", log=lambda m: None)
+    w.plan = _mini_plan()
+    w.progress.plan = w.plan
+    seen, collected = [], []
+
+    def fake_one(r, cfg):
+        seen.append((w.stage, r["run_id"]))
+        store.put_json(f"runs/{r['run_id']}/meta.json", {"wall_s": 1.0})
+        store.put_json(f"runs/{r['run_id']}/done.json", {})
+    monkeypatch.setattr(w, "_one", fake_one)
+    monkeypatch.setattr(w, "best_config", lambda arm: {"lr": 1e-5, "bs": 8})
+    monkeypatch.setattr(w, "collect", lambda out: collected.append(w.stage))
+    w.run_all(1, auto_next=True)
+    assert seen == [(1, "a1"), (1, "a2"), (1, "a3"), (2, "b1"), (3, "c1")]
+    assert collected == [1, 2, 3]
+    assert "Total sisa semua stage" in store.get_bytes("status/progress.txt").decode()
+    assert (tmp_path / "output" / "progress.txt").exists()
+    assert store.get_json("status/progress.json")["stages"]["3"]["done"] == 1
+
+
+def test_heartbeat_prints_status_periodically(tmp_path):
+    logs = []
+    w = W.Worker(LocalStore(tmp_path / "s"), work=tmp_path / "w", status_every_s=0, log=logs.append)
+    w.plan = _mini_plan()
+    w.progress.plan = w.plan
+    w.current = {"run_id": "a1", "started": 0.0, "msg": None}
+    ctx = w._ctx("a1")
+    ctx["heartbeat"]("epoch 1/4 loss 0.3")
+    assert any(m.startswith("==== STATUS F5") for m in logs)
+    assert any("Sedang: a1 — epoch 1/4 loss 0.3" in m for m in logs)

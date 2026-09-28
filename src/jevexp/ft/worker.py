@@ -9,6 +9,7 @@
   runs/<id>/error.json       failed attempts; retried once, then skipped and reported
   export/<id>.tar            representative checkpoints for the laptop
   plan/active.json           plan + code hashes; a worker with different code refuses to start
+  status/progress.{txt,json} last status block printed by the worker (progress + ETA, K63)
 
 Kill it anywhere, start it again: finished runs are skipped, a checkpointed run resumes from its last epoch.
 """
@@ -19,6 +20,7 @@ import tarfile
 import time
 import traceback
 import uuid
+from collections import defaultdict
 from pathlib import Path
 
 import pandas as pd
@@ -29,6 +31,7 @@ from ..schema import validate
 from . import hf_clf, laya_ft
 from .common import Checkpoint, env_versions, gpu_name, now_utc, pred_frame, run_data
 from .plan import MODELS, load_plan
+from .progress import Progress
 
 LEASE_S = 1800
 MAX_ATTEMPTS = 2
@@ -50,13 +53,18 @@ def _parquet_bytes(df):
 
 class Worker:
     def __init__(self, store, work="work", stage=1, hf_token=None, cache_dir=None, ckpt_every_s=900,
-                 max_epochs=None, plan_path=None, shared=False, log=print):
+                 max_epochs=None, plan_path=None, shared=False, status_every_s=600, out_dir=None, log=print):
         self.store, self.work, self.stage = store, Path(work), stage
         self.plan, self.plan_sha = load_plan(plan_path) if plan_path else load_plan()
         self.code_sha = code_sha()
         self.session = uuid.uuid4().hex[:12]
         self.ctx_base = {"hf_token": hf_token, "cache_dir": cache_dir, "max_epochs": max_epochs, "log": log}
         self.ckpt_every_s, self.log, self.shared = ckpt_every_s, log, shared
+        self.status_every_s, self.out_dir = status_every_s, Path(out_dir) if out_dir else None
+        self.progress = Progress(store, self.plan)
+        self.session_info = {"id": self.session, "started": time.time(), "runs": 0}
+        self.current = None
+        self._last_status = 0.0
 
     # ---------------------------------------------------------------- state
     def runs(self, stages=None):
@@ -119,10 +127,46 @@ class Worker:
                 "valid_f1": res[best]["valid_f1"]}
 
     # ---------------------------------------------------------------- loop
+    def print_status(self):
+        """Print the progress block (console) and publish it to the store + out_dir. Never fails the run."""
+        try:
+            text, data = self.progress.report(stage=self.stage, current=self.current, session=self.session_info)
+        except Exception as e:  # a status hiccup (network) must not stop training
+            self.log(f"(status tidak tersedia: {type(e).__name__}: {e})")
+            return
+        self.log(text)
+        self._last_status = time.time()
+        try:
+            self.store.put_bytes("status/progress.txt", text.encode("utf-8"))
+            self.store.put_json("status/progress.json", data)
+            if self.out_dir:
+                self.out_dir.mkdir(parents=True, exist_ok=True)
+                (self.out_dir / "progress.txt").write_text(text + "\n")
+        except Exception as e:
+            self.log(f"(status tidak tersimpan: {type(e).__name__}: {e})")
+
+    def run_all(self, start_stage=1, auto_next=True):
+        """Keep-alive entry point for the last notebook cell: stage after stage until nothing is left (K63).
+        Results are collected into out_dir after every stage, so f5_results.zip is always current."""
+        for st in range(start_stage, 4 if auto_next else start_stage + 1):
+            self.stage = st
+            self.run()
+            if self.out_dir:
+                try:
+                    self.collect(self.out_dir)
+                except Exception as e:
+                    self.log(f"(collect gagal, coba Cell kumpulkan manual: {type(e).__name__}: {e})")
+        self.current = None
+        self.log("SEMUA STAGE SELESAI untuk sesi ini (run yang gagal permanen tercantum di status)."
+                 if auto_next else f"Stage {self.stage} selesai.")
+        self.print_status()
+
     def run(self, limit=None):
         todo = [r for r in self.runs() if not self.is_done(r["run_id"])]
         self.log(f"session {self.session}: {len(todo)} runs left in stage {self.stage}")
+        self.print_status()
         t_start, n = time.time(), 0
+        waiting = defaultdict(int)
         for i, r in enumerate(todo):
             rid = r["run_id"]
             if self.is_done(rid) or not self._lease_ok(rid):
@@ -134,11 +178,12 @@ class Worker:
             if r["kind"] == "train" and r["arm"] in ("B2", "B3"):
                 cfg = self.best_config(r["arm"])
                 if cfg is None:
-                    self.log(f"[{rid}] waiting for the {r['arm']} grid; skipped for now")
+                    waiting[r["arm"]] += 1
                     continue
             self._take_lease(rid)
             self.log(f"[{i + 1}/{len(todo)}] {rid}")
             t0 = time.time()
+            self.current = {"run_id": rid, "started": t0, "msg": None}
             try:
                 self._one(r, cfg)
             except Exception as e:  # recorded, the loop goes on
@@ -150,12 +195,20 @@ class Worker:
                                                                "time": now_utc(), "error": traceback.format_exc()})
                 self.store.delete(f"runs/{rid}/lease.json")
                 self.log(f"  FAILED (attempt {attempts}/{MAX_ATTEMPTS}): {type(e).__name__}: {e}")
+                self.current = None
+                self.print_status()
                 continue
             n += 1
+            self.session_info["runs"] += 1
+            self.progress.add_wall(rid, time.time() - t0)
+            self.current = None
             el = time.time() - t_start
             self.log(f"  done in {time.time() - t0:.0f}s | this session {n} runs, {el / 3600:.2f} h")
+            self.print_status()
             if limit and n >= limit:
                 break
+        for arm, k in waiting.items():
+            self.log(f"{k} run {arm} dilewati: grid {arm} belum lengkap (lihat error.json grid)")
         self.log("no runnable run left in this stage" if not limit or n < limit else f"stopped after {n} runs")
         return n
 
@@ -167,14 +220,19 @@ class Worker:
 
         def heartbeat(msg):
             self.log(f"  {msg}")
+            if self.current:
+                self.current["msg"] = msg
             if time.time() - last["t"] > 60:
                 self._take_lease(rid)
                 last["t"] = time.time()
+            if time.time() - self._last_status >= self.status_every_s:
+                self.print_status()
         ctx["heartbeat"] = heartbeat
         return ctx
 
     def _one(self, r, cfg):
         rid = r["run_id"]
+        t_start = time.time()
         ctx = self._ctx(rid)
         data = run_data(r, self.plan)
         repo, rev = MODELS[r["arm"]]
@@ -212,6 +270,7 @@ class Worker:
                                                       labels=list(DATASETS[r["dataset"]]["labels"])))
         if r.get("export"):
             self._export(r, res)
+        meta["wall_s"] = round(time.time() - t_start, 1)
         self.store.put_json(f"runs/{rid}/meta.json", meta)
         self.store.put_json(f"runs/{rid}/done.json", {"valid_f1": meta["valid_f1"], "finished_utc": now_utc(),
                                                       "session": self.session})
