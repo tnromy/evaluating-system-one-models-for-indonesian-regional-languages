@@ -23,3 +23,6 @@ graphify-out/cache/
 
 # Colab upload bundles
 dist/
+
+# MinIO credentials copied next to the Colab bundle
+dist/f5/config.json
