@@ -1522,7 +1522,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ft_plan",
-      "community": 1,
+      "community": 23,
       "norm_label": "plan.py"
     },
     {
@@ -1532,7 +1532,7 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "ft_plan_alloc",
-      "community": 1,
+      "community": 23,
       "norm_label": "_alloc()"
     },
     {
@@ -1542,7 +1542,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "ft_plan_curve_subsets",
-      "community": 1,
+      "community": 23,
       "norm_label": "curve_subsets()"
     },
     {
@@ -1552,7 +1552,7 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "ft_plan_run_id",
-      "community": 1,
+      "community": 23,
       "norm_label": "run_id()"
     },
     {
@@ -1562,7 +1562,7 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "ft_plan_build",
-      "community": 1,
+      "community": 23,
       "norm_label": "build()"
     },
     {
@@ -1572,7 +1572,7 @@
       "source_location": "L129",
       "_origin": "ast",
       "id": "ft_plan_dumps",
-      "community": 1,
+      "community": 23,
       "norm_label": "dumps()"
     },
     {
@@ -1582,7 +1582,7 @@
       "source_location": "L133",
       "_origin": "ast",
       "id": "ft_plan_sha",
-      "community": 1,
+      "community": 23,
       "norm_label": "sha()"
     },
     {
@@ -1592,7 +1592,7 @@
       "source_location": "L137",
       "_origin": "ast",
       "id": "ft_plan_load_plan",
-      "community": 3,
+      "community": 23,
       "norm_label": "load_plan()"
     },
     {
@@ -1602,7 +1602,7 @@
       "source_location": "L142",
       "_origin": "ast",
       "id": "ft_plan_main",
-      "community": 1,
+      "community": 23,
       "norm_label": "main()"
     },
     {
@@ -1612,7 +1612,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ft_plan_rationale_1",
-      "community": 1,
+      "community": 23,
       "norm_label": "f5 run plan (docs/metodologi.md \u00a74, k60/k61): every fine-tuning run, frozen in `"
     },
     {
@@ -1622,7 +1622,7 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "ft_plan_rationale_43",
-      "community": 1,
+      "community": 23,
       "norm_label": "at least one per label, the rest proportional by largest remainder."
     },
     {
@@ -1632,7 +1632,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "ft_plan_rationale_58",
-      "community": 1,
+      "community": 23,
       "norm_label": "{n: sorted ids} nested over n for one (dataset, seed). `gold`: series sentence_i"
     },
     {
@@ -1852,7 +1852,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ft_store",
-      "community": 7,
+      "community": 0,
       "norm_label": "store.py"
     },
     {
@@ -2162,7 +2162,7 @@
       "source_location": "L121",
       "_origin": "ast",
       "id": "ft_store_file_sha256",
-      "community": 7,
+      "community": 0,
       "norm_label": "file_sha256()"
     },
     {
@@ -2172,7 +2172,7 @@
       "source_location": "L130",
       "_origin": "ast",
       "id": "ft_store_normalize_endpoint",
-      "community": 7,
+      "community": 0,
       "norm_label": "normalize_endpoint()"
     },
     {
@@ -2182,7 +2182,7 @@
       "source_location": "L145",
       "_origin": "ast",
       "id": "ft_store_load_s3_config",
-      "community": 7,
+      "community": 0,
       "norm_label": "load_s3_config()"
     },
     {
@@ -2192,7 +2192,7 @@
       "source_location": "L160",
       "_origin": "ast",
       "id": "ft_store_config_fingerprint",
-      "community": 7,
+      "community": 0,
       "norm_label": "config_fingerprint()"
     },
     {
@@ -2202,7 +2202,7 @@
       "source_location": "L165",
       "_origin": "ast",
       "id": "ft_store_s3_store",
-      "community": 7,
+      "community": 0,
       "norm_label": "s3_store()"
     },
     {
@@ -2212,7 +2212,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ft_store_rationale_1",
-      "community": 7,
+      "community": 0,
       "norm_label": "durable key-value store for f5 runs (k60). minio/s3 on colab, a local folder for"
     },
     {
@@ -2232,7 +2232,7 @@
       "source_location": "L131",
       "_origin": "ast",
       "id": "ft_store_rationale_131",
-      "community": 7,
+      "community": 0,
       "norm_label": "url with the port only when it is not the scheme default: sigv4 signs the host h"
     },
     {
@@ -2242,7 +2242,7 @@
       "source_location": "L161",
       "_origin": "ast",
       "id": "ft_store_rationale_161",
-      "community": 7,
+      "community": 0,
       "norm_label": "shown instead of the access key, so notebook logs never contain credentials."
     },
     {
@@ -2389,7 +2389,7 @@
       "label": ".run()",
       "file_type": "code",
       "source_file": "src/jevexp/ft/worker.py",
-      "source_location": "L164",
+      "source_location": "L165",
       "_origin": "ast",
       "id": "ft_worker_worker_run",
       "community": 4,
@@ -2399,7 +2399,7 @@
       "label": "._ctx()",
       "file_type": "code",
       "source_file": "src/jevexp/ft/worker.py",
-      "source_location": "L215",
+      "source_location": "L216",
       "_origin": "ast",
       "id": "ft_worker_worker_ctx",
       "community": 4,
@@ -2409,7 +2409,7 @@
       "label": "._one()",
       "file_type": "code",
       "source_file": "src/jevexp/ft/worker.py",
-      "source_location": "L233",
+      "source_location": "L234",
       "_origin": "ast",
       "id": "ft_worker_worker_one",
       "community": 4,
@@ -2419,7 +2419,7 @@
       "label": "._export()",
       "file_type": "code",
       "source_file": "src/jevexp/ft/worker.py",
-      "source_location": "L283",
+      "source_location": "L284",
       "_origin": "ast",
       "id": "ft_worker_worker_export",
       "community": 4,
@@ -2429,7 +2429,7 @@
       "label": ".collect()",
       "file_type": "code",
       "source_file": "src/jevexp/ft/worker.py",
-      "source_location": "L294",
+      "source_location": "L295",
       "_origin": "ast",
       "id": "ft_worker_worker_collect",
       "community": 4,
@@ -2439,7 +2439,7 @@
       "label": "_zip()",
       "file_type": "code",
       "source_file": "src/jevexp/ft/worker.py",
-      "source_location": "L324",
+      "source_location": "L329",
       "_origin": "ast",
       "id": "ft_worker_zip",
       "community": 4,
@@ -2509,9 +2509,9 @@
       "label": "Copy every finished run's predictions + meta into out_dir (layout mirrors jev/ru",
       "file_type": "rationale",
       "source_file": "src/jevexp/ft/worker.py",
-      "source_location": "L295",
+      "source_location": "L296",
       "_origin": "ast",
-      "id": "ft_worker_rationale_295",
+      "id": "ft_worker_rationale_296",
       "community": 4,
       "norm_label": "copy every finished run's predictions + meta into out_dir (layout mirrors jev/ru"
     },
@@ -3212,7 +3212,7 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "runners_common_guard_split",
-      "community": 4,
+      "community": 6,
       "norm_label": "guard_split()"
     },
     {
@@ -3362,7 +3362,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "runners_common_rationale_28",
-      "community": 4,
+      "community": 6,
       "norm_label": "test data is only reachable after the pre-registration tag exists (docs/metodolo"
     },
     {
@@ -3972,7 +3972,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "tests_test_ft_test_alloc_min_one_and_total",
-      "community": 1,
+      "community": 23,
       "norm_label": "test_alloc_min_one_and_total()"
     },
     {
@@ -3982,7 +3982,7 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "tests_test_ft_test_curve_subsets_nested_stratified_deterministic",
-      "community": 1,
+      "community": 23,
       "norm_label": "test_curve_subsets_nested_stratified_deterministic()"
     },
     {
@@ -3992,7 +3992,7 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "tests_test_ft_test_plan_shape",
-      "community": 18,
+      "community": 23,
       "norm_label": "test_plan_shape()"
     },
     {
@@ -4144,6 +4144,16 @@
       "id": "tests_test_ft_test_eta_scales_other_dataset_by_train_size",
       "community": 18,
       "norm_label": "test_eta_scales_other_dataset_by_train_size()"
+    },
+    {
+      "label": "test_collect_incremental_and_skipped_when_nothing_ran()",
+      "file_type": "code",
+      "source_file": "tests/test_ft.py",
+      "source_location": "L261",
+      "_origin": "ast",
+      "id": "tests_test_ft_test_collect_incremental_and_skipped_when_nothing_ran",
+      "community": 18,
+      "norm_label": "test_collect_incremental_and_skipped_when_nothing_ran()"
     },
     {
       "label": "F5 plumbing: store, learning-curve subsets, resumable training, idempotent worke",
@@ -8883,9 +8893,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress_rationale_42",
-      "target": "ft_progress_wall_of",
-      "confidence_score": 1.0
+      "target": "ft_progress_wall_of"
     },
     {
       "relation": "calls",
@@ -9084,9 +9094,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L99",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress_rationale_99",
-      "target": "ft_progress_progress_report",
-      "confidence_score": 1.0
+      "target": "ft_progress_progress_report"
     },
     {
       "relation": "rationale_for",
@@ -9094,9 +9104,9 @@
       "source_file": "src/jevexp/ft/progress.py",
       "source_location": "L157",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ft_progress_rationale_157",
-      "target": "ft_progress_keys",
-      "confidence_score": 1.0
+      "target": "ft_progress_keys"
     },
     {
       "relation": "calls",
@@ -9591,6 +9601,17 @@
       "weight": 0.8,
       "confidence_score": 0.5,
       "source": "tests_test_ft_stop",
+      "target": "ft_store_localstore"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_ft.py",
+      "source_location": "L262",
+      "weight": 1.0,
+      "source": "tests_test_ft_test_collect_incremental_and_skipped_when_nothing_ran",
       "target": "ft_store_localstore"
     },
     {
@@ -10539,11 +10560,11 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/jevexp/ft/worker.py",
-      "source_location": "L295",
+      "source_location": "L296",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "ft_worker_rationale_295",
-      "target": "ft_worker_worker_collect"
+      "source": "ft_worker_rationale_296",
+      "target": "ft_worker_worker_collect",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -14217,6 +14238,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_ft.py",
+      "source_location": "L261",
+      "weight": 1.0,
+      "source": "tests_test_ft",
+      "target": "tests_test_ft_test_collect_incremental_and_skipped_when_nothing_ran",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_ft.py",
       "source_location": "L33",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -14229,9 +14260,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L248",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft",
-      "target": "tests_test_ft_test_eta_scales_other_dataset_by_train_size",
-      "confidence_score": 1.0
+      "target": "tests_test_ft_test_eta_scales_other_dataset_by_train_size"
     },
     {
       "relation": "contains",
@@ -14432,6 +14463,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_ft.py",
+      "source_location": "L264",
+      "weight": 1.0,
+      "source": "tests_test_ft_test_collect_incremental_and_skipped_when_nothing_ran",
+      "target": "tests_test_ft_mini_plan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_ft.py",
       "source_location": "L239",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -14466,9 +14508,9 @@
       "source_file": "tests/test_ft.py",
       "source_location": "L249",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_ft_rationale_249",
-      "target": "tests_test_ft_test_eta_scales_other_dataset_by_train_size",
-      "confidence_score": 1.0
+      "target": "tests_test_ft_test_eta_scales_other_dataset_by_train_size"
     },
     {
       "relation": "contains",
@@ -15069,5 +15111,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "5fb8c298e8548bab044c8b5b121f0fb929b7aeba"
+  "built_at_commit": "f528f671975e24a0fa20fe75707e373279ffc4f2"
 }
