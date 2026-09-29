@@ -256,3 +256,25 @@ def test_eta_scales_other_dataset_by_train_size():
     store.put_json("runs/x/meta.json", {"wall_s": 50.0})
     _, d = Progress(store, {"runs": [mk("x", "nusax_senti"), mk("y", "nt_senti")]}).report(stage=1)
     assert d["stages"][1]["eta_h"] == round(50 * 3400 / 500 / 3600, 2) and d["stages"][1]["prior"]
+
+
+def test_collect_incremental_and_skipped_when_nothing_ran(tmp_path, monkeypatch):
+    store = LocalStore(tmp_path / "store")
+    w = W.Worker(store, work=tmp_path / "work", out_dir=tmp_path / "output", log=lambda m: None)
+    w.plan = _mini_plan()
+    w.progress.plan = w.plan
+    for rid in ("a1", "a2", "a3"):
+        store.put_json(f"runs/{rid}/meta.json", {"wall_s": 1.0})
+        store.put_json(f"runs/{rid}/done.json", {})
+    w.collect(tmp_path / "output")
+    reads = []
+    orig = store.get_bytes
+    monkeypatch.setattr(store, "get_bytes", lambda k: reads.append(k) or orig(k))
+    w.collect(tmp_path / "output")
+    assert not [k for k in reads if k.startswith("runs/")]  # nothing re-downloaded
+    collected = []
+    monkeypatch.setattr(w, "collect", lambda out: collected.append(w.stage))
+    monkeypatch.setattr(w, "_one", lambda r, cfg: store.put_json(f"runs/{r['run_id']}/done.json", {}))
+    monkeypatch.setattr(w, "best_config", lambda arm: {"lr": 1e-5, "bs": 8})
+    w.run_all(1)
+    assert collected == [2, 3]  # stage 1 was already complete: no collect for it

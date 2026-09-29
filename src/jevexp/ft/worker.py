@@ -150,7 +150,8 @@ class Worker:
         Results are collected into out_dir after every stage, so f5_results.zip is always current."""
         for st in range(start_stage, 4 if auto_next else start_stage + 1):
             self.stage = st
-            self.run()
+            if self.run() == 0:  # nothing new in this stage: no need to collect again (keeps the GPU busy)
+                continue
             if self.out_dir:
                 try:
                     self.collect(self.out_dir)
@@ -295,21 +296,25 @@ class Worker:
         """Copy every finished run's predictions + meta into out_dir (layout mirrors jev/runs) and zip it."""
         out = Path(out_dir)
         n = 0
-        for key in self.store.list("runs/"):
+        keys = self.store.list("runs/")
+        done = {k.split("/")[1] for k in keys if k.endswith("/done.json")}
+        for key in keys:
             rid, name = key.split("/")[1], key.split("/")[-1]
             if name not in ("pred_test.parquet", "pred_valid.parquet", "meta.json", "done.json") \
                     or "/ckpt/" in key:
                 continue
-            if not self.is_done(rid):
+            if rid not in done:
                 continue
             arm = rid.split("-")[0].upper() if not rid.startswith("grid") else "grid"
             dest = {"pred_test.parquet": out / "runs" / arm / f"{rid}.parquet",
                     "pred_valid.parquet": out / "runs" / arm / "valid" / f"{rid}.parquet",
                     "meta.json": out / "meta" / f"{rid}.json",
                     "done.json": out / "done" / f"{rid}.json"}[name]
+            n += name == "done.json"
+            if dest.exists():  # outputs of a finished run never change: incremental collect
+                continue
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_bytes(self.store.get_bytes(key))
-            n += name == "done.json"
         if include_export:
             for key in self.store.list("export/"):
                 self.store.get_file(key, out / key)
