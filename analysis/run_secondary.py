@@ -50,6 +50,7 @@ def arms(d):
     """Every test arm of dataset d: name -> (frame, scope). Loaded lazily by the callers that need them."""
     langs = list(DATASETS[d]["parallel_langs"])
     b1 = latest(f"B1/B1-{d}-*.parquet")
+    b1 = b1[b1["lang"].isin(langs)]  # B1 was also trained on the non-parallel NT languages
     out = {
         "A1": (rc.load_arm("jev/{split}-A1-noul_en-{d}.parquet", SPLIT, d), "full"),
         "A1-choice": (rc.load_arm("jev/{split}-A1-choice_en-{d}.parquet", SPLIT, d), "full"),
