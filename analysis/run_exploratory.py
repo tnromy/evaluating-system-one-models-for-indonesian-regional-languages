@@ -59,13 +59,14 @@ def emotions():
     langs = list(DATASETS[d]["parallel_langs"])
     arms = {"A1": rc.load_arm("jev/{split}-A1-noul_en-{d}.parquet", "test", d),
             "D1": read(RUNS / f"deepseek/test-full-D1-deepseek-flash-nothink-{d}.parquet"),
-            "B2-per_lang": pd.concat([seeds(f"B2/b2-{d}-{lang}-s{{s}}-nfull.parquet") for lang in langs]),
+            "B2-per_lang": pd.concat([seeds(f"B2/b2-{d}-{lang}-s{{s}}-nfull.parquet") for lang in langs],
+                                     ignore_index=True),
             "C1-pooled": seeds(f"C1/c1-{d}-pooled-s{{s}}-nfull.parquet")}
     conf, rec = [], []
     for arm, df in arms.items():
         for lang, g in [("ALL", df), *df.groupby("lang")]:
             ct = pd.crosstab(g["gold"], g["pred"]).reindex(index=labels, columns=labels + ["INVALID"], fill_value=0)
-            norm = ct.div(ct.sum(1), axis=0)
+            norm = ct.div(ct.sum(axis=1), axis=0)
             for gold in labels:
                 rec.append({"arm": arm, "lang": lang, "emotion": gold, "n": int(ct.loc[gold].sum()),
                             "recall": float(norm.loc[gold, gold])})
