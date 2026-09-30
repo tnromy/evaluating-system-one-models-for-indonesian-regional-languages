@@ -1,4 +1,5 @@
 """Manuscript figures from the F6 result CSVs only (no analysis is recomputed). Output -> results/figures/{png,pdf}.
+No in-figure footnotes: the manuscript captions carry the explanations (journal 010 F7).
 
 Palette: first three categorical slots of the dataviz reference palette (validated all-pairs, light mode); each
 series also has its own marker shape (secondary encoding: aqua is < 3:1 on the surface, and print is grayscale).
@@ -64,8 +65,6 @@ def fig_learning_curves():
     handles = [plt.Line2D([], [], label=l, **mark(i)) for i, l in enumerate(["B1-LR (primary)", "B2 IndoBERT", "C1 Laya-ft"])]
     handles.append(plt.Line2D([], [], color=INK2, linestyle=(0, (4, 3)), label="Jev A1 (zero-shot)"))
     fig.legend(handles=handles, loc="upper center", ncol=4, bbox_to_anchor=(0.5, 1.04))
-    fig.text(0.5, -0.04, "Shaded: B1-LR mean down to the pooled 95 % lower bound (3 seeds x 2,000 draws). "
-             "C1 points at n <= 50 omitted (no effective training, K68).", ha="center", color=INK2, fontsize=7.5)
     save(fig, "fig1_learning_curves_h3a")
 
 
@@ -74,8 +73,8 @@ def fig_forest():
     f1 = pd.read_csv(RESULTS / "secondary_test" / "f1_family.csv")
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(9, 6.2), sharey=False)
     for ax, df, col, title, lo, hi in [
-            (a1, h1b, "acc_diff_a4_minus_a1", "H1b: A4 (human Indonesian) minus A1", None, None),
-            (a2, f1, "acc_diff_a1_minus_comparator", "F1 family: Jev A1 minus B1-LR", "ci_lo", "ci_hi")]:
+            (a1, h1b, "acc_diff_a4_minus_a1", "Indonesian source minus regional text (A4 − A1)", None, None),
+            (a2, f1, "acc_diff_a1_minus_comparator", "Jev minus classical baseline (A1 − B1-LR)", "ci_lo", "ci_hi")]:
         df = df.sort_values(["dataset", "lang"], key=lambda s: s.map({d: i for i, d in enumerate(DS_NAME)})
                             if s.name == "dataset" else s).reset_index(drop=True)
         y = np.arange(len(df))[::-1]
@@ -93,8 +92,6 @@ def fig_forest():
         ax.set_xlabel("accuracy difference (points)")
         ax.set_title(title)
         ax.grid(axis="y", visible=False)
-    fig.text(0.5, -0.02, "Filled marker: Holm-adjusted p < 0.05 (exact McNemar); hollow: not significant. "
-             "Right panel bars: 95 % cluster-bootstrap CI.", ha="center", color=INK2, fontsize=7.5)
     fig.tight_layout()
     save(fig, "fig2_forest_h1b_f1")
 
@@ -119,8 +116,6 @@ def fig_frontier():
         ax.set_title(DS_NAME[d] + " (subset)")
         ax.set_xlabel("API cost per 1,000 decisions (USD, log)")
     axes[0].set_ylabel("macro-F1")
-    fig.text(0.5, -0.06, "Claude cost = API-equivalent cost reported by Claude Code. Codex models report no cost "
-             "and are omitted here (see table).", ha="center", color=INK2, fontsize=7.5)
     fig.tight_layout()
     save(fig, "fig3_cost_frontier")
 
@@ -146,8 +141,6 @@ def fig_cascade():
     h.append(plt.Line2D([], [], marker="D", color=INK2, markeredgecolor=INK, linestyle="none", markersize=7))
     lab.append("operating point chosen on validation")
     fig.legend(h, lab, loc="upper center", ncol=4, bbox_to_anchor=(0.5, 1.08))
-    fig.text(0.5, -0.06, "Jev A1 answers every item; its lowest-confidence share is re-answered by the fallback. "
-             "Local fallbacks: 3 seeds averaged.", ha="center", color=INK2, fontsize=7.5)
     fig.tight_layout()
     save(fig, "fig4_cascade_h3b")
 
@@ -172,9 +165,6 @@ def fig_reliability():
         ax.set_xlabel("mean top-class confidence")
         ax.legend(loc="upper left", fontsize=7)
     axes[0].set_ylabel("accuracy")
-    fig.text(0.5, -0.04, "15 equal-width bins; bins with fewer than 10 items not drawn. Dashed: perfect calibration. "
-             "Same items for both models (NusaX: 12 languages; NT: 7 regional).",
-             ha="center", color=INK2, fontsize=7.5)
     fig.tight_layout()
     save(fig, "fig5_reliability")
 
