@@ -12,7 +12,7 @@ import pandas as pd  # noqa: E402
 
 from jevexp.paths import RESULTS  # noqa: E402
 
-SURFACE, INK, INK2, GRID = "#fcfcfb", "#0b0b0b", "#52514e", "#e4e3df"
+SURFACE, INK, INK2, GRID = "#ffffff", "#0b0b0b", "#52514e", "#e4e3df"
 SERIES = ["#2a78d6", "#eb6834", "#1baf7a"]
 MARKERS = ["o", "s", "^"]
 DS_NAME = {"nusax_senti": "NusaX-senti", "nt_senti": "NusaTranslation-senti", "nt_emot": "NusaTranslation-emot"}
@@ -24,7 +24,10 @@ plt.rcParams.update({
     "axes.spines.top": False, "axes.spines.right": False, "axes.grid": True, "grid.color": GRID,
     "grid.linewidth": 0.6, "axes.axisbelow": True, "font.size": 8.5, "axes.titlesize": 9, "legend.frameon": False,
     "lines.linewidth": 1.5, "lines.markersize": 5.5, "lines.markeredgewidth": 1.0, "pdf.fonttype": 42,
+    # Manuscript house style shared with journals 002/003 (SNCS): Times New Roman, 300 dpi.
+    "font.family": "Times New Roman", "mathtext.fontset": "stix",
 })
+DPI = 300
 
 
 def mark(i):
@@ -34,7 +37,7 @@ def mark(i):
 def save(fig, name):
     OUT.mkdir(parents=True, exist_ok=True)
     for ext in ("png", "pdf"):
-        fig.savefig(OUT / f"{name}.{ext}", dpi=200, bbox_inches="tight")
+        fig.savefig(OUT / f"{name}.{ext}", dpi=DPI, bbox_inches="tight")
     plt.close(fig)
 
 
