@@ -14,6 +14,7 @@ cuda-pathfinder==1.8.2
 cuda-toolkit==13.0.3.0
 defusedxml==0.7.1
 filelock==4.0.3
+formulaic==1.2.2
 fsspec==2026.9.0
 h11==0.16.0
 hf-xet==1.6.0
@@ -22,6 +23,7 @@ httpx==0.28.1
 huggingface_hub==1.33.0
 idna==3.20
 iniconfig==2.3.0
+interface_meta==2.0.1
 Jinja2==3.1.6
 jmespath==1.1.0
 joblib==1.6.0
@@ -53,6 +55,7 @@ nvidia-nvshmem-cu13==3.4.5
 nvidia-nvtx==13.0.85
 packaging==26.3
 pandas==3.0.6
+patsy==1.0.3
 pluggy==1.6.0
 portalocker==4.4.0
 pyarrow==25.0.1
@@ -72,6 +75,7 @@ sentencepiece==0.2.2
 setuptools==80.10.2
 shellingham==1.5.4
 six==1.17.0
+statsmodels==0.15.0
 sympy==1.14.0
 tabulate==0.10.0
 threadpoolctl==3.7.0
@@ -83,3 +87,4 @@ triton==3.8.0
 typer==0.27.2
 typing_extensions==4.16.0
 urllib3==2.8.0
+wrapt==2.5.0
