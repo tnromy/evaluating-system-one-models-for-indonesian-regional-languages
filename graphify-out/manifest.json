@@ -290,8 +290,8 @@
     "semantic_hash": ""
   },
   "analysis/make_figures.py": {
-    "mtime": 1790748692.9324837,
-    "ast_hash": "9bcdf66baf04333fdf6df0fe11adb542",
+    "mtime": 1790756048.7549288,
+    "ast_hash": "020935f93eb95d560f94daa145ba2750",
     "semantic_hash": ""
   },
   "analysis/run_cascade.py": {
@@ -307,6 +307,11 @@
   "tests/test_f6_cascade.py": {
     "mtime": 1790746490.4268997,
     "ast_hash": "21138af37f5bdfe459ff6416fbc9fdc9",
+    "semantic_hash": ""
+  },
+  "analysis/manuscript_facts.py": {
+    "mtime": 1790755363.401116,
+    "ast_hash": "61ec0002a2f1c6b5a0faa615229d2b29",
     "semantic_hash": ""
   }
 }
