@@ -253,6 +253,7 @@ class Worker:
         version = f"ft:{rid}" if r["kind"] != "zeroshot" else model_id
         meta = {"run": r, "config": conf, "model_id": model_id, "valid_f1": res.get("valid_f1"),
                 "best_epoch": res.get("best_epoch"), "epochs": res.get("epochs"), "history": res.get("history"),
+                "opt_steps": res.get("opt_steps"), "opt_steps_skipped": res.get("opt_steps_skipped"),
                 "train_n": res["train_n"], "train_time_s": res["train_time_s"], "gpu": gpu_name(),
                 "versions": env_versions(), "plan_sha": self.plan_sha, "code_sha": self.code_sha,
                 "session": self.session, "finished_utc": now_utc()}

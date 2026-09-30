@@ -220,8 +220,11 @@ def train(run, data, ctx):
             if accum % GRAD_ACCUM == 0 or b_idx + MICRO_BATCH >= len(order):
                 scaler.unscale_(opt)
                 torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
+                scale = scaler.get_scale()
                 scaler.step(opt)
                 scaler.update()
+                st["steps"] = st.get("steps", 0) + 1
+                st["steps_skipped"] = st.get("steps_skipped", 0) + int(scaler.get_scale() < scale)  # fp16 overflow (K68)
                 sched.step()
                 opt.zero_grad(set_to_none=True)
             tot += loss.item()
@@ -234,6 +237,8 @@ def train(run, data, ctx):
             ctx["ckpt"].maybe_save(lambda: {"model": model.state_dict(), "opt": opt.state_dict(),
                                             "sched": sched.state_dict(), "scaler": scaler.state_dict(),
                                             "rng": rng_state(), "st": st})
+    if st.get("steps", 0) and st.get("steps_skipped", 0) == st["steps"]:
+        ctx["log"](f"  WARNING: all {st['steps']} optimizer steps were skipped by GradScaler: the model did not train")
     del opt, scaler, sched
     if amp:
         torch.cuda.empty_cache()
@@ -248,6 +253,7 @@ def train(run, data, ctx):
     zt = logits_of(model, tok, build_items(tok, cfg, run["dataset"], test_df, with_target=False), dev)
     return {"valid_probs": probs_from_logits(zv, t), "test_probs": probs_from_logits(zt, t),
             "temperature": temp[0], "temperature_applied": t, "epochs": st["epoch"], "history": st["history"],
+            "opt_steps": st.get("steps", 0), "opt_steps_skipped": st.get("steps_skipped", 0),
             "train_time_s": st["train_time_s"], "train_n": len(tr), "model": model, "tok": tok, "cfg": cfg,
             "src": src}
 
