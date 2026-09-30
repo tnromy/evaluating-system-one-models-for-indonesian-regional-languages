@@ -88,7 +88,8 @@ def reliability():
                                            rc.load_arm("jev/{split}-A4-choice_en-{d}.parquet", "test", d)])
         for arm, df in arms.items():
             df = df[df["probs"].notna()]
-            for lang, g in [("ALL", df), *df.groupby("lang")]:
+            regional = df[df["lang"] != "ind"] if d != "nusax_senti" else df  # ALL = D1's languages (no A4 `ind`)
+            for lang, g in [("ALL", regional), *df.groupby("lang")]:
                 probs = np.stack(g["probs"].to_numpy())
                 y = g["gold"].map({lab: i for i, lab in enumerate(labels)}).to_numpy()
                 correct = (g["pred"] == g["gold"]).to_numpy()

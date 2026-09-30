@@ -53,16 +53,15 @@ def fig_learning_curves():
         ax.axhline(g["target"].iloc[0], color=INK2, linestyle=(0, (4, 3)), linewidth=1.2)
         ax.set_title(lang)
         ax.set_xscale("log")
-        ax.set_xticks([10, 25, 50, 100, 250, 500], ["10", "25", "50", "100", "250", "500"])
+        ax.set_xticks([10, 25, 50, 100, 250, 500], ["10", "25", "50", "100", "250", "500"], rotation=45, fontsize=7)
         ax.minorticks_off()
     for ax in axes[:, 0]:
         ax.set_ylabel("macro-F1")
-    for ax in axes[1]:
-        ax.set_xlabel("training labels per language (n)")
+    fig.supxlabel("training labels per language (n, log scale)", fontsize=8.5, y=0.02)
     handles = [plt.Line2D([], [], label=l, **mark(i)) for i, l in enumerate(["B1-LR (primary)", "B2 IndoBERT", "C1 Laya-ft"])]
     handles.append(plt.Line2D([], [], color=INK2, linestyle=(0, (4, 3)), label="Jev A1 (zero-shot)"))
     fig.legend(handles=handles, loc="upper center", ncol=4, bbox_to_anchor=(0.5, 1.04))
-    fig.text(0.5, -0.03, "Shaded: B1-LR mean down to the pooled 95 % lower bound (3 seeds x 2,000 draws). "
+    fig.text(0.5, -0.04, "Shaded: B1-LR mean down to the pooled 95 % lower bound (3 seeds x 2,000 draws). "
              "C1 points at n <= 50 omitted (no effective training, K68).", ha="center", color=INK2, fontsize=7.5)
     save(fig, "fig1_learning_curves_h3a")
 
@@ -92,7 +91,7 @@ def fig_forest():
         ax.set_title(title)
         ax.grid(axis="y", visible=False)
     fig.text(0.5, -0.02, "Filled marker: Holm-adjusted p < 0.05 (exact McNemar); hollow: not significant. "
-             "Bars: 95 % cluster-bootstrap CI.", ha="center", color=INK2, fontsize=7.5)
+             "Right panel bars: 95 % cluster-bootstrap CI.", ha="center", color=INK2, fontsize=7.5)
     fig.tight_layout()
     save(fig, "fig2_forest_h1b_f1")
 
@@ -113,6 +112,7 @@ def fig_frontier():
                         xytext=(6, -3), fontsize=7, color=INK)
         ax.set_xscale("log")
         ax.set_xlim(0.008, 40)
+        ax.margins(y=0.08)
         ax.set_title(DS_NAME[d] + " (subset)")
         ax.set_xlabel("API cost per 1,000 decisions (USD, log)")
     axes[0].set_ylabel("macro-F1")
@@ -127,7 +127,7 @@ def fig_cascade():
     op = pd.read_csv(RESULTS / "cascade_test" / "operating_point.csv")
     c = c[c["lang"] == "ALL"]
     fbs = ["B2-per_lang", "C1-pooled", "D1"]
-    label = {"B2-per_lang": "-> B2 IndoBERT (local)", "C1-pooled": "-> C1 Laya-ft (local)", "D1": "-> DeepSeek D1 (API)"}
+    label = {"B2-per_lang": "→ B2 IndoBERT (local)", "C1-pooled": "→ C1 Laya-ft (local)", "D1": "→ DeepSeek D1 (API)"}
     fig, axes = plt.subplots(1, 3, figsize=(10, 3.3))
     for ax, d in zip(axes, DS_NAME):
         for i, fb in enumerate(fbs):
@@ -169,7 +169,8 @@ def fig_reliability():
         ax.set_xlabel("mean top-class confidence")
         ax.legend(loc="upper left", fontsize=7)
     axes[0].set_ylabel("accuracy")
-    fig.text(0.5, -0.04, "15 equal-width bins; bins with fewer than 10 items not drawn. Dashed: perfect calibration.",
+    fig.text(0.5, -0.04, "15 equal-width bins; bins with fewer than 10 items not drawn. Dashed: perfect calibration. "
+             "Same items for both models (NusaX: 12 languages; NT: 7 regional).",
              ha="center", color=INK2, fontsize=7.5)
     fig.tight_layout()
     save(fig, "fig5_reliability")
