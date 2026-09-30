@@ -4,6 +4,7 @@ Batch 1, fp16, 20 warm-up + 200 NusaX test sentences stratified by language; tim
 B2/B3: transformers sequence classifier. C1: `laya.Agent.system_one` (the official inference path).
 Output -> results/latency_local.csv
 """
+import argparse
 import platform
 import tarfile
 import time
@@ -72,12 +73,18 @@ def measure(predict, items, dev):
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--arms", default="B2,B3,C1", help="measure only these arms (each in a fresh process avoids "
+                    "one model's GPU memory starving the next); rows of other arms in the CSV are kept")
+    arms = ap.parse_args().arms.split(",")
     guard_split("test")
     items = texts()
     rows = []
     for arm, name, make in [("B2", "b2-nusax_senti-pooled-s0-nfull", hf_predictor),
                             ("B3", "b3-nusax_senti-pooled-s0-nfull", hf_predictor),
                             ("C1", "c1-nusax_senti-pooled-s0-nfull", laya_predictor)]:
+        if arm not in arms:
+            continue
         path = extract(name)
         for dev in [torch.device("cuda"), torch.device("cpu")] if torch.cuda.is_available() else [torch.device("cpu")]:
             try:
@@ -94,7 +101,11 @@ def main():
                          "n": len(ms), "mean_ms": ms.mean(), "p50_ms": np.median(ms), "p95_ms": np.quantile(ms, 0.95)})
             print(rows[-1])
     out = pd.DataFrame(rows)
-    out.to_csv(RESULTS / "latency_local.csv", index=False)
+    csv = RESULTS / "latency_local.csv"
+    if csv.exists():
+        old = pd.read_csv(csv)
+        out = pd.concat([old[~old["arm"].isin(arms)], out], ignore_index=True)
+    out.to_csv(csv, index=False)
     print(out.to_string(index=False))
 
 
