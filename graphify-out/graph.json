@@ -50,7 +50,7 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "analysis_latency_local_laya_predictor",
-      "community": 25,
+      "community": 24,
       "norm_label": "laya_predictor()"
     },
     {
@@ -94,10 +94,80 @@
       "norm_label": "make_figures.py"
     },
     {
+      "label": "t()",
+      "file_type": "code",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "analysis_make_figures_t",
+      "community": 13,
+      "norm_label": "t()"
+    },
+    {
+      "label": "num()",
+      "file_type": "code",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "analysis_make_figures_num",
+      "community": 13,
+      "norm_label": "num()"
+    },
+    {
+      "label": "localise()",
+      "file_type": "code",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "analysis_make_figures_localise",
+      "community": 13,
+      "norm_label": "localise()"
+    },
+    {
+      "label": "CommaFormatter",
+      "file_type": "code",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "analysis_make_figures_commaformatter",
+      "community": 13,
+      "norm_label": "commaformatter"
+    },
+    {
+      "label": "ScalarFormatter",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "scalarformatter",
+      "community": 13,
+      "norm_label": "scalarformatter"
+    },
+    {
+      "label": ".__call__()",
+      "file_type": "code",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "analysis_make_figures_commaformatter_call",
+      "community": 13,
+      "norm_label": ".__call__()"
+    },
+    {
+      "label": ".format_ticks()",
+      "file_type": "code",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "analysis_make_figures_commaformatter_format_ticks",
+      "community": 13,
+      "norm_label": ".format_ticks()"
+    },
+    {
       "label": "mark()",
       "file_type": "code",
       "source_file": "analysis/make_figures.py",
-      "source_location": "L34",
+      "source_location": "L89",
       "_origin": "ast",
       "id": "analysis_make_figures_mark",
       "community": 13,
@@ -107,7 +177,7 @@
       "label": "save()",
       "file_type": "code",
       "source_file": "analysis/make_figures.py",
-      "source_location": "L38",
+      "source_location": "L93",
       "_origin": "ast",
       "id": "analysis_make_figures_save",
       "community": 13,
@@ -117,7 +187,7 @@
       "label": "fig_learning_curves()",
       "file_type": "code",
       "source_file": "analysis/make_figures.py",
-      "source_location": "L45",
+      "source_location": "L100",
       "_origin": "ast",
       "id": "analysis_make_figures_fig_learning_curves",
       "community": 13,
@@ -127,7 +197,7 @@
       "label": "fig_forest()",
       "file_type": "code",
       "source_file": "analysis/make_figures.py",
-      "source_location": "L71",
+      "source_location": "L127",
       "_origin": "ast",
       "id": "analysis_make_figures_fig_forest",
       "community": 13,
@@ -137,7 +207,7 @@
       "label": "fig_frontier()",
       "file_type": "code",
       "source_file": "analysis/make_figures.py",
-      "source_location": "L99",
+      "source_location": "L156",
       "_origin": "ast",
       "id": "analysis_make_figures_fig_frontier",
       "community": 13,
@@ -147,7 +217,7 @@
       "label": "fig_cascade()",
       "file_type": "code",
       "source_file": "analysis/make_figures.py",
-      "source_location": "L123",
+      "source_location": "L198",
       "_origin": "ast",
       "id": "analysis_make_figures_fig_cascade",
       "community": 13,
@@ -157,7 +227,7 @@
       "label": "fig_reliability()",
       "file_type": "code",
       "source_file": "analysis/make_figures.py",
-      "source_location": "L148",
+      "source_location": "L224",
       "_origin": "ast",
       "id": "analysis_make_figures_fig_reliability",
       "community": 13,
@@ -167,7 +237,7 @@
       "label": "main()",
       "file_type": "code",
       "source_file": "analysis/make_figures.py",
-      "source_location": "L172",
+      "source_location": "L249",
       "_origin": "ast",
       "id": "analysis_make_figures_main",
       "community": 13,
@@ -182,6 +252,46 @@
       "id": "analysis_make_figures_rationale_1",
       "community": 13,
       "norm_label": "manuscript figures from the f6 result csvs only (no analysis is recomputed). out"
+    },
+    {
+      "label": "Number text in the figure language (decimal comma for id).",
+      "file_type": "rationale",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "analysis_make_figures_rationale_53",
+      "community": 13,
+      "norm_label": "number text in the figure language (decimal comma for id)."
+    },
+    {
+      "label": "Decimal comma on linear axes for the Indonesian figures (log axes keep 10^k labe",
+      "file_type": "rationale",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "analysis_make_figures_rationale_59",
+      "community": 13,
+      "norm_label": "decimal comma on linear axes for the indonesian figures (log axes keep 10^k labe"
+    },
+    {
+      "label": "matplotlib's default tick labels (same number of decimals on every tick), with a",
+      "file_type": "rationale",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "analysis_make_figures_rationale_69",
+      "community": 13,
+      "norm_label": "matplotlib's default tick labels (same number of decimals on every tick), with a"
+    },
+    {
+      "label": "Cost\u2013accuracy on the fixed subsets. Models without a reported cost (GPT via Code",
+      "file_type": "rationale",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L157",
+      "_origin": "ast",
+      "id": "analysis_make_figures_rationale_157",
+      "community": 13,
+      "norm_label": "cost\u2013accuracy on the fixed subsets. models without a reported cost (gpt via code"
     },
     {
       "label": "manuscript_facts.py",
@@ -250,7 +360,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "analysis_power",
-      "community": 0,
+      "community": 29,
       "norm_label": "power.py"
     },
     {
@@ -260,7 +370,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "analysis_power_mcnemar_crit",
-      "community": 0,
+      "community": 29,
       "norm_label": "mcnemar_crit()"
     },
     {
@@ -270,7 +380,7 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "analysis_power_power",
-      "community": 0,
+      "community": 29,
       "norm_label": "power()"
     },
     {
@@ -280,7 +390,7 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "analysis_power_mdd",
-      "community": 0,
+      "community": 29,
       "norm_label": "mdd()"
     },
     {
@@ -290,7 +400,7 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "analysis_power_discordance",
-      "community": 0,
+      "community": 29,
       "norm_label": "discordance()"
     },
     {
@@ -300,7 +410,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "analysis_power_main",
-      "community": 0,
+      "community": 29,
       "norm_label": "main()"
     },
     {
@@ -310,7 +420,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "analysis_power_rationale_1",
-      "community": 0,
+      "community": 29,
       "norm_label": "power analysis for prereg-v1 (k25), sized from validation pilot data only.  mcne"
     },
     {
@@ -320,7 +430,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "analysis_power_rationale_26",
-      "community": 0,
+      "community": 29,
       "norm_label": "smallest k such that the exact two-sided test on m discordant pairs rejects when"
     },
     {
@@ -790,7 +900,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "analysis_run_exploratory",
-      "community": 0,
+      "community": 30,
       "norm_label": "run_exploratory.py"
     },
     {
@@ -800,7 +910,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "analysis_run_exploratory_lang_features",
-      "community": 0,
+      "community": 30,
       "norm_label": "lang_features()"
     },
     {
@@ -810,7 +920,7 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "analysis_run_exploratory_seeds",
-      "community": 0,
+      "community": 30,
       "norm_label": "seeds()"
     },
     {
@@ -820,7 +930,7 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "analysis_run_exploratory_emotions",
-      "community": 0,
+      "community": 30,
       "norm_label": "emotions()"
     },
     {
@@ -830,7 +940,7 @@
       "source_location": "L80",
       "_origin": "ast",
       "id": "analysis_run_exploratory_reliability",
-      "community": 0,
+      "community": 30,
       "norm_label": "reliability()"
     },
     {
@@ -840,7 +950,7 @@
       "source_location": "L106",
       "_origin": "ast",
       "id": "analysis_run_exploratory_main",
-      "community": 0,
+      "community": 30,
       "norm_label": "main()"
     },
     {
@@ -850,7 +960,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "analysis_run_exploratory_rationale_1",
-      "community": 0,
+      "community": 30,
       "norm_label": "exploratory analyses (hypotheses.md \"exploratory\"; labelled exploratory in the p"
     },
     {
@@ -1572,7 +1682,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_eval",
-      "community": 2,
+      "community": 6,
       "norm_label": "eval.py"
     },
     {
@@ -1582,7 +1692,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "jevexp_eval_accuracy",
-      "community": 2,
+      "community": 28,
       "norm_label": "accuracy()"
     },
     {
@@ -1592,7 +1702,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "jevexp_eval_macro_f1",
-      "community": 2,
+      "community": 28,
       "norm_label": "macro_f1()"
     },
     {
@@ -1602,7 +1712,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "jevexp_eval_top",
-      "community": 2,
+      "community": 6,
       "norm_label": "_top()"
     },
     {
@@ -1612,7 +1722,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "jevexp_eval_bin_edges",
-      "community": 2,
+      "community": 6,
       "norm_label": "_bin_edges()"
     },
     {
@@ -1622,7 +1732,7 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "jevexp_eval_reliability_bins",
-      "community": 2,
+      "community": 6,
       "norm_label": "reliability_bins()"
     },
     {
@@ -1632,7 +1742,7 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "jevexp_eval_ece",
-      "community": 2,
+      "community": 6,
       "norm_label": "ece()"
     },
     {
@@ -1642,7 +1752,7 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "jevexp_eval_brier",
-      "community": 2,
+      "community": 6,
       "norm_label": "brier()"
     },
     {
@@ -1652,7 +1762,7 @@
       "source_location": "L66",
       "_origin": "ast",
       "id": "jevexp_eval_coverage_accuracy_curve",
-      "community": 2,
+      "community": 31,
       "norm_label": "coverage_accuracy_curve()"
     },
     {
@@ -1662,7 +1772,7 @@
       "source_location": "L74",
       "_origin": "ast",
       "id": "jevexp_eval_aurc",
-      "community": 2,
+      "community": 31,
       "norm_label": "aurc()"
     },
     {
@@ -1672,7 +1782,7 @@
       "source_location": "L80",
       "_origin": "ast",
       "id": "jevexp_eval_cluster_bootstrap",
-      "community": 2,
+      "community": 6,
       "norm_label": "cluster_bootstrap()"
     },
     {
@@ -1682,7 +1792,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_eval_rationale_1",
-      "community": 2,
+      "community": 6,
       "norm_label": "metrics shared by every arm (docs/metodologi.md \u00a77-8).  conventions:   y_true, y"
     },
     {
@@ -1692,7 +1802,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "jevexp_eval_rationale_19",
-      "community": 2,
+      "community": 28,
       "norm_label": "macro-f1 over the task's labels only; invalid predictions count as errors for ev"
     },
     {
@@ -1702,7 +1812,7 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "jevexp_eval_rationale_39",
-      "community": 2,
+      "community": 6,
       "norm_label": "per bin: (count, mean confidence, accuracy). y_idx = gold class index into probs"
     },
     {
@@ -1712,7 +1822,7 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "jevexp_eval_rationale_54",
-      "community": 2,
+      "community": 6,
       "norm_label": "expected calibration error of the top-class confidence (naeini 2015; adaptive ="
     },
     {
@@ -1722,7 +1832,7 @@
       "source_location": "L60",
       "_origin": "ast",
       "id": "jevexp_eval_rationale_60",
-      "community": 2,
+      "community": 6,
       "norm_label": "multiclass brier score: mean over items of sum_k (p_k - 1[y=k])^2."
     },
     {
@@ -1732,7 +1842,7 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "jevexp_eval_rationale_67",
-      "community": 2,
+      "community": 31,
       "norm_label": "sort by confidence (desc); return coverage and accuracy of the kept prefix at ev"
     },
     {
@@ -1742,7 +1852,7 @@
       "source_location": "L75",
       "_origin": "ast",
       "id": "jevexp_eval_rationale_75",
-      "community": 2,
+      "community": 31,
       "norm_label": "area under the risk-coverage curve (geifman et al. 2019): mean selective risk ov"
     },
     {
@@ -1752,7 +1862,7 @@
       "source_location": "L81",
       "_origin": "ast",
       "id": "jevexp_eval_rationale_81",
-      "community": 2,
+      "community": 6,
       "norm_label": "percentile ci resampling whole clusters (all languages of a sentence move togeth"
     },
     {
@@ -2442,7 +2552,7 @@
       "source_location": "L137",
       "_origin": "ast",
       "id": "ft_plan_load_plan",
-      "community": 23,
+      "community": 3,
       "norm_label": "load_plan()"
     },
     {
@@ -3112,7 +3222,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "ft_worker_code_sha",
-      "community": 23,
+      "community": 4,
       "norm_label": "code_sha()"
     },
     {
@@ -3122,7 +3232,7 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "ft_worker_parquet_bytes",
-      "community": 4,
+      "community": 0,
       "norm_label": "_parquet_bytes()"
     },
     {
@@ -3142,7 +3252,7 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "ft_worker_worker_init",
-      "community": 23,
+      "community": 4,
       "norm_label": ".__init__()"
     },
     {
@@ -3392,7 +3502,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_parsing",
-      "community": 28,
+      "community": 24,
       "norm_label": "parsing.py"
     },
     {
@@ -3402,7 +3512,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "jevexp_parsing_normalise",
-      "community": 28,
+      "community": 24,
       "norm_label": "_normalise()"
     },
     {
@@ -3412,7 +3522,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "jevexp_parsing_pred",
-      "community": 28,
+      "community": 24,
       "norm_label": "_pred()"
     },
     {
@@ -3422,7 +3532,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "jevexp_parsing_jev_answer",
-      "community": 28,
+      "community": 24,
       "norm_label": "jev_answer()"
     },
     {
@@ -3432,7 +3542,7 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "jevexp_parsing_llm_json",
-      "community": 28,
+      "community": 24,
       "norm_label": "llm_json()"
     },
     {
@@ -3442,7 +3552,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "jevexp_parsing_logprob_label_dist",
-      "community": 28,
+      "community": 24,
       "norm_label": "logprob_label_dist()"
     },
     {
@@ -3452,7 +3562,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_parsing_rationale_1",
-      "community": 28,
+      "community": 24,
       "norm_label": "turn raw api responses into (pred, probs, confidence). probs follow datasets lab"
     },
     {
@@ -3462,7 +3572,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "jevexp_parsing_rationale_23",
-      "community": 28,
+      "community": 24,
       "norm_label": "jev system one response -> (pred, probs, confidence). invalid if the answer is m"
     },
     {
@@ -3472,7 +3582,7 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "jevexp_parsing_rationale_45",
-      "community": 28,
+      "community": 24,
       "norm_label": "llm json answer -> (pred, verbalized probs or none). invalid on malformed json /"
     },
     {
@@ -3482,7 +3592,7 @@
       "source_location": "L71",
       "_origin": "ast",
       "id": "jevexp_parsing_rationale_71",
-      "community": 28,
+      "community": 24,
       "norm_label": "distribution over labels from top_logprobs at the first generated token that beg"
     },
     {
@@ -3492,7 +3602,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_paths",
-      "community": 25,
+      "community": 4,
       "norm_label": "paths.py"
     },
     {
@@ -3502,7 +3612,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_questions",
-      "community": 6,
+      "community": 24,
       "norm_label": "questions.py"
     },
     {
@@ -3512,7 +3622,7 @@
       "source_location": "L66",
       "_origin": "ast",
       "id": "jevexp_questions_spec",
-      "community": 6,
+      "community": 24,
       "norm_label": "spec()"
     },
     {
@@ -3522,7 +3632,7 @@
       "source_location": "L72",
       "_origin": "ast",
       "id": "jevexp_questions_to_jev",
-      "community": 6,
+      "community": 24,
       "norm_label": "to_jev()"
     },
     {
@@ -3532,7 +3642,7 @@
       "source_location": "L84",
       "_origin": "ast",
       "id": "jevexp_questions_to_llm_messages",
-      "community": 6,
+      "community": 24,
       "norm_label": "to_llm_messages()"
     },
     {
@@ -3542,7 +3652,7 @@
       "source_location": "L98",
       "_origin": "ast",
       "id": "jevexp_questions_output_schema",
-      "community": 6,
+      "community": 24,
       "norm_label": "output_schema()"
     },
     {
@@ -3552,7 +3662,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_questions_rationale_1",
-      "community": 6,
+      "community": 24,
       "norm_label": "single question spec shared by jev and the llm arms (docs/metodologi.md \u00a74.2, k3"
     },
     {
@@ -3562,7 +3672,7 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "jevexp_questions_rationale_73",
-      "community": 6,
+      "community": 24,
       "norm_label": "request body fields `state` + `questions` for the jev system one api."
     },
     {
@@ -3572,7 +3682,7 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "jevexp_questions_rationale_85",
-      "community": 6,
+      "community": 24,
       "norm_label": "neutral chat prompt (no persona, no mention of jev) from the same spec; json ans"
     },
     {
@@ -3582,7 +3692,7 @@
       "source_location": "L99",
       "_origin": "ast",
       "id": "jevexp_questions_rationale_99",
-      "community": 6,
+      "community": 24,
       "norm_label": "json schema of the llm answer, enforced by the clis (--json-schema for claude, -"
     },
     {
@@ -3662,7 +3772,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_report_f2",
-      "community": 2,
+      "community": 28,
       "norm_label": "report_f2.py"
     },
     {
@@ -3672,7 +3782,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "jevexp_report_f2_per_lang",
-      "community": 2,
+      "community": 28,
       "norm_label": "per_lang()"
     },
     {
@@ -3682,7 +3792,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "jevexp_report_f2_ops",
-      "community": 2,
+      "community": 28,
       "norm_label": "ops()"
     },
     {
@@ -3692,7 +3802,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "jevexp_report_f2_select_formulation",
-      "community": 2,
+      "community": 28,
       "norm_label": "select_formulation()"
     },
     {
@@ -3702,7 +3812,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "jevexp_report_f2_main",
-      "community": 2,
+      "community": 28,
       "norm_label": "main()"
     },
     {
@@ -3712,7 +3822,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_report_f2_rationale_1",
-      "community": 2,
+      "community": 28,
       "norm_label": "f2 pilot summaries (validation only): per-language macro-f1 per run, formulation"
     },
     {
@@ -3722,7 +3832,7 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "jevexp_report_f2_rationale_42",
-      "community": 2,
+      "community": 28,
       "norm_label": "scores: {formulation: mean macro-f1}. rule from prereg/pilot_rules.md."
     },
     {
@@ -3732,7 +3842,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_report_f4",
-      "community": 0,
+      "community": 34,
       "norm_label": "report_f4.py"
     },
     {
@@ -3742,7 +3852,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "jevexp_report_f4_status",
-      "community": 0,
+      "community": 34,
       "norm_label": "status()"
     },
     {
@@ -3752,7 +3862,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "jevexp_report_f4_check",
-      "community": 0,
+      "community": 34,
       "norm_label": "check()"
     },
     {
@@ -3762,7 +3872,7 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "jevexp_report_f4_main",
-      "community": 0,
+      "community": 34,
       "norm_label": "main()"
     },
     {
@@ -3772,7 +3882,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jevexp_report_f4_rationale_1",
-      "community": 0,
+      "community": 34,
       "norm_label": "f4 collection monitor. deliberately computes no performance metric (no accuracy"
     },
     {
@@ -3792,7 +3902,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "runners_baseline",
-      "community": 3,
+      "community": 27,
       "norm_label": "baseline.py"
     },
     {
@@ -3802,7 +3912,7 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "runners_baseline_tokenize",
-      "community": 3,
+      "community": 27,
       "norm_label": "tokenize()"
     },
     {
@@ -3812,7 +3922,7 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "runners_baseline_fit_select",
-      "community": 3,
+      "community": 27,
       "norm_label": "fit_select()"
     },
     {
@@ -3822,7 +3932,7 @@
       "source_location": "L64",
       "_origin": "ast",
       "id": "runners_baseline_prediction_frame",
-      "community": 3,
+      "community": 27,
       "norm_label": "_prediction_frame()"
     },
     {
@@ -3832,7 +3942,7 @@
       "source_location": "L83",
       "_origin": "ast",
       "id": "runners_baseline_run",
-      "community": 3,
+      "community": 27,
       "norm_label": "run()"
     },
     {
@@ -3842,7 +3952,7 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "runners_baseline_run_curves",
-      "community": 3,
+      "community": 27,
       "norm_label": "run_curves()"
     },
     {
@@ -3852,7 +3962,7 @@
       "source_location": "L138",
       "_origin": "ast",
       "id": "runners_baseline_main",
-      "community": 3,
+      "community": 27,
       "norm_label": "main()"
     },
     {
@@ -3862,7 +3972,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "runners_baseline_rationale_1",
-      "community": 3,
+      "community": 27,
       "norm_label": "b1: classical baselines, replicating the official nusax notebook (indonlp/nusax@"
     },
     {
@@ -3872,7 +3982,7 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "runners_baseline_rationale_47",
-      "community": 3,
+      "community": 27,
       "norm_label": "one notebook run. frames have columns text, label. returns dict with fitted sear"
     },
     {
@@ -3882,7 +3992,7 @@
       "source_location": "L84",
       "_origin": "ast",
       "id": "runners_baseline_rationale_84",
-      "community": 3,
+      "community": 27,
       "norm_label": "all languages x classifiers x features for one dataset; writes runs/b1 and retur"
     },
     {
@@ -3892,7 +4002,7 @@
       "source_location": "L109",
       "_origin": "ast",
       "id": "runners_baseline_rationale_109",
-      "community": 3,
+      "community": 27,
       "norm_label": "h3a (analysis_plan \u00a76): per language, the frozen f5 train subsets (splits/f5_pla"
     },
     {
@@ -3902,7 +4012,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "runners_claude",
-      "community": 30,
+      "community": 24,
       "norm_label": "claude.py"
     },
     {
@@ -3912,7 +4022,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "runners_claude_call_cli",
-      "community": 30,
+      "community": 24,
       "norm_label": "call_cli()"
     },
     {
@@ -3922,7 +4032,7 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "runners_claude_run",
-      "community": 30,
+      "community": 24,
       "norm_label": "run()"
     },
     {
@@ -3932,7 +4042,7 @@
       "source_location": "L99",
       "_origin": "ast",
       "id": "runners_claude_main",
-      "community": 30,
+      "community": 24,
       "norm_label": "main()"
     },
     {
@@ -3942,7 +4052,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "runners_claude_rationale_1",
-      "community": 30,
+      "community": 24,
       "norm_label": "d3 (appendix): claude via headless claude code cli, one isolated call per item ("
     },
     {
@@ -3952,7 +4062,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "runners_claude_rationale_26",
-      "community": 30,
+      "community": 24,
       "norm_label": "returns a record; `_infra=true` when no model answer exists (quota, rate limit,"
     },
     {
@@ -3962,7 +4072,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "runners_codex",
-      "community": 6,
+      "community": 24,
       "norm_label": "codex.py"
     },
     {
@@ -3972,7 +4082,7 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "runners_codex_enabled_features",
-      "community": 6,
+      "community": 24,
       "norm_label": "enabled_features()"
     },
     {
@@ -3982,7 +4092,7 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "runners_codex_parse_events",
-      "community": 6,
+      "community": 24,
       "norm_label": "parse_events()"
     },
     {
@@ -3992,7 +4102,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "runners_codex_call_cli",
-      "community": 6,
+      "community": 24,
       "norm_label": "call_cli()"
     },
     {
@@ -4002,7 +4112,7 @@
       "source_location": "L80",
       "_origin": "ast",
       "id": "runners_codex_run",
-      "community": 6,
+      "community": 24,
       "norm_label": "run()"
     },
     {
@@ -4012,7 +4122,7 @@
       "source_location": "L121",
       "_origin": "ast",
       "id": "runners_codex_main",
-      "community": 6,
+      "community": 24,
       "norm_label": "main()"
     },
     {
@@ -4022,7 +4132,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "runners_codex_rationale_1",
-      "community": 6,
+      "community": 24,
       "norm_label": "d4 (llm reference ladder): openai gpt models via headless codex cli (`codex exec"
     },
     {
@@ -4032,7 +4142,7 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "runners_codex_rationale_37",
-      "community": 6,
+      "community": 24,
       "norm_label": "codex --json event stream -> final message, usage, tool-call count, error messag"
     },
     {
@@ -4072,7 +4182,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "runners_common_now_utc",
-      "community": 6,
+      "community": 24,
       "norm_label": "now_utc()"
     },
     {
@@ -4112,7 +4222,7 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "runners_common_rawlog",
-      "community": 29,
+      "community": 24,
       "norm_label": "rawlog"
     },
     {
@@ -4122,7 +4232,7 @@
       "source_location": "L91",
       "_origin": "ast",
       "id": "runners_common_rawlog_init",
-      "community": 29,
+      "community": 24,
       "norm_label": ".__init__()"
     },
     {
@@ -4132,7 +4242,7 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "runners_common_rawlog_records",
-      "community": 29,
+      "community": 24,
       "norm_label": ".records()"
     },
     {
@@ -4142,7 +4252,7 @@
       "source_location": "L101",
       "_origin": "ast",
       "id": "runners_common_rawlog_done_keys",
-      "community": 29,
+      "community": 24,
       "norm_label": ".done_keys()"
     },
     {
@@ -4152,7 +4262,7 @@
       "source_location": "L104",
       "_origin": "ast",
       "id": "runners_common_rawlog_append",
-      "community": 29,
+      "community": 24,
       "norm_label": ".append()"
     },
     {
@@ -4172,7 +4282,7 @@
       "source_location": "L118",
       "_origin": "ast",
       "id": "runners_common_is_infra_text",
-      "community": 30,
+      "community": 24,
       "norm_label": "is_infra_text()"
     },
     {
@@ -4182,7 +4292,7 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "runners_common_run_parallel",
-      "community": 29,
+      "community": 24,
       "norm_label": "run_parallel()"
     },
     {
@@ -4192,7 +4302,7 @@
       "source_location": "L168",
       "_origin": "ast",
       "id": "runners_common_frame",
-      "community": 30,
+      "community": 24,
       "norm_label": "frame()"
     },
     {
@@ -4252,7 +4362,7 @@
       "source_location": "L89",
       "_origin": "ast",
       "id": "runners_common_rationale_89",
-      "community": 29,
+      "community": 24,
       "norm_label": "append-only jsonl, one line per completed call, written immediately (never lost"
     },
     {
@@ -4262,7 +4372,7 @@
       "source_location": "L119",
       "_origin": "ast",
       "id": "runners_common_rationale_119",
-      "community": 30,
+      "community": 24,
       "norm_label": "true if an error message describes an infrastructure failure (no model answer wa"
     },
     {
@@ -4272,7 +4382,7 @@
       "source_location": "L125",
       "_origin": "ast",
       "id": "runners_common_rationale_125",
-      "community": 29,
+      "community": 24,
       "norm_label": "call fn(item) -> record for every item whose key is not yet in `log`; resume-saf"
     },
     {
@@ -4282,7 +4392,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "runners_deepseek",
-      "community": 31,
+      "community": 24,
       "norm_label": "deepseek.py"
     },
     {
@@ -4292,7 +4402,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "runners_deepseek_cost_upper",
-      "community": 31,
+      "community": 24,
       "norm_label": "cost_upper()"
     },
     {
@@ -4302,7 +4412,7 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "runners_deepseek_balance",
-      "community": 31,
+      "community": 24,
       "norm_label": "balance()"
     },
     {
@@ -4312,7 +4422,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "runners_deepseek_body",
-      "community": 31,
+      "community": 24,
       "norm_label": "body()"
     },
     {
@@ -4322,7 +4432,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "runners_deepseek_parse",
-      "community": 31,
+      "community": 24,
       "norm_label": "parse()"
     },
     {
@@ -4332,7 +4442,7 @@
       "source_location": "L61",
       "_origin": "ast",
       "id": "runners_deepseek_run",
-      "community": 31,
+      "community": 24,
       "norm_label": "run()"
     },
     {
@@ -4342,7 +4452,7 @@
       "source_location": "L103",
       "_origin": "ast",
       "id": "runners_deepseek_main",
-      "community": 31,
+      "community": 24,
       "norm_label": "main()"
     },
     {
@@ -4352,7 +4462,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "runners_deepseek_rationale_1",
-      "community": 31,
+      "community": 24,
       "norm_label": "deepseek arms, direct api (not openrouter; k34-k36).  d1 = deepseek-flash, think"
     },
     {
@@ -4362,7 +4472,7 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "runners_deepseek_rationale_50",
-      "community": 31,
+      "community": 24,
       "norm_label": "-> pred, probs, confidence_type, used_fallback"
     },
     {
@@ -4502,7 +4612,7 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "jevexp_schema_write",
-      "community": 3,
+      "community": 27,
       "norm_label": "write()"
     },
     {
@@ -4512,7 +4622,7 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "jevexp_schema_read",
-      "community": 0,
+      "community": 30,
       "norm_label": "read()"
     },
     {
@@ -4542,7 +4652,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_baseline",
-      "community": 3,
+      "community": 27,
       "norm_label": "test_baseline.py"
     },
     {
@@ -4552,7 +4662,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "tests_test_baseline_toy",
-      "community": 3,
+      "community": 27,
       "norm_label": "_toy()"
     },
     {
@@ -4562,7 +4672,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "tests_test_baseline_test_tokenize_matches_notebook",
-      "community": 3,
+      "community": 27,
       "norm_label": "test_tokenize_matches_notebook()"
     },
     {
@@ -4572,7 +4682,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "tests_test_baseline_test_fit_select_and_schema",
-      "community": 3,
+      "community": 27,
       "norm_label": "test_fit_select_and_schema()"
     },
     {
@@ -4582,7 +4692,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "tests_test_baseline_test_report_select_valid_picks_best_validation",
-      "community": 3,
+      "community": 27,
       "norm_label": "test_report_select_valid_picks_best_validation()"
     },
     {
@@ -4592,7 +4702,7 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "tests_test_baseline_test_anchor_matches_official_notebook_output",
-      "community": 3,
+      "community": 27,
       "norm_label": "test_anchor_matches_official_notebook_output()"
     },
     {
@@ -4602,7 +4712,7 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "tests_test_baseline_rationale_56",
-      "community": 3,
+      "community": 27,
       "norm_label": "official notebook output: indonesian, nb, bow -> test macro-f1 0.731105202275122"
     },
     {
@@ -4672,7 +4782,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_eval",
-      "community": 2,
+      "community": 6,
       "norm_label": "test_eval.py"
     },
     {
@@ -4682,7 +4792,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "tests_test_eval_test_accuracy_and_macro_f1_match_sklearn",
-      "community": 2,
+      "community": 28,
       "norm_label": "test_accuracy_and_macro_f1_match_sklearn()"
     },
     {
@@ -4692,7 +4802,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "tests_test_eval_test_invalid_counts_as_wrong",
-      "community": 2,
+      "community": 28,
       "norm_label": "test_invalid_counts_as_wrong()"
     },
     {
@@ -4702,7 +4812,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "tests_test_eval_test_ece_zero_for_perfectly_calibrated_one_hot",
-      "community": 2,
+      "community": 6,
       "norm_label": "test_ece_zero_for_perfectly_calibrated_one_hot()"
     },
     {
@@ -4712,7 +4822,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "tests_test_eval_test_ece_hand_computed",
-      "community": 2,
+      "community": 6,
       "norm_label": "test_ece_hand_computed()"
     },
     {
@@ -4722,7 +4832,7 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "tests_test_eval_test_reliability_bins_right_closed_edges",
-      "community": 2,
+      "community": 6,
       "norm_label": "test_reliability_bins_right_closed_edges()"
     },
     {
@@ -4732,7 +4842,7 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "tests_test_eval_test_brier",
-      "community": 2,
+      "community": 6,
       "norm_label": "test_brier()"
     },
     {
@@ -4742,7 +4852,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "tests_test_eval_test_coverage_curve_and_aurc",
-      "community": 2,
+      "community": 31,
       "norm_label": "test_coverage_curve_and_aurc()"
     },
     {
@@ -4752,7 +4862,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "tests_test_eval_test_cluster_bootstrap_deterministic_and_brackets_point",
-      "community": 2,
+      "community": 6,
       "norm_label": "test_cluster_bootstrap_deterministic_and_brackets_point()"
     },
     {
@@ -4762,7 +4872,7 @@
       "source_location": "L79",
       "_origin": "ast",
       "id": "tests_test_eval_test_cluster_bootstrap_resamples_whole_clusters",
-      "community": 2,
+      "community": 6,
       "norm_label": "test_cluster_bootstrap_resamples_whole_clusters()"
     },
     {
@@ -4952,7 +5062,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_features",
-      "community": 25,
+      "community": 4,
       "norm_label": "test_features.py"
     },
     {
@@ -4962,7 +5072,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "tests_test_features_test_overlap_ind_is_identity_for_indonesian_and_complete",
-      "community": 25,
+      "community": 4,
       "norm_label": "test_overlap_ind_is_identity_for_indonesian_and_complete()"
     },
     {
@@ -4972,7 +5082,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "tests_test_features_test_language_features_cover_all_parallel_languages",
-      "community": 25,
+      "community": 4,
       "norm_label": "test_language_features_cover_all_parallel_languages()"
     },
     {
@@ -5222,7 +5332,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_infra",
-      "community": 29,
+      "community": 24,
       "norm_label": "test_infra.py"
     },
     {
@@ -5232,7 +5342,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "tests_test_infra_test_infra_text",
-      "community": 30,
+      "community": 24,
       "norm_label": "test_infra_text()"
     },
     {
@@ -5242,7 +5352,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "tests_test_infra_items",
-      "community": 29,
+      "community": 24,
       "norm_label": "_items()"
     },
     {
@@ -5252,7 +5362,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "tests_test_infra_test_infra_records_are_not_logged_and_are_retried",
-      "community": 29,
+      "community": 24,
       "norm_label": "test_infra_records_are_not_logged_and_are_retried()"
     },
     {
@@ -5262,7 +5372,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "tests_test_infra_test_stops_after_consecutive_infra_failures",
-      "community": 29,
+      "community": 24,
       "norm_label": "test_stops_after_consecutive_infra_failures()"
     },
     {
@@ -5272,7 +5382,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_parsing",
-      "community": 28,
+      "community": 24,
       "norm_label": "test_parsing.py"
     },
     {
@@ -5282,7 +5392,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "tests_test_parsing_test_spec_keys_are_canonical_labels",
-      "community": 28,
+      "community": 24,
       "norm_label": "test_spec_keys_are_canonical_labels()"
     },
     {
@@ -5292,7 +5402,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "tests_test_parsing_test_render_jev_and_llm_are_deterministic_and_share_text",
-      "community": 6,
+      "community": 24,
       "norm_label": "test_render_jev_and_llm_are_deterministic_and_share_text()"
     },
     {
@@ -5302,7 +5412,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "tests_test_parsing_test_jev_choice_reorders_probs_to_canonical",
-      "community": 28,
+      "community": 24,
       "norm_label": "test_jev_choice_reorders_probs_to_canonical()"
     },
     {
@@ -5312,7 +5422,7 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "tests_test_parsing_test_jev_noul_normalised_and_invalid_when_missing",
-      "community": 28,
+      "community": 24,
       "norm_label": "test_jev_noul_normalised_and_invalid_when_missing()"
     },
     {
@@ -5322,7 +5432,7 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "tests_test_parsing_test_llm_json",
-      "community": 28,
+      "community": 24,
       "norm_label": "test_llm_json()"
     },
     {
@@ -5332,7 +5442,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "tests_test_parsing_tok",
-      "community": 28,
+      "community": 24,
       "norm_label": "_tok()"
     },
     {
@@ -5342,7 +5452,7 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "tests_test_parsing_test_logprob_merges_whitespace_variants_by_max",
-      "community": 28,
+      "community": 24,
       "norm_label": "test_logprob_merges_whitespace_variants_by_max()"
     },
     {
@@ -5352,7 +5462,7 @@
       "source_location": "L71",
       "_origin": "ast",
       "id": "tests_test_parsing_test_logprob_real_distribution_and_prefix_tokens",
-      "community": 28,
+      "community": 24,
       "norm_label": "test_logprob_real_distribution_and_prefix_tokens()"
     },
     {
@@ -5362,7 +5472,7 @@
       "source_location": "L80",
       "_origin": "ast",
       "id": "tests_test_parsing_test_codex_output_schema_and_event_parser",
-      "community": 6,
+      "community": 24,
       "norm_label": "test_codex_output_schema_and_event_parser()"
     },
     {
@@ -5422,7 +5532,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_scope",
-      "community": 25,
+      "community": 4,
       "norm_label": "test_scope.py"
     },
     {
@@ -5432,7 +5542,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "tests_test_scope_test_scope_sizes",
-      "community": 25,
+      "community": 4,
       "norm_label": "test_scope_sizes()"
     },
     {
@@ -5442,7 +5552,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "tests_test_scope_test_test_split_requires_explicit_scope",
-      "community": 25,
+      "community": 4,
       "norm_label": "test_test_split_requires_explicit_scope()"
     },
     {
@@ -5456,44 +5566,114 @@
       "norm_label": "readme.md"
     },
     {
-      "label": "jevexp \u2014 experiments for journal 010",
+      "label": "Evaluating System One Models for Indonesian Regional Languages",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "readme_jevexp_experiments_for_journal_010",
+      "id": "readme_evaluating_system_one_models_for_indonesian_regional_languages",
       "community": 8,
-      "norm_label": "jevexp \u2014 experiments for journal 010"
+      "norm_label": "evaluating system one models for indonesian regional languages"
     },
     {
-      "label": "Setup (reproducible)",
+      "label": "Data",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L5",
+      "source_location": "L16",
       "_origin": "ast",
-      "id": "readme_setup_reproducible",
+      "id": "readme_data",
       "community": 8,
-      "norm_label": "setup (reproducible)"
+      "norm_label": "data"
     },
     {
-      "label": "Layout",
+      "label": "Systems compared",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L18",
+      "source_location": "L27",
       "_origin": "ast",
-      "id": "readme_layout",
+      "id": "readme_systems_compared",
       "community": 8,
-      "norm_label": "layout"
+      "norm_label": "systems compared"
     },
     {
-      "label": "Data (pinned)",
+      "label": "System One (typed-decision) models",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L29",
       "_origin": "ast",
-      "id": "readme_data_pinned",
+      "id": "readme_system_one_typed_decision_models",
       "community": 8,
-      "norm_label": "data (pinned)"
+      "norm_label": "system one (typed-decision) models"
+    },
+    {
+      "label": "Classical baselines (B1, following the NusaX protocol, scikit-learn)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "readme_classical_baselines_b1_following_the_nusax_protocol_scikit_learn",
+      "community": 8,
+      "norm_label": "classical baselines (b1, following the nusax protocol, scikit-learn)"
+    },
+    {
+      "label": "Fine-tuned encoders",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "readme_fine_tuned_encoders",
+      "community": 8,
+      "norm_label": "fine-tuned encoders"
+    },
+    {
+      "label": "Large language models",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "readme_large_language_models",
+      "community": 8,
+      "norm_label": "large language models"
+    },
+    {
+      "label": "Pre-registration",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "readme_pre_registration",
+      "community": 8,
+      "norm_label": "pre-registration"
+    },
+    {
+      "label": "Repository layout",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "readme_repository_layout",
+      "community": 8,
+      "norm_label": "repository layout"
+    },
+    {
+      "label": "Reproducing the analysis",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "readme_reproducing_the_analysis",
+      "community": 8,
+      "norm_label": "reproducing the analysis"
+    },
+    {
+      "label": "Licence",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "readme_licence",
+      "community": 8,
+      "norm_label": "licence"
     },
     {
       "label": "README.md",
@@ -6020,6 +6200,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "analysis/make_figures.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "analysis_make_figures",
+      "target": "analysis_make_figures_commaformatter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
       "source_location": "L125",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -6070,6 +6260,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "analysis/make_figures.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "analysis_make_figures",
+      "target": "analysis_make_figures_localise",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
       "source_location": "L179",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -6090,11 +6290,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "analysis/make_figures.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "analysis_make_figures",
+      "target": "analysis_make_figures_num",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
       "source_location": "L34",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "analysis_make_figures",
       "target": "analysis_make_figures_save"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "analysis_make_figures",
+      "target": "analysis_make_figures_t",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -6116,6 +6336,198 @@
       "confidence_score": 1.0,
       "source": "analysis_make_figures_rationale_1",
       "target": "analysis_make_figures"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L203",
+      "weight": 1.0,
+      "source": "analysis_make_figures_fig_cascade",
+      "target": "analysis_make_figures_t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "analysis_make_figures_fig_forest",
+      "target": "analysis_make_figures_t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L185",
+      "weight": 1.0,
+      "source": "analysis_make_figures_fig_frontier",
+      "target": "analysis_make_figures_t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "analysis_make_figures_fig_learning_curves",
+      "target": "analysis_make_figures_t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L235",
+      "weight": 1.0,
+      "source": "analysis_make_figures_fig_reliability",
+      "target": "analysis_make_figures_t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L236",
+      "weight": 1.0,
+      "source": "analysis_make_figures_fig_reliability",
+      "target": "analysis_make_figures_num",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "analysis_make_figures_rationale_53",
+      "target": "analysis_make_figures_num",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L214",
+      "weight": 1.0,
+      "source": "analysis_make_figures_fig_cascade",
+      "target": "analysis_make_figures_localise",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L151",
+      "weight": 1.0,
+      "source": "analysis_make_figures_fig_forest",
+      "target": "analysis_make_figures_localise",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L187",
+      "weight": 1.0,
+      "source": "analysis_make_figures_fig_frontier",
+      "target": "analysis_make_figures_localise",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "analysis_make_figures_fig_learning_curves",
+      "target": "analysis_make_figures_localise",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L243",
+      "weight": 1.0,
+      "source": "analysis_make_figures_fig_reliability",
+      "target": "analysis_make_figures_localise",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "analysis_make_figures_localise",
+      "target": "analysis_make_figures_commaformatter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "analysis_make_figures_rationale_59",
+      "target": "analysis_make_figures_localise",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "analysis_make_figures_commaformatter",
+      "target": "analysis_make_figures_commaformatter_call",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "analysis_make_figures_commaformatter",
+      "target": "analysis_make_figures_commaformatter_format_ticks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "analysis_make_figures_commaformatter",
+      "target": "scalarformatter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "analysis_make_figures_rationale_69",
+      "target": "analysis_make_figures_commaformatter",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -6239,14 +6651,24 @@
       "target": "analysis_make_figures_save"
     },
     {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "analysis/make_figures.py",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "analysis_make_figures_rationale_157",
+      "target": "analysis_make_figures_fig_frontier",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "analysis/manuscript_facts.py",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "analysis_manuscript_facts",
-      "target": "analysis_manuscript_facts_dataset_sizes",
-      "confidence_score": 1.0
+      "target": "analysis_manuscript_facts_dataset_sizes"
     },
     {
       "relation": "contains",
@@ -6254,9 +6676,9 @@
       "source_file": "analysis/manuscript_facts.py",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "analysis_manuscript_facts",
-      "target": "analysis_manuscript_facts_f4",
-      "confidence_score": 1.0
+      "target": "analysis_manuscript_facts_f4"
     },
     {
       "relation": "contains",
@@ -6264,9 +6686,9 @@
       "source_file": "analysis/manuscript_facts.py",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "analysis_manuscript_facts",
-      "target": "analysis_manuscript_facts_f5",
-      "confidence_score": 1.0
+      "target": "analysis_manuscript_facts_f5"
     },
     {
       "relation": "contains",
@@ -6274,9 +6696,9 @@
       "source_file": "analysis/manuscript_facts.py",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "analysis_manuscript_facts",
-      "target": "analysis_manuscript_facts_main",
-      "confidence_score": 1.0
+      "target": "analysis_manuscript_facts_main"
     },
     {
       "relation": "imports_from",
@@ -6285,9 +6707,9 @@
       "source_file": "analysis/manuscript_facts.py",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "analysis_manuscript_facts",
-      "target": "jevexp_data",
-      "confidence_score": 1.0
+      "target": "jevexp_data"
     },
     {
       "relation": "imports_from",
@@ -6296,9 +6718,9 @@
       "source_file": "analysis/manuscript_facts.py",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "analysis_manuscript_facts",
-      "target": "jevexp_paths",
-      "confidence_score": 1.0
+      "target": "jevexp_paths"
     },
     {
       "relation": "rationale_for",
@@ -6306,9 +6728,9 @@
       "source_file": "analysis/manuscript_facts.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "analysis_manuscript_facts_rationale_1",
-      "target": "analysis_manuscript_facts",
-      "confidence_score": 1.0
+      "target": "analysis_manuscript_facts"
     },
     {
       "relation": "calls",
@@ -6317,9 +6739,9 @@
       "source_file": "analysis/manuscript_facts.py",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "analysis_manuscript_facts_main",
-      "target": "analysis_manuscript_facts_dataset_sizes",
-      "confidence_score": 1.0
+      "target": "analysis_manuscript_facts_dataset_sizes"
     },
     {
       "relation": "calls",
@@ -6328,9 +6750,9 @@
       "source_file": "analysis/manuscript_facts.py",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "analysis_manuscript_facts_main",
-      "target": "analysis_manuscript_facts_f4",
-      "confidence_score": 1.0
+      "target": "analysis_manuscript_facts_f4"
     },
     {
       "relation": "calls",
@@ -6339,9 +6761,9 @@
       "source_file": "analysis/manuscript_facts.py",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "analysis_manuscript_facts_main",
-      "target": "analysis_manuscript_facts_f5",
-      "confidence_score": 1.0
+      "target": "analysis_manuscript_facts_f5"
     },
     {
       "relation": "contains",
@@ -17997,9 +18419,99 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "readme",
-      "target": "readme_jevexp_experiments_for_journal_010"
+      "target": "readme_evaluating_system_one_models_for_indonesian_regional_languages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "readme_evaluating_system_one_models_for_indonesian_regional_languages",
+      "target": "readme_data",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "readme_evaluating_system_one_models_for_indonesian_regional_languages",
+      "target": "readme_licence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "readme_evaluating_system_one_models_for_indonesian_regional_languages",
+      "target": "readme_pre_registration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "readme_evaluating_system_one_models_for_indonesian_regional_languages",
+      "target": "readme_repository_layout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "readme_evaluating_system_one_models_for_indonesian_regional_languages",
+      "target": "readme_reproducing_the_analysis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "readme_evaluating_system_one_models_for_indonesian_regional_languages",
+      "target": "readme_systems_compared",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "readme_systems_compared",
+      "target": "readme_classical_baselines_b1_following_the_nusax_protocol_scikit_learn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "readme_systems_compared",
+      "target": "readme_fine_tuned_encoders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "readme_systems_compared",
+      "target": "readme_large_language_models",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -18007,29 +18519,9 @@
       "source_file": "README.md",
       "source_location": "L29",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme_jevexp_experiments_for_journal_010",
-      "target": "readme_data_pinned"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L18",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme_jevexp_experiments_for_journal_010",
-      "target": "readme_layout"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme_jevexp_experiments_for_journal_010",
-      "target": "readme_setup_reproducible"
+      "source": "readme_systems_compared",
+      "target": "readme_system_one_typed_decision_models",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -18323,5 +18815,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a22ff4c4b0fe826c54c0c92f304fa5a3118a5c8c"
+  "built_at_commit": "1404c4a244b6f4947d78def8a7249c270cbc8970"
 }
