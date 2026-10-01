@@ -97,26 +97,43 @@ def fig_forest():
 
 
 def fig_frontier():
+    """Cost–accuracy on the fixed subsets. Models without a reported cost (GPT via Codex CLI) sit in a narrow
+    strip to the right of each panel, on the same y axis, instead of being dropped."""
     lad = pd.read_csv(RESULTS / "secondary_test" / "ladder.csv")
-    lad = lad[lad["cost_per_1000_usd"].notna()]
-    names = {"A1": "Jev", "A1-choice": None, "RQ4-choice_id": None, "A3": None, "D1": "DeepSeek flash",
-             "D3-claude-haiku-4-5-20251001": "Claude Haiku 4.5", "D3-claude-sonnet-5": "Claude Sonnet 5",
-             "D3-claude-opus-5-5": "Claude Opus 5.5"}
-    lad = lad[lad["arm"].map(names).notna()]
-    fig, axes = plt.subplots(1, 3, figsize=(10, 3.3), sharey=False)
-    for ax, (d, g) in zip(axes, [(d, lad[lad["dataset"] == d]) for d in DS_NAME]):
-        for _, r in g.iterrows():
-            i = 0 if r["arm"] == "A1" else (1 if r["arm"] == "D1" else 2)
+    priced = {"A1": "Jev", "D1": "DeepSeek V4.1 Flash", "D3-claude-haiku-4-5-20251001": "Claude Haiku 4.5",
+              "D3-claude-sonnet-5": "Claude Sonnet 5", "D3-claude-opus-5-5": "Claude Opus 5.5"}
+    unpriced = {"D4-gpt-6-luna": "GPT-6 Luna", "D4-gpt-6-sol": "GPT-6 Sol", "D4-gpt-5.6-terra": "GPT-5.6 Terra"}
+    fig, axes = plt.subplots(1, 6, figsize=(10, 3.4), gridspec_kw={"width_ratios": [4, 1.5, 4, 1.5, 4, 1.5]})
+    for k, d in enumerate(DS_NAME):
+        ax, strip = axes[2 * k], axes[2 * k + 1]
+        g = lad[lad["dataset"] == d]
+        for arm, name in priced.items():
+            r = g[g["arm"] == arm].iloc[0]
+            i = 0 if arm == "A1" else (1 if arm == "D1" else 2)
             ax.plot(r["cost_per_1000_usd"], r["macro_f1"], linestyle="none", **mark(i))
-            ax.annotate(names[r["arm"]], (r["cost_per_1000_usd"], r["macro_f1"]), textcoords="offset points",
-                        xytext=(6, -3), fontsize=7, color=INK)
+            ax.annotate(name, (r["cost_per_1000_usd"], r["macro_f1"]), textcoords="offset points",
+                        xytext=(5, -3), fontsize=6.5, color=INK)
+        for j, (arm, name) in enumerate(unpriced.items()):
+            r = g[g["arm"] == arm].iloc[0]
+            strip.plot(0, r["macro_f1"], linestyle="none", marker="D", color=INK2, markeredgecolor=SURFACE)
+            strip.annotate(name, (0, r["macro_f1"]), textcoords="offset points",
+                           xytext=(5, -3), fontsize=6.5, color=INK)
+        ys = g[g["arm"].isin(list(priced) + list(unpriced))]["macro_f1"]
+        lo, hi = ys.min(), ys.max()
+        pad = (hi - lo) * 0.08
+        for a in (ax, strip):
+            a.set_ylim(lo - pad, hi + pad)
         ax.set_xscale("log")
         ax.set_xlim(0.008, 40)
-        ax.margins(y=0.08)
         ax.set_title(DS_NAME[d] + " (subset)")
         ax.set_xlabel("API cost per 1,000 decisions (USD, log)")
+        strip.set_xlim(-0.3, 2.2)
+        strip.set_xticks([0], ["GPT\n(cost n/r)"], fontsize=7)
+        strip.tick_params(axis="y", labelleft=False)
+        strip.grid(axis="x", visible=False)
+        strip.spines["left"].set_linestyle((0, (2, 2)))
     axes[0].set_ylabel("macro-F1")
-    fig.tight_layout()
+    fig.tight_layout(w_pad=0.6)
     save(fig, "fig3_cost_frontier")
 
 
