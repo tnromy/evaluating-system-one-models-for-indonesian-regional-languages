@@ -1,0 +1,61 @@
+{
+ "run": {
+  "arm": "C1",
+  "dataset": "nt_senti",
+  "export": false,
+  "kind": "train",
+  "n": null,
+  "run_id": "c1-nt_senti-pooled-s2-nfull",
+  "seed": 2,
+  "stage": 1,
+  "train_lang": "pooled"
+ },
+ "config": {
+  "EPOCHS": 4,
+  "MICRO_BATCH": 8,
+  "GRAD_ACCUM": 8,
+  "GROUP_SIZE": 4,
+  "LR_ENCODER": 2.5e-05,
+  "LR_HEAD": 0.0001,
+  "SIGMA_START": 0.4,
+  "SIGMA_END": 0.1,
+  "temperature_fitted": 10.0,
+  "temperature_applied": 5.0
+ },
+ "model_id": "convaiinnovations/laya-multilingual@e4e9ddf21a7b",
+ "valid_f1": 0.7903617763265938,
+ "best_epoch": null,
+ "epochs": 4,
+ "history": [
+  {
+   "epoch": 1,
+   "avg_loss": 0.34367
+  },
+  {
+   "epoch": 2,
+   "avg_loss": 0.71806
+  },
+  {
+   "epoch": 3,
+   "avg_loss": 0.46544
+  },
+  {
+   "epoch": 4,
+   "avg_loss": 0.2629
+  }
+ ],
+ "train_n": 23800,
+ "train_time_s": 2171.3904037449993,
+ "gpu": "Tesla T4",
+ "versions": {
+  "torch": "2.11.0+cu128",
+  "transformers": "5.17.0",
+  "cuda": "12.8",
+  "python": "3.13.15",
+  "laya": "0.3.21"
+ },
+ "plan_sha": "96fa77ef38f73ea11b4c36f9f5d57c39b1646edae20866c8b58f431417f50a00",
+ "code_sha": "35c4f7c9316b16fc8cf0466c3974976a65bdb3ec2433f0ef96f5fb804650f210",
+ "session": "b3c640881398",
+ "finished_utc": "2026-09-28T06:38:38Z"
+}

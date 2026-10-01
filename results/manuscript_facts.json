@@ -1,0 +1,207 @@
+{
+ "datasets": {
+  "nusax_senti": {
+   "langs": [
+    "ace",
+    "ban",
+    "bbc",
+    "bjn",
+    "bug",
+    "eng",
+    "ind",
+    "jav",
+    "mad",
+    "min",
+    "nij",
+    "sun"
+   ],
+   "n_langs": 12,
+   "labels": [
+    "negative",
+    "neutral",
+    "positive"
+   ],
+   "splits": {
+    "train": {
+     "total": 6000,
+     "per_lang": 500
+    },
+    "valid": {
+     "total": 1200,
+     "per_lang": 100
+    },
+    "test": {
+     "total": 4800,
+     "per_lang": 400
+    }
+   },
+   "subset_per_lang": 100,
+   "subset_total": 1200
+  },
+  "nt_senti": {
+   "langs": [
+    "bew",
+    "btk",
+    "jav",
+    "mad",
+    "mak",
+    "min",
+    "sun"
+   ],
+   "n_langs": 7,
+   "labels": [
+    "negative",
+    "positive"
+   ],
+   "splits": {
+    "train": {
+     "total": 23800,
+     "per_lang": 3400
+    },
+    "valid": {
+     "total": 3136,
+     "per_lang": 448
+    },
+    "test": {
+     "total": 8400,
+     "per_lang": 1200
+    }
+   },
+   "subset_per_lang": 200,
+   "subset_total": 1400
+  },
+  "nt_emot": {
+   "langs": [
+    "bew",
+    "btk",
+    "jav",
+    "mad",
+    "mak",
+    "min",
+    "sun"
+   ],
+   "n_langs": 7,
+   "labels": [
+    "anger",
+    "fear",
+    "happy",
+    "love",
+    "sadness"
+   ],
+   "splits": {
+    "train": {
+     "total": 21000,
+     "per_lang": 3000
+    },
+    "valid": {
+     "total": 2807,
+     "per_lang": 401
+    },
+    "test": {
+     "total": 7000,
+     "per_lang": 1000
+    }
+   },
+   "subset_per_lang": 200,
+   "subset_total": 1400
+  }
+ },
+ "f4": {
+  "runs": 37,
+  "items": 102400,
+  "by_arm": [
+   {
+    "arm": "A1",
+    "runs": 9,
+    "items": 44400,
+    "cost_usd": 0.7556,
+    "invalid_max_pct": 0.0
+   },
+   {
+    "arm": "A3",
+    "runs": 3,
+    "items": 9400,
+    "cost_usd": 0.1551,
+    "invalid_max_pct": 0.0
+   },
+   {
+    "arm": "A4",
+    "runs": 4,
+    "items": 4400,
+    "cost_usd": 0.0734,
+    "invalid_max_pct": 0.0
+   },
+   {
+    "arm": "D1",
+    "runs": 3,
+    "items": 20200,
+    "cost_usd": 2.0374,
+    "invalid_max_pct": 0.086
+   },
+   {
+    "arm": "D3",
+    "runs": 9,
+    "items": 12000,
+    "cost_usd": 98.1752,
+    "invalid_max_pct": 0.0
+   },
+   {
+    "arm": "D4",
+    "runs": 9,
+    "items": 12000,
+    "cost_usd": 0.0,
+    "invalid_max_pct": 0.0
+   }
+  ],
+  "versions": [
+   "aeb56401ca74e127821c4f9126dcb669",
+   "claude-haiku-4-5-20251001",
+   "claude-opus-5-5",
+   "claude-sonnet-5",
+   "effort=low",
+   "gpt-5.6-terra",
+   "gpt-6-luna",
+   "gpt-6-sol",
+   "typesafe/jev-1.13-20260917"
+  ]
+ },
+ "f5": {
+  "runs": 1270,
+  "done": 1270,
+  "failed": 0,
+  "gpu_hours": 24.3,
+  "sessions": 9,
+  "gpu": [
+   "Tesla T4"
+  ],
+  "grid_size": {
+   "B2": 20,
+   "B3": 20
+  },
+  "grid_lrs": [
+   1e-06,
+   5e-06,
+   1e-05,
+   5e-05,
+   0.0001
+  ],
+  "grid_bs": [
+   4,
+   8,
+   16,
+   32
+  ],
+  "grid_winners": {
+   "B2": {
+    "lr": 5e-06,
+    "bs": 16,
+    "valid_f1": 0.9218897044984001
+   },
+   "B3": {
+    "lr": 5e-06,
+    "bs": 8,
+    "valid_f1": 0.9306557922118563
+   }
+  }
+ }
+}

@@ -1,0 +1,7 @@
+Predictions (runs/**/*.parquet) and result tables/figures (results/) in this repository
+are derived from the NusaX and NusaWrites datasets (CC BY-SA 4.0) and are released under the
+Creative Commons Attribution-ShareAlike 4.0 International licence:
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Outputs of the commercial Jev model are included for benchmarking and reproducibility only;
+the provider's terms prohibit using them to train, distil or improve other models.

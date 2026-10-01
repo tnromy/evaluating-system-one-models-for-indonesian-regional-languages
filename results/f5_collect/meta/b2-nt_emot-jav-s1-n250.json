@@ -1,0 +1,117 @@
+{
+ "run": {
+  "arm": "B2",
+  "dataset": "nt_emot",
+  "export": false,
+  "kind": "train",
+  "n": 250,
+  "run_id": "b2-nt_emot-jav-s1-n250",
+  "seed": 1,
+  "stage": 3,
+  "train_lang": "jav"
+ },
+ "config": {
+  "lr": 5e-06,
+  "bs": 16,
+  "optimizer": "Adam",
+  "max_len": 256,
+  "grid_run": "grid-b2-lr5e-06-bs16",
+  "valid_f1": 0.9218897044984001
+ },
+ "model_id": "indobenchmark/indobert-base-p1@c2cd0b51ddce",
+ "valid_f1": 0.4762402453679108,
+ "best_epoch": 12,
+ "epochs": 15,
+ "history": [
+  {
+   "epoch": 1,
+   "valid_f1": 0.21253,
+   "loss_last": 1.41372
+  },
+  {
+   "epoch": 2,
+   "valid_f1": 0.23168,
+   "loss_last": 1.48207
+  },
+  {
+   "epoch": 3,
+   "valid_f1": 0.26948,
+   "loss_last": 1.3302
+  },
+  {
+   "epoch": 4,
+   "valid_f1": 0.28037,
+   "loss_last": 1.20323
+  },
+  {
+   "epoch": 5,
+   "valid_f1": 0.30514,
+   "loss_last": 1.24793
+  },
+  {
+   "epoch": 6,
+   "valid_f1": 0.37735,
+   "loss_last": 1.00144
+  },
+  {
+   "epoch": 7,
+   "valid_f1": 0.36623,
+   "loss_last": 1.08643
+  },
+  {
+   "epoch": 8,
+   "valid_f1": 0.38346,
+   "loss_last": 0.91369
+  },
+  {
+   "epoch": 9,
+   "valid_f1": 0.41745,
+   "loss_last": 0.48193
+  },
+  {
+   "epoch": 10,
+   "valid_f1": 0.41581,
+   "loss_last": 0.48208
+  },
+  {
+   "epoch": 11,
+   "valid_f1": 0.44531,
+   "loss_last": 0.36439
+  },
+  {
+   "epoch": 12,
+   "valid_f1": 0.47624,
+   "loss_last": 0.37321
+  },
+  {
+   "epoch": 13,
+   "valid_f1": 0.45673,
+   "loss_last": 0.12591
+  },
+  {
+   "epoch": 14,
+   "valid_f1": 0.4669,
+   "loss_last": 0.14693
+  },
+  {
+   "epoch": 15,
+   "valid_f1": 0.46878,
+   "loss_last": 0.126
+  }
+ ],
+ "train_n": 250,
+ "train_time_s": 32.002127369001755,
+ "gpu": "Tesla T4",
+ "versions": {
+  "torch": "2.11.0+cu128",
+  "transformers": "5.17.0",
+  "cuda": "12.8",
+  "python": "3.13.15",
+  "laya": "0.3.21"
+ },
+ "plan_sha": "96fa77ef38f73ea11b4c36f9f5d57c39b1646edae20866c8b58f431417f50a00",
+ "code_sha": "4b9bb12464764d8a96f65bc83aa816f340682c3bcc4b618c87ac0e8ec687299a",
+ "session": "672c310f0e48",
+ "finished_utc": "2026-09-29T11:07:06Z",
+ "wall_s": 38.4
+}

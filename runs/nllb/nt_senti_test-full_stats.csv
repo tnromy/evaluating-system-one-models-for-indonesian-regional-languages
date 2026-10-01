@@ -1,0 +1,4 @@
+lang,n,chrf,sec_per_item,model,device
+jav,1200,57.1,0.0457,facebook/nllb-200-distilled-600M,cuda
+min,1200,67.05,0.0447,facebook/nllb-200-distilled-600M,cuda
+sun,1200,57.49,0.0473,facebook/nllb-200-distilled-600M,cuda

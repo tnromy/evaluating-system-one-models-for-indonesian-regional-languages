@@ -1,0 +1,67 @@
+{
+ "run": {
+  "arm": "B2",
+  "dataset": "nt_senti",
+  "export": false,
+  "kind": "train",
+  "n": 10,
+  "run_id": "b2-nt_senti-jav-s0-n10",
+  "seed": 0,
+  "stage": 3,
+  "train_lang": "jav"
+ },
+ "config": {
+  "lr": 5e-06,
+  "bs": 16,
+  "optimizer": "Adam",
+  "max_len": 256,
+  "grid_run": "grid-b2-lr5e-06-bs16",
+  "valid_f1": 0.9218897044984001
+ },
+ "model_id": "indobenchmark/indobert-base-p1@c2cd0b51ddce",
+ "valid_f1": 0.6224622692101432,
+ "best_epoch": 2,
+ "epochs": 5,
+ "history": [
+  {
+   "epoch": 1,
+   "valid_f1": 0.53758,
+   "loss_last": 0.67063
+  },
+  {
+   "epoch": 2,
+   "valid_f1": 0.62246,
+   "loss_last": 0.62742
+  },
+  {
+   "epoch": 3,
+   "valid_f1": 0.59858,
+   "loss_last": 0.54627
+  },
+  {
+   "epoch": 4,
+   "valid_f1": 0.48713,
+   "loss_last": 0.56193
+  },
+  {
+   "epoch": 5,
+   "valid_f1": 0.46015,
+   "loss_last": 0.51802
+  }
+ ],
+ "train_n": 10,
+ "train_time_s": 1.9965977260017098,
+ "gpu": "Tesla T4",
+ "versions": {
+  "torch": "2.11.0+cu128",
+  "transformers": "5.17.0",
+  "cuda": "12.8",
+  "python": "3.13.15",
+  "laya": "0.3.21"
+ },
+ "plan_sha": "96fa77ef38f73ea11b4c36f9f5d57c39b1646edae20866c8b58f431417f50a00",
+ "code_sha": "7c08d1107c4d1d382342a09fd9608aabaaaf28932ef768e8fb891f75876649d3",
+ "session": "d268dac797e4",
+ "finished_utc": "2026-09-29T05:51:53Z",
+ "wall_s": 6.6
+}

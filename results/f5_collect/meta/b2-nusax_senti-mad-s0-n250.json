@@ -1,0 +1,127 @@
+{
+ "run": {
+  "arm": "B2",
+  "dataset": "nusax_senti",
+  "export": false,
+  "kind": "train",
+  "n": 250,
+  "run_id": "b2-nusax_senti-mad-s0-n250",
+  "seed": 0,
+  "stage": 2,
+  "train_lang": "mad"
+ },
+ "config": {
+  "lr": 5e-06,
+  "bs": 16,
+  "optimizer": "Adam",
+  "max_len": 256,
+  "grid_run": "grid-b2-lr5e-06-bs16",
+  "valid_f1": 0.9218897044984001
+ },
+ "model_id": "indobenchmark/indobert-base-p1@c2cd0b51ddce",
+ "valid_f1": 0.6887776387150605,
+ "best_epoch": 14,
+ "epochs": 17,
+ "history": [
+  {
+   "epoch": 1,
+   "valid_f1": 0.3829,
+   "loss_last": 0.84696
+  },
+  {
+   "epoch": 2,
+   "valid_f1": 0.53145,
+   "loss_last": 0.74997
+  },
+  {
+   "epoch": 3,
+   "valid_f1": 0.56237,
+   "loss_last": 0.74445
+  },
+  {
+   "epoch": 4,
+   "valid_f1": 0.5864,
+   "loss_last": 0.4263
+  },
+  {
+   "epoch": 5,
+   "valid_f1": 0.60277,
+   "loss_last": 0.34919
+  },
+  {
+   "epoch": 6,
+   "valid_f1": 0.65497,
+   "loss_last": 0.25357
+  },
+  {
+   "epoch": 7,
+   "valid_f1": 0.64746,
+   "loss_last": 0.15679
+  },
+  {
+   "epoch": 8,
+   "valid_f1": 0.64746,
+   "loss_last": 0.14492
+  },
+  {
+   "epoch": 9,
+   "valid_f1": 0.65613,
+   "loss_last": 0.06568
+  },
+  {
+   "epoch": 10,
+   "valid_f1": 0.65457,
+   "loss_last": 0.32021
+  },
+  {
+   "epoch": 11,
+   "valid_f1": 0.64475,
+   "loss_last": 0.03234
+  },
+  {
+   "epoch": 12,
+   "valid_f1": 0.67256,
+   "loss_last": 0.0507
+  },
+  {
+   "epoch": 13,
+   "valid_f1": 0.66804,
+   "loss_last": 0.15427
+  },
+  {
+   "epoch": 14,
+   "valid_f1": 0.68878,
+   "loss_last": 0.02591
+  },
+  {
+   "epoch": 15,
+   "valid_f1": 0.6678,
+   "loss_last": 0.0226
+  },
+  {
+   "epoch": 16,
+   "valid_f1": 0.66368,
+   "loss_last": 0.08562
+  },
+  {
+   "epoch": 17,
+   "valid_f1": 0.68285,
+   "loss_last": 0.0141
+  }
+ ],
+ "train_n": 250,
+ "train_time_s": 37.93297320700003,
+ "gpu": "Tesla T4",
+ "versions": {
+  "torch": "2.11.0+cu128",
+  "transformers": "5.17.0",
+  "cuda": "12.8",
+  "python": "3.13.15",
+  "laya": "0.3.21"
+ },
+ "plan_sha": "96fa77ef38f73ea11b4c36f9f5d57c39b1646edae20866c8b58f431417f50a00",
+ "code_sha": "7c08d1107c4d1d382342a09fd9608aabaaaf28932ef768e8fb891f75876649d3",
+ "session": "59f48cf0bc6e",
+ "finished_utc": "2026-09-29T03:07:28Z",
+ "wall_s": 41.6
+}

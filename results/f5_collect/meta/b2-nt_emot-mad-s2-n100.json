@@ -1,0 +1,112 @@
+{
+ "run": {
+  "arm": "B2",
+  "dataset": "nt_emot",
+  "export": false,
+  "kind": "train",
+  "n": 100,
+  "run_id": "b2-nt_emot-mad-s2-n100",
+  "seed": 2,
+  "stage": 3,
+  "train_lang": "mad"
+ },
+ "config": {
+  "lr": 5e-06,
+  "bs": 16,
+  "optimizer": "Adam",
+  "max_len": 256,
+  "grid_run": "grid-b2-lr5e-06-bs16",
+  "valid_f1": 0.9218897044984001
+ },
+ "model_id": "indobenchmark/indobert-base-p1@c2cd0b51ddce",
+ "valid_f1": 0.3136043641663509,
+ "best_epoch": 11,
+ "epochs": 14,
+ "history": [
+  {
+   "epoch": 1,
+   "valid_f1": 0.2249,
+   "loss_last": 1.60565
+  },
+  {
+   "epoch": 2,
+   "valid_f1": 0.20207,
+   "loss_last": 1.79011
+  },
+  {
+   "epoch": 3,
+   "valid_f1": 0.22533,
+   "loss_last": 1.55511
+  },
+  {
+   "epoch": 4,
+   "valid_f1": 0.22332,
+   "loss_last": 1.44491
+  },
+  {
+   "epoch": 5,
+   "valid_f1": 0.22842,
+   "loss_last": 1.64285
+  },
+  {
+   "epoch": 6,
+   "valid_f1": 0.23197,
+   "loss_last": 1.23607
+  },
+  {
+   "epoch": 7,
+   "valid_f1": 0.24332,
+   "loss_last": 1.33179
+  },
+  {
+   "epoch": 8,
+   "valid_f1": 0.27772,
+   "loss_last": 1.10323
+  },
+  {
+   "epoch": 9,
+   "valid_f1": 0.24863,
+   "loss_last": 1.11243
+  },
+  {
+   "epoch": 10,
+   "valid_f1": 0.27252,
+   "loss_last": 0.99213
+  },
+  {
+   "epoch": 11,
+   "valid_f1": 0.3136,
+   "loss_last": 1.0635
+  },
+  {
+   "epoch": 12,
+   "valid_f1": 0.29999,
+   "loss_last": 0.75978
+  },
+  {
+   "epoch": 13,
+   "valid_f1": 0.26717,
+   "loss_last": 0.76627
+  },
+  {
+   "epoch": 14,
+   "valid_f1": 0.30747,
+   "loss_last": 1.12303
+  }
+ ],
+ "train_n": 100,
+ "train_time_s": 17.01813523299961,
+ "gpu": "Tesla T4",
+ "versions": {
+  "torch": "2.11.0+cu128",
+  "transformers": "5.17.0",
+  "cuda": "12.8",
+  "python": "3.13.15",
+  "laya": "0.3.21"
+ },
+ "plan_sha": "96fa77ef38f73ea11b4c36f9f5d57c39b1646edae20866c8b58f431417f50a00",
+ "code_sha": "4b9bb12464764d8a96f65bc83aa816f340682c3bcc4b618c87ac0e8ec687299a",
+ "session": "672c310f0e48",
+ "finished_utc": "2026-09-29T10:46:08Z",
+ "wall_s": 23.4
+}

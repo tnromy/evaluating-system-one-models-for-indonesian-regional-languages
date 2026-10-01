@@ -1,0 +1,112 @@
+{
+ "run": {
+  "arm": "B3",
+  "dataset": "nusax_senti",
+  "export": false,
+  "kind": "train",
+  "n": null,
+  "run_id": "b3-nusax_senti-ind-s0-nfull",
+  "seed": 0,
+  "stage": 1,
+  "train_lang": "ind"
+ },
+ "config": {
+  "lr": 5e-06,
+  "bs": 8,
+  "optimizer": "Adam",
+  "max_len": 256,
+  "grid_run": "grid-b3-lr5e-06-bs8",
+  "valid_f1": 0.9306557922118563
+ },
+ "model_id": "FacebookAI/xlm-roberta-base@e73636d4f797",
+ "valid_f1": 0.9306557922118563,
+ "best_epoch": 11,
+ "epochs": 14,
+ "history": [
+  {
+   "epoch": 1,
+   "valid_f1": 0.26173,
+   "loss_last": 1.0164
+  },
+  {
+   "epoch": 2,
+   "valid_f1": 0.58878,
+   "loss_last": 0.78675
+  },
+  {
+   "epoch": 3,
+   "valid_f1": 0.6509,
+   "loss_last": 0.52047
+  },
+  {
+   "epoch": 4,
+   "valid_f1": 0.83617,
+   "loss_last": 0.19483
+  },
+  {
+   "epoch": 5,
+   "valid_f1": 0.83843,
+   "loss_last": 0.5884
+  },
+  {
+   "epoch": 6,
+   "valid_f1": 0.8813,
+   "loss_last": 0.30585
+  },
+  {
+   "epoch": 7,
+   "valid_f1": 0.91323,
+   "loss_last": 0.14046
+  },
+  {
+   "epoch": 8,
+   "valid_f1": 0.88972,
+   "loss_last": 0.15918
+  },
+  {
+   "epoch": 9,
+   "valid_f1": 0.92188,
+   "loss_last": 0.02578
+  },
+  {
+   "epoch": 10,
+   "valid_f1": 0.90223,
+   "loss_last": 0.04145
+  },
+  {
+   "epoch": 11,
+   "valid_f1": 0.93066,
+   "loss_last": 0.05263
+  },
+  {
+   "epoch": 12,
+   "valid_f1": 0.90457,
+   "loss_last": 0.04071
+  },
+  {
+   "epoch": 13,
+   "valid_f1": 0.91323,
+   "loss_last": 0.02035
+  },
+  {
+   "epoch": 14,
+   "valid_f1": 0.93055,
+   "loss_last": 0.0071
+  }
+ ],
+ "train_n": 500,
+ "train_time_s": 119.81137252400549,
+ "gpu": "Tesla T4",
+ "versions": {
+  "torch": "2.11.0+cu128",
+  "transformers": "5.17.0",
+  "cuda": "12.8",
+  "python": "3.13.15",
+  "laya": "0.3.21"
+ },
+ "plan_sha": "96fa77ef38f73ea11b4c36f9f5d57c39b1646edae20866c8b58f431417f50a00",
+ "code_sha": "1d4f481f8b129050ab16d3d5404f82440e4d1039a7f6925be6c81c7f32a609ac",
+ "session": "0256879b4c63",
+ "finished_utc": "2026-09-28T09:13:33Z",
+ "wall_s": 131.3
+}

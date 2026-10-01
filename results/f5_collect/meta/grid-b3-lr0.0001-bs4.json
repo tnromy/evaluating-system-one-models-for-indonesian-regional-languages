@@ -1,0 +1,62 @@
+{
+ "run": {
+  "arm": "B3",
+  "bs": 4,
+  "dataset": "nusax_senti",
+  "export": false,
+  "kind": "grid",
+  "lr": 0.0001,
+  "n": null,
+  "run_id": "grid-b3-lr0.0001-bs4",
+  "seed": 0,
+  "stage": 1,
+  "train_lang": "ind"
+ },
+ "config": {
+  "lr": 0.0001,
+  "bs": 4,
+  "optimizer": "Adam",
+  "max_len": 256
+ },
+ "model_id": "FacebookAI/xlm-roberta-base@e73636d4f797",
+ "valid_f1": 0.18357487922705315,
+ "best_epoch": 1,
+ "epochs": 4,
+ "history": [
+  {
+   "epoch": 1,
+   "valid_f1": 0.18357,
+   "loss_last": 0.98973
+  },
+  {
+   "epoch": 2,
+   "valid_f1": 0.18357,
+   "loss_last": 1.15742
+  },
+  {
+   "epoch": 3,
+   "valid_f1": 0.18357,
+   "loss_last": 1.05683
+  },
+  {
+   "epoch": 4,
+   "valid_f1": 0.18357,
+   "loss_last": 1.00419
+  }
+ ],
+ "train_n": 500,
+ "train_time_s": 67.58353275499985,
+ "gpu": "Tesla T4",
+ "versions": {
+  "torch": "2.11.0+cu128",
+  "transformers": "5.17.0",
+  "cuda": "12.8",
+  "python": "3.13.15",
+  "laya": "0.3.21"
+ },
+ "plan_sha": "96fa77ef38f73ea11b4c36f9f5d57c39b1646edae20866c8b58f431417f50a00",
+ "code_sha": "1d4f481f8b129050ab16d3d5404f82440e4d1039a7f6925be6c81c7f32a609ac",
+ "session": "0256879b4c63",
+ "finished_utc": "2026-09-28T07:11:59Z",
+ "wall_s": 82.4
+}

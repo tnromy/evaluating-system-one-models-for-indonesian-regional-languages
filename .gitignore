@@ -10,9 +10,21 @@ __pycache__/
 
 # large / regenerable artefacts
 data/raw/
-runs/
-results/
 models/
+
+# Released with the paper: parsed predictions (runs/**/*.parquet) and result tables (results/).
+# Not released: raw API responses (large), superseded pilot runs, local logs (local paths),
+# smoke tests, empty CLI sandboxes, and the duplicated F5 collection (runs + checkpoints).
+runs/**/raw/
+runs/**/_superseded/
+runs/**/cwd_empty/
+runs/smoke/
+runs/logs/
+*.log
+results/f5_collect/runs/
+results/f5_collect/export/
+results/f5_collect/work/
+results/f5_collect/*.zip
 *.safetensors
 *.bin
 *.pt

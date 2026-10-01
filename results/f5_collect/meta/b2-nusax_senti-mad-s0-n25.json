@@ -1,0 +1,72 @@
+{
+ "run": {
+  "arm": "B2",
+  "dataset": "nusax_senti",
+  "export": false,
+  "kind": "train",
+  "n": 25,
+  "run_id": "b2-nusax_senti-mad-s0-n25",
+  "seed": 0,
+  "stage": 2,
+  "train_lang": "mad"
+ },
+ "config": {
+  "lr": 5e-06,
+  "bs": 16,
+  "optimizer": "Adam",
+  "max_len": 256,
+  "grid_run": "grid-b2-lr5e-06-bs16",
+  "valid_f1": 0.9218897044984001
+ },
+ "model_id": "indobenchmark/indobert-base-p1@c2cd0b51ddce",
+ "valid_f1": 0.3655215751989946,
+ "best_epoch": 3,
+ "epochs": 6,
+ "history": [
+  {
+   "epoch": 1,
+   "valid_f1": 0.34921,
+   "loss_last": 1.15814
+  },
+  {
+   "epoch": 2,
+   "valid_f1": 0.35362,
+   "loss_last": 1.08863
+  },
+  {
+   "epoch": 3,
+   "valid_f1": 0.36552,
+   "loss_last": 0.92068
+  },
+  {
+   "epoch": 4,
+   "valid_f1": 0.28874,
+   "loss_last": 0.87492
+  },
+  {
+   "epoch": 5,
+   "valid_f1": 0.29087,
+   "loss_last": 0.88283
+  },
+  {
+   "epoch": 6,
+   "valid_f1": 0.31211,
+   "loss_last": 0.93824
+  }
+ ],
+ "train_n": 25,
+ "train_time_s": 2.4248562379998475,
+ "gpu": "Tesla T4",
+ "versions": {
+  "torch": "2.11.0+cu128",
+  "transformers": "5.17.0",
+  "cuda": "12.8",
+  "python": "3.13.15",
+  "laya": "0.3.21"
+ },
+ "plan_sha": "96fa77ef38f73ea11b4c36f9f5d57c39b1646edae20866c8b58f431417f50a00",
+ "code_sha": "7c08d1107c4d1d382342a09fd9608aabaaaf28932ef768e8fb891f75876649d3",
+ "session": "59f48cf0bc6e",
+ "finished_utc": "2026-09-29T02:10:24Z",
+ "wall_s": 5.7
+}

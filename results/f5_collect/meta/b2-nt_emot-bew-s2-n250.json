@@ -1,0 +1,132 @@
+{
+ "run": {
+  "arm": "B2",
+  "dataset": "nt_emot",
+  "export": false,
+  "kind": "train",
+  "n": 250,
+  "run_id": "b2-nt_emot-bew-s2-n250",
+  "seed": 2,
+  "stage": 3,
+  "train_lang": "bew"
+ },
+ "config": {
+  "lr": 5e-06,
+  "bs": 16,
+  "optimizer": "Adam",
+  "max_len": 256,
+  "grid_run": "grid-b2-lr5e-06-bs16",
+  "valid_f1": 0.9218897044984001
+ },
+ "model_id": "indobenchmark/indobert-base-p1@c2cd0b51ddce",
+ "valid_f1": 0.5536701349320212,
+ "best_epoch": 15,
+ "epochs": 18,
+ "history": [
+  {
+   "epoch": 1,
+   "valid_f1": 0.21795,
+   "loss_last": 1.66248
+  },
+  {
+   "epoch": 2,
+   "valid_f1": 0.24618,
+   "loss_last": 1.59926
+  },
+  {
+   "epoch": 3,
+   "valid_f1": 0.33477,
+   "loss_last": 1.46362
+  },
+  {
+   "epoch": 4,
+   "valid_f1": 0.32698,
+   "loss_last": 1.35919
+  },
+  {
+   "epoch": 5,
+   "valid_f1": 0.41932,
+   "loss_last": 0.99444
+  },
+  {
+   "epoch": 6,
+   "valid_f1": 0.40969,
+   "loss_last": 1.50333
+  },
+  {
+   "epoch": 7,
+   "valid_f1": 0.47908,
+   "loss_last": 0.71279
+  },
+  {
+   "epoch": 8,
+   "valid_f1": 0.46126,
+   "loss_last": 1.07233
+  },
+  {
+   "epoch": 9,
+   "valid_f1": 0.46527,
+   "loss_last": 0.69965
+  },
+  {
+   "epoch": 10,
+   "valid_f1": 0.49098,
+   "loss_last": 0.5008
+  },
+  {
+   "epoch": 11,
+   "valid_f1": 0.50129,
+   "loss_last": 0.31341
+  },
+  {
+   "epoch": 12,
+   "valid_f1": 0.50721,
+   "loss_last": 0.42739
+  },
+  {
+   "epoch": 13,
+   "valid_f1": 0.52722,
+   "loss_last": 0.20157
+  },
+  {
+   "epoch": 14,
+   "valid_f1": 0.5414,
+   "loss_last": 0.13006
+  },
+  {
+   "epoch": 15,
+   "valid_f1": 0.55367,
+   "loss_last": 0.09556
+  },
+  {
+   "epoch": 16,
+   "valid_f1": 0.54311,
+   "loss_last": 0.07742
+  },
+  {
+   "epoch": 17,
+   "valid_f1": 0.54532,
+   "loss_last": 0.06112
+  },
+  {
+   "epoch": 18,
+   "valid_f1": 0.54991,
+   "loss_last": 0.06994
+  }
+ ],
+ "train_n": 250,
+ "train_time_s": 37.09559393299969,
+ "gpu": "Tesla T4",
+ "versions": {
+  "torch": "2.11.0+cu128",
+  "transformers": "5.17.0",
+  "cuda": "12.8",
+  "python": "3.13.15",
+  "laya": "0.3.21"
+ },
+ "plan_sha": "96fa77ef38f73ea11b4c36f9f5d57c39b1646edae20866c8b58f431417f50a00",
+ "code_sha": "4b9bb12464764d8a96f65bc83aa816f340682c3bcc4b618c87ac0e8ec687299a",
+ "session": "672c310f0e48",
+ "finished_utc": "2026-09-29T11:16:01Z",
+ "wall_s": 43.9
+}

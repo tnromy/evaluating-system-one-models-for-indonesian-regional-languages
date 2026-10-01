@@ -1,0 +1,127 @@
+{
+ "run": {
+  "arm": "B2",
+  "bs": 16,
+  "dataset": "nusax_senti",
+  "export": false,
+  "kind": "grid",
+  "lr": 1e-06,
+  "n": null,
+  "run_id": "grid-b2-lr1e-06-bs16",
+  "seed": 0,
+  "stage": 1,
+  "train_lang": "ind"
+ },
+ "config": {
+  "lr": 1e-06,
+  "bs": 16,
+  "optimizer": "Adam",
+  "max_len": 256
+ },
+ "model_id": "indobenchmark/indobert-base-p1@c2cd0b51ddce",
+ "valid_f1": 0.8923150923150923,
+ "best_epoch": 14,
+ "epochs": 17,
+ "history": [
+  {
+   "epoch": 1,
+   "valid_f1": 0.62119,
+   "loss_last": 1.04832
+  },
+  {
+   "epoch": 2,
+   "valid_f1": 0.64074,
+   "loss_last": 1.0066
+  },
+  {
+   "epoch": 3,
+   "valid_f1": 0.67063,
+   "loss_last": 0.89373
+  },
+  {
+   "epoch": 4,
+   "valid_f1": 0.7142,
+   "loss_last": 0.63537
+  },
+  {
+   "epoch": 5,
+   "valid_f1": 0.794,
+   "loss_last": 0.85692
+  },
+  {
+   "epoch": 6,
+   "valid_f1": 0.83149,
+   "loss_last": 0.36843
+  },
+  {
+   "epoch": 7,
+   "valid_f1": 0.83149,
+   "loss_last": 0.26794
+  },
+  {
+   "epoch": 8,
+   "valid_f1": 0.86873,
+   "loss_last": 0.5491
+  },
+  {
+   "epoch": 9,
+   "valid_f1": 0.86873,
+   "loss_last": 0.34305
+  },
+  {
+   "epoch": 10,
+   "valid_f1": 0.86904,
+   "loss_last": 0.1142
+  },
+  {
+   "epoch": 11,
+   "valid_f1": 0.8775,
+   "loss_last": 0.08187
+  },
+  {
+   "epoch": 12,
+   "valid_f1": 0.8775,
+   "loss_last": 0.57969
+  },
+  {
+   "epoch": 13,
+   "valid_f1": 0.88153,
+   "loss_last": 0.31196
+  },
+  {
+   "epoch": 14,
+   "valid_f1": 0.89232,
+   "loss_last": 0.06137
+  },
+  {
+   "epoch": 15,
+   "valid_f1": 0.87944,
+   "loss_last": 0.35917
+  },
+  {
+   "epoch": 16,
+   "valid_f1": 0.87944,
+   "loss_last": 0.05794
+  },
+  {
+   "epoch": 17,
+   "valid_f1": 0.88985,
+   "loss_last": 0.51239
+  }
+ ],
+ "train_n": 500,
+ "train_time_s": 52.608709266999995,
+ "gpu": "Tesla T4",
+ "versions": {
+  "torch": "2.11.0+cu128",
+  "transformers": "5.17.0",
+  "cuda": "12.8",
+  "python": "3.13.15",
+  "laya": "0.3.21"
+ },
+ "plan_sha": "96fa77ef38f73ea11b4c36f9f5d57c39b1646edae20866c8b58f431417f50a00",
+ "code_sha": "1d4f481f8b129050ab16d3d5404f82440e4d1039a7f6925be6c81c7f32a609ac",
+ "session": "0256879b4c63",
+ "finished_utc": "2026-09-28T07:09:28Z",
+ "wall_s": 56.0
+}

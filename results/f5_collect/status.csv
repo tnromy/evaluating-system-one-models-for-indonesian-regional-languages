@@ -1,0 +1,11 @@
+stage,kind,arm,done,total,failed
+1,grid,B2,20,20,0
+1,grid,B3,20,20,0
+1,train,B2,81,81,0
+1,train,B3,81,81,0
+1,train,C1,45,45,0
+1,zeroshot,C2,3,3,0
+2,train,B2,216,216,0
+2,train,C1,216,216,0
+3,train,B2,294,294,0
+3,train,C1,294,294,0

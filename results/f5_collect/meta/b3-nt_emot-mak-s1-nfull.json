@@ -1,0 +1,82 @@
+{
+ "run": {
+  "arm": "B3",
+  "dataset": "nt_emot",
+  "export": false,
+  "kind": "train",
+  "n": null,
+  "run_id": "b3-nt_emot-mak-s1-nfull",
+  "seed": 1,
+  "stage": 1,
+  "train_lang": "mak"
+ },
+ "config": {
+  "lr": 5e-06,
+  "bs": 8,
+  "optimizer": "Adam",
+  "max_len": 256,
+  "grid_run": "grid-b3-lr5e-06-bs8",
+  "valid_f1": 0.9306557922118563
+ },
+ "model_id": "FacebookAI/xlm-roberta-base@e73636d4f797",
+ "valid_f1": 0.6285411231287521,
+ "best_epoch": 5,
+ "epochs": 8,
+ "history": [
+  {
+   "epoch": 1,
+   "valid_f1": 0.16441,
+   "loss_last": 1.44336
+  },
+  {
+   "epoch": 2,
+   "valid_f1": 0.24176,
+   "loss_last": 1.51773
+  },
+  {
+   "epoch": 3,
+   "valid_f1": 0.36949,
+   "loss_last": 1.46991
+  },
+  {
+   "epoch": 4,
+   "valid_f1": 0.52531,
+   "loss_last": 1.04473
+  },
+  {
+   "epoch": 5,
+   "valid_f1": 0.62854,
+   "loss_last": 0.85747
+  },
+  {
+   "epoch": 6,
+   "valid_f1": 0.57909,
+   "loss_last": 0.84507
+  },
+  {
+   "epoch": 7,
+   "valid_f1": 0.58998,
+   "loss_last": 0.64293
+  },
+  {
+   "epoch": 8,
+   "valid_f1": 0.56206,
+   "loss_last": 1.0735
+  }
+ ],
+ "train_n": 3000,
+ "train_time_s": 424.3021845789972,
+ "gpu": "Tesla T4",
+ "versions": {
+  "torch": "2.11.0+cu128",
+  "transformers": "5.17.0",
+  "cuda": "12.8",
+  "python": "3.13.15",
+  "laya": "0.3.21"
+ },
+ "plan_sha": "96fa77ef38f73ea11b4c36f9f5d57c39b1646edae20866c8b58f431417f50a00",
+ "code_sha": "7c08d1107c4d1d382342a09fd9608aabaaaf28932ef768e8fb891f75876649d3",
+ "session": "b558b627f733",
+ "finished_utc": "2026-09-28T19:33:50Z",
+ "wall_s": 436.9
+}

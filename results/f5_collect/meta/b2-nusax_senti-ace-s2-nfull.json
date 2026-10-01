@@ -1,0 +1,127 @@
+{
+ "run": {
+  "arm": "B2",
+  "dataset": "nusax_senti",
+  "export": false,
+  "kind": "train",
+  "n": null,
+  "run_id": "b2-nusax_senti-ace-s2-nfull",
+  "seed": 2,
+  "stage": 1,
+  "train_lang": "ace"
+ },
+ "config": {
+  "lr": 5e-06,
+  "bs": 16,
+  "optimizer": "Adam",
+  "max_len": 256,
+  "grid_run": "grid-b2-lr5e-06-bs16",
+  "valid_f1": 0.9218897044984001
+ },
+ "model_id": "indobenchmark/indobert-base-p1@c2cd0b51ddce",
+ "valid_f1": 0.7962624459689039,
+ "best_epoch": 14,
+ "epochs": 17,
+ "history": [
+  {
+   "epoch": 1,
+   "valid_f1": 0.52885,
+   "loss_last": 0.69582
+  },
+  {
+   "epoch": 2,
+   "valid_f1": 0.63421,
+   "loss_last": 0.519
+  },
+  {
+   "epoch": 3,
+   "valid_f1": 0.66404,
+   "loss_last": 0.57
+  },
+  {
+   "epoch": 4,
+   "valid_f1": 0.67978,
+   "loss_last": 0.5613
+  },
+  {
+   "epoch": 5,
+   "valid_f1": 0.72456,
+   "loss_last": 0.38625
+  },
+  {
+   "epoch": 6,
+   "valid_f1": 0.78148,
+   "loss_last": 1.37081
+  },
+  {
+   "epoch": 7,
+   "valid_f1": 0.7565,
+   "loss_last": 1.08497
+  },
+  {
+   "epoch": 8,
+   "valid_f1": 0.78329,
+   "loss_last": 0.04556
+  },
+  {
+   "epoch": 9,
+   "valid_f1": 0.76629,
+   "loss_last": 0.0962
+  },
+  {
+   "epoch": 10,
+   "valid_f1": 0.7843,
+   "loss_last": 0.0386
+  },
+  {
+   "epoch": 11,
+   "valid_f1": 0.78447,
+   "loss_last": 0.01804
+  },
+  {
+   "epoch": 12,
+   "valid_f1": 0.78373,
+   "loss_last": 0.01433
+  },
+  {
+   "epoch": 13,
+   "valid_f1": 0.78542,
+   "loss_last": 0.01373
+  },
+  {
+   "epoch": 14,
+   "valid_f1": 0.79626,
+   "loss_last": 0.0092
+  },
+  {
+   "epoch": 15,
+   "valid_f1": 0.79407,
+   "loss_last": 0.00932
+  },
+  {
+   "epoch": 16,
+   "valid_f1": 0.76686,
+   "loss_last": 0.02997
+  },
+  {
+   "epoch": 17,
+   "valid_f1": 0.78509,
+   "loss_last": 0.02302
+  }
+ ],
+ "train_n": 500,
+ "train_time_s": 64.9480526949992,
+ "gpu": "Tesla T4",
+ "versions": {
+  "torch": "2.11.0+cu128",
+  "transformers": "5.17.0",
+  "cuda": "12.8",
+  "python": "3.13.15",
+  "laya": "0.3.21"
+ },
+ "plan_sha": "96fa77ef38f73ea11b4c36f9f5d57c39b1646edae20866c8b58f431417f50a00",
+ "code_sha": "1d4f481f8b129050ab16d3d5404f82440e4d1039a7f6925be6c81c7f32a609ac",
+ "session": "0256879b4c63",
+ "finished_utc": "2026-09-28T07:43:54Z",
+ "wall_s": 70.4
+}

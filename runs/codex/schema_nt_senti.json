@@ -1,0 +1,1 @@
+{"type": "object", "additionalProperties": false, "required": ["choice", "probabilities"], "properties": {"choice": {"type": "string", "enum": ["negative", "positive"]}, "probabilities": {"type": "object", "additionalProperties": false, "required": ["negative", "positive"], "properties": {"negative": {"type": "number"}, "positive": {"type": "number"}}}}}

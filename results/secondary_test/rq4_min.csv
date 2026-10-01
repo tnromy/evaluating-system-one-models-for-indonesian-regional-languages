@@ -1,0 +1,19 @@
+dataset,formulation,n,macro_f1,accuracy,kappa
+nusax_senti,noul_en,1200,0.7829558901065253,0.7991666666666667,
+nusax_senti,choice_en,1200,0.7900830019058015,0.8033333333333333,
+nusax_senti,choice_id,1200,0.7921394690032056,0.8033333333333333,
+nusax_senti,kappa noul_en vs choice_en,1200,,,0.919368858674727
+nusax_senti,kappa noul_en vs choice_id,1200,,,0.9108395727941816
+nusax_senti,kappa choice_en vs choice_id,1200,,,0.9441726503082664
+nt_senti,noul_en,1400,0.782823248905566,0.8185714285714286,
+nt_senti,choice_en,1400,0.7896715510941887,0.8214285714285714,
+nt_senti,choice_id,1400,0.7935076924757772,0.8264285714285714,
+nt_senti,kappa noul_en vs choice_en,1400,,,0.9329795611597408
+nt_senti,kappa noul_en vs choice_id,1400,,,0.92383356545961
+nt_senti,kappa choice_en vs choice_id,1400,,,0.9450125685557587
+nt_emot,noul_en,1400,0.6401052492957234,0.6392857142857142,
+nt_emot,choice_en,1400,0.6385712150213019,0.64,
+nt_emot,choice_id,1400,0.6396911868033963,0.6421428571428571,
+nt_emot,kappa noul_en vs choice_en,1400,,,0.8907909465694706
+nt_emot,kappa noul_en vs choice_id,1400,,,0.8745793344135611
+nt_emot,kappa choice_en vs choice_id,1400,,,0.9272653593480898

@@ -1,0 +1,77 @@
+{
+ "run": {
+  "arm": "B2",
+  "dataset": "nt_emot",
+  "export": false,
+  "kind": "train",
+  "n": null,
+  "run_id": "b2-nt_emot-mad-s2-nfull",
+  "seed": 2,
+  "stage": 1,
+  "train_lang": "mad"
+ },
+ "config": {
+  "lr": 5e-06,
+  "bs": 16,
+  "optimizer": "Adam",
+  "max_len": 256,
+  "grid_run": "grid-b2-lr5e-06-bs16",
+  "valid_f1": 0.9218897044984001
+ },
+ "model_id": "indobenchmark/indobert-base-p1@c2cd0b51ddce",
+ "valid_f1": 0.62912146525466,
+ "best_epoch": 4,
+ "epochs": 7,
+ "history": [
+  {
+   "epoch": 1,
+   "valid_f1": 0.43276,
+   "loss_last": 1.00669
+  },
+  {
+   "epoch": 2,
+   "valid_f1": 0.53159,
+   "loss_last": 1.34565
+  },
+  {
+   "epoch": 3,
+   "valid_f1": 0.56825,
+   "loss_last": 0.71718
+  },
+  {
+   "epoch": 4,
+   "valid_f1": 0.62912,
+   "loss_last": 0.58045
+  },
+  {
+   "epoch": 5,
+   "valid_f1": 0.61036,
+   "loss_last": 0.73158
+  },
+  {
+   "epoch": 6,
+   "valid_f1": 0.58044,
+   "loss_last": 0.75212
+  },
+  {
+   "epoch": 7,
+   "valid_f1": 0.61588,
+   "loss_last": 0.17258
+  }
+ ],
+ "train_n": 3000,
+ "train_time_s": 140.39731789500047,
+ "gpu": "Tesla T4",
+ "versions": {
+  "torch": "2.11.0+cu128",
+  "transformers": "5.17.0",
+  "cuda": "12.8",
+  "python": "3.13.15",
+  "laya": "0.3.21"
+ },
+ "plan_sha": "96fa77ef38f73ea11b4c36f9f5d57c39b1646edae20866c8b58f431417f50a00",
+ "code_sha": "7c08d1107c4d1d382342a09fd9608aabaaaf28932ef768e8fb891f75876649d3",
+ "session": "b558b627f733",
+ "finished_utc": "2026-09-28T16:45:38Z",
+ "wall_s": 146.9
+}

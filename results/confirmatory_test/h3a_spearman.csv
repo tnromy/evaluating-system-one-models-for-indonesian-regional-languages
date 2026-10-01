@@ -1,0 +1,4 @@
+arm,role,n_lang,rho,p_one_sided,confirmed
+B1-LR,primary,10,0.5222329678670935,0.0607514594085566,False
+B2,secondary,10,0.38924947208076155,0.13311203653461345,False
+C1,secondary,10,,,False

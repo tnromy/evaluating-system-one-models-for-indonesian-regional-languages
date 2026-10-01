@@ -1,0 +1,4 @@
+dataset,model,beta,ci_lo,ci_hi,n,n_lang,converged
+nusax_senti,glmer(correct ~ overlap_z + (1|sentence_id) + (1|lang)),0.551395722844567,0.263967020951497,0.838824424737636,1000,10,True
+nt_senti,glmer(correct ~ overlap_z + (1|sentence_id) + (1|lang)),0.747550173803408,0.225901836739797,1.26919851086702,700,7,True
+nt_emot,glmer(correct ~ overlap_z + (1|sentence_id) + (1|lang)),0.354547580459082,-0.0081802672224213,0.717275428140586,700,7,True
