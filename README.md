@@ -4,8 +4,9 @@ Code, pre-registration, predictions and results of a pre-registered study of **s
 classification in Indonesian regional languages**. It compares calibrated typed-decision ("System One") models
 with **classical classifiers**, **fine-tuned encoders** and **large language models (LLMs)**.
 
-> Manuscript: *Does System One Transfer? Calibrated Typed-Decision Models, Label Budgets, and Translation for
-> Indonesian Regional Languages* (submitted to SN Computer Science). Citation details will be added on publication.
+> Preprint: R. Fadli, Rusdah, W. R. P. Utami and Z. M. Amana, *Does System One Transfer? Calibrated Typed-Decision
+> Models, Label Budgets, and Translation for Indonesian Regional Languages*, arXiv:2610.14112, 2026.
+> https://arxiv.org/abs/2610.14112 (DOI: https://doi.org/10.48550/arXiv.2610.14112).
 
 The study asks four questions:
 1. How does zero-shot accuracy depend on how close a regional language is to Indonesian?
